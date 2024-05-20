@@ -1,0 +1,119 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_alumno = $_REQUEST['id_alumno'];
+if (!is_numeric($id_alumno)) {
+	echo(js("location.href='principal.php?modulo=gestion_alumnos';"));
+	exit;
+}
+
+$SQL_alumno = "SELECT va.id,va.nombre,va.rut,va.carrera,va.semestre_cohorte||'-'||va.cohorte AS cohorte,
+                      va.estado,ca.arancel,ca.beca,ca.congelado
+               FROM vista_alumnos AS va
+               LEFT JOIN alumnos AS a USING (id)
+               LEFT JOIN finanzas.contratos_al_2009 AS ca ON ca.id_alumno=a.id
+               LEFT JOIN finanzas.cred_int_al_2009 AS ci ON ci.id_alumno=a.id
+               WHERE va.id=$id_alumno;";
+$alumno = consulta_sql($SQL_alumno);
+if (count($alumno) == 0) {
+	echo(js("location.href='principal.php?modulo=gestion_alumnos';"));
+	exit;
+}
+extract($alumno[0]);
+
+if ($_REQUEST['guardar'] == "Guardar") {
+	$_REQUEST['arancel'] = str_replace(".","",$_REQUEST['arancel']);
+	$_REQUEST['beca']    = str_replace(".","",$_REQUEST['beca']);	
+	if ($arancel <> $_REQUEST['arancel'] || $beca <> $_REQUEST['beca'] || $congelado <> $_REQUEST['congelado']) {
+		$contrato_al_2009 = consulta_sql("SELECT arancel,beca,id_alumno FROM finanzas.contratos_al_2009 WHERE id_alumno=$id_alumno");
+		if (count($contrato_al_2009) == 1) {
+			$SQL_cont_al_2009 = "UPDATE finanzas.contratos_al_2009
+			                     SET arancel={$_REQUEST['arancel']},beca={$_REQUEST['beca']},congelado='{$_REQUEST['congelado']}'
+			                     WHERE id_alumno=$id_alumno";
+		} elseif (count($contrato_al_2009) == 0) {
+			$SQL_cont_al_2009 = "INSERT INTO finanzas.contratos_al_2009(id_alumno,arancel,beca,congelado)
+			                          VALUES ($id_alumno,{$_REQUEST['arancel']},{$_REQUEST['beca']},'{$_REQUEST['congelado']}')";
+			echo $SQL_cont_al_2009;
+		}
+		
+		if (consulta_dml($SQL_cont_al_2009) == 1) {
+			echo(msje_js("Se han guardado exitosamente los cambios."));
+		} else {
+			echo(msje_js("ERROR: No se han guardado los cambios."));
+		}
+	} else {
+		echo(msje_js("No se han realizado cambios, nada que guardar."));
+	}
+	echo(js("location.href='$enlbase=ver_alumno&id_alumno=$id_alumno';"));
+	exit;
+}
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="get" onSubmit="return enblanco2('arancel','beca');">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_alumno" value="<?php echo($id_alumno); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla"><input type="submit" name="guardar" value="Guardar"></td>
+    <td class="tituloTabla"><input type="button" name="cancelar" value="Cancelar" onClick="history.back();"></td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Alumno</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">ID alumno:</td>
+    <td class="celdaValorAttr"><?php echo($id); ?></td>
+    <td class="celdaNombreAttr">RUT:</td>
+    <td class="celdaValorAttr"><?php echo($rut); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Nombre:</td>
+    <td class="celdaValorAttr" colspan="3"><?php echo($nombre); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Carrrera:</td>
+    <td class="celdaValorAttr"><?php echo($carrera); ?></td>
+    <td class="celdaNombreAttr">Cohorte:</td>
+    <td class="celdaValorAttr"><?php echo($cohorte); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Arancel Colegiatura:</td>
+    <td class="celdaValorAttr" colspan="3">
+      $<input type='text' class='montos' style="text-align: right;" size='10' name='arancel' value="<?php echo($arancel); ?>"
+              onkeyup="puntitos(this,this.value.charAt(this.value.length-1),this.name)"
+              onClick="puntitos(this,this.value.charAt(this.value.length-1),this.name)">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Beca de arancel:</td>
+    <td class="celdaValorAttr" colspan="3">
+      $<input type='text' class='montos' style="text-align: right;" size='10' name='beca' value="<?php echo($beca); ?>"
+              onkeyup="puntitos(this,this.value.charAt(this.value.length-1),this.name)"
+              onClick="puntitos(this,this.value.charAt(this.value.length-1),this.name)">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Arancel congelado?</td>
+    <td class="celdaValorAttr" colspan="3">
+      <select name="congelado">
+        <?php echo(select($sino,$congelado)); ?>
+      </select>
+    </td>
+  </tr>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

@@ -1,0 +1,119 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_alumno  = $_REQUEST['id_alumno'];
+$id_malla   = $_REQUEST['id_malla'];
+$id_jornada = $_REQUEST['id_jornada'];
+
+$SQL_alumno = "SELECT va.id,va.nombre,va.rut,trim(va.carrera) AS alias_carrera,va.malla_actual,
+                      coalesce(va.id_malla_actual,0) AS id_malla_actual,va.id_carrera,a.jornada,
+                      c.nombre AS carrera
+               FROM vista_alumnos AS va
+               LEFT JOIN alumnos AS a USING (id)
+               LEFT JOIN carreras AS c ON c.id=a.carrera_actual
+               WHERE va.id=$id_alumno;";
+$alumno     = consulta_sql($SQL_alumno);
+
+extract($alumno[0]);
+
+if ($_REQUEST['guardar'] == "Guardar") {
+	if ($id_malla > 0) {
+		$malla = consulta_sql("SELECT id_carrera,alias_carrera||'/'||ano AS nombre_malla FROM vista_mallas WHERE id=$id_malla");
+		$id_carrera_nueva = $id_carrera;
+		if ($malla[0]['id_carrera'] <> $id_carrera) {
+			echo(msje_js("Ha escogido un Plan de estudios perteneciente a una carrera distinta "
+			            ."a la que el alumno cursa actualmente.\\n"
+			            ."Entonces junto con modificar la malla actual para este alumno, se modificará la "
+			            ."carrera actual"));
+			$id_carrera_nueva = $malla[0]['id_carrera'];
+		}
+		$SQL_update = "UPDATE alumnos
+		               SET carrera_actual=$id_carrera_nueva, malla_actual=$id_malla, jornada=$id_jornada
+		               WHERE id=$id_alumno";
+		$alumno = consulta_dml($SQL_update);
+		if ($alumno == 1) {
+			$nombre_malla = $malla[0]['nombre_malla'];
+			echo(msje_js("Se ha cambiado al alumno de plan de estudios $nombre_malla"));
+			echo(js("window.location='$enlbase=ver_alumno&id_alumno=$id_alumno';"));
+		}
+	} else {
+		echo(msje_js("No ha seleccionado un Plan de estudios"));
+	}
+}
+
+$SQL_mallas = "(SELECT id,alias_carrera||'/'||ano AS nombre FROM vista_mallas WHERE id_carrera=$id_carrera AND id<>$id_malla_actual ORDER BY alias_carrera,ano DESC)
+               UNION ALL
+               (SELECT 0,'-- Planes de otras carreras --')
+               UNION ALL
+               (SELECT id,alias_carrera||'/'||ano AS nombre FROM vista_mallas WHERE id_carrera<>$id_carrera ORDER BY alias_carrera,ano DESC)";
+
+$mallas     = consulta_sql($SQL_mallas);
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="post" onSubmit="return enblanco2('id_malla','jornada');">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_alumno" value="<?php echo($id_alumno); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla"><input type="submit" name="guardar" value="Guardar"></td>
+    <td class="tituloTabla"><input type="button" name="cancelar" value="Cancelar" onClick="history.back();"></td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class="celdaNombreAttr" style="text-align: center" colspan="4">Antecedentes del Alumno</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">ID:</td>
+    <td class="celdaValorAttr"><?php echo($id); ?></td>
+    <td class="celdaNombreAttr">RUT:</td>
+    <td class="celdaValorAttr"><?php echo($rut); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Nombre:</td>
+    <td class="celdaValorAttr" colspan="3"><?php echo($nombre); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Carrera:</td>
+    <td class="celdaValorAttr"><?php echo($carrera); ?></td>
+    <td class="celdaNombreAttr"><u>Jornada:</u></td>
+    <td class="celdaValorAttr">
+      <select name='id_jornada'>
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($JORNADAS,$jornada)); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr" style="text-align: center" colspan="4">Plan de Estudios del Alumno</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Actual:</td>
+    <td class="celdaValorAttr">
+      <a href="<?php echo("$enlbase=ver_malla&id_malla=$id_malla"); ?>">      
+        <?php echo($alias_carrera."/".$malla_actual); ?>
+      </a>
+    </td>
+    <td class="celdaNombreAttr"><u>Nuevo:</u></td>
+    <td class="celdaValorAttr">
+      <select name="id_malla">
+        <option value="">-- Seleccione --</option>
+        <?php echo(select($mallas,$id_malla)); ?>
+      </select>
+    </td>
+  </tr>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

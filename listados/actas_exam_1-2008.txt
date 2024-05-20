@@ -1,0 +1,1015 @@
+Auditoría
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3503
+Acta de Curso
+
+	Asignatura: AU-101-1 Contabilidad I			Periodo: 1-2008
+	  Profesor: Pedro Raad Allende			Horario: [Lun G {}] [Vie H {}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12336 9875615-9    ACUÑA AGUILERA HÉCTOR RICARDO                      | Vigent | 6.3  |      |      |______|______|
+ 12506 16086816-3   AGUILERA PEDEMONTE VANESSA LOURDES                 | Vigent | NSP  |      |      |______|______|
+ 12445 13084222-4   ALTAMIRANO CANIUÑIR ALEJANDRA DEL PILAR            | Vigent | 5.8  |      |      |______|______|
+ 12481 16120923-6   APARICIO MANSILLA CRISTIÁN ANDRÉS                  | Vigent | 5.6  |      |      |______|______|
+ 12444 16617273-K   ARAYA MILLAR YASNA ANDREA                          | Vigent | 6.1  |      |      |______|______|
+ 12402 14145916-3   AVENDAÑO NAVARRETE CRISTIAN ALEJANDRO              | Vigent | 2.5  |      |      |______|______|
+ 12337 17053406-9   BARRÍA BARRAZA VICTOR ANDRÉS                       | Retira | NSP  |      |      |______|______|Retirado
+ 12403 16922472-2   CÁRDENAS BARRÍA VIVIANA LORETO                     | Vigent | 4.8  |      |      |______|______|
+ 12338 12497681-2   CASTRO WEISKORN GIOVANNI FRANCISCO                 | Vigent | 4.3  |      |      |______|______|
+ 12482 15835811-5   COTRONEO VILLANUEVA LIELLELITH MARISOL             | Vigent | 6.0  |      |      |______|______|
+ 12483 15506956-2   GÓMEZ GONZÁLEZ PATRICIO ANDRÉS                     | Vigent | 5.9  |      |      |______|______|
+ 12404 17166927-8   GONZÁLEZ ORTÍZ FABIÁN ALEJANDRO                    | Vigent | 4.0  |      |      |______|______|
+ 12339 16548539-4   GONZÁLEZ SOLAR JONATHAN JAVIER                     | Vigent | 6.3  |      |      |______|______|
+ 12405 17002595-4   GUTIÉRREZ ÓRDENES VANESSA PAULETTE RAFAELA         | Vigent | 6.1  |      |      |______|______|
+ 12446 16304131-6   MONTECINOS CERVI ROBERTO FABRIZIO                  | Vigent | 2.0  |      |      |______|______|
+ 12468 14190984-3   MORA BRAVO PRISCILLA INÉS                          | Vigent | 5.1  |      |      |______|______|
+ 12406 13658425-1   MUÑOZ FLORES CHRISTIAN GONZALO                     | Vigent | 3.3  |      |      |______|______|
+ 12407 13462257-1   NÚÑEZ CARVACHO ALEJANDRO CÉSAR                     | Vigent | 5.3  |      |      |______|______|
+ 12340 17271119-7   OSORIO ORELLANA VICKY ISABEL                       | Vigent | 5.6  |      |      |______|______|
+ 12408 17074601-5   PONTILLO ORMEÑO DANIELA ROMINA                     | Vigent | 3.4  |      |      |______|______|
+ 12409 15990997-2   ROBLES ARANEDA KAREN IBERZABETT                    | Vigent | 6.7  |      |      |______|______|
+ 12507 15724960-6   ROZAS SALGADO WALTER HUGO                          | Vigent | NSP  |      |      |______|______|
+ 12469 22565922-2   RUIZ SÁNCHEZ DANTE JESÚS                           | Vigent | 2.3  |      |      |______|______|
+ 12410 7040088-K    SORIA PEÑA MIGUEL ANDRÉS                           | Vigent | 5.9  |      |      |______|______|
+ 12411 13448846-8   ULLOA MEZA EVANGELINA DEL CARMEN                   | Moroso | 3.8  |      |      |______|______|
+ 12341 16911886-8   VILLAGRA OLIVARES JENNIFER MARGARITA               | Vigent | 4.9  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 26
+
+
+
+_____________________________		_____________________		_________________________
+Martín Arnaldo Garrido Araya		Pedro Raad Allende    		          C.S.E.         
+Dirección de Escuela         		Profesor(a) del Curso
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3350
+Acta de Curso
+
+	Asignatura: AU-301-1 Contabilidad III			Periodo: 1-2008
+	  Profesor: María Zulema Urzúa Pérez			Horario: [Lun G {305}] [Vie H {305}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12106 15616789-4   AGUAYO LLANOS MANUEL ESTEBAN                       | Vigent | 4.8  |      |      |______|______|
+ 12107 16793309-2   ARAVENA ARAVENA YAQUELINE MACARENA                 | Vigent | 6.3  |      |      |______|______|
+ 12296 7419553-9    BASCUÑAN DONATI LEONARDO JOSÉ                      | Vigent | NSP  |      |      |______|______|Abandono
+ 12109 16040713-1   DOTTE RAMÍREZ DANILO ALEXANDER                     | Vigent | 3.4  |      |      |______|______|
+ 12162 13053557-7   FERRADA HERNÁNDEZ HÉCTOR RODRIGO                   | Vigent | 4.6  |      |      |______|______|
+ 12113 12489387-9   MUÑOZ HIDALGO MANUEL ENRIQUE                       | Vigent | 5.2  |      |      |______|______|
+ 12300 12586306-K   PÉREZ GUTIÉRREZ LILIANA DE LAS MERCEDES            | Vigent | 4.3  |      |      |______|______|
+ 12116 10069958-3   POBLETE SANHUEZA OSCAR ALEJANDRO                   | Vigent | 6.8  |      |      |______|______|
+ 12117 12282623-6   ROJAS CATALÁN PAMELA ADRIANA                       | Vigent | 5.0  |      |      |______|______|
+ 12118 16719090-1   SÁNCHEZ OROSTEGUI PAULINA ANDREA                   | Vigent | 3.6  |      |      |______|______|
+ 12254 14417177-2   VALDERRAMA ACEVEDO RODRIGO RAÚL                    | Vigent | 5.0  |      |      |______|______|
+ 12052 16663970-0   VALENZUELA MUÑOZ CAROLINA GUISELLA                 | Vigent | 3.3  |      |      |______|______|
+ 12119 16787313-8   VENEGAS QUEZADA JACQUELINE DEL CARMEN              | Vigent | 4.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 13
+
+
+
+_____________________________		___________________________		_________________________
+Martín Arnaldo Garrido Araya		María Zulema Urzúa Pérez		          C.S.E.         
+Dirección de Escuela         		Profesor(a) del Curso       
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3358
+Acta de Curso
+
+	Asignatura: AU-503-1 Auditoría II			Periodo: 1-2008
+	  Profesor: Nelson Fernando Palominos González			Horario: [Mar H {306}] [Jue G {306}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12296 7419553-9    BASCUÑAN DONATI LEONARDO JOSÉ                      | Vigent | 3.6  |      |      |______|______|Abandono
+ 12175 9663976-7    GUTIÉRREZ GONZÁLEZ MARÍA ANGÉLICA                  | Vigent | 4.9  |      |      |______|______|
+ 12110 13883615-0   JARA MELLA ARIEL ENRIQUE                           | Vigent | 4.0  |      |      |______|______|Abandono
+ 12116 10069958-3   POBLETE SANHUEZA OSCAR ALEJANDRO                   | Vigent | 5.3  |      |      |______|______|
+ 11970 16724425-4   TAPIA LÓPEZ Tamara Cecilia                         | Vigent | 4.0  |      |      |______|______|
+ 11974 10782043-4   VERGARA VILLAGRA Roberto Mario                     | Vigent | 4.3  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 6
+
+
+
+_____________________________		___________________________________		_________________________
+Martín Arnaldo Garrido Araya		Nelson Fernando Palominos González		          C.S.E.         
+Dirección de Escuela         		Profesor(a) del Curso               
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3363
+Acta de Curso
+
+	Asignatura: AU-703-1 Finanzas II			Periodo: 1-2008
+	  Profesor: Elinor Demesio Garay Contreras			Horario: [Lun G {402}] [Vie H {402}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 10001 12638300-2   ANTUNEZ VILLAGRAN Claudio Andrés                   | Vigent | 5.4  |      |      |______|______|
+ 10005 14901778-K   ÁVILA URIBE Dieter Alberto                         | Vigent | 5.1  |      |      |______|______|
+ 10012 13953185-K   CORONADO GALLEGOS Dayan del Carmen                 | Vigent | 4.7  |      |      |______|______|
+ 10040 15663771-8   FIGUEROA CÁRDENAS Antonio Alexis                   | Vigent | 5.2  |      |      |______|______|
+ 12116 10069958-3   POBLETE SANHUEZA OSCAR ALEJANDRO                   | Vigent | 6.6  |      |      |______|______|
+ 10031 16548430-4   PONCE BRIONES José Alejandro                       | Vigent | 5.6  |      |      |______|______|
+ 10041 15333714-4   RIQUELME KATIC Marjorie Liz                        | Vigent | 5.6  |      |      |______|______|
+ 11976 15335224-0   TORO SEPÚLVEDA Patricia Eugenia                    | Moroso | 4.8  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 8
+
+
+
+_____________________________		______________________________		_________________________
+Martín Arnaldo Garrido Araya		Elinor Demesio Garay Contreras		          C.S.E.         
+Dirección de Escuela         		Profesor(a) del Curso          
+Derecho Diurno
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3245
+Acta de Curso
+
+	Asignatura: DD-302-1 Derecho Constitucional I			Periodo: 1-2008
+	  Profesor: Francisco Javier Soto Arriagada			Horario: [Mar F {402}] [Jue F {402}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11459 7959276-5    ARANEDA SÛHS Guillermo                             | Vigent | NSP  |      |      |______|______|
+ 12186 16956466-3   BRICEÑO CARRASCO CAMILA IGNACIA                    | Vigent | 5.3  |      |      |______|______|
+ 11675 16617624-7   CASTRO ÁRIAS Kristel Elisabet                      | Vigent | 3.3  |      |      |______|______|
+ 11681 15805153-2   GONZÁLEZ DÍAZ Paola Andrea                         | Vigent | NSP  |      |      |______|______|
+ 11682 20346886-5   GUZMÁN ROCHA Camila Andrea                         | Vigent | NSP  |      |      |______|______|
+ 12084 15587680-8   HERRERA LÓPEZ FELIPE ANDRÉS                        | Vigent | 6.0  |      |      |______|______|
+ 12085 17022602-K   JARA ZANNI DOMINIQUE ALEJANDRA                     | Vigent | 5.3  |      |      |______|______|
+ 12086 17025556-9   LAGOS CARIS JAVIERA LOURDES                        | Vigent | 4.0  |      |      |______|______|
+ 12087 17082711-2   LARENAS YÉVENES CAMILA ALEJANDRA                   | Vigent | 5.6  |      |      |______|______|
+ 12088 16937170-9   MARÍN MARTÍNEZ PAOLA CRISTINA                      | Vigent | 5.3  |      |      |______|______|
+ 11689 16746895-0   MUÑOZ MATUS Deborah Francisca                      | Vigent | 5.0  |      |      |______|______|
+ 12152 15957928-K   NOVOA MORALES ALDO PATRICIO                        | Vigent | 6.3  |      |      |______|______|
+ 12065 14141710-K   PIZARRO AGUILERA FERNANDO IGNACIO                  | Vigent | 5.3  |      |      |______|______|
+ 12068 16092733-K   ROJAS GUERRA OSVALDO ANDRÉS DE JESÚS               | Vigent | 4.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 14
+
+
+
+__________________________________		_______________________________		_________________________
+Diana Marcela Palacios Aristizabal		Francisco Javier Soto Arriagada		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso           
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3251
+Acta de Curso
+
+	Asignatura: DD-503-1 Derecho Penal I			Periodo: 1-2008
+	  Profesor: Fernando Roberto García Díaz			Horario: [Mar D {305}] [Jue D {403}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12185 16149165-9   ARAYA MOSQUERA DAYAN AMBAR                         | Vigent | 2.5  |      |      |______|______|
+ 11672 16383419-7   ARENAS LEÓN Nataly Yazmina                         | Vigent | 2.5  |      |      |______|______|
+ 12268 12035581-3   CABEZAS DE LA PARRA MARISOL SONIA                  | Vigent | NSP  |      |      |______|______|
+ 11674 15345524-4   CARVAJAL BAHAMONDES Rodrigo Armando                | Vigent | 3.0  |      |      |______|______|
+ 11677 16745489-5   CORTÉS ORELLANA Piero Andrés                       | Vigent | 4.8  |      |      |______|______|
+ 11684 16760335-1   JARA VILLALOBOS Patricia Andrea                    | Vigent | 4.0  |      |      |______|______|
+ 11685 16020452-4   LEYTON RODRÍGUEZ Natalie Julietta                  | Vigent | 4.9  |      |      |______|______|
+ 11494 16622772-0   NOVOA BELLO Francisco Andrés                       | Vigent | 3.0  |      |      |______|______|
+ 11690 16322764-9   RIQUELME GONZÁLEZ ARLETTE ANDREA                   | Vigent | 3.5  |      |      |______|______|
+ 11695 16477188-1   VALDÉS RUBIO Victoria Jaqueline                    | Vigent | 4.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 10
+
+
+
+__________________________________		______________________________		_________________________
+Diana Marcela Palacios Aristizabal		Fernando Roberto García Díaz		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso          
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3253
+Acta de Curso
+
+	Asignatura: DD-505-1 Derecho Procesal III			Periodo: 1-2008
+	  Profesor: Enrique Ortiz Schindler			Horario: [Jue A {402}] [Jue C {402}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12185 16149165-9   ARAYA MOSQUERA DAYAN AMBAR                         | Vigent | 4.5  |      |      |______|______|
+ 11672 16383419-7   ARENAS LEÓN Nataly Yazmina                         | Vigent | NSP  |      |      |______|______|
+ 11393 13834943-8   CAMPILLAY ZÚÑIGA Patricio Ismael                   | Vigent | 5.3  |      |      |______|______|
+ 11674 15345524-4   CARVAJAL BAHAMONDES Rodrigo Armando                | Vigent | 3.0  |      |      |______|______|
+ 11677 16745489-5   CORTÉS ORELLANA Piero Andrés                       | Vigent | NSP  |      |      |______|______|
+ 11684 16760335-1   JARA VILLALOBOS Patricia Andrea                    | Vigent | 4.0  |      |      |______|______|
+ 11615 13453605-5   MEZA ALARCON Enibette Marcela                      | Vigent | 3.5  |      |      |______|______|
+ 11664 11114964-K   PULQUILLANCA NAHUELPAN Luz Pilar                   | Vigent | 4.0  |      |      |______|______|
+ 11438 13077111-4   REYES VEGA Daniel Elias                            | Vigent | 2.0  |      |      |______|______|
+ 11690 16322764-9   RIQUELME GONZÁLEZ ARLETTE ANDREA                   | Vigent | 3.0  |      |      |______|______|
+ 12389 15327749-4   URREJOLA ESTRADA CLAUDIA ANDREA                    | Vigent | 4.0  |      |      |______|______|
+ 11695 16477188-1   VALDÉS RUBIO Victoria Jaqueline                    | Vigent | NSP  |      |      |______|______|
+ 12255 16082176-0   VARGAS CAÑAS NATALIA ANDREA                        | Vigent | 4.3  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 13
+
+
+
+__________________________________		_______________________		_________________________
+Diana Marcela Palacios Aristizabal		Enrique Ortiz Schindler		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3255
+Acta de Curso
+
+	Asignatura: DD-701-1 Derecho Civil  V			Periodo: 1-2008
+	  Profesor: Juan Andrés Celis Pérez			Horario: [Vie B {405}] [Vie C {405}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11600 15723863-9   AGUILERA ALARCON Christopher Randall               | Vigent | 5.0  |      |      |______|______|
+ 12268 12035581-3   CABEZAS DE LA PARRA MARISOL SONIA                  | Vigent | NSP  |      |      |______|______|
+ 11401 8115599-2    CASTRO ROJAS José Guillermo                        | Vigent | NSP  |      |      |______|______|
+ 12287 14135713-1   CORREA CABRALES CHRISTIAN MARCELO                  | Vigent | 5.5  |      |      |______|______|
+ 11648 16472159-0   GONZÁLEZ CANTILLANA Nicolás Ignacio                | Vigent | 6.0  |      |      |______|______|
+ 11681 15805153-2   GONZÁLEZ DÍAZ Paola Andrea                         | Vigent | 4.2  |      |      |______|______|
+ 12393 15153218-7   GUTIÉRREZ PAREJA RITA MARÍA                        | Vigent | 6.0  |      |      |______|______|
+ 11415 14044369-7   ITURRI LUCERO Sergio Ignacio                       | Vigent | NSP  |      |      |______|______|Suspendido
+ 11655 13687931-6   MIRANDA GARAY Cristián Adrián                      | Vigent | 5.8  |      |      |______|______|
+ 11235 10376885-3   OCHOA VALENZUELA Ximena del Pilar                  | Vigent | 4.2  |      |      |______|______|
+ 11439 16247492-8   RÍOS OLIVARES Viviana Indalicia                    | Vigent | 4.5  |      |      |______|______|
+ 12252 13912406-5   RUBIO HERNANDEZ EVELYN                             | Vigent | 5.5  |      |      |______|______|
+ 12255 16082176-0   VARGAS CAÑAS NATALIA ANDREA                        | Vigent | NSP  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 13
+
+
+
+__________________________________		_________________________		_________________________
+Diana Marcela Palacios Aristizabal		Juan Andrés Celis Pérez		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso     
+Derecho Vespertino
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3290
+Acta de Curso
+
+	Asignatura: DV-302-1 Derecho Constitucional I			Periodo: 1-2008
+	  Profesor: France Jullie De Ponson Du Terrail Gunckel			Horario: [Mar H {409}] [Vie G {303}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12148 15811354-6   ALVAREZ MEDINA DANILO IVÁN                         | Vigent | 6.5  |      |      |______|______|
+ 12263 12964973-9   AQUEVEQUE CARRASCO PABLO RODRIGO                   | Vigent | 5.2  |      |      |______|______|
+ 12190 11126884-3   ARRIOLA OPORTO LUIS ALFREDO                        | Vigent | 5.2  |      |      |______|______|
+ 12055 12496934-4   BARRUETO CISTERNA CARLA PAOLA                      | Vigent | 5.2  |      |      |______|______|
+ 12150 16416676-7   BELMAR MEZA MARCELA PAZ                            | Vigent | 4.4  |      |      |______|______|
+ 12056 13909949-4   CAMPOS RUBILLO ANA MARÍA                           | Suspen | NSP  |      |      |______|______|Suspendido
+ 12196 10033534-4   CARTAGENA ARAYA ALEX ARTURO                        | Vigent | 3.4  |      |      |______|______|
+ 12057 7016374-8    CARVALLO RENCORET MANUEL FEDERICO                  | Vigent | 5.4  |      |      |______|______|
+ 12058 15566889-K   CÓRDOVA ACEVEDO DANIELA ISABEL                     | Vigent | 5.0  |      |      |______|______|
+ 11678 16251421-0   DUARTE GUERRERO Patricio Andrés                    | Vigent | NSP  |      |      |______|______|
+ 12476 7175958-K    FLORES CASTILLO IRIS ELIANA                        | Vigent | 3.0  |      |      |______|______|
+ 12169 15149579-6   GUAJARDO JARA CAMILO DEL TRÁNSITO                  | Vigent | 4.6  |      |      |______|______|
+ 12170 5667185-4    GUERRA TORO MARGARITA ANGÉLICA                     | Vigent | 4.6  |      |      |______|______|
+ 12200 15360928-4   GUZMÁN AMAS FRANCIS ESTHER                         | Moroso | 6.0  |      |      |______|______|
+ 11481 16144668-8   HERMOSILLA GUEDE Andrea Victoria                   | Vigent | NSP  |      |      |______|______|Suspendido
+ 12062 14470176-3   HERNÁNDEZ IBACACHE CRISTIAN ANTONIO                | Moroso | 5.9  |      |      |______|______|
+ 12243 13552736-K   JIMENEZ URREA Vanessa                              | Moroso | 5.8  |      |      |______|______|
+ 12262 13670832-5   LARA VILCHES ELIZABETH GABRIELA                    | Vigent | 5.4  |      |      |______|______|
+ 12171 14497824-2   LEVIÑANCO JARAMILLO ROBERTO CARLOS                 | Vigent | 5.5  |      |      |______|______|
+ 12235 12828254-8   MALEBRAN RIVERA LORETO PAOLA                       | Vigent | 4.4  |      |      |______|______|
+ 12064 6836363-2    PEREDO LOBOS JORGE OMAR                            | Vigent | 4.5  |      |      |______|______|
+ 12066 13248633-6   QUINTEROS PÉREZ JOHANNA PAULINA                    | Vigent | 4.9  |      |      |______|______|
+ 12208 15434170-6   RODRIGUEZ JIMÉNEZ MANUEL JESÚS                     | Vigent | 4.5  |      |      |______|______|
+ 12153 10311906-5   RODRÍGUEZ POBLETE CÉSAR ANTONIO                    | Vigent | 4.0  |      |      |______|______|
+ 12068 16092733-K   ROJAS GUERRA OSVALDO ANDRÉS DE JESÚS               | Vigent | NSP  |      |      |______|______|Suspendido
+ 12210 7346355-6    ROMO LADRON DE GUEVARA ALFREDO JULIO               | Vigent | 4.2  |      |      |______|______|
+ 12070 15793652-2   SABALLA PAVÉZ CRISTIAN SPLEY                       | Vigent | 5.0  |      |      |______|______|
+ 12154 11265992-7   SANHUEZA QUEZADA RAÚL EDUARDO                      | Vigent | 5.7  |      |      |______|______|
+ 12213 15360742-7   SEPULVEDA RODAS ALEX ESTEBAN                       | Vigent | 5.8  |      |      |______|______|
+ 12073 9514039-4    TELLO CONTRERAS JUAN PATRICIO                      | Suspen | NSP  |      |      |______|______|Suspendido
+ 12074 15378922-3   TORRES RODRIGUEZ RODRIGO FELIPE                    | Vigent | 5.4  |      |      |______|______|
+ 12241 7304600-9    URREA SALGADO Vanessa                              | Vigent | 5.3  |      |      |______|______|
+ 12270 10740557-7   VÁSQUEZ OLIVARES FRANCISCO MARIO                   | Vigent | 5.0  |      |      |______|______|
+ 12077 10084963-1   ZAMORANO MARTÍNEZ JOSÉ RODRIGO                     | Suspen | NSP  |      |      |______|______|Suspendido
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 34
+
+
+
+__________________________________		__________________________________________		_________________________
+Diana Marcela Palacios Aristizabal		France Jullie De Ponson Du Terrail Gunckel		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso                      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3302
+Acta de Curso
+
+	Asignatura: DV-503-1 Derecho Penal I			Periodo: 1-2008
+	  Profesor: Mario Alberto Araya Flores			Horario: [Mar H {408}] [Jue H {408}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12500 15584274-1   ABARCA POBLETE CARMEN ROSA                         | Vigent | 3.6  |      |      |______|______|
+ 12488 13232763-7   ACUÑA MATURANA IGNACIO IVÁN                        | Vigent | 6.6  |      |      |______|______|
+ 11458 11475491-9   ARANDA URRA Tito Fernando                          | Vigent | 6.3  |      |      |______|______|
+ 11460 15335235-6   ARANGUIZ POBLETE Daniela Elizabeth                 | Vigent | 5.0  |      |      |______|______|
+ 11465 13290212-7   CAMPOS POBLETE Rodrigo Alejandro                   | Vigent | 6.1  |      |      |______|______|
+ 11466 10583343-1   CARRASCO ÁLVAREZ Gustavo Jorge                     | Vigent | 5.0  |      |      |______|______|
+ 11469 12292752-0   CRUZAT ANABALÓN Luis Ricardo                       | Vigent | 4.9  |      |      |______|______|
+ 11471 13798471-7   DURÁN VEGA César Leonel                            | Vigent | 6.3  |      |      |______|______|
+ 11633 14128498-3   ESPINOZA AYALA Gabriel Fernando                    | Vigent | NSP  |      |      |______|______|
+ 11474 12260051-3   FUENTES MONTECINOS Carlos Wilfredo                 | Moroso | 5.0  |      |      |______|______|
+ 12198 12590568-4   GÓMEZ VALDÉS GONZALO ANTONIO                       | Vigent | NSP  |      |      |______|______|
+ 11477 7276210-K    GONZÁLEZ ALIAGA Juan Carlos                        | Vigent | NSP  |      |      |______|______|
+ 11486 15409929-8   LOZANO IBACACHE Óscar Eduardo                      | Moroso | 6.0  |      |      |______|______|
+ 11490 12662032-2   MENARES ALFARO Víctor Andrés                       | Vigent | 3.6  |      |      |______|______|
+ 11491 13915143-7   MORA CHACÓN Gonzalo José                           | Moroso | 6.6  |      |      |______|______|
+ 12205 15865528-4   NORAMBUENA GONZÁLEZ ROMÁN OSVALDO                  | Vigent | 4.6  |      |      |______|______|
+ 11660 15427917-2   OLIVERA DE LA FUENTE Ruth Cecilia                  | Vigent | 3.4  |      |      |______|______|
+ 12206 13619818-1   ORTIZ MENDOZA DANIEL MAURICIO                      | Vigent | NSP  |      |      |______|______|
+ 11497 13716160-5   ORTIZ ROMERO Cristina Alejandra                    | Vigent | 6.4  |      |      |______|______|
+ 11664 11114964-K   PULQUILLANCA NAHUELPAN Luz Pilar                   | Vigent | 2.3  |      |      |______|______|
+ 11371 13235709-9   QUILODRÁN TAPIA Ricardo Andres                     | Vigent | 6.0  |      |      |______|______|
+ 11691 15517142-1   ROSAS RIVERO Fabián Nicolas                        | Vigent | 2.1  |      |      |______|______|
+ 11504 9677945-3    RUELAS TORRES Alejandro Alonso                     | Vigent | 5.5  |      |      |______|______|
+ 11506 16718691-2   SAN JUAN ESPINOZA Alejandro Ignacio                | Vigent | 6.0  |      |      |______|______|
+ 11693 16872731-3   SEIN ARMIJO Víctor Hugo                            | Vigent | NSP  |      |      |______|______|
+ 11512 8663181-4    SILVA SANHUEZA Carolina Inés                       | Vigent | 4.6  |      |      |______|______|
+ 11514 16173116-1   SOTO COFRÉ Ana Alejandra                           | Vigent | 5.2  |      |      |______|______|
+ 11515 11424203-9   TORRES PEDREROS Daniel Isaias                      | Vigent | 4.5  |      |      |______|______|
+ 11518 12306325-2   VERA TORO Carlos Lorenzo                           | Vigent | 6.0  |      |      |______|______|
+ 11520 14400972-K   ZEGERS LARRAGUIBEL Felipe Antonio                  | Vigent | NSP  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 30
+
+
+
+__________________________________		__________________________		_________________________
+Diana Marcela Palacios Aristizabal		Mario Alberto Araya Flores		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3304
+Acta de Curso
+
+	Asignatura: DV-505-1 Derecho Procesal III			Periodo: 1-2008
+	  Profesor: Enrique Ortiz Schindler			Horario: [Lun G {405}] [Sab D {409}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12500 15584274-1   ABARCA POBLETE CARMEN ROSA                         | Vigent | 3.0  |      |      |______|______|
+ 11458 11475491-9   ARANDA URRA Tito Fernando                          | Vigent | 5.0  |      |      |______|______|
+ 11460 15335235-6   ARANGUIZ POBLETE Daniela Elizabeth                 | Vigent | 6.0  |      |      |______|______|
+ 12246 13204120-2   BARRIOS ORELLANA Marcelo                           | Vigent | 3.5  |      |      |______|______|
+ 11465 13290212-7   CAMPOS POBLETE Rodrigo Alejandro                   | Vigent | 5.5  |      |      |______|______|
+ 11466 10583343-1   CARRASCO ÁLVAREZ Gustavo Jorge                     | Vigent | 3.0  |      |      |______|______|
+ 11469 12292752-0   CRUZAT ANABALÓN Luis Ricardo                       | Vigent | 3.5  |      |      |______|______|
+ 11471 13798471-7   DURÁN VEGA César Leonel                            | Vigent | 6.5  |      |      |______|______|
+ 11474 12260051-3   FUENTES MONTECINOS Carlos Wilfredo                 | Moroso | 3.5  |      |      |______|______|
+ 12198 12590568-4   GÓMEZ VALDÉS GONZALO ANTONIO                       | Vigent | 4.0  |      |      |______|______|
+ 11477 7276210-K    GONZÁLEZ ALIAGA Juan Carlos                        | Vigent | 3.0  |      |      |______|______|
+ 11486 15409929-8   LOZANO IBACACHE Óscar Eduardo                      | Moroso | 6.0  |      |      |______|______|
+ 11490 12662032-2   MENARES ALFARO Víctor Andrés                       | Vigent | 3.5  |      |      |______|______|
+ 11491 13915143-7   MORA CHACÓN Gonzalo José                           | Moroso | 4.8  |      |      |______|______|
+ 12205 15865528-4   NORAMBUENA GONZÁLEZ ROMÁN OSVALDO                  | Vigent | 4.0  |      |      |______|______|
+ 11497 13716160-5   ORTIZ ROMERO Cristina Alejandra                    | Vigent | 4.0  |      |      |______|______|
+ 12382 13201949-5   PÉREZ GARRIDO PEDRO SENDAR                         | Vigent | 3.0  |      |      |______|______|
+ 11371 13235709-9   QUILODRÁN TAPIA Ricardo Andres                     | Vigent | 4.0  |      |      |______|______|
+ 11691 15517142-1   ROSAS RIVERO Fabián Nicolas                        | Vigent | 3.0  |      |      |______|______|
+ 11504 9677945-3    RUELAS TORRES Alejandro Alonso                     | Vigent | 3.0  |      |      |______|______|
+ 11506 16718691-2   SAN JUAN ESPINOZA Alejandro Ignacio                | Vigent | 4.0  |      |      |______|______|
+ 11693 16872731-3   SEIN ARMIJO Víctor Hugo                            | Vigent | NSP  |      |      |______|______|
+ 11512 8663181-4    SILVA SANHUEZA Carolina Inés                       | Vigent | 4.5  |      |      |______|______|
+ 11515 11424203-9   TORRES PEDREROS Daniel Isaias                      | Vigent | 3.5  |      |      |______|______|
+ 11518 12306325-2   VERA TORO Carlos Lorenzo                           | Vigent | 4.0  |      |      |______|______|
+ 11520 14400972-K   ZEGERS LARRAGUIBEL Felipe Antonio                  | Vigent | NSP  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 26
+
+
+
+__________________________________		_______________________		_________________________
+Diana Marcela Palacios Aristizabal		Enrique Ortiz Schindler		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3312
+Acta de Curso
+
+	Asignatura: DV-701-1 Derecho Civil  V			Periodo: 1-2008
+	  Profesor: José Luis Díaz Contreras			Horario: [Mar G {407}] [Jue G {407}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11345 11176785-8   ÁVILA FRIZ Domingo Antonio                         | Vigent | 3.5  |      |      |______|______|
+ 11393 13834943-8   CAMPILLAY ZÚÑIGA Patricio Ismael                   | Vigent | 3.5  |      |      |______|______|
+ 11394 10180677-4   CAMPOS CERDA Azucena                               | Vigent | 6.0  |      |      |______|______|
+ 11400 11531277-4   CASTRO GONZÁLEZ Jacqueline del Carmen              | Vigent | 4.0  |      |      |______|______|
+ 11401 8115599-2    CASTRO ROJAS José Guillermo                        | Vigent | NSP  |      |      |______|______|Suspendido
+ 12033 12376075-1   FUENTES YESSI Claudia Leonor                       | Vigent | 5.8  |      |      |______|______|
+ 12491 10650302-8   HERNÁNDEZ SALAS MARIO FRANCISCO                    | Vigent | 2.0  |      |      |______|______|
+ 11651 15652900-1   HUENTELEO CAUPÁN Pablo Alejandro                   | Moroso | 4.6  |      |      |______|______|
+ 11482 15449444-8   IBÁÑEZ TOLEDO Stiffanni Sphell                     | Vigent | 3.8  |      |      |______|______|
+ 11415 14044369-7   ITURRI LUCERO Sergio Ignacio                       | Vigent | 4.5  |      |      |______|______|
+ 11639 10403211-7   LISBOA TRONCOSO Karla Andrea                       | Vigent | 5.8  |      |      |______|______|
+ 11360 15543351-5   MOLINA BASTIAS Carlos Eugenio                      | Vigent | 5.2  |      |      |______|______|
+ 11416 13207665-0   MORALES LÓPEZ Cristián Gonzalo                     | Vigent | NSP  |      |      |______|______|
+ 12247 13289326-8   NARVAEZ VILLALOBOS Luis Patricio                   | Vigent | 5.0  |      |      |______|______|
+ 11436 15346026-4   POBLETE CEPEDA Álvaro Alonso                       | Vigent | 4.5  |      |      |______|______|
+ 12531 15363553-6   POSADA CORVALAN RODRIGO FERNANDO                   | Vigent | 6.5  |      |      |______|______|
+ 12455 13026369-0   RODRÍGUEZ MUÑOZ ALVARO ALEJANDRO                   | Vigent | 2.9  |      |      |______|______|
+ 11442 13903361-2   ROJAS OHMKE Nicolás Andrés                         | Vigent | 5.3  |      |      |______|______|
+ 11445 14258986-9   SALINAS MATALÓN Luis Eduardo                       | Vigent | 6.6  |      |      |______|______|
+ 11449 12403857-K   SOLÍS LOBOS Sergio Patricio                        | Vigent | 5.0  |      |      |______|______|
+ 12256 15256603-4   TRANAMIL ASPE ANDREA DEL PILAR                     | Vigent | 4.3  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 21
+
+
+
+__________________________________		__________________________		_________________________
+Diana Marcela Palacios Aristizabal		José Luis Díaz Contreras		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso      
+Pedagogía en Educación Básica
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3434
+Acta de Curso
+
+	Asignatura: EB-103-1 Bases Psicológicas de la Educación			Periodo: 1-2008
+	  Profesor: Ana María Moreno Badenier			Horario: [Mar D {LAB-AR1}] [Jue D {304}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12245 15601400-1   ALARCON FERREIRA Verónica                          | Vigent | 4.0  |      |      |______|______|
+ 12130 16692834-6   ARANDA BAEZA NICOL ALISON                          | Vigent | 5.7  |      |      |______|______|
+ 12348 16376886-0   BANCHERO QUINTANA CAROLINA ANDREA                  | Vigent | 3.3  |      |      |______|______|
+ 12324 17414210-6   BUCAREY TAPIA JULIETTE KARINA                      | Vigent | 4.9  |      |      |______|______|
+ 12323 15359009-5   BURTON CARVAJAL MARGARITA ORIANA                   | Vigent | 4.5  |      |      |______|______|
+ 12397 17019757-7   BUSTAMANTE LAZO SCARLETT DE LOS ANGELES            | Moroso | 5.5  |      |      |______|______|
+ 12454 12643551-7   BUSTOS GAJARDO KARINA ANTONIETA                    | Vigent | NSP  |      |      |______|______|
+ 12325 17537651-8   CÁCERES NEIRA VICTORIA YANEL                       | Moroso | 5.5  |      |      |______|______|
+ 12120 16780563-9   CALISTO BÁEZ MARÍA FRANCISCA                       | Vigent | 3.2  |      |      |______|______|
+ 12257 15798929-4   CONTRERAS MATUS ANDRÉS PABLO                       | Vigent | 5.3  |      |      |______|______|
+ 12349 16415271-5   CUELLAR MADRID MAURIN ROXANA NICOLE                | Vigent | 5.7  |      |      |______|______|
+ 12398 17064748-3   ELGUETA MUÑOZ INGRID ALEJANDRA                     | Vigent | 5.3  |      |      |______|______|
+ 12121 16663477-6   FERNÁNDEZ SANDOVAL KARINA ANDREA                   | Vigent | 4.0  |      |      |______|______|
+ 12399 14141122-5   FIGUEROA KAWADA MARÍA PAZ                          | Moroso | 5.1  |      |      |______|______|
+ 12342 17245659-6   GARCÉS LÓPEZ NICOLE ANDREA                         | Vigent | 5.1  |      |      |______|______|
+ 12343 15868860-3   GÁRCES LÓPEZ OLGA ABID                             | Vigent | 5.7  |      |      |______|______|
+ 12122 17148918-0   GARCÍA TELLO DENISSE ALEJANDRA                     | Vigent | 4.0  |      |      |______|______|
+ 12484 13275204-4   GONZÁLEZ CELIS JOHANNA FRANCIS                     | Vigent | 6.2  |      |      |______|______|
+ 12421 16956655-0   GUTIÉRREZ PIQUERES KATHERINE BELÉN                 | Vigent | 4.7  |      |      |______|______|
+ 12326 17339454-3   IBACACHE MUÑOZ DEYSI SUSAN                         | Vigent | 4.5  |      |      |______|______|
+ 12422 13064900-9   JIMÉNEZ BUSTOS RUTH CAROL                          | Vigent | 5.9  |      |      |______|______|
+ 12327 12775968-5   LARA VEGA MAURICIO FERNANDO                        | Vigent | 5.3  |      |      |______|______|
+ 12400 17096109-9   LARENAS VALDÉS DAYANNE YOANA                       | Vigent | 4.9  |      |      |______|______|
+ 12442 17128002-8   LEÓN SAAVEDRA LORENA VALENTINA                     | Vigent | 5.1  |      |      |______|______|
+ 12225 16723801-7   LEÓN URRIOLA CAROLINA CECILIA                      | Vigent | NSP  |      |      |______|______|
+ 12423 17538248-8   MANCILLA PALMA VIRGINIA CATALINA                   | Vigent | 6.1  |      |      |______|______|
+ 12328 17256398-8   MARDONES ZAPATA MARGARITA ALEJANDRA                | Vigent | 4.0  |      |      |______|______|
+ 12425 15771341-8   MAYNE CASAS CORDERO YOVERNA GUILYAN                | Vigent | 5.5  |      |      |______|______|
+ 12329 17674171-6   MENA GALLEGUILLOS KARLA VICTORIA                   | Vigent | NSP  |      |      |______|______|Suspendido
+ 12344 16121729-8   MENESES MORÁN ANA LORETO                           | Vigent | 4.9  |      |      |______|______|
+ 12520 17100007-6   MOLINA AYALA NICOL BERNABETH                       | Vigent | 3.9  |      |      |______|______|
+ 12123 16475826-5   ORELLANA CAMPOS CAMILA FERNANDA                    | Vigent | 4.9  |      |      |______|______|
+ 12426 17101365-8   RAMOS BELMAR MARÍA JOSÉ                            | Abando | NSP  |      |      |______|______|Abandono
+ 12219 16799361-3   REQUENA PINTO JENNIFER JOHANA                      | Vigent | 3.8  |      |      |______|______|
+ 12330 17103434-5   ROBLEDO ZÚÑIGA MARISOL VALESKA                     | Moroso | 3.8  |      |      |______|______|
+ 12467 16479494-6   ROBLES DÍAZ SAMARIA ANGELA                         | Vigent | 4.0  |      |      |______|______|
+ 12350 17385464-1   SARAVIA NEIRA CARMEN GLORIA                        | Vigent | 4.7  |      |      |______|______|
+ 12345 17023758-7   SERRANO SERRANO NICOLÁS LEONARDO                   | Vigent | 4.5  |      |      |______|______|
+ 12346 16141237-6   SUÁREZ DUARTE PATRICIO ANTONIO                     | Moroso | NSP  |      |      |______|______|
+ 12443 17455607-5   TAPIA MUGA MARISEL DE LOS ANGELES                  | Vigent | 4.7  |      |      |______|______|
+ 12401 16837451-8   VÁSQUEZ VALDÉS CAMILA NICOLLE                      | Vigent | 5.7  |      |      |______|______|
+ 12420 17083574-3   VERA LIU CONSTANZA MAYLIN                          | Vigent | 5.5  |      |      |______|______|
+ 12347 17371649-4   VIDAL CARRASCO MARCELO NICOLÁS                     | Retira | NSP  |      |      |______|______|Retirado
+ 12521 15565541-0   VIVAR BUSTAMANTE KAREN ANDREA                      | Vigent | 4.5  |      |      |______|______|
+ 12424 15470375-6   ZÚÑIGA LEÓN JESSICA EDITH                          | Vigent | 5.9  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 45
+
+
+
+_____________________		__________________________		_________________________
+Mónica Urzúa        		Ana María Moreno Badenier		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3439
+Acta de Curso
+
+	Asignatura: EB-301-1 Curriculum Educacional II			Periodo: 1-2008
+	  Profesor: Claudia Gallegos Barrera			Horario: [Mie E {307}] [Jue D {409}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12125 17225147-1   ARMIJO IBARRA MARÍA FERNANDA                       | Vigent | 4.7  |      |      |______|______|
+ 12132 16952591-9   BRAVO LIZANA CAMILO ALEJANDRO                      | Vigent | 4.5  |      |      |______|______|
+ 12133 16380625-8   BUSTOS LOBOS LUIS YOSUHART                         | Vigent | 4.3  |      |      |______|______|
+ 12126 17150070-2   CARGNINO LATIN ALEXANDRA VALESKA                   | Vigent | 4.2  |      |      |______|______|
+ 12134 17049825-9   CORTÉS SOTO NICOLE ANDREA                          | Vigent | 4.0  |      |      |______|______|
+ 12166 16027033-0   GALLARDO DONOSO ANDREA LORETO                      | Vigent | 5.8  |      |      |______|______|
+ 12225 16723801-7   LEÓN URRIOLA CAROLINA CECILIA                      | Vigent | 3.7  |      |      |______|______|
+ 12137 15413384-4   LOPEHANDIA VALDÉS KAREN VIVIANA                    | Vigent | 6.0  |      |      |______|______|
+ 12167 15793852-5   MARQUÉZ MARTÍNEZ LORNEE JOCELYN                    | Vigent | 4.8  |      |      |______|______|
+ 12127 17082616-7   MORAGA JOFRÉ CONSTANZA PAZ                         | Vigent | 5.7  |      |      |______|______|
+ 12259 15537076-9   PALMA MUÑOZ PRISCILLA ALEJANDRA                    | Vigent | 4.0  |      |      |______|______|
+ 12218 16638255-6   QUEZADA YAÑEZ CARLA ALEJANDRA                      | Vigent | 6.2  |      |      |______|______|
+ 12140 16711697-3   TEJO SANTIBAÑEZ SIRIA FRANSUA                      | Moroso | 5.5  |      |      |______|______|
+ 12260 15660685-5   TORRES ASTORGA MARCO ANTONIO                       | Vigent | 4.4  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 14
+
+
+
+_____________________		________________________		_________________________
+Mónica Urzúa        		Claudia Gallegos Barrera		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso    
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3444
+Acta de Curso
+
+	Asignatura: EB-306-1 Pedagogía del Lenguaje y Comunicación I			Periodo: 1-2008
+	  Profesor: Julio Esteban Toro Otey			Horario: [Mar B {307}] [Mar C {307}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12245 15601400-1   ALARCON FERREIRA Verónica                          | Vigent | 3.0  |      |      |______|______|
+ 12130 16692834-6   ARANDA BAEZA NICOL ALISON                          | Vigent | 3.4  |      |      |______|______|
+ 12165 15474025-2   BARRIOS PLAZA KARLA KARINA                         | Vigent | 3.1  |      |      |______|______|
+ 12132 16952591-9   BRAVO LIZANA CAMILO ALEJANDRO                      | Vigent | 3.5  |      |      |______|______|
+ 12133 16380625-8   BUSTOS LOBOS LUIS YOSUHART                         | Vigent | 4.9  |      |      |______|______|
+ 12257 15798929-4   CONTRERAS MATUS ANDRÉS PABLO                       | Vigent | 3.0  |      |      |______|______|
+ 12134 17049825-9   CORTÉS SOTO NICOLE ANDREA                          | Vigent | 4.0  |      |      |______|______|
+ 12137 15413384-4   LOPEHANDIA VALDÉS KAREN VIVIANA                    | Vigent | 5.2  |      |      |______|______|
+ 12167 15793852-5   MARQUÉZ MARTÍNEZ LORNEE JOCELYN                    | Vigent | 4.5  |      |      |______|______|
+ 12259 15537076-9   PALMA MUÑOZ PRISCILLA ALEJANDRA                    | Vigent | NSP  |      |      |______|______|Suspendido
+ 12014 15564620-9   PÉREZ SEPÚLVEDA Carolina del Pilar                 | Vigent | NSP  |      |      |______|______|
+ 12218 16638255-6   QUEZADA YAÑEZ CARLA ALEJANDRA                      | Vigent | 3.6  |      |      |______|______|
+ 12219 16799361-3   REQUENA PINTO JENNIFER JOHANA                      | Vigent | 4.0  |      |      |______|______|
+ 12138 16832867-2   SAAVEDRA RODRIGUEZ LILIAN VICTORIA                 | Vigent | 3.0  |      |      |______|______|
+ 12139 15395449-6   SÁNCHEZ FERNÁNDEZ MARCELA LORETO                   | Vigent | 3.5  |      |      |______|______|
+ 12140 16711697-3   TEJO SANTIBAÑEZ SIRIA FRANSUA                      | Moroso | 6.0  |      |      |______|______|
+ 12222 15707613-2   VIDAL JIMENEZ PAMELA DEL CARMEN                    | Vigent | 6.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 17
+
+
+
+_____________________		_______________________		_________________________
+Mónica Urzúa        		Julio Esteban Toro Otey		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3421
+Acta de Curso
+
+	Asignatura: EB-504-1 Adaptaciones Curriculares y Necesidades Educactivas			Periodo: 1-2008
+	  Profesor: Jorge Humberto Toro Norambuena			Horario: [Lun A {408}] [Mie A {405}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12013 16615419-7   ABARCA SALINAS Claudia Estela                      | Vigent | 4.8  |      |      |______|______|
+ 11999 16901684-4   ASTORGA ESPINOZA Romina Andrea                     | Vigent | 3.9  |      |      |______|______|
+ 12001 16089696-5   CALDERÓN BICHON Margarita Leontina                 | Vigent | 4.1  |      |      |______|______|
+ 12019 16984570-0   DEVIA PIZARRO Leyla Franchesca                     | Vigent | 5.5  |      |      |______|______|
+ 12010 16698189-1   FONTT GONZÁLEZ Francisco Antonio                   | Vigent | 3.2  |      |      |______|______|
+ 11998 16876947-4   MARDONES LIZAMA Silvana Natalia                    | Vigent | 5.0  |      |      |______|______|
+ 12000 16509676-2   MUGA TORRES María Paz                              | Vigent | 5.5  |      |      |______|______|
+ 12020 14106070-8   MUÑOZ CASTILLO Johana Soledad                      | Vigent | 4.6  |      |      |______|______|
+ 12008 16531363-1   PÉREZ VALLEJOS José Agustín                        | Vigent | 5.7  |      |      |______|______|
+ 12004 16691176-1   RAMÍREZ RAMÍREZ Lissett Marisol                    | Vigent | 4.6  |      |      |______|______|
+ 11997 16786143-1   SAN MARTÍN BRIONES Tania Valentina                 | Vigent | 6.1  |      |      |______|______|
+ 12018 16744623-K   TRUJILLO MENA Marcela Olivia                       | Vigent | 4.8  |      |      |______|______|
+ 12007 16759353-4   VELÁSQUEZ SILVA José Luis                          | Vigent | NSP  |      |      |______|______|Suspendido
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 13
+
+
+
+_____________________		______________________________		_________________________
+Mónica Urzúa        		Jorge Humberto Toro Norambuena		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso          
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3428
+Acta de Curso
+
+	Asignatura: EB-703-1 Diseño y Evaluación de Proyectos Educativos			Periodo: 1-2008
+	  Profesor: Andrés Padilla Ballesteros			Horario: [Mie B {405}] [Mie C {405}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 10082 15800378-3   AGUIRRE AGUILERA Daniela Teresa                    | Vigent | 6.8  |      |      |______|______|
+ 10053 16347191-4   CORTÉS CABRERA Pamela Andrea                       | Vigent | 6.8  |      |      |______|______|
+ 10059 16123286-6   HERRERA ALEGRE Luis Emanuelle                      | Vigent | 5.9  |      |      |______|______|
+ 10061 11405872-6   JIMÉNEZ JARA Tatiana Ingrid                        | Vigent | 6.8  |      |      |______|______|
+ 12167 15793852-5   MARQUÉZ MARTÍNEZ LORNEE JOCELYN                    | Vigent | 6.5  |      |      |______|______|
+ 10066 10621966-4   MONCADA MÁRQUEZ María Angélica                     | Vigent | 6.8  |      |      |______|______|
+ 10068 16074367-0   OLGUÍN FARÍAS Jocelyn Andrea                       | Vigent | 6.8  |      |      |______|______|
+ 12014 15564620-9   PÉREZ SEPÚLVEDA Carolina del Pilar                 | Vigent | 6.5  |      |      |______|______|
+ 10073 16118299-0   PINTO LÓPEZ Maximiliano Andrés                     | Vigent | 5.9  |      |      |______|______|
+ 10075 13943798-5   REYES SILVA Damaris Priscilla                      | Vigent | NSP  |      |      |______|______|
+ 10083 15620018-2   RUBILAR ACEVEDO Joselyn Valesca                    | Vigent | 6.8  |      |      |______|______|
+ 12139 15395449-6   SÁNCHEZ FERNÁNDEZ MARCELA LORETO                   | Vigent | 6.5  |      |      |______|______|
+ 10081 16477589-5   VELÁSQUEZ VALDÉS Leslye de Lourdes                 | Vigent | 6.8  |      |      |______|______|
+ 12222 15707613-2   VIDAL JIMENEZ PAMELA DEL CARMEN                    | Vigent | 6.5  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 14
+
+
+
+_____________________		___________________________		_________________________
+Mónica Urzúa        		Andrés Padilla Ballesteros		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso       
+Pedagogía en Educación Básica Vespertino
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3498
+Acta de Curso
+
+	Asignatura: PEBV-102-1 Bases Psicológicas de la Educación			Periodo: 1-2008
+	  Profesor: Ana María Moreno Badenier			Horario: [Jue G {403}] [Jue H {405}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12485 10780838-8   ACUM PARDO ALEJANDRA SOLEDAD                       | Vigent | 4.6  |      |      |______|______|
+ 12427 15351289-2   BRUNO MIRANDA DANITZA ROXANA                       | Vigent | 4.6  |      |      |______|______|
+ 12428 11707089-1   CÁRDENAS VERA CLAUDIO ADOLFO                       | Vigent | 5.4  |      |      |______|______|
+ 12429 15426227-K   CELIS ITURRA DENISSE JACQUELINE                    | Vigent | 4.8  |      |      |______|______|
+ 12530 8351690-9    CELPA ESPINOZA VERONICA DEL CARMEN                 | Vigent | 4.6  |      |      |______|______|
+ 12497 8308285-2    CONTRERAS VALDÉS ALICIA DEL CARMEN                 | Vigent | 3.2  |      |      |______|______|
+ 12508 14078171-1   CURÍN JARA MARISOL ISABEL                          | Vigent | 4.2  |      |      |______|______|
+ 12522 16624767-5   DÍAZ ANCAMILLA JUAN PEDRO                          | Vigent | NSP  |      |      |______|______|
+ 12486 15954270-K   GUZMÁN MORENO STEPHANIE BELÉN                      | Suspen | NSP  |      |      |______|______|Suspendido
+ 12509 16296057-1   HIRIARTE TORRES ALEJANDRO ANDRÉS                   | Vigent | 4.6  |      |      |______|______|
+ 12430 14601759-2   JIMÉNEZ MUÑOZ HÉCTOR RAMÓN                         | Vigent | 5.4  |      |      |______|______|
+ 12431 15337230-6   LAMOZA ESPINOZA NORMA LUISA AURORA                 | Moroso | 5.6  |      |      |______|______|
+ 12529 10965091-9   LÓPEZ FILLOU SILVIA DEL CARMEN                     | Vigent | NSP  |      |      |______|______|Suspendido
+ 12503 17390322-7   MATURANA CALDERON HECTOR ANTONIO                   | Vigent | 5.2  |      |      |______|______|
+ 12463 13687709-7   MONSALVES FIGUEROA DANIELA CRISTINA                | Vigent | 5.0  |      |      |______|______|
+ 12432 16681890-7   MORA BRAVO REIMY SAMOHA                            | Vigent | 5.0  |      |      |______|______|
+ 12498 6483661-7    NAVARRO SILVA NILO DEL CARMEN                      | Vigent | 4.8  |      |      |______|______|
+ 12510 16516725-2   NEIRA ORTIZ CARLOS RODRIGO                         | Suspen | NSP  |      |      |______|______|Suspendido
+ 12441 08423323-4   NÚÑEZ LÓPEZ HÉCTOR FERNANDO                        | Vigent | 4.4  |      |      |______|______|
+ 12465 16296876-9   PINOCHET AVENDAÑO CAROLINA DEL CARMEN              | Vigent | 5.4  |      |      |______|______|
+ 12504 15448171-0   RAMÍREZ CARO FRANCO GONZALO                        | Vigent | 5.2  |      |      |______|______|
+ 12511 15434111-0   RIVAS RIVAS CARLOS ALFREDO                         | Vigent | 5.4  |      |      |______|______|
+ 12433 14140618-3   ROA NAVARRO KAREN ISABEL                           | Vigent | 4.8  |      |      |______|______|
+ 12464 15317842-9   RODRIGUEZ LUCERO GONZALO MANUEL                    | Vigent | NSP  |      |      |______|______|
+ 12434 16423001-5   RODRÍGUEZ TORO CARMEN EUGENIA                      | Retira | NSP  |      |      |______|______|Retirado
+ 12505 16114606-4   ROMÁN GONZÁLEZ  KAREN MARCELA                      | Retira | NSP  |      |      |______|______|Retirado
+ 12440 16629197-6   SANTIS CÁRDENAS MICHELLE MARIE                     | Vigent | 4.0  |      |      |______|______|
+ 12499 10394633-6   SARMIENTO VALDERRAMA ROGELIO IVAN                  | Vigent | 4.4  |      |      |______|______|
+ 12435 12858528-1   TORRES GARRIDO RODRIGO ALEJANDRO                   | Vigent | 6.0  |      |      |______|______|
+ 12528 16020295-5   VALENZUELA ANCAMIL CAMILA FRANCISCA                | Vigent | NSP  |      |      |______|______|
+ 12436 13257033-7   VERA LEMA MARCELA SOLEDAD                          | Vigent | 4.2  |      |      |______|______|
+ 12347 17371649-4   VIDAL CARRASCO MARCELO NICOLÁS                     | Retira | NSP  |      |      |______|______|Retirado
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 32
+
+
+
+_____________________		__________________________		_________________________
+Mónica Urzúa        		Ana María Moreno Badenier		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3500
+Acta de Curso
+
+	Asignatura: PEBV-104-1 Educación Matemática I			Periodo: 1-2008
+	  Profesor: Raquel Díaz Bustos			Horario: [Sab A {}] [Sab B {}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12485 10780838-8   ACUM PARDO ALEJANDRA SOLEDAD                       | Vigent | 2.0  |      |      |______|______|
+ 12427 15351289-2   BRUNO MIRANDA DANITZA ROXANA                       | Vigent | 4.0  |      |      |______|______|
+ 12428 11707089-1   CÁRDENAS VERA CLAUDIO ADOLFO                       | Vigent | 4.5  |      |      |______|______|
+ 12429 15426227-K   CELIS ITURRA DENISSE JACQUELINE                    | Vigent | 5.5  |      |      |______|______|
+ 12530 8351690-9    CELPA ESPINOZA VERONICA DEL CARMEN                 | Vigent | 4.4  |      |      |______|______|
+ 12497 8308285-2    CONTRERAS VALDÉS ALICIA DEL CARMEN                 | Vigent | 2.0  |      |      |______|______|
+ 12508 14078171-1   CURÍN JARA MARISOL ISABEL                          | Vigent | 4.0  |      |      |______|______|
+ 12522 16624767-5   DÍAZ ANCAMILLA JUAN PEDRO                          | Vigent | 2.0  |      |      |______|______|
+ 12486 15954270-K   GUZMÁN MORENO STEPHANIE BELÉN                      | Suspen | NSP  |      |      |______|______|Suspendido
+ 12509 16296057-1   HIRIARTE TORRES ALEJANDRO ANDRÉS                   | Vigent | 2.4  |      |      |______|______|
+ 12430 14601759-2   JIMÉNEZ MUÑOZ HÉCTOR RAMÓN                         | Vigent | NSP  |      |      |______|______|
+ 12431 15337230-6   LAMOZA ESPINOZA NORMA LUISA AURORA                 | Moroso | 5.0  |      |      |______|______|
+ 12529 10965091-9   LÓPEZ FILLOU SILVIA DEL CARMEN                     | Vigent | NSP  |      |      |______|______|Suspendido
+ 12503 17390322-7   MATURANA CALDERON HECTOR ANTONIO                   | Vigent | 6.4  |      |      |______|______|
+ 12463 13687709-7   MONSALVES FIGUEROA DANIELA CRISTINA                | Vigent | 4.3  |      |      |______|______|
+ 12432 16681890-7   MORA BRAVO REIMY SAMOHA                            | Vigent | 4.8  |      |      |______|______|
+ 12498 6483661-7    NAVARRO SILVA NILO DEL CARMEN                      | Vigent | 4.0  |      |      |______|______|
+ 12510 16516725-2   NEIRA ORTIZ CARLOS RODRIGO                         | Suspen | NSP  |      |      |______|______|Suspendido
+ 12441 08423323-4   NÚÑEZ LÓPEZ HÉCTOR FERNANDO                        | Vigent | 2.0  |      |      |______|______|
+ 12465 16296876-9   PINOCHET AVENDAÑO CAROLINA DEL CARMEN              | Vigent | 6.3  |      |      |______|______|
+ 12504 15448171-0   RAMÍREZ CARO FRANCO GONZALO                        | Vigent | 7.0  |      |      |______|______|
+ 12511 15434111-0   RIVAS RIVAS CARLOS ALFREDO                         | Vigent | 5.4  |      |      |______|______|
+ 12433 14140618-3   ROA NAVARRO KAREN ISABEL                           | Vigent | 4.0  |      |      |______|______|
+ 12464 15317842-9   RODRIGUEZ LUCERO GONZALO MANUEL                    | Vigent | 7.0  |      |      |______|______|
+ 12434 16423001-5   RODRÍGUEZ TORO CARMEN EUGENIA                      | Retira | NSP  |      |      |______|______|Retirado
+ 12505 16114606-4   ROMÁN GONZÁLEZ  KAREN MARCELA                      | Retira | NSP  |      |      |______|______|Retirado
+ 12440 16629197-6   SANTIS CÁRDENAS MICHELLE MARIE                     | Vigent | NSP  |      |      |______|______|Suspendido
+ 12499 10394633-6   SARMIENTO VALDERRAMA ROGELIO IVAN                  | Vigent | 5.3  |      |      |______|______|
+ 12435 12858528-1   TORRES GARRIDO RODRIGO ALEJANDRO                   | Vigent | 6.9  |      |      |______|______|
+ 12528 16020295-5   VALENZUELA ANCAMIL CAMILA FRANCISCA                | Vigent | 3.3  |      |      |______|______|
+ 12436 13257033-7   VERA LEMA MARCELA SOLEDAD                          | Vigent | 5.5  |      |      |______|______|
+ 12347 17371649-4   VIDAL CARRASCO MARCELO NICOLÁS                     | Retira | NSP  |      |      |______|______|Retirado
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 32
+
+
+
+_____________________		_____________________		_________________________
+Mónica Urzúa        		Raquel Díaz Bustos   		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso
+Pedagogía en Educación Especial con Problemas de Aprendizaje
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3467
+Acta de Curso
+
+	Asignatura: EE-303-1 Teoría y Evaluación de los Procesos Cognitivos			Periodo: 1-2008
+	  Profesor: María Alejandra Osorio Von Nordenflycht			Horario: [Lun A {406}] [Lun B {406}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12125 17225147-1   ARMIJO IBARRA MARÍA FERNANDA                       | Vigent | 4.4  |      |      |______|______|
+ 12126 17150070-2   CARGNINO LATIN ALEXANDRA VALESKA                   | Vigent | 4.8  |      |      |______|______|
+ 12166 16027033-0   GALLARDO DONOSO ANDREA LORETO                      | Vigent | 5.7  |      |      |______|______|
+ 12225 16723801-7   LEÓN URRIOLA CAROLINA CECILIA                      | Vigent | NSP  |      |      |______|______|
+ 12127 17082616-7   MORAGA JOFRÉ CONSTANZA PAZ                         | Vigent | 5.6  |      |      |______|______|
+ 12129 16747587-6   VERGARA BAEZA JENNIFFER MARJORYTE                  | Vigent | 2.8  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 6
+
+
+
+_____________________		________________________________________		_________________________
+Mónica Urzúa        		María Alejandra Osorio Von Nordenflycht		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso                    
+Pedagogía en Educación Parvularia
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3477
+Acta de Curso
+
+	Asignatura: EP-106-1 Introducción a la Educación Parvularia			Periodo: 1-2008
+	  Profesor: Verónica Gil Abarca			Horario: [Mar A {407}] [Mar B {407}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12348 16376886-0   BANCHERO QUINTANA CAROLINA ANDREA                  | Vigent | 3.4  |      |      |______|______|
+ 12120 16780563-9   CALISTO BÁEZ MARÍA FRANCISCA                       | Vigent | 3.8  |      |      |______|______|
+ 12349 16415271-5   CUELLAR MADRID MAURIN ROXANA NICOLE                | Vigent | 3.4  |      |      |______|______|
+ 12442 17128002-8   LEÓN SAAVEDRA LORENA VALENTINA                     | Vigent | 5.0  |      |      |______|______|
+ 12425 15771341-8   MAYNE CASAS CORDERO YOVERNA GUILYAN                | Vigent | 4.0  |      |      |______|______|
+ 12520 17100007-6   MOLINA AYALA NICOL BERNABETH                       | Vigent | 4.3  |      |      |______|______|
+ 12426 17101365-8   RAMOS BELMAR MARÍA JOSÉ                            | Abando | NSP  |      |      |______|______|Abandono
+ 12467 16479494-6   ROBLES DÍAZ SAMARIA ANGELA                         | Vigent | 4.5  |      |      |______|______|
+ 12350 17385464-1   SARAVIA NEIRA CARMEN GLORIA                        | Vigent | 4.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 9
+
+
+
+_____________________		_____________________		_________________________
+Mónica Urzúa        		Verónica Gil Abarca  		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3452
+Acta de Curso
+
+	Asignatura: EP-304-1 Didáctica de las Relaciones Lógico Matemáticas			Periodo: 1-2008
+	  Profesor: Fatme Nebile Hidd Nassar			Horario: [Mie B {402}]  
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12121 16663477-6   FERNÁNDEZ SANDOVAL KARINA ANDREA                   | Vigent | 4.8  |      |      |______|______|
+ 12122 17148918-0   GARCÍA TELLO DENISSE ALEJANDRA                     | Vigent | 5.0  |      |      |______|______|
+ 12123 16475826-5   ORELLANA CAMPOS CAMILA FERNANDA                    | Vigent | 4.6  |      |      |______|______|
+ 12124 11481146-7   PINO BARRIENTOS SANDRA MARCELA                     | Vigent | 5.2  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 4
+
+
+
+_____________________		________________________		_________________________
+Mónica Urzúa        		Fatme Nebile Hidd Nassar		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso    
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3455
+Acta de Curso
+
+	Asignatura: EP-502-1 Gestión Educativa e Innovación en Educación Parvularia			Periodo: 1-2008
+	  Profesor: Maria Lorena Barrios Osorio			Horario: [Lun C {405}]  
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12022 15542461-3   ARÉVALO URBINA Norma Erika                         | Vigent | 6.2  |      |      |______|______|
+ 12021 14760363-0   GARCÍA CHÁVEZ Patricia Lisbeth                     | Vigent | 5.3  |      |      |______|______|
+ 10089 15344610-5   HERRERA ZÚÑIGA Daniela Andrea                      | Vigent | 3.5  |      |      |______|______|
+ 12027 13960395-8   VALENZUELA BELTRÁN Claudia Alejandra               | Vigent | 5.8  |      |      |______|______|
+ 12025 16744403-2   VILA AYALA Katherine Andrea                        | Vigent | 5.8  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 5
+
+
+
+_____________________		___________________________		_________________________
+Mónica Urzúa        		Maria Lorena Barrios Osorio		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso       
+Periodismo
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3520
+Acta de Curso
+
+	Asignatura: PE-302-1 Periodismo Informativo I			Periodo: 1-2008
+	  Profesor: Ricardo Waldo Urzúa Munita			Horario: [Mar D {}]  
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 10404 16378119-0   DOMÍNGUEZ DONAIRE Katherine Elizabeth              | Vigent | 4.6  |      |      |______|______|
+ 10435 15754864-6   MORENO PINTO Gabriela Masiel                       | Vigent | 5.6  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 2
+
+
+
+_____________________		___________________________		_________________________
+Ricardo Urzúa        		Ricardo Waldo Urzúa Munita		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso       
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3522
+Acta de Curso
+
+	Asignatura: PE-505-1 Pensamiento Político y Económico			Periodo: 1-2008
+	  Profesor: Raúl Patricio Luco Torres			Horario: [Lun B {801}]  
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 10404 16378119-0   DOMÍNGUEZ DONAIRE Katherine Elizabeth              | Vigent | 3.5  |      |      |______|______|
+ 10423 15782112-1   HINOJOSA VALDÉS María Constanza                    | Vigent | 4.0  |      |      |______|______|
+ 10435 15754864-6   MORENO PINTO Gabriela Masiel                       | Vigent | 6.0  |      |      |______|______|
+ 10457 14164771-7   SEGUEL CASTRO María Trinidad                       | Vigent | NSP  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 4
+
+
+
+_____________________		__________________________		_________________________
+Ricardo Urzúa        		Raúl Patricio Luco Torres		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3515
+Acta de Curso
+
+	Asignatura: PER-704-1 Gestión de Medios I			Periodo: 1-2008
+	  Profesor: Jorge Antonio Toledo Chandia			Horario: [Mie B {801}]  
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 10411 15430573-4   GARCÍA BARROS Muriel Cecilia                       | Vigent | 4.1  |      |      |______|______|
+ 10424 13149718-0   INOSTROZA ARANEDA Rodrigo Alejandro                | Vigent | 4.1  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 2
+
+
+
+_____________________		____________________________		_________________________
+Ricardo Urzúa        		Jorge Antonio Toledo Chandia		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso        
+Psicología
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3369
+Acta de Curso
+
+	Asignatura: PS-105-1 Fundamentos Cult. y Soc. del Comportamiento I			Periodo: 1-2008
+	  Profesor: Jorge Mauricio Birkner Del Canto			Horario: [Mie B {307}] [Mie C {307}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 12412 7582459-9    APABLAZA SANTIBAÑEZ JOHNY GERARDO                  | Vigent | 6.7  |      |      |______|______|
+ 12413 17199643-0   BARAHONA LEIVA CAMILO JAVIER ANDRÉS                | Vigent | 5.5  |      |      |______|______|
+ 12244 13757729-1   CORREA CARRASCO Claudio                            | Vigent | 3.3  |      |      |______|______|
+ 12437 17023911-3   CORTÉS TOLOSA AMÉRICA ALINE                        | Vigent | 4.2  |      |      |______|______|
+ 12414 17336184-K   DÍAZ BELLO PATRICIA ALEJANDRA                      | Moroso | 2.9  |      |      |______|______|
+ 12331 12641035-2   FERNÁNDEZ BAEZA CARMEN GLORIA                      | Vigent | 6.8  |      |      |______|______|
+ 12332 8876020-4    FLORES LATRACH LEONORA DE LOS ÁNGELES              | Suspen | NSP  |      |      |______|______|Suspendido
+ 12082 16647166-4   FUENTEALBA FUENTEALBA ANDREA ESTEFANY              | Vigent | NSP  |      |      |______|______|
+ 12466 13735371-7   GONZÁLEZ OYARZO EVELYN MARGOTH                     | Vigent | 5.7  |      |      |______|______|
+ 12333 17106830-4   MANRIQUEZ LÓPEZ PATRICIA ANDREA                    | Vigent | 6.3  |      |      |______|______|
+ 12334 16976325-9   MELLADO MANGAS NATALIA DEL PILAR                   | Vigent | NSP  |      |      |______|______|
+ 12329 17674171-6   MENA GALLEGUILLOS KARLA VICTORIA                   | Vigent | 6.2  |      |      |______|______|
+ 12438 12037177-0   MEZA DONOSO CAMILO ANDRÉS                          | Retira | NSP  |      |      |______|______|Retirado
+ 12415 16839938-3   PEREIRA BUSTAMANTE FRANCY NICOL                    | Vigent | 2.0  |      |      |______|______|
+ 12232 17027553-5   ROA SANTELICES NICOLE CONSTANZA                    | Vigent | 4.2  |      |      |______|______|
+ 12416 6223802-K    ROMÁN BRIONES JUANA ROSA                           | Vigent | NSP  |      |      |______|______|
+ 12439 16119293-7   SANDOVAL LEIVA FELIPE GUSTAVO                      | Vigent | 3.5  |      |      |______|______|
+ 12233 16667036-5   SANTANDER PÉREZ RODRIGO JAVIER                     | Vigent | 2.2  |      |      |______|______|
+ 12417 15919081-1   TORRES OSORIO JOHANNA ANDREA                       | Vigent | 5.5  |      |      |______|______|
+ 12418 16644834-4   VEGA GÁLVEZ FABIÁN EDUARDO                         | Vigent | 2.0  |      |      |______|______|
+ 12335 15770892-9   VILLALOBOS ESPINOZA NICOLE YASMÍN                  | Moroso | 5.5  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 21
+
+
+
+________________________________		________________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Jorge Mauricio Birkner Del Canto		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso            
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3375
+Acta de Curso
+
+	Asignatura: PS-304-1 Procesos Psicológicos II			Periodo: 1-2008
+	  Profesor: Rodolfo Bächler Silva			Horario: [Mar C {403}] [Mie E {402}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11869 16380357-7   ANTILÉN MARTÍNEZ Daniel Antonio                    | Abando | NSP  |      |      |______|______|Abandono
+ 12095 17082419-9   CARVALLO VERGARA SERGIO IGNACIO                    | Vigent | 5.7  |      |      |______|______|
+ 12097 16876515-0   GALLARDO VÁSQUEZ NATALIA ALEJANDRA                 | Vigent | NSP  |      |      |______|______|
+ 12098 16309320-0   GONZÁLEZ CAVIERES FRANCISCA JAVIERA                | Moroso | 5.6  |      |      |______|______|
+ 12099 16952644-3   GONZÁLEZ LÓPEZ YENIFER ESTEFANI                    | Vigent | NSP  |      |      |______|______|
+ 12100 16796919-4   GUTIÉRREZ DÍAZ DAMARIS ELIZABETH                   | Vigent | 3.9  |      |      |______|______|
+ 12101 16478080-5   HERNÁNDEZ CÓRDOVA NATALIA ALEJANDRA                | Vigent | 3.0  |      |      |______|______|
+ 12145 17006290-6   NEIRA RUIZ JENIFFER VALESCA                        | Vigent | 3.9  |      |      |______|______|
+ 12271 6598391-5    ORTÍZ ROJAS ANA MARÍA                              | Vigent | 3.2  |      |      |______|______|
+ 11895 16367448-3   RÍOS BELMAR David Sebastian                        | Vigent | 4.0  |      |      |______|______|
+ 12232 17027553-5   ROA SANTELICES NICOLE CONSTANZA                    | Vigent | 4.0  |      |      |______|______|
+ 11896 16435932-8   SAN CRISTÓBAL SAN CRISTÓBAL Marco Antonio          | Vigent | 3.9  |      |      |______|______|
+ 11845 12250638-K   SOTO DONOSO Paulina Andrea                         | Vigent | NSP  |      |      |______|______|
+ 11897 16875576-7   SOTO KELLER Missy Inga                             | Vigent | 3.8  |      |      |______|______|
+ 11865 16149992-7   TAPIA MOSSEI Mose Tiberio Hugo                     | Vigent | 3.9  |      |      |______|______|
+ 12105 16742167-9   VALENZUELA CERDA CONSTANZA PATRICIA                | Vigent | 3.3  |      |      |______|______|
+ 11899 15843257-9   ZÚÑIGA VIDAL Alejandro José                        | Vigent | 2.8  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 17
+
+
+
+________________________________		______________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Rodolfo Bächler Silva		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso  
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3381
+Acta de Curso
+
+	Asignatura: PS-502-1 Psicología de la Personalidad			Periodo: 1-2008
+	  Profesor: Carolina Trinidad Hernández Villar			Horario: [Mie E {306}] [Mie C {409}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11869 16380357-7   ANTILÉN MARTÍNEZ Daniel Antonio                    | Abando | 3.0  |      |      |______|______|Abandono
+ 11870 11492998-0   AVENDAÑO MALDONADO Claudia Ivonne                  | Vigent | 5.6  |      |      |______|______|
+ 11888 16626143-0   GUZMÁN PALMA Daniela Katalina Paz                  | Moroso | 3.8  |      |      |______|______|
+ 11891 16786549-6   ORTEGA BERRÍOS Alan Esteban                        | Vigent | 6.3  |      |      |______|______|
+ 11893 15844321-K   PÉREZ YAITUL Pamela Alejandra                      | Vigent | 5.2  |      |      |______|______|
+ 11845 12250638-K   SOTO DONOSO Paulina Andrea                         | Vigent | 4.6  |      |      |______|______|
+ 11886 16426514-5   ZÚÑIGA CALDERÓN Alejandra Paola                    | Vigent | NSP  |      |      |______|______|Suspendido
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 7
+
+
+
+________________________________		___________________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Carolina Trinidad Hernández Villar		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso               
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 3384
+Acta de Curso
+
+	Asignatura: PS-503-1 Psicología anormal y patología Infanto-juvenil			Periodo: 1-2008
+	  Profesor: Antonio Letelier Soto			Horario: [Mar F {405}] [Jue F {306}] 
+===============================================================================================================================
+ Alumnos                                                                        | Calificaciones
+-------------------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             | Estado |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+===============================================================================================================================
+ 11869 16380357-7   ANTILÉN MARTÍNEZ Daniel Antonio                    | Abando | 3.6  |      |      |______|______|Abandono
+ 11870 11492998-0   AVENDAÑO MALDONADO Claudia Ivonne                  | Vigent | 5.1  |      |      |______|______|
+ 11888 16626143-0   GUZMÁN PALMA Daniela Katalina Paz                  | Moroso | 4.7  |      |      |______|______|
+ 11891 16786549-6   ORTEGA BERRÍOS Alan Esteban                        | Vigent | 6.7  |      |      |______|______|
+ 11893 15844321-K   PÉREZ YAITUL Pamela Alejandra                      | Vigent | 4.5  |      |      |______|______|
+ 11845 12250638-K   SOTO DONOSO Paulina Andrea                         | Vigent | NSP  |      |      |______|______|
+ 11886 16426514-5   ZÚÑIGA CALDERÓN Alejandra Paola                    | Vigent | 4.0  |      |      |______|______|
+===============================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 7
+
+
+
+________________________________		_____________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Antonio Letelier Soto 		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso
+

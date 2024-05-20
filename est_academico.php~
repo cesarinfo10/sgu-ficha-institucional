@@ -1,0 +1,148 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$id_alumno = $_REQUEST['id_alumno'];
+if (!is_numeric($id_alumno)) {
+	echo(js("location.href='principal.php?modulo=gestion_alumnos';"));
+	exit;
+}
+
+$SQL_alumno = "SELECT va.id,va.nombre,va.rut,va.carrera,va.semestre_cohorte,va.cohorte,va.estado,
+                      a.estado AS id_estado,va.id_carrera,a.admision,
+                      CASE WHEN m.id_alumno IS NOT NULL THEN 'Si' END AS matriculado
+               FROM vista_alumnos AS va
+               LEFT JOIN alumnos AS a USING (id)
+               LEFT JOIN matriculas AS m ON (m.id_alumno=a.id AND semestre=$SEMESTRE AND ano=$ANO)
+               WHERE va.id=$id_alumno;";
+$alumno = consulta_sql($SQL_alumno);
+extract($alumno[0]);
+if (count($alumno) == 0) {
+	echo(msje_js("Este alumno no se encuentra Vigente ni Moroso. No se puede cambiar su actual estado."));
+	echo(js("window.location='$enlbase=ver_alumno&id_alumno=$id_alumno';"));
+}
+
+$estado_tramite = false;
+if ($alumno[0]['estado'] == "Moroso") {
+	$estado_tramite = true;
+}
+
+$id_estado = $_REQUEST['id_estado'];
+$admision  = $_REQUEST['admision'];
+if ($_REQUEST['guardar'] == "Guardar" && is_numeric($id_estado)) {
+
+	if ($estado_tramite) {
+		echo(msje_js("Actualmente el estado de este alumno es Moroso, por lo que el nuevo estado seleccionado ha quedado "
+		            ."en trámite. El SGU le avisará con un e-Mail cuando quede asignado finalmente el estado que ha "
+		            ."seleccionado"));
+		$SQLupdate_alumno = "UPDATE alumnos SET admision=$admision,estado_tramite=$id_estado WHERE id=$id_alumno";
+	} else {
+		$SQLupdate_alumno = "UPDATE alumnos SET admision=$admision,estado=$id_estado WHERE id=$id_alumno";
+	}
+	
+	if (consulta_dml($SQLupdate_alumno) > 0) {
+	
+		$estado_nuevo = consulta_sql("SELECT nombre FROM al_estados WHERE id='$id_estado';");
+		$estado_nuevo = $estado_nuevo[0]['nombre'];		
+		
+		$SQL_emails = "SELECT email FROM usuarios
+		               WHERE tipo in (1,2,10) AND activo
+		                 AND id_escuela IN (SELECT id_escuela FROM carreras WHERE id=$id_carrera)";
+		$emails = consulta_sql($SQL_emails);
+		
+		if ($estado_tramite) {
+			$asunto = "SGU: Alumno cambia de estado (en Trámite)";
+			$cuerpo = "El alumno $nombre de la carrera $carrera, ahora tiene en trámite el estado de $estado_nuevo.";
+		} else {
+			$asunto = "SGU: Alumno cambia de estado";
+			$cuerpo = "El alumno $nombre de la carrera $carrera, ahora tiene definitivamente el estado de $estado_nuevo.";
+		}
+		$cabeceras = "From: SGU" . "\r\n"
+		           . "Content-Type: text/plain;charset=utf-8" . "\r\n";
+		for ($x=0;$x<count($emails);$x++) {
+			$email = $emails[$x]['email'];
+			mail($email,$asunto,$cuerpo,$cabeceras);
+		}
+	
+		echo(msje_js("Se ha cambiado exitosamente el estado de este alumno"));
+	} else {
+		echo(msje_js("Ocurrió un problema mientras se intentaba cambiar el estado de este alumno.\\n"
+		            ."Por favor, inténtelo más tarde"));
+	}	
+	echo(js("window.location='$enlbase=ver_alumno&id_alumno=$id_alumno';"));		
+}
+
+$id_estados = "";
+if ($alumno[0]['matriculado'] == "Si") {
+	$id_estados = "1,3,4,5,6,7,8,9";
+} else {
+	$id_estados = "0,1,3,4,5,6,7,8,9";
+}	
+
+$estados = consulta_sql("SELECT id,nombre FROM al_estados WHERE id IN ($id_estados) ORDER BY id;");
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="get" onSubmit="return enblanco2('id_pa','id_pa_homo');">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_alumno" value="<?php echo($id_alumno); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+<table>
+  <tr>
+    <td>
+      <input type="submit" name="guardar" value="Guardar">
+      <input type="button" name="cancelar" value="Cancelar" onClick="history.back();">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Alumno</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Código Interno:</td>
+    <td class="celdaValorAttr"><?php echo($alumno[0]['id']); ?></td>
+    <td class="celdaNombreAttr">RUT:</td>
+    <td class="celdaValorAttr"><?php echo($alumno[0]['rut']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Nombre:</td>
+    <td class="celdaValorAttr" colspan="3"><?php echo($alumno[0]['nombre']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Carrrera:</td>
+    <td class="celdaValorAttr"><?php echo($alumno[0]['carrera']); ?></td>
+    <td class="celdaNombreAttr">Cohorte:</td>
+    <td class="celdaValorAttr"><?php echo($alumno[0]['cohorte'].'-'.$alumno[0]['semestre_cohorte']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Estado Actual:</td>
+    <td class="celdaValorAttr"><?php echo($alumno[0]['estado']); ?></td>
+    <td class="celdaNombreAttr">Estado nuevo:</td>
+    <td class="celdaValorAttr">
+      <select name="id_estado">
+        <?php echo(select($estados,$alumno[0]['id_estado']));?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Admisión:</td>
+    <td class="celdaValorAttr" colspan="3">
+      <select name="admision">
+        <?php echo(select($ADMISION,$alumno[0]['admision']));?>
+      </select>
+    </td>
+  </tr>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

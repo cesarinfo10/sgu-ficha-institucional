@@ -1,0 +1,14 @@
+<?php ?>
+<p align='right'>Folio: <?php echo("$carrera_alias_alumno - $folio_cert / $ano_cert"); ?></p>
+
+<h1 align='center'>CERTIFICADO DE ALUMNO REGULAR</h1>
+
+<p align='justify'>
+La Secretaria General de la Universidad Miguel de Cervantes certifica que <?php echo("$vocativo_alumno $nombre_alumno"); ?>, Rut  Nº <?php echo($rut_alumno); ?>, es alumno(a) regular de esta Casa de Estudios Superiores durante el año académico <?php echo($ano_academico); ?>, en la carrera de <?php echo($carrera_alumno); ?>, jornada <?php echo($jornada_alumno); ?>.
+
+Esta Universidad autónoma, otorga grados y títulos oficiales, cumpliendo con las exigencias establecidas en el DFL Nº 1 de 1981, y está autorizada por el Ministerio de Educación Pública según Decreto Supremo Exento Nº 1169 del 27 de noviembre de 1997, publicado en el Diario Oficial del 17 de diciembre del mismo año.
+
+<?php echo($texto_adicional); ?>
+
+Santiago, <?php echo($fecha_cert); ?>.
+</p>

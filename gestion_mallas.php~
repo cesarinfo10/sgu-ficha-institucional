@@ -1,0 +1,97 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$condicion = "";
+if ($_SESSION['ids_carreras'] <> "") {
+	$ids_carreras = $_SESSION['ids_carreras'];
+	$condicion = "WHERE vm.id_carrera IN ($ids_carreras)";
+}
+
+$SQL_mallas = "SELECT vm.id,carrera,alias_carrera,ano,CASE WHEN c.id_malla_actual IS NOT NULL THEN '*' END AS activa
+               FROM vista_mallas AS vm
+               LEFT JOIN carreras AS c ON c.id_malla_actual=vm.id
+               $condicion
+               ORDER BY carrera,ano";
+$mallas = consulta_sql($SQL_mallas);
+//var_dump($mallas[0]);
+//exit;
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo"><?php echo($nombre_modulo); ?></div>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class="tituloTabla">Carrera</td>
+    <td class="tituloTabla">Año malla</td>
+  </tr>
+<?php
+
+	$carrera_malla = $mallas[0]['carrera'];
+
+	for ($x=0;$x<count($mallas);$x++) {
+
+		echo("  <tr class='filaTabla'>\n");
+		echo("    <td class='textoTabla'>".$mallas[$x]['carrera']."</td>\n");
+		echo("    <td class='textoTabla' align='right'>");
+		
+		while(true) {
+		
+			$enl = "$enlbase=ver_malla&enl_volver=history.back();&id_malla=".$mallas[$x]['id'];			
+			echo("<a href='$enl' class='enlaces'>".$mallas[$x]['activa']." ".$mallas[$x]['ano']."</a><br>");
+			$x++;
+			if ($carrera_malla <> $mallas[$x]['carrera']) {
+				$carrera_malla = $mallas[$x]['carrera'];
+				break;
+			}				
+		}
+		$x--;
+		echo("</td>\n");
+	}
+	
+?>
+</table>
+<div class="texto">
+  Los años de mallas marcados con * corresponde a la
+  malla actualmente usada en la carrera para nuevos alumnos.
+</div>
+<!-- Fin: <?php echo($modulo); ?> -->
+
+<?php
+/*
+$mallas = consulta_sql("SELECT * FROM vista_mallas $condicion;");
+
+$carreras = consulta_sql("SELECT id,id_malla_actual FROM carreras WHERE id IN (SELECT DISTINCT id_carrera FROM mallas);");
+
+	$x = 0;
+	while ($x < count($mallas)) {
+		echo("  <tr class='filaTabla'>\n");
+		echo("    <td class='textoTabla'>" . $mallas[$x]['carrera'] . "</td>\n");
+		echo("    <td class='textoTabla' align='right'>\n");		
+		$id_carrera = $mallas[$x]['id_carrera'];
+		$anos = "";
+		while ($id_carrera == $mallas[$x]['id_carrera']) {
+			$malla_actual = "";
+			for ($z=0;$z<count($carreras);$z++) {
+				if ($mallas[$x]['id_carrera'] == $carreras[$z]['id'] &&
+					 $mallas[$x]['id'] == $carreras[$z]['id_malla_actual']) {
+					$malla_actual = "*";
+				};
+			};
+			$enl = "$enlbase=ver_malla&enl_volver=history.back();&id_malla=" . $mallas[$x]['id'];
+			$anos .= "      <a class='enlaces' href='$enl'>$malla_actual " . $mallas[$x]['ano'] . "</a><br>\n";
+			$x++;
+		};
+		echo($anos);
+		echo("    </td>\n");
+		echo("  </tr>\n");
+	};
+*/
+
+?>

@@ -1,0 +1,201 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$id_curso = $_REQUEST['id_curso'];
+$calif    = $_REQUEST['calificacion'];
+if ($id_curso == "" || $calif == "") {
+	echo(js("location.href='principal.php?modulo=calificaciones';"));
+	exit;
+};
+
+/*
+$SQL_tiempo_calificaciones = "SELECT * FROM tiempo_calificaciones
+                              WHERE semestre=$SEMESTRE AND ano=$ANO AND $calif;";
+$tiempo_calificaciones = consulta_sql($SQL_tiempo_calificaciones);
+
+if (count($tiempo_calificaciones) == 0) {
+	echo(msje_js("Esta calificación aún no está activa."));
+	echo(js("location.href='principal.php?modulo=calificaciones';"));
+	exit;
+}
+*/
+
+$nombre_calificacion = ucfirst($calif);
+
+$SQL_curso = "SELECT vc.id,vc.cod_asignatura||'-'||vc.seccion||' '||vc.asignatura AS asignatura,
+                     CASE WHEN vc.semestre=1 THEN 'Primero' ELSE 'Segundo' END AS semestre,vc.ano,vc.profesor,vc.carrera,
+                     coalesce(vc.sesion1,'')||' '||coalesce(vc.sesion2,'')||' '||coalesce(vc.sesion3,'') AS horario,
+                     vc.id_prog_asig,cantidad_alumnos(vc.id) AS cant_alumnos,vc.id_profesor
+              FROM vista_cursos AS vc
+              WHERE vc.id = '$id_curso';";
+$curso = consulta_sql($SQL_curso);
+
+if (count($curso) > 0) {
+	$SQL_alumnos_curso = "SELECT vca.id_ca,id_alumno,nombre_alumno,situacion,$calif
+	                      FROM calificaciones_parciales AS cp
+	                      LEFT JOIN vista_cursos_alumnos AS vca ON vca.id_ca=cp.id_ca
+	                      WHERE id_curso = '$id_curso'
+	                      ORDER BY fecha_mod,nombre_alumno;";
+	$alumnos_curso = consulta_sql($SQL_alumnos_curso);
+	
+	if (count($alumnos_curso) > 0) {
+		$campos_validar = "";
+		for ($x=0;$x<count($alumnos_curso);$x++) {
+			$campos_validar .= "'IDCA_".$alumnos_curso[$x]['id_ca']."',";
+		}
+		$campos_validar = substr($campos_validar,0,strlen($campos_validar)-1);
+	}
+	
+	if (count($alumnos_curso) == 0) {
+		echo(msje_js("Esta calificación ya fue ingresada.\\n"
+		            ."Si necesita realizar alguna rectificación, acérquese a la Dirección "
+		            ."de Escuela de la carrera que aparece en el Acta de curso"));
+		echo(js("location.href='principal.php?modulo=calificaciones_ver_curso&id_curso=$id_curso';"));
+	}
+		
+}
+
+if ($_REQUEST['guardar'] == "Guardar") {
+
+	foreach($_REQUEST AS $nombre_campo => $valor_campo) {
+		
+		if (substr($nombre_campo,0,5) == "IDCA_") {
+
+			$largo_id_ca_nota = strlen($nombre_campo);
+			$id_ca_nota = substr($nombre_campo,5,$largo_id_ca_nota);
+			
+			$id_ca_valido = false;
+			for($x=0;$x<count($alumnos_curso);$x++) {
+				if ($alumnos_curso[$x]['id_ca'] == $id_ca_nota) {
+					$id_ca_valido = true;
+				}
+			}
+						
+			if ($id_ca_valido) {
+				if ($valor_campo == "NSP") { $valor_campo = -1; }
+				// agregar a esta sentencia en el SET: promedio=null 
+				$SQL_update_Calificaciones_parciales = "UPDATE calificaciones_parciales
+				                                        SET $calif = $valor_campo
+				                                        WHERE id_ca = '$id_ca_nota';";
+				$SQL_update_cargas_academicas = "UPDATE cargas_academicas
+				                                 SET nota_catedra=null,nota_final=null
+				                                 WHERE id = '$id_ca_nota';";
+
+				consulta_dml($SQL_update_Calificaciones_parciales);
+				consulta_dml($SQL_update_cargas_academicas);
+
+			}
+			
+		}
+		
+	}
+	echo(msje_js("Se han guardado las calificaciones parciales"));
+	echo(js("location.href='principal.php?modulo=calificaciones_ver_curso_califpar&id_curso=$id_curso';"));
+}			
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>: <?php echo($curso[0]['asignatura']); ?>  
+</div><br>
+<form name="formulario" action="principal.php" method="post" onSubmit="if (validar_nota(<?php echo($campos_validar); ?>) && confirm('Está seguro de informar estas notas')) { return true; } else { return false; }">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_curso" value="<?php echo($id_curso); ?>">
+<input type="hidden" name="calificacion" value="<?php echo($calif); ?>">
+
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla" style="text-align:left">
+      <input type="submit" name="guardar" value="Guardar">
+    </td>
+    <td class="tituloTabla" style="text-align:left">
+      <input type="button" value="Cancelar" onClick="history.back();">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class='celdaNombreAttr'>Número de Acta:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['id']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Asignatura:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['asignatura']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Semestre:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['semestre']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Año:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['ano']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Profesor(a):</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['profesor']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Carrera:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['carrera']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Horario:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['horario']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Inscritos:</td>
+    <td class='celdaValorAttr'><?php echo($curso[0]['cant_alumnos']); ?> alumnos</td>
+  </tr>
+</table>
+<div class="texto"><br>
+  Recuerde que las calificaciones tienen 2 formatos:<br>
+  a) Una nota o número (p.e. 4.2 cuatro punto dos)<br>
+  b) NSP que se utiliza cuando un alumno(a) no se presentó a dar la prueba.<br><br>
+</div>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>ID</td>
+    <td class='tituloTabla'>Nombre alumno(a)</td>
+    <td class='tituloTabla'><?php echo($nombre_calificacion); ?></td>
+  </tr>
+<?php
+	$HTML_alumnos_curso = "";
+	for ($x=0; $x<count($alumnos_curso); $x++) {
+		extract($alumnos_curso[$x]);
+
+		$cp = $alumnos_curso[$x][$calif];
+		
+		$disabled = "";
+		$situacion = trim($situacion);
+		if ($situacion == "Suspendido" || $situacion == "Abandono" || $situacion == "Retirado") {
+				$disabled = "readonly";
+				$cp = "NSP";
+		}
+	
+		
+		if ($cp == -1) { $cp = "NSP"; }
+		
+		$HTML_alumnos_curso .= "<tr class='filaTabla'>\n"
+		                     . "  <td class='textoTabla' align='right'>$id_alumno</td>\n"
+		                     . "  <td class='textoTabla'>$nombre_alumno</td>\n"
+		                     . "  <td class='textoTabla' align='center'>"
+		                     . "    <input type='text' name='IDCA_$id_ca' size='3' maxlength='3' "
+		                     . "           value='$cp' "
+		                     . "           onChange='this.value = this.value.toUpperCase();'"
+		                     . "           onBlur=\"if(this.value==''){this.value='NSP';}\" $deshabilitado $disabled><br>$situacion"
+		                     . "  </td>\n"
+		                     . "</tr>\n";
+	}
+	echo($HTML_alumnos_curso);
+?>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

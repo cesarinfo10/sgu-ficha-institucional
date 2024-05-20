@@ -1,0 +1,184 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$id_alumno = $_REQUEST['id_alumno'];
+if (!is_numeric($id_alumno)) {
+	echo(js("location.href='principal.php?modulo=gestion_alumnos';"));
+	exit;
+}
+
+$mod_ant = $_SERVER['HTTP_REFERER'];
+if ($mod_ant == "") { $mod_ant = "$enlbase=gestion_alumnos"; }
+
+$fichas = array(0 => array("nombre" => "Datos<br>Personales",                     "enlace" => "alumno_ficha_datos_personales"),
+                1 => array("nombre" => "Antecedentes<br>Escolares/Universitarios","enlace" => "alumno_ficha_datos_esc_ies"),
+                2 => array("nombre" => "Control<br>Interno",                      "enlace" => "alumno_ficha_control_interno")
+               );
+$ficha = $_REQUEST['ficha'];
+if ($ficha == "") { $ficha = $fichas[0]['enlace']; }
+
+$HTML_botones_ficha = "";
+for($x=0;$x<count($fichas);$x++) {
+	$boton_ficha = $fichas[$x]['nombre'];
+	$estilo_boton = "background: #DEF1FF";
+	if ($fichas[$x]['enlace'] <> $ficha) {
+		$enlace_ficha = "$enlbase=$modulo&id_alumno=$id_alumno&ficha=".$fichas[$x]['enlace'];
+		$boton_ficha  = "<a class='enlaces' href='$enlace_ficha'>$boton_ficha</a>";
+		$estilo_boton = "";
+	}
+	$HTML_botones_ficha .= "<td width='33%' class='tituloTabla' style='$estilo_boton'>$boton_ficha</td>";
+}
+
+$vista  = $_REQUEST['vista'];
+$VISTAS = array(0 => array("id" => "avance_cronologico","nombre" => "Rendimiento académico cronológico"),
+                1 => array("id" => "avance_malla",      "nombre" => "Rendimiento académico según avance en malla"),
+                2 => array("id" => "homologaciones",    "nombre" => "Homologaciones"),
+                3 => array("id" => "convalidaciones",   "nombre" => "Convalidaciones"),
+                4 => array("id" => "examenes_con_rel",  "nombre" => "Examenes de Conocimientos relevantes"),
+                5 => array("id" => "anotaciones",       "nombre" => "Anotaciones")
+               );
+
+if ($vista == "") { $vista = $VISTAS[0]['id']; } 
+switch ($vista) {
+	case "avance_cronologico":
+		$HTML_vista_rend_acad = avance_cronologico();
+		break;
+	case "avance_malla":
+		$HTML_vista_rend_acad = avance_malla();
+		break;
+	case "homologaciones":
+		$HTML_vista_rend_acad = vista_homologaciones();
+		break;
+	case "convalidaciones":
+		$HTML_vista_rend_acad = vista_convalidaciones();
+		break;
+	case "examenes_con_rel":
+		$HTML_vista_rend_acad = vista_examenes_con_rel();
+		break;
+	case "anotaciones":
+		$HTML_vista_rend_acad = vista_anotaciones();
+		break;
+}			
+
+$GESTION_CARGA = array(array("id"     => "$enlbase=tomar_ramos&id_alumno=$id_alumno",
+                             "nombre" => "Tomar Ramos"),
+                       array("id"     => "$enlbase=alumno_eliminar_cursos&id_alumno=$id_alumno",
+                             "nombre" => "Eliminar cursos"),
+                       array("id"     => "$enlbase=alumno_ingresar_calificaciones&id_alumno=$id_alumno",
+                             "nombre" => "Ingresar calificaciones"),
+                       array("id"     => "$enlbase=alumno_mod_calificaciones&id_alumno=$id_alumno",
+                             "nombre" => "Modificar calificaciones"),
+                       array("id"     => "$enlbase=crear_convalidacion&id_alumno=$id_alumno",
+                             "nombre" => "Convalidar"),
+                       array("id"     => "$enlbase=crear_homologacion&id_alumno=$id_alumno",
+                             "nombre" => "Homologar"),
+                       array("id"     => "$enlbase=crear_examen_conrel&id_alumno=$id_alumno",
+                             "nombre" => "Registrar Examen de Conocimientos Relevantes"),
+                       array("id"     => "$enlbase=editar_alumno_malla&id_alumno=$id_alumno",
+                             "nombre" => "Cambio de Malla")
+                      );
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  <?php echo($nombre_modulo); ?>
+</div><br>
+
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>Acciones:</td>
+    <td class='tituloTabla'>Gestión de Carga Académica:</td>
+    <td class='tituloTabla'>Gestión de Estado:</td>
+    <td class='tituloTabla'>Otros doctos.:</td>
+  </tr>
+  <tr>
+    <td align="center" class="textoTabla" style="vertical-align: middle;">
+<?php
+	if ($_SESSION['tipo'] <=2) {
+		echo("<a href='$enlbase=editar_alumno&id_alumno=$id_alumno' class='boton'>Editar</a> ");
+		echo("<a href='alumno_imprimir_ficha_datos_personales.php?id_alumno=$id_alumno&vista=$vista' class='boton'>Imprimir</a> ");
+	}
+	echo("<a href='$mod_ant' class='boton'>Volver</a><br><br>");
+	
+	if ($_SESSION['tipo'] == 0 || $_SESSION['tipo'] == 5 || $_SESSION['tipo'] == 4 || $_SESSION['tipo'] == 2) {
+		echo("<a href='$enlbase=alumno_matricular&id_alumno=$id_alumno' class='boton'>Matricular</a> ");
+		echo("<a href='$enlbase=alumno_arancel&id_alumno=$id_alumno' class='boton'>Arancel</a> ");
+	}
+	
+?>
+    </td>
+    <td class='textoTabla' align='center' style="vertical-align: middle;">
+      <select name="gestion_carga" onChange="window.location=this.value;">
+        <option value="">-- Selecccione --</option>
+        <?php echo(select($GESTION_CARGA,"")); ?>
+      </select>
+    </td>
+	 <td class='textoTabla' align='center' style="vertical-align: middle;">
+		<?php
+			if ($_SESSION['tipo'] == 0) {
+				echo("<a href='$enlbase=est_academico&id_alumno=$id_alumno' class='boton'>Estado Académico</a> ");
+				echo("<br>");
+			}
+			if ($_SESSION['tipo'] == 0 || $_SESSION['tipo'] == 5) {
+				echo("<br>");
+				echo("<a href='$enlbase=est_financiero&id_alumno=$id_alumno' class='boton'>Estado Financiero</a> ");
+//				echo("<a href='$enlbase=est_matricula&id_alumno=$id_alumno' class='boton'>Matriculas</a> ");
+			}
+      ?>
+    </td>
+    <td class='textoTabla' align='center' style="vertical-align: middle;">
+		<?php
+			if ($_SESSION['tipo'] == 0 || $_SESSION['tipo'] == 4 || $_SESSION['tipo'] == 5 || $_SESSION['tipo'] == 1) {    
+				echo("<a href='$enlbase=alumnos_doctos_matricula&id_alumno=$id_alumno' class='boton'>Documentos de Matrícula</a>");
+			}
+		?>
+    </td>
+  </tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" border="0" class="tabla">
+  <tr style="padding: 5px">
+    <?php echo($HTML_botones_ficha); ?>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla' colspan="<?php echo(count($fichas)); ?>">
+      <?php include($ficha.".php"); ?>
+      
+      <br>
+      <?php
+			if ($_SESSION['tipo'] < 3) {
+      ?>
+      <form name="formulario" action="principal.php">
+      <input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+      <input type="hidden" name="id_alumno" value="<?php echo($id_alumno); ?>">
+      Vista: 
+      <select name="vista" onChange="submitform();">
+        <option value="">-- Seleccione --</option>
+        <?php echo(select($VISTAS,$vista)); ?>
+      </select>
+      </form>
+
+      <table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla" width="100%">
+        <?php echo($HTML_vista_rend_acad); ?>
+      </table>
+      
+      <?php
+			}
+      ?>
+
+    </td>
+  </tr>
+</table>
+<div class="texto">
+  <b>N/D:</b> No Disponible. Las calificaciones con esta leyenda no están disponibles debido a incumplimientos
+  <b>N/D:</b> No Disponible. Las calificaciones con esta leyenda no están disponibles debido a incumplimientos
+              financieros del alumno con la Universidad. El alumno debe regularizar su situación, para tener
+              acceso nuevamente a sus calificaciones obtenidas.
+</div>

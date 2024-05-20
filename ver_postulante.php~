@@ -1,0 +1,91 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_pap = $_REQUEST['id_pap'];
+if (!is_numeric($id_pap)) {
+	echo(js("location.href='principal.php?modulo=gestion_postulantes';"));
+	exit;
+}
+
+$mod_ant = $_SERVER['HTTP_REFERER'];
+if ($mod_ant == "") { $mod_ant = "$enlbase=gestion_postulantes"; }
+
+$ficha = $_REQUEST['ficha'];
+if ($ficha == "") { $ficha = "postulante_ficha_datos_personales"; }
+
+$fichas[0]['nombre'] = "Antecedentes Personales<br>y de la Postulación";
+$fichas[0]['enlace'] = "postulante_ficha_datos_personales";
+$fichas[1]['nombre'] = "Antecedentes<br>Escolares/Universitarios";
+$fichas[1]['enlace'] = "postulante_ficha_datos_escolares_instedsup";
+$fichas[2]['nombre'] = "Control<br>Interno";
+$fichas[2]['enlace'] = "postulante_ficha_control_interno";
+
+$HTML_botones_ficha = "";
+for($x=0;$x<count($fichas);$x++) {
+	$boton_ficha = $fichas[$x]['nombre'];
+	$estilo_boton = "background: #DEF1FF";
+	if ($fichas[$x]['enlace'] <> $ficha) {
+		$enlace_ficha = "$enlbase=$modulo&id_pap=$id_pap&ficha=".$fichas[$x]['enlace'];
+		$boton_ficha  = "<a class='enlaces' href='$enlace_ficha'>$boton_ficha</a>";
+		$estilo_boton = "";
+	}
+	$HTML_botones_ficha .= "<td width='33%' class='tituloTabla' style='$estilo_boton'>$boton_ficha</td>";
+}       
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>Acciones:</td>
+    <td class='tituloTabla'>Gestión de Recepción:</td>
+    <td class='tituloTabla'>Contratos y otros doctos.:</td>
+  </tr>
+  <tr>
+    <td class='textoTabla' align='center'>
+<?php
+	echo("<a href='$enlbase=postulante_editar&id_pap=$id_pap' class='boton'>Editar</a> "
+	    ."<a href='potulante_imprimir_ficha_datos_personales.php?id_pap=$id_pap' class='boton'>Imprimir</a> "
+	    ."<a href='$enlbase=postulante_matricular&id_pap=$id_pap' class='boton'>Matricular</a> " 
+	    ."<a href='$mod_ant' class='boton'>Volver</a> ");
+?>
+    </td>
+    <td class='textoTabla' align='center'>
+<?php
+	if ($_SESSION['tipo'] == 0) {    
+		echo("<a href='$enlbase=registrar_prog_asig_externo&id_pap=$id_pap' class='boton'>Registrar Programa de Asignatura Externo</a>");
+	}
+?>
+    </td>
+    <td class='textoTabla' align='center'>
+<?php
+	if ($_SESSION['tipo'] == 0 || $_SESSION['tipo'] == 4 || $_SESSION['tipo'] == 5) {    
+		echo("<a href='$enlbase=postulante_doctos_matricula&id_pap=$id_pap' class='boton'>Documentos de Matrícula</a>");
+	}
+?>
+    </td>
+  </tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" border="0" class="tabla">
+  <tr style="padding: 5px">
+    <?php echo($HTML_botones_ficha); ?>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla' colspan="<?php echo(count($fichas)); ?>">
+      <?php include("$ficha.php"); ?>
+    </td>
+  </tr>
+</table>
+<!-- Fin: <?php echo($modulo); ?> -->
+

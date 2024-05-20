@@ -1,0 +1,192 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+if (!is_numeric($_REQUEST['id_profesor'])) {
+	echo(js("location.href='principal.php?modulo=gestion_profesores';"));
+	exit;
+}
+$id_profesor = $_REQUEST['id_profesor'];
+
+$aCampos = array('rut','nombre','apellido','sexo','fec_nac',
+                 'direccion','comuna','region','telefono','tel_movil',
+                 'email_personal','nacionalidad','grado_academico','grado_acad_ano','grado_acad_universidad',
+                 'doc_fotocopia_ci','doc_curriculum_vitae','doc_certif_grado_acad','id_escuela'
+                );
+$aRequeridos = array(0,1,2,3,5,6,7,8,9,10,12,13,14);
+
+if ($_REQUEST['guardar'] == "Guardar") {
+}	
+$SQL_profesor = "SELECT u.id,u.rut,u.nombre,u.apellido,u.sexo,u.fec_nac,u.direccion,u.comuna,u.region,
+                        u.telefono,u.tel_movil,u.email,u.email_personal,u.nacionalidad,
+                        u.nombre_usuario,u.grado_academico,u.grado_acad_ano,u.grado_acad_universidad,
+                        u.doc_fotocopia_ci,u.doc_curriculum_vitae,u.doc_certif_grado_acad,u.id_escuela
+               FROM usuarios AS u               
+               WHERE u.id=$id_profesor AND tipo=3;";
+$profesor = consulta_sql($SQL_profesor);
+if (count($profesor) == 0) {
+	echo(js("location.href='principal.php?modulo=gestion_profesores';"));
+	exit;
+}
+$_REQUEST = array_merge($_REQUEST,$profesor[0]);
+
+$nacionalidades    = consulta_sql("SELECT localizacion AS id,nacionalidad AS nombre FROM pais ORDER BY nacionalidad");
+$grados_academicos = consulta_sql("SELECT * FROM grado_acad ORDER BY id");
+$comunas           = consulta_sql("SELECT id,nombre FROM comunas ORDER BY nombre");
+$regiones          = consulta_sql("SELECT id,romano||' '||nombre AS nombre FROM regiones ORDER BY id");
+$escuelas          = consulta_sql("SELECT id,nombre FROM escuelas ORDER BY nombre");
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  <?php echo($nombre_modulo); ?>
+</div><br>
+
+<form name="formulario" action="principal.php" method="post">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_profesor" value="<?php echo($id_profesor); ?>">
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr>
+    <td align="center" class="textoTabla" style="vertical-align: middle;">
+      <input type="submit" name='guardar' value="Guardar">
+      <input type="button" name='cancelar' value="Cancelar">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Código Interno:</td>
+    <td class='celdaValorAttr'><?php echo($_REQUEST['id']); ?></td>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'>
+      <input type="text" size="12" name="rut" value="<?php echo($_REQUEST['rut']); ?>"
+             onKeyUp="var valor=this.value;this.value=valor.toUpperCase();"
+             onBlur="valida_rut(this);">
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombres:</td>
+    <td class='celdaValorAttr'>
+      <input type="text" name="nombre" value="<?php echo($_REQUEST['nombre']); ?>"
+             onBlur="var valor=this.value;this.value=valor.toUpperCase();">
+    </td>
+    <td class='celdaNombreAttr'>Apellidos:</td>
+    <td class='celdaValorAttr'>
+      <input type="text" name="apellido" value="<?php echo($_REQUEST['apellido']); ?>"
+             onBlur="var valor=this.value;this.value=valor.toUpperCase();">
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Género:</td>
+    <td class='celdaValorAttr'>
+      <select name="genero">
+        <?php echo(select($generos,$_REQUEST['sexo'])); ?>    
+      </select>
+    </td>
+    <td class='celdaNombreAttr' nowrap>Fecha de nacimiento:</td>
+    <td class='celdaValorAttr'><input type="text" size="10" name="fec_nac" value="<?php echo($_REQUEST['fec_nac']); ?>"></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nacionalidad:</td>
+    <td class='celdaValorAttr' colspan='3'>
+      <select name="nacionalidad">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($nacionalidades,$_REQUEST['nacionalidad'])); ?>    
+      </select>
+    </td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Académicos del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Grado Académico:</td>
+    <td class='celdaValorAttr'>
+      <select name="grado_academico">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($grados_academicos,$_REQUEST['grado_academico'])); ?>    
+      </select>
+    </td>
+    <td class='celdaNombreAttr' nowrap>Año de obtención:</td>
+    <td class='celdaValorAttr'><input type="text" size="4" name="grado_acad_ano" value="<?php echo($_REQUEST['grado_acad_ano']); ?>"></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Universidad:</td>
+    <td class='celdaValorAttr' colspan='3'><input type="text" size="40" name="grado_acad_universidad" value="<?php echo($_REQUEST['grado_acad_universidad']); ?>"></td>
+  </tr>
+    <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Documentación presentada del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Curriculum Vitae:</td>
+    <td class='celdaValorAttr' colspan="2"><input type="checkbox" name="doc_curriculum_vitae" <?php if ($_REQUEST['doc_curriculum_vitae'] == 't') { echo("checked"); } ?>></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Certificado de Grado Académico:</td>
+    <td class='celdaValorAttr' colspan="2"><input type="checkbox" name="doc_certif_grado_acad" <?php if ($_REQUEST['doc_certif_grado_acad'] == 't') { echo("checked"); } ?>></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Fotocopia C.I.:</td>
+    <td class='celdaValorAttr' colspan="2"><input type="checkbox" name="doc_fotocopia_ci" <?php if ($_REQUEST['doc_fotocopia_ci'] == 't') { echo("checked"); } ?>></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Referenciales del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr' colspan='3'><input type="text" size="40" name="direccion" value="<?php echo($_REQUEST['direccion']); ?>"></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'>
+      <select name="comuna">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($comunas,$_REQUEST['comuna'])); ?>    
+      </select>
+    </td>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr' nowrap>
+      <select name="region">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($regiones,$_REQUEST['region'])); ?>    
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Telefóno fijo:</td>
+    <td class='celdaValorAttr'><input type="text" size="15" name="telefono" value="<?php echo($_REQUEST['telefono']); ?>"></td>
+    <td class='celdaNombreAttr'>Telefóno móvil:</td>
+    <td class='celdaValorAttr'><input type="text" size="15" name="tel_movil" value="<?php echo($_REQUEST['tel_movil']); ?>"></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-Mail Personal:</td>
+    <td class='celdaValorAttr' colspan='3'><input type="text" size="30" name="email_personal" value="<?php echo($_REQUEST['email_personal']); ?>"></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Datos internos del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Escuela:</td>
+    <td class='celdaValorAttr'>
+      <select name="region">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($escuelas,$_REQUEST['id_escuela'])); ?>    
+      </select>
+    </td>
+    <td class='celdaNombreAttr'>Nombre de usuario:</td>
+    <td class='celdaValorAttr'><?php echo($_REQUEST['nombre_usuario']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-Mail UMC:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($_REQUEST['email']); ?></td>
+  </tr>
+</table>
+</form>

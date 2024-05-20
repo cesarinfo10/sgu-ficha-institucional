@@ -1,0 +1,187 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$bdcon = pg_connect("dbname=regacad" . $authbd);
+
+$id_curso = $_REQUEST['id_curso'];
+$dia1         = $_REQUEST['dia1'];
+$horario1     = $_REQUEST['horario1'];
+$dia2         = $_REQUEST['dia2'];
+$horario2     = $_REQUEST['horario2'];
+$dia3         = $_REQUEST['dia3'];
+$horario3     = $_REQUEST['horario3'];
+$sala1        = $_REQUEST['sala1'];
+$sala2        = $_REQUEST['sala2'];
+$sala3        = $_REQUEST['sala3'];
+
+if ($_SESSION['tipo'] <> 0) {
+	echo(js("window.location='$enlbase=ver_curso&id_curso=$id_curso';"));
+	exit;
+}
+
+if ($_REQUEST['guardar'] <> "") {
+	if ( !empty($dia1) || !empty($horario1) ) { $sesion1 = $dia1 . $horario1; } else { $sesion1 = NULL; }
+	if ( !empty($dia2) || !empty($horario2) ) { $sesion2 = $dia2 . $horario2; } else { $sesion2 = NULL; }
+	if ( !empty($dia3) || !empty($horario3) ) { $sesion3 = $dia3 . $horario3; } else { $sesion3 = NULL; }
+	if ( ($sesion1 == $sesion2 && (!is_null($sesion1) && !is_null($sesion2))) ||	
+	     ($sesion1 == $sesion3 && (!is_null($sesion1) && !is_null($sesion3))) ||
+	     ($sesion2 == $sesion3 && (!is_null($sesion2) && !is_null($sesion3)))
+	   ) {
+		$mensaje_error = "Se han definido 2 o 3 horarios en el mismo día o módulo.\\n"
+		               . "Por favor corrija el(los) horarios repetidos.";
+		echo(msje_js($mensaje_error));		
+	} else {   
+		$filas = 0;
+		$aCampos = array("id_profesor","dia1","horario1","dia2","horario2","dia3","horario3","sala1","sala2","sala3");
+		$SQLupdate = "UPDATE cursos SET " . arr2sqlupdate($_REQUEST,$aCampos) . " WHERE id=$id_curso";
+		$resultado = pg_query($bdcon, $SQLupdate);
+		if (!$resultado) {
+			echo(msje(pg_last_error()));
+		} else {
+			$filas = pg_affected_rows($resultado);
+		};
+		if ($filas > 0) {
+			echo(msje_js("Se han guardado los datos"));
+			echo(js("window.location='$enlbase=ver_curso&id_curso=$id_curso'"));
+			exit;
+		}
+	}
+}
+
+$SQL_cursos = "SELECT id,cod_asignatura,asignatura,seccion AS \"sección\",
+                      CASE WHEN semestre=1 THEN 'Primero' ELSE 'Segundo' END AS semestre,
+                      ano,id_profesor,carrera,dia1,horario1,dia2,horario2,dia3,horario3,
+                      sala1,sala2,sala3
+               FROM vista_cursos
+               WHERE id=$id_curso";
+$cursos = consulta_sql($SQL_cursos);
+$_REQUEST = array_merge($cursos[0],$_REQUEST);
+
+$profesores = consulta_sql("SELECT id,apellido||' '||nombre AS nombre FROM usuarios WHERE tipo=3 AND activo ORDER BY nombre");
+
+$horarios = consulta_sql("SELECT id,id||'=> '||intervalo AS nombre FROM vista_horarios ORDER BY id;");
+
+$salas = consulta_sql("SELECT trim(codigo) AS id,nombre FROM salas ORDER BY nombre;");
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="get">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_curso" value="<?php echo($id_curso); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla"><input type="submit" name="guardar" value="Guardar"></td>
+    <td class="tituloTabla">
+      <input type="button" name="cancelar" value="Cancelar" onClick="window.location='<?php echo("$enlbase=ver_curso&id_curso=$id_curso"); ?>';">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class="celdaNombreAttr">N&uacute;mero Acta:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['id']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Carrera:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['carrera']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">C&oacute;digo:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['cod_asignatura']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Asignatura:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['asignatura']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Secci&oacute;n:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['sección']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Semestre:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['semestre']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Año:</td>
+    <td class="celdaValorAttr"><?php echo($cursos[0]['ano']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Profesor:</td>
+    <td class="celdaValorAttr">
+      <select name="id_profesor">
+        <option value="">-- Seleccione --</option>
+        <?php echo(select($profesores,$_REQUEST['id_profesor'])); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr" colspan="2" style="text-align: center;">
+      Programación Horaria Semanal del curso
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">1ª Sesión:</td>
+    <td class="celdaValorAttr">
+      <select name="dia1">
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$_REQUEST['dia1'])); ?>
+      </select>
+      <select name="horario1">
+        <option value="">-- Módulo (horario) --</option>
+        <?php echo(select($horarios,$_REQUEST['horario1'])); ?>
+      </select>
+      <select name="sala1">
+        <option value="">-- Sala --</option>
+        <?php echo(select($salas,$_REQUEST['sala1'])); ?>        
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">2ª Sesión:</td>
+    <td class="celdaValorAttr">
+      <select name="dia2">
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$_REQUEST['dia2'])); ?>
+      </select>
+      <select name="horario2">
+        <option value="">-- Módulo (horario) --</option>
+        <?php echo(select($horarios,$_REQUEST['horario2'])); ?>
+      </select>
+      <select name="sala2">
+        <option value="">-- Sala --</option>
+        <?php echo(select($salas,$_REQUEST['sala2'])); ?>        
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">3ª Sesión:</td>
+    <td class="celdaValorAttr">
+      <select name="dia3">
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$_REQUEST['dia3'])); ?>
+      </select>
+      <select name="horario3">
+        <option value="">-- Módulo (horario) --</option>
+        <?php echo(select($horarios,$_REQUEST['horario3'])); ?>
+      </select>
+      <select name="sala3">
+        <option value="">-- Sala --</option>
+        <?php echo(select($salas,$_REQUEST['sala3'])); ?>        
+      </select>
+    </td>
+  </tr>  
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

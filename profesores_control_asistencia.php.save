@@ -1,0 +1,219 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+$ids_carreras = $_SESSION['ids_carreras'];
+$id_usuario   = $_SESSION['id_usuario'];
+ 
+include("validar_modulo.php");
+
+$hoy = date('N'); 
+$dia_asist = 0;
+if ($hoy == 1) { $dia_asist = 2; } else { $dia_asist = 1; }
+
+$fecha_asistencia = strftime("%A %d de %B de %Y", strtotime('-1 day'));
+ 
+$SQL_cursos_dia = "SELECT id,horario1 AS modulo,current_date-$dia_asist AS fecha FROM cursos WHERE ano=$ANO AND semestre=$SEMESTRE AND dia1 = $dia_asist UNION
+                   SELECT id,horario2 AS modulo,current_date-$dia_asist AS fecha FROM cursos WHERE ano=$ANO AND semestre=$SEMESTRE AND dia2 = $dia_asist UNION
+                   SELECT id,horario3 AS modulo,current_date-$dia_asist AS fecha FROM cursos WHERE ano=$ANO AND semestre=$SEMESTRE AND dia3 = $dia_asist";
+$cursos_dia = consulta_sql($SQL_cursos_dia);
+
+$aCampos = array("asiste_","fecha_recup_","modulo_recup_","comentario_recup_");
+
+if ($_REQUEST['guardar'] == "Guardar") {
+	$aValores = array();
+	$j = -1;
+	$id_asist = 0;
+	
+	foreach($_REQUEST AS $nombre_campo => $valor_campo) {
+		
+		for ($x=0;$x<count($aCampos);$x++) {
+			$largo_aCampos = strlen($aCampos[$x]);
+			if (substr($nombre_campo,0,$largo_aCampos) == $aCampos[$x]) {
+				$largo_campo = strlen($nombre_campo);
+				$id_asist = substr($nombre_campo,$largo_aCampos,$largo_campo-$largo_aCampos);
+				if ($id_asist <> $aValores[$j]['id_asist']) {
+					$j++;
+					$aValores[$j]['id_asist'] = $id_asist;
+				}
+				$nombre_aCampo = substr($aCampos[$x],0,-1);
+				$aValores[$j][$nombre_aCampo] = $valor_campo;
+				break;				
+			}
+		}
+		
+	}
+	
+	for ($x=0;$x<count($aValores);$x++) {
+		$id_asist = $aValores[$x]['id_asist'];
+		$SQL_update = "UPDATE asist_profesores SET id_coordinador=$id_usuario,";
+		foreach($aValores[$x] AS $nom_campo => $val_campo) {
+			if ($nom_campo <> "id_asist") {
+				$SQL_update .= "$nom_campo='$val_campo',";
+			}
+		}
+		$SQL_update = substr($SQL_update,0,-1);
+		$SQL_update .= " WHERE id=$id_asist";
+		consulta_dml($SQL_update);
+		//echo($SQL_update."<br>");
+	}	
+}
+
+$SQL_asist_profe = "SELECT id_curso FROM asist_profesores WHERE fecha = current_date - $dia_asist;";
+$asist_profe     = consulta_sql($SQL_asist_profe);
+if (count($asist_profe) == 0 || count($asist_profe) < count($cursos_dia)) {
+	$SQL_insert = "INSERT INTO asist_profesores (id_curso,modulo,fecha,id_coordinador) 
+	                    SELECT id,modulo,fecha,$id_usuario AS id_coordinador FROM ($SQL_cursos_dia) AS foo 
+	                     WHERE id::text||modulo NOT IN (SELECT id_curso||modulo FROM asist_profesores
+	                                                    WHERE fecha = current_date - $dia_asist);";
+	consulta_dml($SQL_insert);
+}
+
+if ($ids_carreras <> "") { $condicion_carreras = "AND vc.id_carrera IN ($ids_carreras)"; }
+$SQL_asist_profe = "SELECT ap.id AS id_asist,ap.id_curso,vc.profesor,
+                           vc.cod_asignatura||'-'||vc.seccion||' '||vc.asignatura AS asignatura,ap.modulo,
+                           coalesce(ap.asiste,'') AS asiste,coalesce(to_char(ap.fecha_recup,'DD/MM/YYYY'),'') as fecha_recup,
+                           coalesce(ap.modulo_recup,'') AS modulo_recup,coalesce(ap.comentario_recup,'') AS comentario_recup
+                    FROM asist_profesores AS ap 
+                    LEFT JOIN vista_cursos AS vc ON vc.id=ap.id_curso
+                    WHERE fecha = current_date - $dia_asist $condicion_carreras
+                    ORDER BY profesor,modulo,asignatura;";
+$asist_profe     = consulta_sql($SQL_asist_profe);
+
+$_REQUEST_aux = array();
+for ($x=0;$x<count($asist_profe);$x++) {
+	$id_asist = $asist_profe[$x]['id_asist'];
+	foreach ($asist_profe[$x] AS $nom_campo => $val_campo) {
+		for ($y=0;$y<count($aCampos);$y++) {
+			if (substr($aCampos[$y],0,-1) == $nom_campo) {
+				$nombre_campo = $nom_campo."_".$id_asist;
+				$_REQUEST_aux[$nombre_campo] = $val_campo;
+			}
+		}
+	}
+}
+$_REQUEST = array_merge($_REQUEST,$_REQUEST_aux);
+//var_dump($_REQUEST);
+
+$horarios = consulta_sql("SELECT id,id AS nombre FROM vista_horarios ORDER BY id");
+
+$ASISTE = array(array("id" => "p","nombre" => "Presente"),
+                array("id" => "a","nombre" => "Ausente"),
+                array("id" => "r","nombre" => "Recupera"));
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+	<?php echo($nombre_modulo); ?>
+</div><br>
+<script>
+function recuperacion(asiste,id_asist) {
+	if (asiste == 'r') {		
+		document.formulario['fecha_recup_'+id_asist].disabled     =false;
+	} else {
+		document.formulario['fecha_recup_'+id_asist].disabled     =true;
+		document.formulario['modulo_recup_'+id_asist].disabled    =true;
+		document.formulario['comentario_recup_'+id_asist].disabled=true;
+	}
+}
+
+function val_fecha(fecha,id_asist) {
+	if (fecha == "") {
+		alert("Debido a que no ingresó una fecha de recuperación, el profesor quedará como Ausente");		
+		document.formulario['asiste_'+id_asist].value       ='a';
+		document.formulario['fecha_recup_'+id_asist].disabled=true;
+		document.getElementById('fecha_recup_'+id_asist).focus();
+		return false;
+	}
+	if (validar_fecha(fecha)) {
+		document.formulario['modulo_recup_'+id_asist].disabled    =false;
+		document.formulario['comentario_recup_'+id_asist].disabled=false;
+	} else {
+		document.formulario['modulo_recup_'+id_asist].disabled    =true;
+		document.formulario['comentario_recup_'+id_asist].disabled=true;
+	}
+}
+		
+</script>  
+<form name="formulario" action="principal.php" method="post">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<table width="100%">
+  <tr>
+    <td><input type="submit" name="guardar" value="Guardar"></td>
+    <td align="right"><input type="button" name="cambiar_fecha" value="Cambiar Fecha"></td>
+  </tr>
+</table>
+<div class="texto">
+  Asistencia para el día <b><?php echo($fecha_asistencia); ?></b>, en total <?php echo(count($asist_profe)); ?> cursos en este día: 
+</div><br>
+
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla' rowspan="2">ID</td>
+    <td class='tituloTabla' rowspan="2">Profesor</td>
+    <td class='tituloTabla' rowspan="2">Asignatura</td>
+    <td class='tituloTabla' rowspan="2">Módulo</td>
+    <td class='tituloTabla' rowspan="2">Asistencia</td>
+    <td class='tituloTabla' colspan="3">Recuperación</td>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>Fecha</td>
+    <td class='tituloTabla'>Módulo</td>
+    <td class='tituloTabla'>Motivo</td>
+  </tr>
+<?php
+	$HTML = "";
+	for ($x=0; $x<count($asist_profe); $x++) {
+		extract($asist_profe[$x]);
+
+		if (strlen($asignatura) > 30) { $asignatura = substr($asignatura,0,30)."..."; }
+		
+		$campo = 'asiste_'.$id_asist;		
+		if ($_REQUEST[$campo] == '') { $_REQUEST[$campo] = "a"; }
+		$opciones_asiste   = select($ASISTE,$_REQUEST[$campo]);
+		
+		$campo ='modulo_recup_'.$id_asist;
+		$opciones_horarios = select($horarios,$_REQUEST[$campo]);
+
+		$fec_recup_disabled = $mod_recup_disabled = $coment_recup_disabled = "";
+
+		if ($_REQUEST['fecha_recup_$id_asist'] == "")      { $fec_recup_disabled = "disabled"; }
+		if ($_REQUEST['modulo_recup_$id_asist'] == "")     { $mod_recup_disabled = "disabled"; }
+		if ($_REQUEST['comentario_recup_$id_asist'] == "") { $coment_recup_disabled = "disabled"; }
+
+		$HTML .= "  <tr class='filaTabla'>
+			           <td class='textoTabla' align='right'>$id_curso</td>
+			           <td class='textoTabla'>$profesor</td>
+			           <td class='textoTabla'>$asignatura</td>
+			           <td class='textoTabla'>$modulo</td>
+			           <td class='textoTabla'>
+			             <select name='asiste_$id_asist' onChange='recuperacion(this.value,$id_asist);'>
+			               $opciones_asiste
+			             </select>
+			           </td>
+			           <td class='textoTabla'>
+			             <input type='text' name='fecha_recup_$id_asist' size='10' onBlur='val_fecha(this.value,$id_asist);' 
+                                           value='".$_REQUEST['fecha_recup_$id_asist']."' $fec_recup_disabled>
+			           </td>
+			           <td class='textoTabla'>  
+			             <select name='modulo_recup_$id_asist' $mod_recup_disabled>
+			               <option value=''>--</option>
+			               $opciones_horarios			   
+			             </select>
+		                   </td>
+			           <td class='textoTabla'>
+			             <input type='text' name='comentario_recup_$id_asist'
+                                           value='".$_REQUEST['comentario_recup_$id_asist']."' coment_recup_disabled>
+			           </td>
+			         </tr>";
+	}
+	echo($HTML);
+?>
+</table>
+</form>
+
+<!-- Fin: <?php echo($modulo); ?> -->
+

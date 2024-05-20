@@ -1,0 +1,14 @@
+COPY (SELECT to_char(c.fecha,'DD-MM-YYYY') as fecha_emision,
+                            (SELECT to_char(max(fecha_venc),'DD-MM-YYYY') FROM finanzas.cobros where id_contrato=c.id) as fecha_venc,
+                            '' as cta_ctble,
+                            coalesce(c.arancel_efectivo,0)+coalesce(c.arancel_pagare_coleg,0)+coalesce(c.arancel_cheque,0)+coalesce(c.arancel_tarjeta_credito,0) as monto,
+                            coalesce(va.rut,vp.rut) as rut,coalesce(va.nombre,vp.nombre) as razon_social,
+                            c.id as nro_contrato,pc.id as nro_pagare 
+                     FROM finanzas.contratos AS c 
+                     LEFT JOIN vista_contratos AS vc USING (id)
+                     LEFT JOIN vista_alumnos AS va ON va.id=c.id_alumno 
+                     LEFT JOIN vista_pap     AS vp ON vp.id=c.id_pap 
+                     LEFT JOIN finanzas.pagares_colegiatura AS pc ON pc.id_contrato=c.id
+                     LEFT JOIN carreras        AS car ON car.id=c.id_carrera
+                     WHERE (lower(pap.nombres||' '||pap.apellidos) ~* 'j[oó][aá]nn[ií]' OR  pap.rut ~* 'j[oó][aá]nn[ií]' OR lower(a.nombres||' '||a.apellidos) ~* 'j[oó][aá]nn[ií]' OR  a.rut ~* 'j[oó][aá]nn[ií]' OR lower(av.rf_nombres||' '||av.rf_apellidos) ~* 'j[oó][aá]nn[ií]' OR  av.rf_rut ~* 'j[oó][aá]nn[ií]' OR  text(c.id) ~* 'j[oó][aá]nn[ií]' ) AND (lower(pap.nombres||' '||pap.apellidos) ~* 'j[oó]s[eé]' OR  pap.rut ~* 'j[oó]s[eé]' OR lower(a.nombres||' '||a.apellidos) ~* 'j[oó]s[eé]' OR  a.rut ~* 'j[oó]s[eé]' OR lower(av.rf_nombres||' '||av.rf_apellidos) ~* 'j[oó]s[eé]' OR  av.rf_rut ~* 'j[oó]s[eé]' OR  text(c.id) ~* 'j[oó]s[eé]' ) AND (lower(pap.nombres||' '||pap.apellidos) ~* 't[eé]n[ií][aá]' OR  pap.rut ~* 't[eé]n[ií][aá]' OR lower(a.nombres||' '||a.apellidos) ~* 't[eé]n[ií][aá]' OR  a.rut ~* 't[eé]n[ií][aá]' OR lower(av.rf_nombres||' '||av.rf_apellidos) ~* 't[eé]n[ií][aá]' OR  av.rf_rut ~* 't[eé]n[ií][aá]' OR  text(c.id) ~* 't[eé]n[ií][aá]' ) AND (lower(pap.nombres||' '||pap.apellidos) ~* 'l[eé]th[ií]d[eé]l' OR  pap.rut ~* 'l[eé]th[ií]d[eé]l' OR lower(a.nombres||' '||a.apellidos) ~* 'l[eé]th[ií]d[eé]l' OR  a.rut ~* 'l[eé]th[ií]d[eé]l' OR lower(av.rf_nombres||' '||av.rf_apellidos) ~* 'l[eé]th[ií]d[eé]l' OR  av.rf_rut ~* 'l[eé]th[ií]d[eé]l' OR  text(c.id) ~* 'l[eé]th[ií]d[eé]l' ) AND (lower(pap.nombres||' '||pap.apellidos) ~* '' OR  pap.rut ~* '' OR lower(a.nombres||' '||a.apellidos) ~* '' OR  a.rut ~* '' OR lower(av.rf_nombres||' '||av.rf_apellidos) ~* '' OR  av.rf_rut ~* '' OR  text(c.id) ~* '' ) 
+                     ORDER BY c.fecha DESC ) to stdout WITH CSV HEADER

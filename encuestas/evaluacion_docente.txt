@@ -1,0 +1,23 @@
+Gestión Académico-administrativa
+p1#1. Asiste regularmente a sus clases de acuerdo al horario establecido por la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p2#2. Avisa oportunamente sus inasistencias.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p3#3. Recupera las clases perdidas a causa de sus inasistencias. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p4#4. Registra adecuadamente en el libro de clases la asistencia, las calificaciones de los alumnos y los contenidos revisados clases a clase.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p5#5. Respeta el calendario académico dispuesto por la Universidad. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p6#6. Entrega en las fechas solicitadas las calificaciones obtenidas por los esutdiantes.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p7#7. Presenta los instrumentos de evaluación de Pruebas Solemnes a la Dirección de la escuela con la debida anticipación.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p8#8. Ingresa la calendarización de cada una de sus asignaturas al SGU en los plazos establecidos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p9#9. Cumple adecuadamente con el programa de asignatura de la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p10#10. Informa oportunamente de las pautas y criterios de corrección de las evaluaciones a sus estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p11#11. Especifica al inicio del semestre a sus estudiantes los tipos y cantidad de evaluaciones (pruebas, disertaciones, trabajos, etc.) #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p12#12. Utiliza medios audiovisuales y Biblioteca Virtual como parte de las metodologías de apoyo a la docencia.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p13#13. Ingresa las calificaciones al SGU en los plazos establecidos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Compromiso con los alumnos
+p14#14. Demuestra disponibilidad para resolver las necesidades de los alumnos fuera del aula. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p15#15. Los alumnos manifiestan conformidad con el desempeño del  profesor.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Compromiso con la Institución
+p16#16. El profesor demuestra inquietud para asumir perfeccionamiento en materias pedagógicas.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p17#17. El profesor demuestra una actitud de cooperación con la institución (firmar actas, disponibilidad en general para facilitar el trabajo de coordinación académica).#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p18#18. El profesor participa regularmente en actividades institucionales extra programáticas.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p19#19. El profesor demuestra buena disposición para asumir otras responsabilidades académicas (integrar comités, extensión u otras).#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+

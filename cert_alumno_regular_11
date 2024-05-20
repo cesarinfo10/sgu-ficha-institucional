@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>UMC - SGU - Certificado de Alumno Regular</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 12px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body>
+    <table width='100%'>
+      <tr><td><p align='right'>Folio: $carrera_alias_alumno - $folio_cert / $ano_cert</p><br />
+<br />
+<h1 align='center'>CERTIFICADO DE ALUMNO REGULAR</h1><br />
+<br />
+<p align='justify'><br />
+La Secretaria General de la Universidad Miguel de Cervantes certifica que $vocativo_alumno $nombre_alumno, Rut  Nº $rut_alumno, es alumno(a) regular de esta Casa de Estudios Superiores durante el año académico $ano_academico, en la carrera de $carrera_alumno, jornada $jornada_alumno.<br />
+<br />
+Esta Universidad autónoma, otorga grados y títulos oficiales, cumpliendo con las exigencias establecidas en el DFL Nº 1 de 1981, y está autorizada por el Ministerio de Educación Pública según Decreto Supremo Exento Nº 1169 del 27 de noviembre de 1997, publicado en el Diario Oficial del 17 de diciembre del mismo año.<br />
+<br />
+$texto_adicional<br />
+<br />
+Santiago, $fecha_cert.<br />
+</p><br />
+</td></tr>
+      <tr><td><table>  <tr>    <td width='40%' align='center'><hr><br>LEONOR SOTO GUZMÁN<br />
+Jefa Registro Académico, Títulos y Grados</td>    <td width='20%'>&nbsp;</td>    <td width='40%' align='center'><hr><br>MERCEDES AUBÁ ASVISIO<br />
+Secretaria General</td>  </tr></table></td></tr>
+    </table>
+  </body>
+</html>

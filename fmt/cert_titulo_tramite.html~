@@ -1,0 +1,15 @@
+<p align='right'>Folio: $carrera_alias_alumno - $folio_cert / $ano_cert</p>
+
+<h1 align='center'>CERTIFICADO DE TITULO EN TRÁMITE</h1>
+
+<p align='justify'>
+La Secretaria General de la Universidad Miguel de Cervantes que suscribe certifica que $vocativo_alumno $nombre_alumno, Rut  Nº $rut_alumno, de la carrera de $carrera_alumno, rindió Examen para obtener el Título Profesional de $nombre_titulo_alumno (Grado Académico de $nombre_grado_alumno), el día $examen_grado_titulo_fecha, aprobándolo satisfactoriamente con nota $examen_grado_titulo_calif ($examen_grado_titulo_calif_palabras).
+
+Se deja constancia que el Expediente de Título se encuentra en trámite en esta Casa de Estudios Superiores. 
+
+Esta Universidad autónoma, otorga grados y títulos oficiales, cumpliendo con las exigencias establecidas en el DFL Nº 1 de 1981, y está autorizada por el Ministerio de Educación Pública según Decreto Supremo Exento Nº 1169 del 27 de noviembre de 1997, publicado en el Diario Oficial del 17 de diciembre del mismo año.
+
+Se extiende el presente certificado a petición del interesado para los fines que estime convenientes.
+
+Santiago, $fecha_cert.
+</p>

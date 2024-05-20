@@ -1,0 +1,151 @@
+DºVº  
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12237
+     RUT: 12952982-2
+  Nombre: ESCOBAR MIRANDA José
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12242
+     RUT: 16914763-9
+  Nombre: GAMBOA MORALES Ruth
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12243
+     RUT: 13552736-K
+  Nombre: JIMENEZ URREA Vanessa
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12238
+     RUT: 8829232-4
+  Nombre: RIQUELME TORRES Francisco
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12241
+     RUT: 7304600-9
+  Nombre: URREA SALGADO Vanessa
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12239
+     RUT: 13058618-K
+  Nombre: VILLA MARIQUEO Miriam
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12240
+     RUT: 10866006-6
+  Nombre: ZAMORA Carlos
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2410 | DV-101-2 Introducción al Derecho I
+  2007-1 |     2412 | DV-102-2 Derecho Político I
+  2007-1 |     2408 | DV-103-2 Historia del Derecho I
+  2007-1 |     2411 | DV-104-2 Teoría Económica
+  2007-1 |     2409 | DV-105-2 Derecho Romano I
+=================================================================================================
+PEB   
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12245
+     RUT: 15601400-1
+  Nombre: ALARCON FERREIRA Verónica
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101-1 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102-1 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103-1 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104-1 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105-1 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106-1 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107-1 Introducción  a la Vida Académica I
+=================================================================================================
+PS    
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12244
+     RUT: 13757729-1
+  Nombre: CORREA CARRASCO Claudio
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2223 | PS-101-1 Mundo Biológico
+  2007-1 |     2224 | PS-102-1 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103-1 Antropología Filosófica
+  2007-1 |     2227 | PS-104-1 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105-1 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106-1 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+

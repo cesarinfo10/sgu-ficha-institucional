@@ -1,0 +1,71 @@
+<?php
+
+session_start();
+include("funciones.php");
+include("conversor_num2palabras.php");
+
+if ($argv[1]=="") {
+	$id_pagare_cred_interno = $_REQUEST['id_pagare_cred_interno'];
+} elseif (is_numeric($argv[1])) {
+	$id_pagare_cred_interno = $argv[1];
+}
+
+if (!$_SESSION['autentificado'] || !is_numeric($id_pagare_cred_interno)) {
+	header("Location: index.php");
+	exit;
+}
+
+$modulo = "pagare_cred_interno";
+include("validar_modulo.php");
+
+$SQL_pagare_coleg = "SELECT p.*,p.fecha::date,a.*,(p.fecha + '1 years'::interval)::date AS fecha_venc
+                            CASE WHEN c.id_alumno IS NOT NULL THEN al.nombre
+                                 WHEN c.id_pap    IS NOT NULL THEN vp.nombre
+                            END AS nombre_al,
+                            CASE WHEN c.id_alumno IS NOT NULL THEN al.rut
+                                 WHEN c.id_pap    IS NOT NULL THEN vp.rut
+                            END AS rut_al,
+                            CASE WHEN c.id_alumno IS NOT NULL THEN al.direccion||', '||al.comuna||', '||al.region
+                                 WHEN c.id_pap    IS NOT NULL THEN vp.direccion||', '||vp.comuna||', '||vp.region
+                            END AS domicilio_al
+                     FROM finanzas.pagares_cred_interno AS p
+                     LEFT JOIN finanzas.contratos AS c ON p.id_contrato=c.id
+                     LEFT JOIN vista_avales AS a ON a.id=c.id_aval
+                     LEFT JOIN vista_alumnos AS al ON al.id=c.id_alumno
+                     LEFT JOIN vista_pap AS vp ON vp.id=c.id_pap
+                     WHERE p.id='$id_pagare_colegiatura'";
+$pagare_cred_interno = consulta_sql($SQL_pagare_cred_interno);
+
+if (count($pagare_cred_interno) == 1) {
+
+	extract($pagare_cred_interno[0]);
+
+	$monto_uf_palabras = num2palabras($monto);
+	
+	$monto = number_format($monto,0,',','.');
+
+	$fecha_venc = strftime("%e de %B de %Y",strtotime($fecha_venc));
+		
+	$fecha_pagare = strftime("%e de %B de %Y",strtotime($fecha));
+	
+	
+	$HTML = ""; 
+	include("pagare_cred_interno.php");
+	
+	//echo($HTML);
+	$HTML = iconv("UTF-8","ISO-8859-1",$HTML);
+	$archivo = "pagare_colegiatura_".$id_pagare_colegiatura;
+	$hand=fopen($archivo,"w");
+	fwrite($hand,$HTML);
+	fclose($hand);
+	$html2pdf = "htmldoc -t pdf --fontsize 11 --fontspacing 1.2 --no-strict --size 21.5x33cm --bodyfont helvetica "
+	          . "--left 1.5cm --top 1cm --right 1.5cm --bottom 1cm --footer '   ' --header '   ' --no-embedfonts "
+	          . "--compression=9 --encryption --permissions print,no-copy,no-annotate,no-modify "
+	          . "--webpage $archivo ";
+	header("Content-Type: application/pdf");
+	header("Content-Disposition: attachment; filename=$archivo.pdf");
+	passthru($html2pdf);
+	unlink($archivo);
+	echo(js("window.close();"));	
+}
+?>

@@ -1,0 +1,152 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_malla = $_REQUEST['id_malla'];
+if (!is_numeric($id_malla)) {
+	echo(js("location.href='principal.php?modulo=gestion_carreras';"));
+	exit;
+}
+
+$SQL_malla = "SELECT id,ano,carrera,niveles,cant_asig_oblig,cant_asig_elect,cant_asig_efp,comentarios,
+                     id_escuela
+              FROM vista_mallas
+              WHERE id=$id_malla";
+$malla     = consulta_sql($SQL_malla);
+if (count($malla) > 0) {
+	extract($malla[0]);
+
+	$SQL_detalle_malla = "SELECT * FROM vista_detalle_malla WHERE id_malla=$id_malla";
+	$detalle_malla     = consulta_sql($SQL_detalle_malla);
+
+	$SQL_lineas_tematicas = "SELECT id,nombre FROM lineas_tematicas WHERE id_escuela=$id_escuela";
+	$lineas_tematicas     = consulta_sql($SQL_lineas_tematicas);
+
+	$SQL_requisitos = "SELECT *
+	                   FROM vista_requisitos_malla
+	                   WHERE id_dm IN (SELECT id FROM detalle_mallas WHERE id_malla=$id_malla)";
+	$requisitos     = consulta_sql($SQL_requisitos); 
+} else {
+	echo(js("location.href='principal.php?modulo=gestion_carreras';"));
+	exit;
+}
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>: <?php echo($carrera); ?> - <?php echo($ano); ?>
+</div><br>
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla">
+      <input type="button" name="editar" value="Editar Datos de la Malla" onClick="window.location='<?php echo("$enlbase=editar_malla&id_malla=$id_malla"); ?>'">
+    </td>
+    <td class="tituloTabla">
+      <input type="button" name="editar" value="Editar Contenido de la Malla" onClick="window.location='<?php echo("$enlbase=editar_detalle_malla&id_malla=$id_malla"); ?>'">
+    </td>
+    <td class="tituloTabla">
+      <input type="button" name="volver" value="Volver" onClick="<?php echo($_REQUEST['enl_volver']); ?>">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class='celdaNombreAttr'>Id:</td>
+    <td class='celdaValorAttr'><?php echo($id); ?></td>
+    <td class='celdaNombreAttr'>Año:</td>
+    <td class='celdaValorAttr'><?php echo($ano); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Carrera:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($carrera); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center">Cantidad de Asignaturas</td>
+  </tr>
+  <tr>
+    <td class='celdaValorAttr' colspan="4" style="text-align: center">
+      <b>Obligatorias:</b> <?php echo($cant_asig_oblig); ?> &nbsp;&nbsp;&nbsp;
+      <b>E.F.G.:</b> <?php echo($cant_asig_elect); ?> &nbsp;&nbsp;&nbsp;
+      <b>E.F.P.:</b> <?php echo($cant_asig_efp); ?>
+    </td>  
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' style="text-align: center">Comentarios:</td>
+    <td class='celdaValorAttr' colspan="3" align="justify"><?php echo(nl2br($comentarios)); ?></td>
+  </tr>
+</table>
+<br>
+<table cellpadding="4" cellspacing="1" border="0" bgcolor="#ffffff" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td rowspan="2" class="tituloTabla" width="80">L&iacute;neas<br>Tem&aacute;ticas</td>
+    <td colspan="<?php echo($niveles); ?>" class='tituloTabla'>Semestres</td>
+  </tr>
+  <tr class='filaTituloTabla'>
+<?php
+	for($nivel=1;$nivel<=$niveles;$nivel++) {	
+		echo("    <td class='tituloTabla'>$nivel</td>\n");
+	}
+?>
+  </tr>
+<?php
+	$enlace = "$enlbase=ver_prog_asig&id_prog_asig";	
+	for($x=0;$x<count($lineas_tematicas);$x++) {
+		$id_lt = $lineas_tematicas[$x]['id'];
+		$nombre_lt = $lineas_tematicas[$x]['nombre'];
+		$tieneAsig = false;
+		$filaTabla = "";
+		$filaTabla  = "  <tr>\n";
+		$filaTabla .= "    <td class='tituloTabla' width='80'>$nombre_lt</td>\n";		
+		for($nivel=1;$nivel<=$niveles;$nivel++) {
+			$asignatura = "";
+			for($y=0;$y<count($detalle_malla);$y++) {
+				if ($nivel==$detalle_malla[$y]['nivel'] && $id_lt==$detalle_malla[$y]['id_linea_tematica']) {
+					$id_prog_asig      = $detalle_malla[$y]['id_prog_asig'];
+					$cod_asignatura    = trim($detalle_malla[$y]['cod_asignatura']);
+					$ano_asignatura    = $detalle_malla[$y]['ano'];
+					$nombre_asignatura = $detalle_malla[$y]['asignatura'];
+					$id_dm             = $detalle_malla[$y]['id'];
+					$caracter          = $detalle_malla[$y]['caracter'];
+					
+					$requisitos_asig = "";
+					for($i=0;$i<count($requisitos);$i++) {
+						if ($requisitos[$i]['id_dm'] == $id_dm && $requisitos[$i]['tipo'] == 1) {
+							$requisitos_asig .= $requisitos[$i]['asignatura_req'] . "<br>";
+						};
+					};
+											
+					$title = "header=[Propiedades] fade=[on]"
+					       . "body=[Año Programa: $ano_asignatura<br>"
+					       . "      Carácter: $caracter<br>"
+ 					       . "      <b>Pre-requisitos:</b><br>$requisitos_asig]";
+					$cont_asig = "<div class='ramoMalla' title='$title'>
+					                <a class='enlaces' href='$enlace=$id_prog_asig'>
+					                  <b>$cod_asignatura</b><br>$nombre_asignatura
+					                </a>
+					              </div>";					              
+					if ($asignatura <> "") {
+						$cont_asig .= "<br>$asignatura";
+					};
+					$asignatura = $cont_asig;
+					$tieneAsig = true;
+//					break;
+				};
+			};
+			$filaTabla .= "    <td valign='top' class='celdaramoMalla'>$asignatura</td>\n";
+		};
+		$filaTabla .= "  </tr>\n";
+		if ($tieneAsig) {
+			echo($filaTabla);
+		};
+	};
+?>
+</table>
+<!-- Fin: <?php echo($modulo); ?> -->
+

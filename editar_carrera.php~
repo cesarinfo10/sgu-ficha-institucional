@@ -1,0 +1,112 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_carrera = $_REQUEST['id_carrera'];
+if (!is_numeric($id_carrera)) {
+	echo(js("location.href='principal.php?modulo=gestion_carreras';"));
+	exit;
+}
+
+if ($_REQUEST['guardar'] <> "") {
+	$aCampos = array("nombre","alias","jornada","id_coordinador","id_escuela","activa","id_malla_actual");
+	$SQLupdate = "UPDATE carreras SET " . arr2sqlupdate($_REQUEST,$aCampos) . " WHERE id=$id_carrera;";
+	if (consulta_dml($SQLupdate) == 1) {
+		echo(msje_js("Se han guardado los cambios exitósamente"));
+		echo(js("window.location='$enlbase=gestion_carreras';"));
+		exit;
+	}
+}
+	
+$carrera = consulta_sql("SELECT * FROM carreras WHERE id=$id_carrera;");
+if (count($carrera) == 0) {
+	echo(js("location.href='$enlbase=gestion_carreras';"));
+	exit;
+}
+extract($carrera[0]);
+
+$escuelas      = consulta_sql("SELECT * FROM escuelas ORDER BY nombre;");
+$coordinadores = consulta_sql("SELECT * FROM coordinadores WHERE activo AND id_escuela=$id_escuela ORDER BY nombre;");
+$mallas        = consulta_sql("SELECT id,ano AS nombre FROM mallas WHERE id_carrera=$id_carrera;");
+
+$JORNADAS = array_merge($JORNADAS,array(array('id'=>'a','nombre'=>"Ambas")));
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="post" onSubmit="return enblanco2('nombre','alias');">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_carrera" value="<?php echo($id_carrera); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>: <?php echo($carrera[0]['nombre']); ?>  
+</div><br>
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla"><input type="submit" name="guardar" value="Guardar" onClick="return confirmar_guardar();"></td>
+    <td class="tituloTabla"><input type="button" name="cancelar" value="Cancelar"  onClick="cancelar_guardar();"></td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class="celdaNombreAttr">Nombre:</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="nombre" value="<?php echo($carrera[0]['nombre']); ?>" size="40" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Alias:</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="alias" value="<?php echo(trim($carrera[0]['alias'])); ?>" size="6" maxlength="6" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Jornada(s):</td>
+    <td class="celdaValorAttr">
+      <select name="jornada" onChange="cambiado();">
+        <option value=''>-- Seleccione --</option>
+        <?php echo(select($JORNADAS,$carrera[0]['jornada'])); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Coordinador:</td>
+    <td class="celdaValorAttr">
+      <select name="id_coordinador" onChange="cambiado();">
+        <?php echo(select($coordinadores,$carrera[0]['id_coordinador'])); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Escuela:</td>
+    <td class="celdaValorAttr">
+      <select name="id_escuela" onChange="cambiado();">
+        <?php echo(select($escuelas,$carrera[0]['id_escuela'])); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Año malla actual:</td>
+    <td class="celdaValorAttr">
+      <select name="id_malla_actual" onChange="cambiado();">
+        <option value="">-- Seleccione --</option>
+        <?php echo(select($mallas,$carrera[0]['id_malla_actual'])); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Activa:</td>
+    <td class="celdaValorAttr">
+      <select name="activa" onChange="cambiado();">
+        <?php echo(select($sino,$carrera[0]['activa'])); ?>
+      </select>
+    </td>
+  </tr>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+

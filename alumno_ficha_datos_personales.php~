@@ -1,0 +1,113 @@
+<?php
+
+$SQL_alumno = "SELECT va.id,va.rut,va.nombre,va.genero,va.fec_nac,
+                      va.nacionalidad,coalesce(va.pasaporte,'**No corresponde**') AS pasaporte,va.direccion,va.comuna,va.region,
+                      va.telefono,coalesce(va.tel_movil,'** No se registra **') AS tel_movil,va.email as email_inst,
+                      coalesce(va.semestre_cohorte,0) AS semestre_cohorte,va.cohorte,a.email,
+                      trim(va.carrera) AS carrera_alias,va.malla_actual,va.estado,va.id_malla_actual,c.nombre AS carrera,
+                      ae.nombre AS estado_tramite,CASE a.jornada WHEN 'D' THEN 'Diurna' WHEN 'V' THEN 'Vespertina' END AS jornada,
+                      CASE WHEN a.moroso_financiero THEN 'Moroso(a)' ELSE 'Al día' END AS moroso_financiero,
+                      CASE a.admision WHEN 1 THEN 'Regular' WHEN 2 THEN 'Extraordinaria' WHEN 10 THEN 'Modular' WHEN 20 THEN 'Modular (Extr.)' END AS admision
+               FROM vista_alumnos AS va
+               LEFT JOIN carreras AS c ON c.id=id_carrera
+               LEFT JOIN alumnos AS a ON a.id=va.id
+               LEFT JOIN al_estados AS ae ON ae.id=a.estado_tramite
+               LEFT JOIN pap ON pap.id=a.id_pap
+               WHERE va.id=$id_alumno;";
+$alumno = consulta_sql($SQL_alumno);
+if (count($alumno) == 0) {
+	echo(js("location.href='principal.php?modulo=gestion_alumnos';"));
+	exit;
+} else {
+	extract($alumno[0]);
+	if ($estado=="Moroso") { $estado = $estado_tramite; }
+}
+
+if ($estado_tramite <> "") {
+	echo(msje_js("Actualmente este alumno está trámite de obtener el estado de $estado_tramite"));
+	$estado_tramite = "<sub><br>En trámite: <b>$estado_tramite</b></sub>";
+}
+
+?>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Alumno</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Código Interno:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['id']); ?></td>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['rut']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($alumno[0]['nombre']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Género:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['genero']); ?></td>
+    <td class='celdaNombreAttr' nowrap>F. Nacimiento:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['fec_nac']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nacionalidad:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['nacionalidad']); ?></td>
+    <td class='celdaNombreAttr'>Pasaporte:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['pasaporte']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">
+      Antecedentes de Contacto
+      <a href="<?php echo("$enlbase=editar_alumno_datos_contacto&id_alumno=$id"); ?>" class="boton">editar</a>
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($alumno[0]['direccion']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['comuna']); ?></td>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr' nowrap><?php echo($alumno[0]['region']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Tel. fijo:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['telefono']); ?></td>
+    <td class='celdaNombreAttr'>Tel. móvil:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['tel_movil']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-mail UMC:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($alumno[0]['email_inst']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-mail externo:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($alumno[0]['email']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Curriculares</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Admisión:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['admision']); ?></td>
+    <td class='celdaNombreAttr'>Cohorte:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['semestre_cohorte'].'-'.$alumno[0]['cohorte']); ?></td>
+    </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Carrera Actual:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['carrera'].' ('.$alumno[0]['carrera_alias'].')'); ?></td>
+    <td class='celdaNombreAttr'>Jornada:</td>
+    <td class='celdaValorAttr'><?php echo($alumno[0]['jornada']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Año Malla Actual:</td>
+    <td class='celdaValorAttr'>
+      <a class='enlaces' href="<?php echo($enlbase.'=ver_malla&id_malla='.$alumno[0]['id_malla_actual']); ?>">
+        <?php echo($alumno[0]['malla_actual']); ?>
+      </a>
+    </td>
+    <td class='celdaNombreAttr'><p style='text-align: left'>Estado<br>Académico:<br>Financiero:</p></td>
+    <td class='celdaValorAttr'><?php echo("<br>"$estado."<br>".$moroso_financiero); ?></td>
+  </tr>
+</table>

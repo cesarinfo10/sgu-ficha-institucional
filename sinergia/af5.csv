@@ -1,0 +1,31 @@
+nro_pregunta,pregunta,dimension,compensacion
+1,Hago bien los trabajos escolares (profesionales),Acad-Lab,0
+2,Hago fácilmente amigos,Social,0
+3,Tengo miedo de algunas cosas,Emocional,0
+4,Soy muy criticado en casa,Familiar,100
+5,Me cuido físicamente,Físico,0
+6,Mis superiores (profesores) me consideran un buen trabajador,Acad-Lab,0
+7,Soy una persona amigable,Social,0
+8,Muchas cosas me ponen nervioso,Emocional,0
+9,Me siento feliz en casa,Familiar,0
+10,Me buscan para realizar actividades deportivas,Físico,0
+11,Trabajo mucho en clase (en el trabajo),Acad-Lab,0
+12,Es difícil para mí hacer amigos,Social,100
+13,Me asusto con facilidad,Emocional,0
+14,Mi familia está decepcionada de mí,Familiar,100
+15,Me considero elegante,Físico,0
+16,Mis superiores (profesores) me estiman,Acad-Lab,0
+17,Soy una persona alegre,Social,0
+18,Cuando los mayores me dicen algo me pongo muy nervioso,Emocional,0
+19,Mi familia me ayudaría en cualquier tipo de problemas,Familiar,0
+20,Me gusta como soy físicamente,Físico,0
+21,Soy un buen trabajador (estudiante),Acad-Lab,0
+22,Me cuesta hablar con desconocidos,Social,100
+23,Me pongo nervioso cuando me pregunta el profesor,Emocional,0
+24,Mis padres me dan confianza,Familiar,0
+25,Soy bueno haciendo deporte,Físico,0
+26,Mis profesores (superiores) me consideran inteligente y trabajador,Acad-Lab,0
+27,Tengo muchos amigos,Social,0
+28,Me siento nervioso,Emocional,0
+29,Me siento querido por mis padres,Familiar,0
+30,Soy una persona atractiva,Físico,0

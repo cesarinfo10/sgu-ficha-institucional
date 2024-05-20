@@ -1,0 +1,73 @@
+<?php
+
+$SQL_estados = "SELECT nombre FROM al_estados ORDER BY id;";
+$estados     = consulta_sql($SQL_estados);
+
+$SQL_av_est_nuevos = "SELECT va.estado,count(va.id) as cantidad
+                      FROM vista_alumnos AS va
+                      LEFT JOIN alumnos AS a ON a.id=va.id
+                      WHERE va.id IN (SELECT id_alumno FROM matriculas WHERE semestre=$SEMESTRE AND ano=$ANO)
+                        AND va.cohorte=$ANO
+                      GROUP BY va.estado,a.estado ORDER BY a.estado;";                       
+$av_est_nuevos = consulta_sql($SQL_av_est_nuevos);
+$tot_als_nuevos = 0;
+for ($x=0;$x<count($av_est_nuevos);$x++) { $tot_als_nuevos += $av_est_nuevos[$x]['cantidad']; }
+
+$SQL_av_est_antiguos = "SELECT va.estado,count(va.id) as cantidad
+                        FROM vista_alumnos AS va
+                        LEFT JOIN alumnos AS a ON a.id=va.id
+                        WHERE va.id IN (SELECT id_alumno FROM matriculas WHERE semestre=$SEMESTRE AND ano=$ANO)
+                          AND va.cohorte<$ANO
+                        GROUP BY va.estado,a.estado ORDER BY a.estado;";
+$av_est_antiguos = consulta_sql($SQL_av_est_antiguos);
+$tot_als_antiguos = 0;
+for ($x=0;$x<count($av_est_antiguos);$x++) { $tot_als_antiguos += $av_est_antiguos[$x]['cantidad']; }
+  
+$tot_alumnos = $tot_als_nuevos + $tot_als_antiguos;
+  
+$HTML = "<table border='1' class='texto' cellspacing='0' cellpadding='2'>"
+      . "  <tr><td>&nbsp;</td><td colspan='4' align='center'><b>Cantidad de Alumnos</b></td></tr>"
+      . "  <tr>"
+      . "    <td align='center'><b>Estado</b></td>"
+      . "    <td align='center'><b>Nuevos</b></td>"
+      . "    <td align='center'><b>Aantiguos</b></td>"
+      . "    <td align='center' colspan='2'><b>TOTAL</b></td>";
+
+$y = $z = 0;            
+for ($x=0;$x<count($estados);$x++) {
+	$estado          = $estados[$x]['nombre'];
+	$estado_cantidad = 0;
+	
+	$HTML .= "  <tr><td>$estado</td>";
+	if ($av_est_nuevos[$y]['estado'] == $estado && $y < count($av_est_nuevos)) {
+		$HTML .= "<td align='right'>".$av_est_nuevos[$y]['cantidad']."</td>";
+		$estado_cantidad += $av_est_nuevos[$y]['cantidad'];
+		$y++;
+	} else {
+		$HTML .= "<td align='right'>0</td>";
+	}
+	
+	if ($av_est_antiguos[$z]['estado'] == $estado && $z < count($av_est_antiguos)) {
+		$HTML .= "<td align='right'>".$av_est_antiguos[$z]['cantidad']."</td>";
+		$estado_cantidad += $av_est_antiguos[$z]['cantidad'];
+		$z++;
+	} else {
+		$HTML .= "<td align='right'>0</td>";
+	}
+	
+	$porcentaje = ($estado_cantidad/$tot_alumnos)*100;
+	$porcentaje = number_format($porcentaje,2);
+	
+	$HTML .=	"<td align='right'>$estado_cantidad</td><td align='center'>$porcentaje%</td></tr>";
+}
+
+$HTML .= "    <tr>"
+      .  "      <td align='right'>Total Alumnos:</td>"
+      .  "      <td align='right'><b>$tot_als_nuevos</b></td>"
+      .  "      <td align='right'><b>$tot_als_antiguos</b></td>"
+      .  "      <td align='center' colspan='2'><b>$tot_alumnos</b></td>"
+      .  "    </tr>"
+      .  "  </table>";
+
+echo($HTML);
+?>

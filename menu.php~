@@ -1,0 +1,61 @@
+<?php
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+$id_usuario = $_SESSION['id_usuario'];
+$bdcon = pg_connect("dbname=regacad" . $authbd);
+$SQLtxt = "SELECT id,nombre,descripcion,ejecutable FROM permisos_apps as p_apps 
+                     INNER JOIN aplicaciones as apps ON apps.id=p_apps.id_aplicacion
+                     WHERE id_usuario=$id_usuario AND menu ORDER BY id;";
+$resultado = pg_query($bdcon, $SQLtxt);
+$filas = pg_numrows($resultado);
+if ($filas > 0) {
+	$menu = utf2html(pg_fetch_all($resultado));
+};
+
+?>
+
+<!-- inicio: menu -->
+<div id="menu">
+  <ul>
+<?php
+	if (pg_numrows($resultado) > 0) {
+		echo("    <li><a href='http://www.umcervantes.cl/archivos/calendario_academico_2009.pdf' title='Pinche aquí para ver el Calendario Académico 2009'><blink>NUEVO:</blink> Calendario Académico 2009</a></li>\n");
+		for($x=0;$x<$filas;$x++) {
+			$nombre_app  = $menu[$x]['nombre'];
+			$ejec_app    = $menu[$x]['ejecutable'];
+			$descrip_app = $menu[$x]['descripcion'];
+			$enlace = "principal.php?modulo=$ejec_app";
+			if (($menu[$x]['id'] % 100) <> 0) {
+				echo("    <ul><li><a href='$enlace' title='$descrip_app'>$nombre_app</a></li></ul>\n");
+			} else {
+				echo("    <li><a href='$enlace' title='$descrip_app'>$nombre_app</a></li>\n");
+			};
+		};
+	} else {
+		echo("<li>Usted no tiene un perfil de usuario creado.
+		          Pongase en contacto con su unidad Acad&eacute;mica correspondiente</li>");
+	};
+?>
+  </ul>
+</div>
+<br>
+<table border="1" class="tabla" cellspacing="0" cellpadding="2">
+  <tr class="filaTituloTabla">
+    <th class="tituloTabla" align="center">Nombre del<br>M&oacute;dulo</th>
+    <th class="tituloTabla" align="center">Intervalo</th>
+  </tr>
+	<?php
+		$horarios = consulta_sql("SELECT id,to_char(hora_inicio,'HH24:MI')||' - '||to_char(hora_fin,'HH24:MI') as nombre FROM horarios;");
+		$HTML = "";
+		for ($x=0;$x<count($horarios);$x++) {
+			extract($horarios[$x]);			
+			$HTML .= "<tr class='filaTabla' valign='top'><td class='textoTabla' align='center'>$id</td><td class='textoTabla' align='left'>$nombre</td></tr>";
+		}
+		echo($HTML);
+	?>
+</table>
+<!-- fin: menu -->
+

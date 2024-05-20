@@ -1,0 +1,48 @@
+Gestión Académico-administrativa
+p1#*#1. Asiste regularmente a sus clases de acuerdo al horario establecido por la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p2#*#2. Avisa oportunamente sus inasistencias.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p3#*#3. Recupera las clases perdidas a causa de sus inasistencias. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p4#*#4. Registra adecuadamente en el libro de clases la asistencia, las calificaciones de los alumnos y los contenidos revisados clases a clase.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p5#*#5. Respeta el calendario académico dispuesto por la Universidad. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p6#*#6. Entrega en las fechas solicitadas las calificaciones obtenidas por los esutdiantes.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p7#*#7. Presenta los instrumentos de evaluación de Pruebas Solemnes a la Dirección de la escuela con la debida anticipación.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p8#*#8. Ingresa la calendarización de cada una de sus asignaturas al SGU en los plazos establecidos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p9#*#9. Cumple adecuadamente con el programa de asignatura de la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p10#*#10. Informa oportunamente de las pautas y criterios de corrección de las evaluaciones a sus estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p11#*#11. Especifica al inicio del semestre a sus estudiantes los tipos y cantidad de evaluaciones (pruebas, disertaciones, trabajos, etc.) #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p12#*#12. Utiliza medios audiovisuales y Biblioteca Virtual como parte de las metodologías de apoyo a la docencia.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p13#*#13. Ingresa las calificaciones al SGU en los plazos establecidos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Compromiso con los alumnos
+p14#*#14. Demuestra disponibilidad para resolver las necesidades de los alumnos fuera del aula. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p15#*#15. Los alumnos manifiestan conformidad con el desempeño del  profesor.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Compromiso con la Institución
+p16#*#16. El profesor demuestra inquietud para asumir perfeccionamiento en materias pedagógicas.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p17#*#17. El profesor demuestra una actitud de cooperación con la institución (firmar actas, disponibilidad en general para facilitar el trabajo de coordinación académica).#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p18#*#18. El profesor participa regularmente en actividades institucionales extra programáticas.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p19#*#19. El profesor demuestra buena disposición para asumir otras responsabilidades académicas (integrar comités, extensión u otras).#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Metodologías activo-participativas
+p101#*#1. ¿Utilizó el docente metodologías activo-participativas? #Si#No
+Las metodologías activo – participativas utilizadas por el Docente permitieron:
+p102#*#1.1 Fomentar el trabajo autónomo de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p103#*#1.2 Fomentar el aprendizaje significativo de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p104#*#1.3 Fomentar la capacidad de aprender a aprender de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p105#*#1.4 Mejorar los rendimientos académicos de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p106#*#1.5 Desarrollar habilidades en los estudiantes para la integración de los contenidos#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Uso de audiovisuales
+p107#*#2. Durante el desarrollo del curso, ¿El docente utilizó  recursos audiovisuales (películas, videos, charlas TED, etc)? #Si#No
+El uso de recursos audiovisuales permitió:
+p108#*#2.1 Introducir a los estudiantes en las materias de la asignatura#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p109#*#2.2 Fortalecer los conocimientos teóricos de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p110#*#2.3 Potenciar la aplicación práctica de los contenidos de la asignatura#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p111#*#2.4 Obtener mejores resultado académicos#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Perfeccionamiento Docente
+3. Las actividades de perfeccionamiento docente realizadas por la Universidad han permitido a los docentes:
+p112#*#3.1 Mejorar sus habilidades pedagógicas y relacionarlas con el Modelo Educativo de la UMC#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p113#*#3.2 Generar aprendizajes que favorecen su desarrollo docente#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Ayudantías
+p114#*#4. ¿Durante el desarrollo del curso, el docente contó con el apoyo de un ayudante?#Si#No
+La realización de la ayudantía (contestar sólo si la pregunta anterior la respondió afirmativamente):
+p115##4.1 Contribuyó a mejorar el proceso de enseñanza – aprendizaje de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p116##4.2 Contribuyó a mejorar los resultados académicos de los estudiantes#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p117##4.3 Permitió fomentar los principios y valores declarados por la Universidad (solidaridad, responsabilidad, honestidad, integridad y compromiso social)#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p118##4.4 Contó con ejemplos y/o ejercicios que contribuyeron a la comprensión de los contenidos#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo

@@ -1,0 +1,32 @@
+p1#1. Actualmente, ¿tienes un trabajo remunerado? (En caso de responder “Sí” pase a la pregunta número 2. En caso de responder “No” pase a la pregunta número 11)#Si#No
+p2#2. Tu actual trabajo se relaciona con la carrera que estudiaste#Si#No
+p3#3. Trabajas de forma...#Independiente#Dependiente
+p4#4. ¿Cuánto tiempo te demoraste en encontrar trabajo en la carrera que estudiaste?#Menos de un mes#Entre 1 y 3 meses#Entre 4 y 7 meses#Entre 8 y 11 meses#Más de un año
+p5#5. ¿Cuál es tu área de desempeño laboral?#Público#Privado#Privado sin fines de lucro
+p6#6. Por favor, escribe el nombre de tu lugar de trabajo
+p7#7. Por favor, escribe cuál es tu principal función o cargo en tu lugar de trabajo
+p8#8. ¿Cómo conseguiste tu actual empleo?#A través de familiares#A través de amigos#A través de ex compañeros de universidad#Postulé a anuncios de diarios o portales web#Otra
+p8_1#8.1. Si respondiste “Otra”, por favor escribe cuál
+p9#9. ¿Cuál es tu situación contractual?#Contrato indefinido#Contrato a plazo fijo#Contrato a honorarios
+p10#10. Aproximadamente, ¿cuál es tu remuneración mensual?#Menos de $225.000#Entre $225.000 y $450.000#Entre $450.001 y $675.000#Entre $675.001 y $900.000#Entre $900.001 y $1.125.000#Entre $1.125.001 y $1.350.000#Entre $1.350.001 y $1.575.000#Entre $1.575.001 y $1.800.000#Más de $1.800.001
+p11#11. ¿Has buscado trabajo desde que te titulaste? (En caso de responder “Si” pase a la pregunta número 12. En caso de responder “No” pase a la pregunta número 13)#Si#No
+p12#12. ¿Hace cuánto tiempo estás buscando trabajo?#Menos de un mes#Entre 1 y 3 meses#Entre 4 y 7 meses#Entre 8 y 11 meses#Más de un año
+p12_1#12.1. Por favor, escribe por qué crees que no has encontrado trabajo desde que te titulaste
+#A continuación encontrarás una serie de afirmaciones respecto a tu formación, califica cada una según la escala.
+p13#13. Dominio de tu área o disciplina#1#2#3#4#5#6#7
+p14#14. Capacidad de investigar y aprender por cuenta propia#1#2#3#4#5#6#7
+p15#15. Capacidad para trabajar bajo presión#1#2#3#4#5#6#7
+p16#16. Capacidad para coordinar actividades#1#2#3#4#5#6#7
+p17#17. Capacidad para usar el tiempo en forma efectiva#1#2#3#4#5#6#7
+p18#18. Capacidad para trabajar en equipo#1#2#3#4#5#6#7
+p19#19. Capacidad para movilizar las capacidades de otros#1#2#3#4#5#6#7
+p20#20. Capacidad para hacerte entender#1#2#3#4#5#6#7
+p21#21. Capacidad de liderazgo#1#2#3#4#5#6#7
+p22#22. Capacidad para utilizar herramientas informáticas#1#2#3#4#5#6#7
+p23#23. Capacidad para encontrar nuevas ideas y soluciones#1#2#3#4#5#6#7
+p24#24. Habilidades comunicacionales tanto orales como escritas#1#2#3#4#5#6#7
+p25#25. Capacidad para aplicar los conocimientos en la práctica#1#2#3#4#5#6#7
+p26#26. Capacidad para tomar decisiones#1#2#3#4#5#6#7
+p27#27. Poseo las competencias profesionales y personales para optar a un mejor cargo de mayor responsabilidad#1#2#3#4#5#6#7
+p28#28. La formación entregada cumplió mis expectativas#1#2#3#4#5#6#7
+p29#29. ¿Cómo calificaría la calidad de la formación recibida?#1#2#3#4#5#6#7

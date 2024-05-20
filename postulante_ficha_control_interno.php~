@@ -1,0 +1,107 @@
+<?php
+
+$SQL_postulante = "SELECT vp.id,vp.nombre,rut,
+                          CASE conc_nt_ies_pro WHEN true THEN 'Sí' ELSE 'No' END AS conc_nt_ies_pro,
+                          CASE prog_as_ies_pro WHEN true THEN 'Sí' ELSE 'No' END AS prog_as_ies_pro,
+                          CASE cert_nacimiento WHEN true THEN 'Sí' ELSE 'No' END AS cert_nacimiento,
+                          CASE copia_ced_iden WHEN true THEN 'Sí' ELSE 'No' END AS copia_ced_iden,
+                          CASE conc_notas_em  WHEN true THEN 'Sí' ELSE 'No' END AS conc_notas_em,
+                          CASE licencia_em WHEN true THEN 'Sí' ELSE 'No' END AS licencia_em,                          
+                          CASE boletin_psu WHEN true THEN 'Sí' ELSE 'No' END AS boletin_psu,
+                          CASE fotografias WHEN true THEN 'Sí' ELSE 'No' END AS fotografias
+                   FROM vista_pap AS vp
+                   LEFT JOIN carreras AS c1 ON c1.id=vp.carrera1_post
+                   LEFT JOIN carreras AS c2 ON c2.id=vp.carrera2_post
+                   LEFT JOIN carreras AS c3 ON c3.id=vp.carrera3_post
+                   LEFT JOIN pap ON pap.id=vp.id
+                   WHERE vp.id=$id_pap;";                   
+$postulante     = consulta_sql($SQL_postulante);
+if (count($postulante) > 0) {
+	$SQL_pa_ext = "SELECT asignatura,inst_edsup,alias,semestre,ano,duracion,nota_final
+	               FROM vista_convalidaciones
+	               WHERE id_pap=$id_pap";
+	$pa_ext     = consulta_sql($SQL_pa_ext);
+} else {
+	echo(js("location.href='principal.php?modulo=gestion_postulantes';"));
+	exit;
+}
+
+?>
+
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla" width="100%">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Postulante</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['rut']); ?></td>
+    <td class='celdaNombreAttr'>ID Postulante:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['id']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['nombre']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Documentación Obligatoria</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Fotocopia CI:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['copia_ced_iden']); ?></td>
+    <td class='celdaNombreAttr'>Cert. de Nacimiento:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['cert_nacimiento']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Licencia de EM:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['licencia_em']); ?></td>
+    <td class='celdaNombreAttr'>Concentración de Notas EM:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['conc_notas_em']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>2 Fotografías:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['fotografias']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Documentación Opcional</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Boletín PAA/PSU:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['boletin_psu']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Documentación Admisión Extraordinaria</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Concentración de Notas:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['conc_nt_ies_pro']); ?></td>
+    <td class='celdaNombreAttr'>Programas de Asignatura:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['prog_as_ies_pro']); ?></td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class="tituloTabla" colspan="5">Programas de Asignaturas externos registrados</td>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class="tituloTabla">Asignatura</td>
+    <td class="tituloTabla">Inst. Ed. Sup. Origen</td>
+    <td class="tituloTabla">Año</td>
+    <td class="tituloTabla">Duración</td>
+    <td class="tituloTabla">NF</td>
+  </tr>
+	<?php
+		$HTML = "";
+		for ($x=0;$x<count($pa_ext);$x++) {
+			extract($pa_ext[$x]);
+			$HTML .= "<tr>"
+			      .  "  <td class='textoTabla'>$asignatura</td>"
+			      .  "  <td class='textoTabla'><a title='$inst_edsup'>$alias</a></td>"
+			      .  "  <td class='textoTabla'>$ano</td>"
+			      .  "  <td class='textoTabla'>$duracion</td>"
+			      .  "  <td class='textoTabla'>$nota_final</td>"
+			      .  "</tr>";
+		}
+		echo($HTML);
+	?>
+</table>

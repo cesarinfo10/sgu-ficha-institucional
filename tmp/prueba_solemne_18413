@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>UMC - SGU - PRUEBAS SOLEMNES</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 11px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body>
+<img src='img/logo_umc_nuevo_ls.png' width='250'><center><b>PRUEBA SOLEMNE I</b><br>Ingeniería en Administración de Recursos Humanos<br> Semestre 2023<br></center><table border='0' cellpadding='3' cellspancing='3' width='100%'>  <tr>    <td align='right'>Nombre Alumno:</td>    <td colspan='3' width='80%' bgcolor='#E5E5E5'><b>&nbsp;</b></td>  </tr>  <tr>    <td align='right'>RUT:</td>    <td width='40%'bgcolor='#E5E5E5'><b>&nbsp;</b></td>    <td align='right'>Fecha:</td>    <td width='30%' bgcolor='#E5E5E5'>&nbsp;</td>  </tr>  <tr>    <td align='right'>Asignatura:</td>    <td colspan='3' bgcolor='#E5E5E5'>IARH-701-5 Finanzas </td>  </tr>  <tr>    <td align='right'>Nombre Profesor:</td>    <td colspan='3' bgcolor='#E5E5E5'>CARLOS HERNAN APARICIO PUENTES</td>  </tr></table><br><table border='2' align='right' width='20%'><tr><td align='center'>NOTA:<br><br><br><br></td></tr></table><b><u>Instrucciones Generales:</u></b><ol>  <li>Usted tiene una cantidad limitada de tiempo para contestar esta prueba, el que será establecido por el/la profesor(a) al comienzo.</li>  <li>Durante el desarrollo de la prueba <b>no podrá salir de la sala de clases, deberá mantener cualquier dispositivo multimedia y/o de comunicaciones (celular, <i>smartphone</i>, <i>tablet</i>, <i>laptop</i> u otro similar) <b>apagado</b>. El uso de audífonos no ortopédicos está terminantemente prohibido.</b></li>  <li>Una vez terminada la prueba, entregue al docente su hoja de respuestas, verificando que todos sus datos están registrados en ella.</li>  <li>Debe <u>escribir con letra clara, usando lápiz de tinta o pasta.</u> Si utiliza hojas adicionales debe escribir su nombre a cada una de ellas e indicar claramente la pregunta que esta contestando.</li></ol><table border='3' cellpadding='5' cellspacing='5' width='100%'>  <tr>    <td align='justify'>      <center><b>CÓDIGO DE ÉTICA</b></center>      La verificación de conocimientos se funda en el concepto de HONESTIDAD y se entiende que todo alumno o alumna       se hace cargo de su ejercicio; de no ser así acepto las sanciones correspondientes, establecidas en el Reglamento       de Estudios de Pregrado de la Universidad, disponible en el sitio web (www.umcervantes.cl) y en la Biblioteca.<br><br>      <table width='100%'><tr><td width='33%'></td><td width='33%'></td><td width='34%' align='center'><hr size='1'>Firma Alumno(a)</td></tr></table>    </td>  </tr></table><!-- PAGE BREAK -->
+  </body>
+</html>

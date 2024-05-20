@@ -1,0 +1,714 @@
+Derecho Diurno
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2330
+Acta de Curso
+
+	Asignatura: DD-301-1 Derecho Civil I			Periodo: 1-2007
+	  Profesor: Juan Andrés Celis Pérez			Horario: [Mie A {408}] [Vie B {408}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11672 16383419-7   Arenas León Nataly Yazmina                         | 4.6  | 5.0  |______|______|______|___________
+ 11674 15345524-4   Carvajal Bahamondes Rodrigo Armando                | 4.8  | 5.0  |______|______|______|___________
+ 11675 16617624-7   Castro Árias Kristel Elisabet                      | 2.0  | 5.0  |______|______|______|___________
+ 11676 16937093-1   Contador Salinas María Belén                       | 3.2  | 5.0  |______|______|______|___________
+ 11677 16745489-5   Cortés Orellana Piero Andrés                       | 6.2  | 5.0  |______|______|______|___________
+ 11633 14128498-3   Espinoza Ayala Gabriel Fernando                    | NSP  | 5.0  |______|______|______|___________
+ 11684 16760335-1   Jara Villalobos Patricia Andrea                    | 3.0  | 5.0  |______|______|______|___________
+ 11685 16020452-4   Leyton Rodríguez Natalie Julietta                  | 3.0  | 5.0  |______|______|______|___________
+ 11488 16119035-7   Medina Martínez Jeremías David                     | 5.0  | 5.0  |______|______|______|___________
+ 11689 16746895-0   Muñoz Matus Deborah Francisca                      | NSP  | 5.0  |______|______|______|___________
+ 11494 16622772-0   Novoa Bello Francisco Andrés                       | 4.8  | 5.0  |______|______|______|___________
+ 11690 16322764-9   Riquelme González Arlette Andrea                   | 3.6  | 5.0  |______|______|______|___________
+ 11695 16477188-1   Valdés Rubio Victoria Jaqueline                    | 5.2  | 5.0  |______|______|______|___________
+ 11670 16292589-K   Vásquez Consuegra Jorge Hernán                     | 2.0  | 5.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 14
+
+
+
+__________________________________		_________________________		_________________________
+Diana Marcela Palacios Aristizabal		Juan Andrés Celis Pérez		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso     
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2334
+Acta de Curso
+
+	Asignatura: DD-501-1 Derecho Civil III			Periodo: 1-2007
+	  Profesor: Juan Andrés Celis Pérez			Horario: [Mie B {409}] [Vie A {409}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11600 15723863-9   Aguilera Alarcon Christopher Randall               | 5.0  | 6.0  |______|______|______|___________
+ 12268 12035581-3   Cabezas De La Parra Marisol Sonia                  | NSP  | 4.0  |______|______|______|___________
+ 11648 16472159-0   González  Cantillana Nicolás Ignacio               | 6.2  | 6.0  |______|______|______|___________
+ 11655 13687931-6   Miranda Garay Cristián Adrián                      | NSP  | 6.0  |______|______|______|___________
+ 11657 16519141-2   Negrete Castellón Camila Andrea                    | NSP  | 6.0  |______|______|______|___________
+ 12249 9081558-K    Pesce Harcha Flavio                                | 3.8  | 6.0  |______|______|______|___________
+ 11439 16247492-8   Ríos Olivares Viviana Indalicia                    | 3.6  | 6.0  |______|______|______|___________
+ 12252 13912406-5   Rubio Hernandez Evelyn                             | NSP  | 6.0  |______|______|______|___________
+ 12255 16082176-0   Vargas Cañas Natalia Andrea                        | 4.4  | 6.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 9
+
+
+
+__________________________________		_________________________		_________________________
+Diana Marcela Palacios Aristizabal		Juan Andrés Celis Pérez		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso     
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2337
+Acta de Curso
+
+	Asignatura: DD-503-1 Derecho Penal I			Periodo: 1-2007
+	  Profesor: Fernando Roberto García Díaz			Horario: [Mie D {409}] [Vie D {409}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11633 14128498-3   Espinoza Ayala Gabriel Fernando                    | NSP  | 4.0  |______|______|______|___________
+ 11647 16550607-3   Espinoza Fuentes Carla Patricia                    | NSP  | 4.0  |______|______|______|___________
+ 11411 16390399-7   Gamboa Morales María De Los Ángeles                | 4.0  | 4.2  |______|______|______|___________
+ 11648 16472159-0   González  Cantillana Nicolás Ignacio               | 5.7  | 5.8  |______|______|______|___________
+ 11655 13687931-6   Miranda Garay Cristián Adrián                      | 5.3  | 5.4  |______|______|______|___________
+ 11657 16519141-2   Negrete Castellón Camila Andrea                    | NSP  | 4.0  |______|______|______|___________
+ 11329 16169563-7   Ortega Obregón Maximiliano Paolo                   | 3.2  | 4.0  |______|______|______|___________
+ 11436 15346026-4   Poblete Cepeda Álvaro Alonso                       | 2.4  | 4.0  |______|______|______|___________
+ 11439 16247492-8   Ríos Olivares Viviana Indalicia                    | 3.7  | 4.1  |______|______|______|___________
+ 11696 15340381-3   Zúñiga Pereda Ricardo Alberto                      | NSP  | 4.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 10
+
+
+
+__________________________________		______________________________		_________________________
+Diana Marcela Palacios Aristizabal		Fernando Roberto García Díaz		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso          
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2333
+Acta de Curso
+
+	Asignatura: DD-505-1 Derecho Procesal III			Periodo: 1-2007
+	  Profesor: Enrique Ortiz Schindler			Horario: [Jue A {407}] [Jue C {407}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 12268 12035581-3   Cabezas De La Parra Marisol Sonia                  | 3.5  | 4.7  |______|______|______|___________
+ 11648 16472159-0   González  Cantillana Nicolás Ignacio               | 5.5  | 5.7  |______|______|______|___________
+ 11681 15805153-2   González Díaz Paola Andrea                         | 6.3  | 4.3  |______|______|______|___________
+ 11655 13687931-6   Miranda Garay Cristián Adrián                      | 4.5  | 4.3  |______|______|______|___________
+ 11657 16519141-2   Negrete Castellón Camila Andrea                    | 5.5  | 2.3  |______|______|______|___________
+ 11442 13903361-2   Rojas Ohmke Nicolás Andrés                         | NSP  | 3.0  |______|______|______|___________
+ 12252 13912406-5   Rubio Hernandez Evelyn                             | 6.0  | 4.0  |______|______|______|___________
+ 12256 15256603-4   Tranamil Aspe Andrea Del Pilar                     | NSP  | 4.5  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 8
+
+
+
+__________________________________		_______________________		_________________________
+Diana Marcela Palacios Aristizabal		Enrique Ortiz Schindler		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2328
+Acta de Curso
+
+	Asignatura: DD-703-1 Derecho Penal III			Periodo: 1-2007
+	  Profesor: Rodrigo Manuel Medina Jara			Horario: [Mie D {403}] [Jue D {407}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11626 15930856-1   Acevedo Iturrieta Roberto Mario                    | 6.3  | 6.0  |______|______|______|___________
+ 11600 15723863-9   Aguilera Alarcon Christopher Randall               | 3.9  | 4.5  |______|______|______|___________
+ 11173 13249916-0   Armijo Rojas Hernán Alejandro                      | NSP  | 3.5  |______|______|______|___________
+ 11606 14561815-0   Cerpa Salinas Nelson Abraham                       | NSP  | 3.0  |______|______|______|___________
+ 11627 16019453-7   Clavería Massú Roberto Carlos                      | 5.0  | 6.7  |______|______|______|___________
+ 11629 15940339-4   Contreras López Nathalie Yasmin                    | 6.0  | 7.0  |______|______|______|___________
+ 11630 15534478-4   Cordero Cabezas Alejandro Enrique                  | 3.7  | 6.5  |______|______|______|___________
+ 11615 13453605-5   Meza Alarcon Enibette Marcela                      | NSP  | 5.8  |______|______|______|___________
+ 11199 7379658-K    Reyes Peña José Adalberto                          | 1.0  | 1.0  |______|______|______|___________
+ 11640 15466206-5   Reyes Zuñiga Daniela Alejandra                     | 5.5  | 6.0  |______|______|______|___________
+ 11442 13903361-2   Rojas Ohmke Nicolás Andrés                         | NSP  | 1.0  |______|______|______|___________
+ 11642 16126377-K   Rubilar Meza Dayana Isabel                         | 5.8  | 7.0  |______|______|______|___________
+ 11620 14612474-7   Salgado Padilla Rodolfo Esteban                    | 5.2  | 3.7  |______|______|______|___________
+ 11643 15145568-9   Soto Morales Margarita Viviana                     | 5.0  | 6.0  |______|______|______|___________
+ 11644 16278653-9   Vergara Pradine Tamara Betsabe                     | 3.7  | 6.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 15
+
+
+
+__________________________________		__________________________		_________________________
+Diana Marcela Palacios Aristizabal		Rodrigo Manuel Medina Jara		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2324
+Acta de Curso
+
+	Asignatura: DD-705-1 Derecho Procesal V			Periodo: 1-2007
+	  Profesor: Enrique Ortiz Schindler			Horario: [Mar E {407}] [Jue E {407}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11626 15930856-1   Acevedo Iturrieta Roberto Mario                    | 6.5  | 5.8  |______|______|______|___________
+ 11646 13756562-5   Alcayaga Olivares Tania Macarena                   | 4.5  | 6.0  |______|______|______|___________
+ 11464 15337089-1   Campos Pereira Daniela Isabel                      | 6.0  | 6.0  |______|______|______|___________
+ 12079 13835486-5   Campos Soto Bernardo Antonio                       | 6.5  | 7.0  |______|______|______|___________
+ 11604 15941194-K   Campusano Figueroa Natalia Andrea                  | 6.0  | 6.0  |______|______|______|___________
+ 11627 16019453-7   Clavería Massú Roberto Carlos                      | 6.0  | 5.5  |______|______|______|___________
+ 11629 15940339-4   Contreras López Nathalie Yasmin                    | 6.5  | 6.0  |______|______|______|___________
+ 11630 15534478-4   Cordero Cabezas Alejandro Enrique                  | 6.3  | 5.5  |______|______|______|___________
+ 11592 14902452-2   Muñoz Gonzalez Vanesa Karina                       | 3.5  | 5.0  |______|______|______|___________
+ 11640 15466206-5   Reyes Zuñiga Daniela Alejandra                     | 5.5  | 6.5  |______|______|______|___________
+ 11642 16126377-K   Rubilar Meza Dayana Isabel                         | 6.0  | 6.5  |______|______|______|___________
+ 11620 14612474-7   Salgado Padilla Rodolfo Esteban                    | 6.0  | 5.5  |______|______|______|___________
+ 11621 16042722-1   Sánchez Silva Carlos Enrique                       | 2.0  | 5.8  |______|______|______|___________
+ 11643 15145568-9   Soto Morales Margarita Viviana                     | 5.5  | 5.5  |______|______|______|___________
+ 11624 13944294-6   Valdés Sepúlveda Rodrigo Hernán                    | 6.5  | 5.3  |______|______|______|___________
+ 11644 16278653-9   Vergara Pradine Tamara Betsabe                     | 6.5  | 5.5  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 16
+
+
+
+__________________________________		_______________________		_________________________
+Diana Marcela Palacios Aristizabal		Enrique Ortiz Schindler		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso   
+Derecho Vespertino
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2185
+Acta de Curso
+
+	Asignatura: DV-301-1 Derecho Civil I			Periodo: 1-2007
+	  Profesor: Óscar Olavarria Aqueveque			Horario: [Lun H {303}] [Sab C {407}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11458 11475491-9   Aranda Urra Tito Fernando                          | 5.0  | 5.2  |______|______|______|___________
+ 11460 15335235-6   Aranguiz Poblete Daniela Elizabeth                 | 5.0  | 5.9  |______|______|______|___________
+ 11462 7813704-5    Baeza López Raúl Iván                              | 5.0  | 1.0  |______|______|______|___________
+ 12246 13204120-2   Barrios Orellana Marcelo                           | 5.0  | 3.0  |______|______|______|___________
+ 11465 13290212-7   Campos Poblete Rodrigo Alejandro                   | 6.0  | 3.5  |______|______|______|___________
+ 11466 10583343-1   Carrasco Álvarez Gustavo Jorge                     | 5.5  | 2.8  |______|______|______|___________
+ 11469 12292752-0   Cruzat Anabalón Luis Ricardo                       | 5.0  | 4.7  |______|______|______|___________
+ 11471 13798471-7   Durán Vega César Leonel                            | 5.8  | 4.6  |______|______|______|___________
+ 11474 12260051-3   Fuentes Montecinos Carlos Wilfredo                 | 5.0  | 5.1  |______|______|______|___________
+ 12198 12590568-4   Gómez Valdés  Gonzálo                              | 4.5  | 3.3  |______|______|______|___________
+ 11477 7276210-K    González Aliaga Juan Carlos                        | 4.5  | 3.3  |______|______|______|___________
+ 11478 12897648-5   González Castillo Luisa Andrea                     | 4.8  | 3.1  |______|______|______|___________
+ 12201 14417595-6   Henriquez Alex                                     | 3.0  | 1.0  |______|______|______|___________
+ 11484 14023841-4   Landero Peralta Gabriel Antonio                    | 4.8  | 3.2  |______|______|______|___________
+ 11486 15409929-8   Lozano Ibacache Óscar Eduardo                      | 5.0  | 5.0  |______|______|______|___________
+ 11490 12662032-2   Menares Alfaro Víctor Andrés                       | 5.0  | 1.0  |______|______|______|___________
+ 11491 13915143-7   Mora Chacón Gonzalo José                           | 5.0  | 3.3  |______|______|______|___________
+ 11193 10131357-3   Moreno Muñoz Italo Andrés                          | 5.0  | 5.5  |______|______|______|___________
+ 12063 15480578-8   Navarrete Toro Bárbara Del Pilar                   | 5.0  | 3.0  |______|______|______|___________
+ 11497 13716160-5   Ortiz Romero Cristina Alejandra                    | 5.0  | 3.3  |______|______|______|___________
+ 11663 16296358-9   Pradenas Marihuán Nancy Andrea                     | NSP  | 1.0  |______|______|______|___________
+ 11444 13691759-5   Romero Galleguillos Manuel Andrés                  | 4.5  | 4.3  |______|______|______|___________
+ 11691 15517142-1   Rosas Rivero Fabián Nicolas                        | NSP  | 4.7  |______|______|______|___________
+ 11504 9677945-3    Ruelas Torres Alejandro Alonso                     | 4.8  | 4.8  |______|______|______|___________
+ 11506 16718691-2   San Juan Espinoza Alejandro Ignacio                | 5.0  | 3.0  |______|______|______|___________
+ 11512 8663181-4    Silva Sanhueza Carolina Inés                       | 5.0  | 5.3  |______|______|______|___________
+ 11513 9902836-K    Sotelo Fernández Jacqueline Lorena                 | 4.8  | 1.0  |______|______|______|___________
+ 11514 16173116-1   Soto Cofré Ana Alejandra                           | 5.0  | 1.0  |______|______|______|___________
+ 11515 11424203-9   Torres Pedreros Daniel Isaias                      | 4.8  | 4.9  |______|______|______|___________
+ 11516 10782107-4   Valladares Vejar Iván Arturo                       | 4.0  | 2.6  |______|______|______|___________
+ 11518 12306325-2   Vera Toro Carlos Lorenzo                           | 4.8  | 4.5  |______|______|______|___________
+ 11519 15967003-1   Vicencio Ñancupil Mariela Antonia                  | 4.8  | 5.2  |______|______|______|___________
+ 11520 14400972-K   Zegers Jauregui Felipe Antonio                     | 5.0  | 4.9  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 33
+
+
+
+__________________________________		__________________________		_________________________
+Diana Marcela Palacios Aristizabal		Óscar Olavarria Aqueveque		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2200
+Acta de Curso
+
+	Asignatura: DV-503-1 Derecho Penal I			Periodo: 1-2007
+	  Profesor: Rodrigo Manuel Medina Jara			Horario: [Lun H {403}] [Mar H {403}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11646 13756562-5   Alcayaga Olivares Tania Macarena                   | NSP  | 5.9  |______|______|______|___________
+ 11345 11176785-8   Ávila Friz Domingo Antonio                         | 5.5  | 5.6  |______|______|______|___________
+ 11393 13834943-8   Campillay Zúñiga Patricio Ismael                   | 2.7  | 6.3  |______|______|______|___________
+ 11394 10180677-4   Campos Cerda Azucena                               | 6.4  | 6.3  |______|______|______|___________
+ 11400 11531277-4   Castro González Jacqueline Del Carmen              | 3.2  | 5.8  |______|______|______|___________
+ 11401 8115599-2    Castro Rojas José Guillermo                        | 4.2  | 4.0  |______|______|______|___________
+ 12033 12376075-1   Fuentes Yessi Claudia Leonor                       | NSP  | 6.5  |______|______|______|___________
+ 11650 15326702-2   Hernández Quelopana Macarena Andrea                | NSP  | 6.0  |______|______|______|___________
+ 11415 14044369-7   Iturri Lucero Sergio Ignacio                       | NSP  | 5.4  |______|______|______|___________
+ 11416 13207665-0   Kleinstein López Cristián Gonzalo                  | NSP  | 4.8  |______|______|______|___________
+ 11639 10403211-7   Lisboa Troncoso Karla Andrea                       | 6.5  | 6.8  |______|______|______|___________
+ 11418 16045156-4   López Muñoz  Fernanda Karina                       | 2.3  | 5.8  |______|______|______|___________
+ 11421 11976638-9   Marivil Marivil Hugo                               | 2.9  | 3.9  |______|______|______|___________
+ 11360 15543351-5   Molina Bastias Carlos Eugenio                      | 4.8  | 6.9  |______|______|______|___________
+ 11295 5127217-K    Osses Concha Sylvia Rita                           | NSP  | 5.9  |______|______|______|___________
+ 11435 8930416-4    Pinochet Cavieres Rafael Patricio                  | 4.3  | 6.4  |______|______|______|___________
+ 11445 14258986-9   Salinas Matalón Luis Eduardo                       | 6.7  | 6.2  |______|______|______|___________
+ 11449 12403857-K   Solís Lobos Sergio Patricio                        | NSP  | 4.8  |______|______|______|___________
+ 12155 15636896-2   Varas Espinoza Fernando Enrique                    | 3.7  | 5.5  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 19
+
+
+
+__________________________________		__________________________		_________________________
+Diana Marcela Palacios Aristizabal		Rodrigo Manuel Medina Jara		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso      
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2195
+Acta de Curso
+
+	Asignatura: DV-505-1 Derecho Procesal III			Periodo: 1-2007
+	  Profesor: Enrique Ortiz Schindler			Horario: [Sab B {406}] [Sab D {406}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11600 15723863-9   Aguilera Alarcon Christopher Randall               | 3.0  | 5.0  |______|______|______|___________
+ 12191 11632052-5   Astete Díaz  Arturo                                | 5.0  | 4.3  |______|______|______|___________
+ 11394 10180677-4   Campos Cerda Azucena                               | 4.5  | 4.5  |______|______|______|___________
+ 11400 11531277-4   Castro González Jacqueline Del Carmen              | 4.5  | 5.0  |______|______|______|___________
+ 11406 11874928-6   Díaz Piña Alejandra Beatriz                        | 3.8  | 3.3  |______|______|______|___________
+ 11634 12242738-2   Flores Ávila Fernando Antonio                      | NSP  | 5.3  |______|______|______|___________
+ 11284 10760033-7   Fuentes Gaete Miguel Angel                         | NSP  | 2.0  |______|______|______|___________
+ 12033 12376075-1   Fuentes Yessi Claudia Leonor                       | 2.0  | 4.3  |______|______|______|___________
+ 11482 15449444-8   Ibáñez Toledo Stiffanni Sphell                     | 5.0  | 5.3  |______|______|______|___________
+ 11416 13207665-0   Kleinstein López Cristián Gonzalo                  | 4.5  | 2.0  |______|______|______|___________
+ 11639 10403211-7   Lisboa Troncoso Karla Andrea                       | 6.0  | 6.0  |______|______|______|___________
+ 11418 16045156-4   López Muñoz  Fernanda Karina                       | 2.5  | 4.3  |______|______|______|___________
+ 11360 15543351-5   Molina Bastias Carlos Eugenio                      | NSP  | 4.3  |______|______|______|___________
+ 11232 9496168-8    Muñoz Molina Margarita Soledad                     | 4.0  | 4.3  |______|______|______|___________
+ 12247 13289326-8   Narvaez Villalobos Luis Patricio                   | 3.5  | 5.5  |______|______|______|___________
+ 12063 15480578-8   Navarrete Toro Bárbara Del Pilar                   | 6.5  | 6.2  |______|______|______|___________
+ 11367 10724950-8   Padilla González Cristian Heriberto                | 3.0  | 4.7  |______|______|______|___________
+ 11435 8930416-4    Pinochet Cavieres Rafael Patricio                  | 3.0  | 4.7  |______|______|______|___________
+ 11436 15346026-4   Poblete Cepeda Álvaro Alonso                       | 5.5  | 4.5  |______|______|______|___________
+ 11445 14258986-9   Salinas Matalón Luis Eduardo                       | 4.0  | 5.7  |______|______|______|___________
+ 11449 12403857-K   Solís Lobos Sergio Patricio                        | 5.0  | 5.7  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 21
+
+
+
+__________________________________		_______________________		_________________________
+Diana Marcela Palacios Aristizabal		Enrique Ortiz Schindler		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2206
+Acta de Curso
+
+	Asignatura: DV-703-1 Derecho Penal III			Periodo: 1-2007
+	  Profesor: Manuela Vitolo Camiruaga			Horario: [Jue G {405}] [Jue H {405}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11309 14140098-3   Allende Becerra Juan Andrés                        | 5.5  | 5.5  |______|______|______|___________
+ 12191 11632052-5   Astete Díaz  Arturo                                | 6.0  | 6.0  |______|______|______|___________
+ 11464 15337089-1   Campos Pereira Daniela Isabel                      | NSP  | 4.0  |______|______|______|___________
+ 11277 12174636-0   Castillo Hernández Hugo Enrique                    | NSP  | 4.0  |______|______|______|___________
+ 11350 15321990-7   Catalán Pérez Claudio Humberto                     | NSP  | 4.0  |______|______|______|___________
+ 11402 10297082-9   Catipillán Salas Ximena Patricia                   | NSP  | 4.0  |______|______|______|___________
+ 11316 14423645-9   Farías Muñoz Bélgica Noemí                         | 6.5  | 6.5  |______|______|______|___________
+ 11634 12242738-2   Flores Ávila Fernando Antonio                      | 6.5  | 6.5  |______|______|______|___________
+ 11356 11434051-0   Fuentealba Rojas Israel Juan                       | 5.5  | 5.5  |______|______|______|___________
+ 11422 8953984-6    Márquez González  Pedro Manuel                     | 6.0  | 6.0  |______|______|______|___________
+ 11366 11257704-1   Ovalle Contreras Sergio Alberto                    | 6.0  | 6.0  |______|______|______|___________
+ 11367 10724950-8   Padilla González Cristian Heriberto                | NSP  | 4.0  |______|______|______|___________
+ 11372 12179032-7   Reinao Alvarado Hugo Enrique                       | 6.0  | 6.0  |______|______|______|___________
+ 11374 12160425-6   Rivera León Sandra Del Pilar                       | NSP  | 4.0  |______|______|______|___________
+ 12044 9822318-5    Torres Poblete Roberto Eduardo                     | 4.0  | 4.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 15
+
+
+
+__________________________________		________________________		_________________________
+Diana Marcela Palacios Aristizabal		Manuela Vitolo Camiruaga		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso    
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2202
+Acta de Curso
+
+	Asignatura: DV-705-1 Derecho Procesal V			Periodo: 1-2007
+	  Profesor: Guido Sepúlveda Yévenes			Horario: [Mie G {403}] [Mie H {403}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11309 14140098-3   Allende Becerra Juan Andrés                        | 4.5  | 4.7  |______|______|______|___________
+ 11573 7260020-7    Barriga Inostroza Nancy Cristina                   | NSP  | 5.3  |______|______|______|___________
+ 11277 12174636-0   Castillo Hernández Hugo Enrique                    | 2.0  | 5.3  |______|______|______|___________
+ 11350 15321990-7   Catalán Pérez Claudio Humberto                     | 6.0  | 5.7  |______|______|______|___________
+ 11356 11434051-0   Fuentealba Rojas Israel Juan                       | 5.0  | 5.7  |______|______|______|___________
+ 11329 16169563-7   Ortega Obregón Maximiliano Paolo                   | 5.0  | 4.2  |______|______|______|___________
+ 11372 12179032-7   Reinao Alvarado Hugo Enrique                       | 6.0  | 5.0  |______|______|______|___________
+ 11374 12160425-6   Rivera León Sandra Del Pilar                       | 5.0  | 4.5  |______|______|______|___________
+ 12044 9822318-5    Torres Poblete Roberto Eduardo                     | 5.5  | 4.3  |______|______|______|___________
+ 12155 15636896-2   Varas Espinoza Fernando Enrique                    | 4.3  | 4.5  |______|______|______|___________
+ 11645 8583895-4    Villarroel Espinoza Hector Andrés                  | 3.5  | 5.2  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 11
+
+
+
+__________________________________		_________________________		_________________________
+Diana Marcela Palacios Aristizabal		Guido Sepúlveda Yévenes		          C.S.E.         
+Dirección de Escuela              		Profesor(a) del Curso     
+Periodismo
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2382
+Acta de Curso
+
+	Asignatura: PE-103-1 Expresión Escrita I			Periodo: 1-2007
+	  Profesor: José Petermann Oliva			Horario: [Dom B {406}]  
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 10404 16378119-0   Domínguez Donaire Katherine Elizabeth              | 4.3  | 4.5  |______|______|______|___________
+ 10423 15782112-1   Hinojosa Valdés  María Constanza                   | 2.3  | 3.9  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 2
+
+
+
+_____________________		_____________________		_________________________
+Alejandra Ozimisa     		José Petermann Oliva 		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2391
+Acta de Curso
+
+	Asignatura: PE-305-1 Ética y Legislación Periodística I			Periodo: 1-2007
+	  Profesor: Claudio Patricio Sebastian Lavados Montes			Horario: [Mie D {306}] [Jue D {306}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 10404 16378119-0   Domínguez Donaire Katherine Elizabeth              | 4.2  | 6.6  |______|______|______|___________
+ 10428 15717673-0   Leiva Figueroa Dania Nicole                        | 4.2  | 6.8  |______|______|______|___________
+ 10457 14164771-7   Seguel Castro María Trinidad                       | 2.9  | 6.8  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 3
+
+
+
+_____________________		_________________________________________		_________________________
+Alejandra Ozimisa     		Claudio Patricio Sebastian Lavados Montes		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso                     
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2393
+Acta de Curso
+
+	Asignatura: PE-501-1 Opinión Pública			Periodo: 1-2007
+	  Profesor: Samuel Eugenio Montecinos Jara			Horario: [Lun C {LAB-AT1}] [Mie B {LAB-AT1}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 10399 15150161-3   Constanzo Miranda Lorena Alejandra                 | 5.5  | 5.1  |______|______|______|___________
+ 10404 16378119-0   Domínguez Donaire Katherine Elizabeth              | 5.5  | 5.4  |______|______|______|___________
+ 10423 15782112-1   Hinojosa Valdés  María Constanza                   | 5.0  | 5.1  |______|______|______|___________
+ 10435 15754864-6   Moreno Pinto  Gabriela Masiel                      | 5.0  | 5.3  |______|______|______|___________
+ 10457 14164771-7   Seguel Castro María Trinidad                       | 6.0  | 6.1  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 5
+
+
+
+_____________________		______________________________		_________________________
+Alejandra Ozimisa     		Samuel Eugenio Montecinos Jara		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso          
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2397
+Acta de Curso
+
+	Asignatura: PER-704-1 Gestión de Medios I			Periodo: 1-2007
+	  Profesor: Carlos Vitali San Martín			Horario: [Mar B {307}]  
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 10399 15150161-3   Constanzo Miranda Lorena Alejandra                 | NSP  | 4.0  |______|______|______|___________
+ 10411 15430573-4   García Barros Muriel Cecilia                       | 4.0  | 4.0  |______|______|______|___________
+ 10455 15721984-7   Robledo Zuñiga Jorge Luis                          | NSP  | 4.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 3
+
+
+
+_____________________		_________________________		_________________________
+Alejandra Ozimisa     		Carlos Vitali San Martín		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso     
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2407
+Acta de Curso
+
+	Asignatura: PER-705-1 Ética y Legislación Periodística			Periodo: 1-2007
+	  Profesor: Claudio Patricio Sebastian Lavados Montes			Horario: [Mie D {306}] [Jue D {306}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 10399 15150161-3   Constanzo Miranda Lorena Alejandra                 | NSP  | 6.5  |______|______|______|___________
+ 10411 15430573-4   García Barros Muriel Cecilia                       | NSP  | 6.5  |______|______|______|___________
+ 10455 15721984-7   Robledo Zuñiga Jorge Luis                          | NSP  | 6.5  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 3
+
+
+
+_____________________		_________________________________________		_________________________
+Alejandra Ozimisa     		Claudio Patricio Sebastian Lavados Montes		          C.S.E.         
+Dirección de Escuela		Profesor(a) del Curso                     
+Psicología
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2223
+Acta de Curso
+
+	Asignatura: PS-101-1 Mundo Biológico			Periodo: 1-2007
+	  Profesor: Claudio Arturo Valenzuela Avilés			Horario: [Mar E {}] [Mar F {}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 12093 12440779-6   Aguilar Reyes Víctor David                         | 3.6  | 4.8  |______|______|______|___________
+ 12227 16474089-7   Bautista Ríos  Alvaro                              | 2.1  | NCR  |______|______|______|___________
+ 12229 15287940-7   Cardenas Ojeda  Danilo                             | NSP  | NCR  |______|______|______|___________
+ 12095 17082419-9   Carvallo Vergara Sergio Ignacio                    | 5.1  | 6.2  |______|______|______|___________
+ 12096 16832384-0   Chávez Escobar Monserrat Daniela                   | 4.3  | 5.9  |______|______|______|___________
+ 12244 13757729-1   Correa Carrasco Claudio                            | 4.3  | NCR  |______|______|______|___________
+ 12097 16876515-0   Gallardo Vásquez Natalia Alejandra                 | 4.2  | 4.4  |______|______|______|___________
+ 12098 16309320-0   González Cavieres Francisca Javiera                | 3.6  | 5.1  |______|______|______|___________
+ 12099 16952644-3   González López Yenifer Estefani                    | 4.0  | 4.2  |______|______|______|___________
+ 12100 16796919-4   Gutiérrez Díaz Damaris Elizabeth                   | 3.5  | 4.6  |______|______|______|___________
+ 12101 16478080-5   Hernández Córdova Natalia Alejandra                | NSP  | 5.7  |______|______|______|___________
+ 12102 16912078-1   Leiva Candia Verónica Alejandra                    | 2.5  | 3.6  |______|______|______|___________
+ 12161 16557909-7   Montoya Lemus Sebastián Patricio                   | NSP  | NCR  |______|______|______|___________
+ 11877 15720521-8   Muñoz Sierra Miguel Andrés                         | 2.8  | 4.4  |______|______|______|___________
+ 12145 17006290-6   Neira Ruiz Jeniffer Valesca                        | 3.1  | 4.3  |______|______|______|___________
+ 12271 6598391-5    Ortíz Rojas Ana María                              | 3.5  | 4.2  |______|______|______|___________
+ 12103 16477940-8   Poblete Mühlenbrock Francisca Alejandra            | 3.4  | 4.6  |______|______|______|___________
+ 12232 17027553-5   Roa Santelices Nicole                              | 2.8  | 4.5  |______|______|______|___________
+ 12233 16667036-5   Santander  Rodrigo                                 | 2.6  | NCR  |______|______|______|___________
+ 12104 19039774-2   Valderas Cortés Sebastián Andrés                   | 2.7  | 4.8  |______|______|______|___________
+ 12105 16742167-9   Valenzuela Cerda Constanza Patricia                | NSP  | 4.6  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 21
+
+
+
+________________________________		_________________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Claudio Arturo Valenzuela Avilés		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso             
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2224
+Acta de Curso
+
+	Asignatura: PS-102-1 Panorama General de la Psicología Contemporánea			Periodo: 1-2007
+	  Profesor: Pablo Enrique Vera Villarroel			Horario: [Lun E {}] [Lun F {}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 12093 12440779-6   Aguilar Reyes Víctor David                         | 4.8  | 5.2  |______|______|______|___________
+ 12227 16474089-7   Bautista Ríos  Alvaro                              | NSP  | 1.6  |______|______|______|___________
+ 12229 15287940-7   Cardenas Ojeda  Danilo                             | NSP  | NCR  |______|______|______|___________
+ 12095 17082419-9   Carvallo Vergara Sergio Ignacio                    | 4.6  | 5.5  |______|______|______|___________
+ 12096 16832384-0   Chávez Escobar Monserrat Daniela                   | 2.9  | 5.9  |______|______|______|___________
+ 12244 13757729-1   Correa Carrasco Claudio                            | 2.7  | 4.6  |______|______|______|___________
+ 12097 16876515-0   Gallardo Vásquez Natalia Alejandra                 | 2.9  | 5.2  |______|______|______|___________
+ 12098 16309320-0   González Cavieres Francisca Javiera                | 4.1  | 5.9  |______|______|______|___________
+ 12099 16952644-3   González López Yenifer Estefani                    | 5.3  | 5.9  |______|______|______|___________
+ 12100 16796919-4   Gutiérrez Díaz Damaris Elizabeth                   | 5.4  | 4.8  |______|______|______|___________
+ 12101 16478080-5   Hernández Córdova Natalia Alejandra                | NSP  | 5.5  |______|______|______|___________
+ 12102 16912078-1   Leiva Candia Verónica Alejandra                    | 2.9  | 4.6  |______|______|______|___________
+ 12161 16557909-7   Montoya Lemus Sebastián Patricio                   | 2.9  | 1.0  |______|______|______|___________
+ 12145 17006290-6   Neira Ruiz Jeniffer Valesca                        | 3.7  | 4.2  |______|______|______|___________
+ 12271 6598391-5    Ortíz Rojas Ana María                              | 4.1  | 5.1  |______|______|______|___________
+ 12103 16477940-8   Poblete Mühlenbrock Francisca Alejandra            | 2.8  | 3.2  |______|______|______|___________
+ 11895 16367448-3   Ríos Belmar  David Sebastian                       | 4.0  | 4.0  |______|______|______|___________
+ 12232 17027553-5   Roa Santelices Nicole                              | 3.2  | 4.2  |______|______|______|___________
+ 11896 16435932-8   San Cristóbal San Cristóbal Marco Antonio          | 4.1  | 5.3  |______|______|______|___________
+ 12233 16667036-5   Santander  Rodrigo                                 | 3.4  | NCR  |______|______|______|___________
+ 12104 19039774-2   Valderas Cortés Sebastián Andrés                   | 4.8  | 2.2  |______|______|______|___________
+ 12105 16742167-9   Valenzuela Cerda Constanza Patricia                | 3.7  | 4.8  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 22
+
+
+
+________________________________		_____________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Pablo Enrique Vera Villarroel		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso         
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2227
+Acta de Curso
+
+	Asignatura: PS-104-1 Int a la Inv. y al Análisis de Datos en Psicología			Periodo: 1-2007
+	  Profesor: Victor Landa Silva			Horario: [Vie B {}] [Vie C {}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 12227 16474089-7   Bautista Ríos  Alvaro                              | NSP  | 1.0  |______|______|______|___________
+ 12229 15287940-7   Cardenas Ojeda  Danilo                             | NSP  | 1.0  |______|______|______|___________
+ 12095 17082419-9   Carvallo Vergara Sergio Ignacio                    | 6.0  | 5.3  |______|______|______|___________
+ 12096 16832384-0   Chávez Escobar Monserrat Daniela                   | 3.7  | 2.4  |______|______|______|___________
+ 12244 13757729-1   Correa Carrasco Claudio                            | NSP  | 2.5  |______|______|______|___________
+ 12097 16876515-0   Gallardo Vásquez Natalia Alejandra                 | 5.8  | 6.3  |______|______|______|___________
+ 12098 16309320-0   González Cavieres Francisca Javiera                | 4.6  | 4.7  |______|______|______|___________
+ 12099 16952644-3   González López Yenifer Estefani                    | 5.7  | 6.3  |______|______|______|___________
+ 12100 16796919-4   Gutiérrez Díaz Damaris Elizabeth                   | NSP  | 5.7  |______|______|______|___________
+ 12101 16478080-5   Hernández Córdova Natalia Alejandra                | NSP  | 2.8  |______|______|______|___________
+ 12102 16912078-1   Leiva Candia Verónica Alejandra                    | 4.3  | 4.3  |______|______|______|___________
+ 12161 16557909-7   Montoya Lemus Sebastián Patricio                   | NSP  | 1.0  |______|______|______|___________
+ 11877 15720521-8   Muñoz Sierra Miguel Andrés                         | 4.6  | 5.7  |______|______|______|___________
+ 12145 17006290-6   Neira Ruiz Jeniffer Valesca                        | 5.2  | 6.5  |______|______|______|___________
+ 12271 6598391-5    Ortíz Rojas Ana María                              | 4.2  | 6.1  |______|______|______|___________
+ 12103 16477940-8   Poblete Mühlenbrock Francisca Alejandra            | 4.4  | 3.7  |______|______|______|___________
+ 12232 17027553-5   Roa Santelices Nicole                              | 2.9  | 5.9  |______|______|______|___________
+ 12233 16667036-5   Santander  Rodrigo                                 | 3.1  | 1.0  |______|______|______|___________
+ 12104 19039774-2   Valderas Cortés Sebastián Andrés                   | 3.5  | 2.3  |______|______|______|___________
+ 12105 16742167-9   Valenzuela Cerda Constanza Patricia                | 4.5  | 4.9  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 20
+
+
+
+________________________________		_____________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Victor Landa Silva    		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2231
+Acta de Curso
+
+	Asignatura: PS-301-1 Neuroanatomofisiología			Periodo: 1-2007
+	  Profesor: Alejandro Pedro Ostoic Rozzi			Horario:   
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11869 16380357-7   Antilén Martínez Daniel Antonio                    | NSP  | 6.5  |______|______|______|___________
+ 11850 13915304-9   Araya Bravo Daniel Alfredo                         | NSP  | 5.9  |______|______|______|___________
+ 11887 16359420-K   Corradi Quintana Luis Fernando                     | 4.2  | 5.8  |______|______|______|___________
+ 11888 16626143-0   Guzmán Palma Daniela Katherina Paz                 | NSP  | 6.5  |______|______|______|___________
+ 11891 16786549-6   Ortega Berríos Alan Esteban                        | 7.0  | 6.0  |______|______|______|___________
+ 11893 15844321-K   Pérez Yaitul Pamela Alejandra                      | NSP  | 5.8  |______|______|______|___________
+ 11895 16367448-3   Ríos Belmar  David Sebastian                       | 4.7  | 6.0  |______|______|______|___________
+ 11896 16435932-8   San Cristóbal San Cristóbal Marco Antonio          | 3.4  | 5.8  |______|______|______|___________
+ 11897 16875576-7   Soto Keller Missy Inga                             | NSP  | 5.8  |______|______|______|___________
+ 11865 16149992-7   Tapia Mossei Mose Tiberio Hugo                     | 5.3  | 6.1  |______|______|______|___________
+ 11899 15843257-9   Zúñiga Vidal Alejandro José                        | 4.9  | 6.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 11
+
+
+
+________________________________		____________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Alejandro Pedro Ostoic Rozzi		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso        
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2230
+Acta de Curso
+
+	Asignatura: PS-304-1 Procesos Psicológicos II			Periodo: 1-2007
+	  Profesor: Pilar Antonieta Valenzuela Ramírez			Horario: [Mar E {}] [Mar F {}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11869 16380357-7   Antilén Martínez Daniel Antonio                    | 2.8  | 5.3  |______|______|______|___________
+ 11887 16359420-K   Corradi Quintana Luis Fernando                     | 2.0  | 2.4  |______|______|______|___________
+ 11888 16626143-0   Guzmán Palma Daniela Katherina Paz                 | 2.8  | 5.5  |______|______|______|___________
+ 11891 16786549-6   Ortega Berríos Alan Esteban                        | 6.5  | 6.3  |______|______|______|___________
+ 11893 15844321-K   Pérez Yaitul Pamela Alejandra                      | 4.5  | 6.1  |______|______|______|___________
+ 11895 16367448-3   Ríos Belmar  David Sebastian                       | 4.3  | 3.1  |______|______|______|___________
+ 11896 16435932-8   San Cristóbal San Cristóbal Marco Antonio          | 3.8  | 2.5  |______|______|______|___________
+ 11844 15606642-7   Solorza Velasquez Jenny Gloria                     | NSP  | NCR  |______|______|______|___________
+ 11845 12250638-K   Soto Donoso Paulina Andrea                         | NSP  | 4.2  |______|______|______|___________
+ 11897 16875576-7   Soto Keller Missy Inga                             | NSP  | 5.2  |______|______|______|___________
+ 11865 16149992-7   Tapia Mossei Mose Tiberio Hugo                     | 3.8  | 3.7  |______|______|______|___________
+ 11886 16426514-5   Zúñiga Calderón Alejandra Paola                    | 4.0  | 5.4  |______|______|______|___________
+ 11899 15843257-9   Zúñiga Vidal Alejandro José                        | 2.5  | 2.9  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 13
+
+
+
+________________________________		___________________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Pilar Antonieta Valenzuela Ramírez		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso               
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2232
+Acta de Curso
+
+	Asignatura: PS-305-1 Psicoestadística Inferencial			Periodo: 1-2007
+	  Profesor: Rodolfo Barria Ramírez			Horario: [Lun D {LAB-AR1}] [Lun E {LAB-AR1}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11887 16359420-K   Corradi Quintana Luis Fernando                     | 3.3  | 4.0  |______|______|______|___________
+ 11888 16626143-0   Guzmán Palma Daniela Katherina Paz                 | NSP  | NCR  |______|______|______|___________
+ 11877 15720521-8   Muñoz Sierra Miguel Andrés                         | NSP  | NCR  |______|______|______|___________
+ 11891 16786549-6   Ortega Berríos Alan Esteban                        | 3.3  | 4.0  |______|______|______|___________
+ 11893 15844321-K   Pérez Yaitul Pamela Alejandra                      | 3.3  | 4.5  |______|______|______|___________
+ 11895 16367448-3   Ríos Belmar  David Sebastian                       | 2.9  | 7.0  |______|______|______|___________
+ 11863 15331302-4   Rojas Subirá Karina Yessenia                       | NSP  | NCR  |______|______|______|___________
+ 11896 16435932-8   San Cristóbal San Cristóbal Marco Antonio          | 4.0  | 4.5  |______|______|______|___________
+ 11844 15606642-7   Solorza Velasquez Jenny Gloria                     | NSP  | NCR  |______|______|______|___________
+ 11845 12250638-K   Soto Donoso Paulina Andrea                         | NSP  | 5.5  |______|______|______|___________
+ 11897 16875576-7   Soto Keller Missy Inga                             | 5.5  | 5.5  |______|______|______|___________
+ 11865 16149992-7   Tapia Mossei Mose Tiberio Hugo                     | NSP  | 7.0  |______|______|______|___________
+ 11886 16426514-5   Zúñiga Calderón Alejandra Paola                    | 4.8  | 5.0  |______|______|______|___________
+ 11899 15843257-9   Zúñiga Vidal Alejandro José                        | 6.3  | 7.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 14
+
+
+
+________________________________		_______________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Rodolfo Barria Ramírez		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso   
+UNIVERSIDAD MIGUEL DE CERVANTES - Sistema de Gestión Universitaria (SGU)			Número de acta: 2235
+Acta de Curso
+
+	Asignatura: PS-502-1 Psicología de la Personalidad			Periodo: 1-2007
+	  Profesor: Carolina Trinidad Hernández Villar			Horario: [Mie E {}] [Jue C {}] 
+======================================================================================================================
+ Alumnos                                                               | Calificaciones
+----------------------------------------------------------------------------------------------------------------------
+ ID    RUT          Nombre                                             |  S1  |  NC  |  S2  | Rec. |  NF  | Situación
+======================================================================================================================
+ 11850 13915304-9   Araya Bravo Daniel Alfredo                         | NSP  | 5.0  |______|______|______|___________
+ 11871 16451797-7   Calquín García  Rommy María Salomé                 | 4.8  | 5.0  |______|______|______|___________
+ 11856 16093750-5   Garrido Cabezas Katherine Elizabeth                | 5.0  | 5.8  |______|______|______|___________
+ 11878 16126017-7   Navarrete Puga María Teresa                        | 6.3  | 5.5  |______|______|______|___________
+ 11861 15642905-8   Pereira Zamora Debora Stephanie                    | 4.8  | 5.8  |______|______|______|___________
+ 11881 15727491-0   Rojas Cruzat María Francisca                       | 4.0  | 5.5  |______|______|______|___________
+ 11883 32374423-0   Sousa De Lima Luana                                | 4.0  | 5.0  |______|______|______|___________
+======================================================================================================================
+	Total Alumno(a)s inscrito(a)s: 7
+
+
+
+________________________________		___________________________________		_________________________
+Leonardo Rodrigo Villarroel Ilic		Carolina Trinidad Hernández Villar		          C.S.E.         
+Dirección de Escuela            		Profesor(a) del Curso               
+

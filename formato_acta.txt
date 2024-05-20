@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>UMC - SGU - Acta de curso</title>
+  </head>
+  <body>
+    <table width='100%'>
+      <tr>
+        <td>$IDENTIFICACION_CURSO</td>
+      </tr>
+      <tr>
+        <td>$LISTA_DE_CURSO</td>
+      </tr>
+      <tr>
+        <td>$FIRMAS</td>
+      </tr>
+    </table>
+  </body>
+</html>

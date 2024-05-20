@@ -1,0 +1,1183 @@
+<?php
+
+setlocale(LC_ALL,"es_ES");
+setlocale(LC_ALL,"es_ES.UTF8");
+setlocale(LC_ALL,"es_ES@euro");
+
+$authbd = " user=sgu password=blanco";
+$bdcon = pg_connect("dbname=regacad" . $authbd);
+$enlbase = "principal.php?modulo";
+
+$ANO = 2013;
+$SEMESTRE = 0;
+
+$Fec_Ini_Sem1 = strtotime("2012-04-02");
+$Fec_Ini_Sem2 = strtotime("2012-08-20");
+
+$ANO_MATRICULA = 2013;
+$SEMESTRE_MATRICULA = 1;
+
+$REPRESENTANTE_LEGAL = "Vicerrector de Administración y Finanzas don Mauricio Antonio Espinosa Sanhueza";
+
+$sino = array(array('id'=>"t",'nombre'=>"Si"),
+              array('id'=>'f','nombre'=>"No")
+             );
+
+
+
+$JORNADAS = array(array('id'=>'D','nombre'=>"Diurna"),
+                  array('id'=>'V','nombre'=>"Vespertina")
+                 );
+
+
+$generos = array(array('id'=>"f",'nombre'=>"Femenino"),
+                 array('id'=>'m','nombre'=>"Masculino")
+                );
+
+$ADMISION = array(array('id'=>"1", 'nombre'=>"Regular"),
+                  array('id'=>"2", 'nombre'=>"Extraordinaria"),
+                  array('id'=>"10",'nombre'=>"Modular"),
+                  array('id'=>"20",'nombre'=>"Modular (Extr.)")
+                 );
+
+$parentezcos = array(array('id' => "Ninguno"   , 'nombre' => "Ninguno (mismo postulante)"),
+                     array('id' => "Madre"     , 'nombre' => "Madre"),
+                     array('id' => "Padre"     , 'nombre' => "Padre"),
+                     array('id' => "Hermano(a)", 'nombre' => "Hermano(a)"),
+                     array('id' => "Esposo(a)" , 'nombre' => "Esposo(a)"),
+                     array('id' => "Tío(a)"    , 'nombre' => "Tío(a)"),
+                     array('id' => "Primo(a)"  , 'nombre' => "Primo(a)"),
+                     array('id' => "Otro"      , 'nombre' => "Otro")
+                    );
+
+$becas_mat = array(array("id" => "UMC","nombre" => "Promoción"),
+                   array("id" => "GMO","nombre" => "Presidencia")
+                  );
+
+$financiamientos = array(array("id" => "CREDITO","nombre" => "Crédito"),
+                         array("id" => "CONTADO","nombre" => "Contado")
+                        );
+
+$NIVELES = array(array('id'=>1 , 'nombre'=>"Primer"),
+                 array('id'=>2 , 'nombre'=>"Segundo"),
+                 array('id'=>3 , 'nombre'=>"Tercer"),
+                 array('id'=>4 , 'nombre'=>"Cuarto"),
+                 array('id'=>5 , 'nombre'=>"Quinto"),
+                 array('id'=>6 , 'nombre'=>"Sexto"),
+                 array('id'=>7 , 'nombre'=>"Séptimo"),
+                 array('id'=>8 , 'nombre'=>"Octavo"),
+                 array('id'=>9 , 'nombre'=>"Noveno"),
+                 array('id'=>10, 'nombre'=>"Décimo"),
+                 array('id'=>11, 'nombre'=>"Undécimo"),
+                 array('id'=>12, 'nombre'=>"Duodécimo"));
+
+$REGIMENES = array(array('id'=>"PRE", 'nombre'=>"Pregrado"),
+                   array('id'=>"POST",'nombre'=>"Postgrado"));
+
+$CANT_REGS = array(array('id'=>30 , 'nombre'=>"30"),
+                   array('id'=>60 , 'nombre'=>"60"),
+                   array('id'=>90 , 'nombre'=>"90"));                   
+
+$vocales = array("á","é","í","ó","ú","a","e","i","o","u");
+$voc_regexp = array('a'=>"[aá]",'e'=>"[eé]",'i'=>"[ií]",'o'=>"[oó]",'u'=>"[uú]",
+                    'á'=>"[aá]",'é'=>"[eé]",'í'=>"[ií]",'ó'=>"[oó]",'ú'=>"[uú]");
+$vocales_regexp = array("[aá]","[eé]","[ií]","[oó]","[uú]","[aá]","[eé]","[ií]","[oó]","[uú]");
+
+$LF="\n";
+
+$anos = array();
+for($ano_x=date("Y");$ano_x>=1998;$ano_x--) {
+	$anos = array_merge($anos,array($ano_x => array("id" => $ano_x,"nombre" => $ano_x)));
+};
+
+$semestres = array(array("id" => 0,"nombre" => "Verano"),
+                   array("id" => 1,"nombre" => "Primero"),
+                   array("id" => 2,"nombre" => "Segundo"));
+
+$dias_fn = array();
+for($x=1;$x<=31;$x++) { $dias_fn = array_merge( $dias_fn , array(array('id' => "$x", 'nombre' => "$x")) ); }
+
+$meses_fn = array();
+for($x=1;$x<=12;$x++) { $meses_fn = array_merge( $meses_fn , array(array('id'=>"$x",'nombre'=>meses($x) )) ); }
+
+$anos_fn = array();
+$ano_actual = intval(strftime("%Y"));
+for($x=($ano_actual-17);$x>=($ano_actual-90);$x--) { $anos_fn = array_merge( $anos_fn , array(array('id'=>"$x",'nombre'=>"$x")) ); }
+
+$anos_contratos = array();
+for($ano_x=date("Y")+1;$ano_x>=2010;$ano_x--) {
+	$anos_contratos = array_merge($anos_contratos,array($ano_x => array("id" => $ano_x,"nombre" => $ano_x)));
+}
+
+$estados_contratos = array(array("id"=>'E', "nombre"=>'Emitido'),
+                           array("id"=>'N', "nombre"=>'Nulo'),
+                           array("id"=>'F', "nombre"=>'Firmado'));
+
+$tipos_contratos = array(array("id"=>'Anual',     "nombre"=>'Anual'),
+                         array("id"=>'Semestral', "nombre"=>'Semestral'),
+                         array("id"=>'Estival',   "nombre"=>'Estival'),
+                         array("id"=>'Modular',   "nombre"=>'Modular')); 
+
+$tipos_alumnos = array(array("id"=>'N', "nombre"=>'Nuevos'),
+                       array("id"=>'A', "nombre"=>'Antiguos'));
+
+#$ANO = date("Y");
+#if (date("n") < 9) { $SEMESTRE = 1; } else { $SEMESTRE = 2; }
+
+$dias_palabra = array(array('id'=>1,'nombre'=>"Lunes"),
+                      array('id'=>2,'nombre'=>"Martes"),
+                      array('id'=>3,'nombre'=>"Miércoles"),
+                      array('id'=>4,'nombre'=>"Jueves"),
+                      array('id'=>5,'nombre'=>"Viernes"),
+                      array('id'=>6,'nombre'=>"Sábado"));
+
+$meses_palabra = array(array('id'=>1, 'nombre'=>"Enero"),
+                       array('id'=>2, 'nombre'=>"Febrero"),
+                       array('id'=>3, 'nombre'=>"Marzo"),
+                       array('id'=>4, 'nombre'=>"Abril"),
+                       array('id'=>5, 'nombre'=>"Mayo"),
+                       array('id'=>6, 'nombre'=>"Junio"),
+                       array('id'=>7, 'nombre'=>"Julio"),
+                       array('id'=>8, 'nombre'=>"Agosto"),
+                       array('id'=>9, 'nombre'=>"Septiembre"),
+                       array('id'=>10,'nombre'=>"Octubre"),
+                       array('id'=>11,'nombre'=>"Noviembre"),
+                       array('id'=>12,'nombre'=>"Diciembre"));
+ 
+$estados = array(array("id"=>1,'nombre'=>"Vigentes"),
+                 array("id"=>5,"nombre"=>"Titulados"),
+                 array("id"=>7,"nombre"=>"Suspendidos"));
+                 
+$estados_civiles = array(array("id"=>"S","nombre"=>"Soltero(a)"),
+                         array("id"=>"C","nombre"=>"Casado(a)"),
+                         array("id"=>"D","nombre"=>"Divorciado(a)"),
+                         array("id"=>"V","nombre"=>"Viudo(a)"));
+
+$CATEG_DOCENTE = array(array("id"=>"Adjunto", "nombre"=>"Profesor(a) Adjunto(a)"),
+                       array("id"=>"Asociado","nombre"=>"Profesor(a) Asociado(a)"),
+                       array("id"=>"Titular", "nombre"=>"Profesor(a) Titular"));
+ 
+function auth_imap($usuario,$clave,$servidor) {
+	$auth = imap_open("{" . $servidor . ":143}Maildir",$usuario,$clave);
+	if (!$auth) {
+		$auth = imap_open("{" . $servidor . ":993/novalidate-cert/ssl}INBOX",$usuario,$clave);
+	}
+	$foo = imap_errors();
+	return $auth;
+};
+
+function auth_bd($usuario,$tipo) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);	
+	$SQLtxt = "SELECT * FROM usuarios WHERE nombre_usuario='$usuario' AND tipo=$tipo AND activo;";
+	$resultado = pg_query($bdcon, $SQLtxt);
+	if (pg_numrows($resultado) == 1) {
+		return true;
+	} else {
+		return false;
+	};	
+};
+
+function tipos_usuario($tipo) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);	
+	if (isset($tipo)) {
+		$SQLtxt = "SELECT nombre,servidor FROM usuarios_tipo WHERE id=$tipo;";
+		$resultado = pg_query($bdcon, $SQLtxt);
+		$tipo_usuario = utf2html(pg_fetch_all($resultado));
+		return $tipo_usuario[0];
+	} else {
+		$SQLtxt = "SELECT id,nombre FROM usuarios_tipo ORDER BY id;";
+		$resultado = pg_query($bdcon, $SQLtxt);
+		$tipo_usuario = utf2html(pg_fetch_all($resultado));
+		return $tipo_usuario;
+	};	
+};
+
+function grados_academicos($id) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);	
+	if (isset($id)) {
+		$SQLtxt = "SELECT nombre FROM grado_acad WHERE id=$id;";
+		$resultado = pg_query($bdcon, $SQLtxt);
+		$grados_academicos = pg_fetch_all($resultado);
+		return $grados_academicos[0]['nombre'];
+	} else {
+		$SQLtxt = "SELECT * FROM grado_acad ORDER BY id;";
+		$resultado = pg_query($bdcon, $SQLtxt);
+		$grados_academicos = pg_fetch_all($resultado);
+		return $grados_academicos;
+	};	
+};
+
+function nombre_real_usuario($usuario,$tipo) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);
+	$SQLtxt = "SELECT nombre FROM vista_usuarios WHERE nombre_usuario='$usuario' AND id_tipo=$tipo;";
+	$resultado = pg_query($bdcon, $SQLtxt);
+	$fila = utf2html(pg_fetch_all($resultado));
+	$nombre = $fila[0]['nombre'];
+	if (pg_numrows($resultado) == 1) {
+		return utf8_decode($nombre);
+	} else {
+		return "";
+	};	
+};
+
+function utf2html($matriz) {
+	$filas = count($matriz);
+	for ($x=0;$x < $filas; $x++) {
+		foreach ($matriz[$x] as $clave => $valor) {
+			$matriz[$x][$clave] = nl2br(htmlentities(utf8_decode($valor)));
+		};
+	};
+	return $matriz;
+};
+
+function select($aOpciones,$seleccionado) {
+	$select = "";
+	for ($y=0;$y<count($aOpciones);$y++) {
+		$id = $aOpciones[$y]['id'];
+		$nombre = $aOpciones[$y]['nombre'];
+		if ($id == $seleccionado && !is_null($seleccionado)) {
+			$select .= "  <option value='$id' selected>$nombre</option>\n";
+		} else {
+			$select .= "  <option value='$id'>$nombre</option>\n";
+		};
+	};
+	return $select;
+};
+
+function arr2sqlupdate($aDatos,$aCampos) {
+	$arr2sqlupdate = "";
+	for($x=0;$x<count($aCampos);$x++) {
+		$campo = $aCampos[$x];
+		$tupla = "$campo=";		
+		$valor = $aDatos[$aCampos[$x]];
+		if ($valor <> "") {
+			$tupla .= "'$valor'";
+		} else {
+			$tupla .= "null";
+		}
+		$arr2sqlupdate .= "$tupla,";
+	}
+	
+//	foreach ($aDatos as $campo => $valor) {
+//		$indice = array_search($campo,$aCampos);
+//		if (is_numeric($indice)) {
+//			if ($valor <> "") {
+//				$arr2sqlupdate .= "$campo='$valor',";
+//			} else {
+//				$arr2sqlupdate .= "$campo=null,";
+//			};
+//		};
+//	};
+
+	return substr($arr2sqlupdate,0,strlen($arr2sqlupdate) - 1);
+};
+				
+function arr2sqlinsert($aDatos,$aCampos) {
+	$arr2sqlinsert = "(" . implode(",", $aCampos) . ") VALUES (";
+	for($x=0;$x<count($aCampos);$x++) {
+		$valor_campo = $aDatos[$aCampos[$x]];
+		if ($valor_campo <> "") {
+			$valor_campo = "'$valor_campo'";
+		} else {
+			$valor_campo = "null";
+		}
+		$arr2sqlinsert .= "$valor_campo,";
+	}
+	
+//	foreach ($aDatos as $campo => $valor) {
+//		$indice = array_search($campo,$aCampos);
+//		if (is_numeric($indice)) {
+//			if ($valor <> "") {
+//				$arr2sqlinsert .= "'$valor',";
+//			} else {
+//				$arr2sqlinsert .= "null,";
+//			}
+//		}
+//	}
+
+	return substr($arr2sqlinsert,0,strlen($arr2sqlinsert) - 1) . ");";
+};
+
+function msje($mensaje) {
+	$msje = "<table cellpadding='0' cellspacing='1' bgcolor='#4c6082' width='100%'>
+	           <tr bgcolor='#D6EEFF' align='center'>
+	             <td class='texto'><br>$mensaje<br><br></td>
+	           </tr>
+	         </table><br>";
+	return $msje;
+};
+
+function msje_js($mensaje) {
+	$msje = "<script language='Javascript1.2'>
+	           alert('$mensaje');
+	         </script>";
+	return $msje;
+};
+
+function js($ejec) {
+	$js = "<script language='Javascript1.2'>
+	           $ejec;
+	         </script>";
+	return $js;
+};
+
+
+function confirma_js($mensaje,$url_si,$url_no) {
+	$msje = "<script language='Javascript1.2'>
+					if (confirm('$mensaje')) {
+						location.href='$url_si';
+					} else {
+						location.href='$url_no';
+					}
+	         </script>";
+	return $msje;
+};
+
+
+function log_sgu($accion,$usuario,$mensaje,$sesion) {
+	$man_arch = fopen("/var/log/sgu/acceso.log","a");
+	$linea_log = strftime("%b %d %X") . " $sesion: $accion: $usuario: $mensaje\n";
+	fwrite($man_arch,$linea_log);
+	fclose($man_arch);
+};
+
+function id_usuario($usuario,$tipo) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);
+	$SQLtxt = "SELECT id FROM usuarios WHERE nombre_usuario='$usuario' AND tipo=$tipo;";
+	$resultado = pg_query($bdcon, $SQLtxt);
+	$fila = pg_fetch_all($resultado);
+	$id_usuario = $fila[0]['id'];
+	if (pg_numrows($resultado) == 1) {
+		return $id_usuario;
+	} else {
+		return "";
+	};	
+};
+
+function escuela_usuario($id_usuario) {
+	global $authbd;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);
+	$SQLtxt = "SELECT id_escuela FROM usuarios WHERE id=$id_usuario;";
+	$resultado = pg_query($bdcon, $SQLtxt);
+	$id_escuela = pg_fetch_result($resultado,0,0);
+	if (pg_numrows($resultado) == 1) {
+		return $id_escuela;
+	} else {
+		return "";
+	};	
+};
+
+function ids_carreras_escuela($id_escuela) {
+	global $authbd;
+	$filas = 0;
+	$bdcon = pg_connect("dbname=regacad" . $authbd);
+	$SQLtxt = "SELECT id FROM carreras WHERE id_escuela=$id_escuela;";
+	$resultado = pg_query($bdcon, $SQLtxt);
+	$filas = pg_numrows($resultado);
+	if ($filas > 0) {
+		$carreras = pg_fetch_all($resultado);
+		$ids_carreras = array();
+		for ($x=0;$x<$filas;$x++) {
+			$ids_carreras = array_merge($ids_carreras, array($carreras[$x]['id']));
+		};
+		return implode(",",$ids_carreras);
+	} else {
+		return "";
+	};	
+};
+
+
+function permiso_ejecutar($id_usuario,$modulo) {
+	$SQL_permisos = "SELECT * FROM permisos_apps AS pa 
+	                 LEFT JOIN aplicaciones AS a ON pa.id_aplicacion=a.id
+	                 WHERE a.activa AND pa.id_usuario=$id_usuario AND a.ejecutable='$modulo'";
+	$permisos = consulta_sql($SQL_permisos);                 
+
+	if (count($permisos) > 0) {
+		return true;
+	} else {
+		echo(msje_js("Usted NO tiene permiso para ejecutar este módulo o bien no está activo"));
+		echo(js("history.back();"));
+		exit;
+	};
+};
+
+function modulos($modulo) {
+	if (isset($modulo)) {
+		$SQL_modulo = "SELECT nombre,descripcion,ejecutable FROM aplicaciones WHERE ejecutable='$modulo'";
+		$modulo = consulta_sql($SQL_modulo);
+		return $modulo[0];
+	} else {
+		$SQL_modulos = "SELECT nombre,descripcion,ejecutable FROM aplicaciones";
+		$modulos = consulta_sql($SQL_modulos);		
+		return $modulos;
+	};
+};
+
+function enlace_volver() {
+	$enlace_volver = strstr($_SERVER['HTTP_REFERER'],"=");
+	$enlace_volver = substr($enlace_volver,1,strlen($enlace_volver));
+	return $enlace_volver;
+};
+
+function sql_regexp($cadena) {
+	global $voc_regexp;
+	$cadena = mb_strtolower($cadena,"UTF-8");
+	$sql_regexp = "";
+	$largo = strlen($cadena);
+	for ($x=0;$x<$largo;$x++) {
+		$caracter = mb_substr($cadena,$x,1,"UTF-8");
+		if (array_key_exists($caracter,$voc_regexp)) {
+			$caracter = $voc_regexp[$caracter];
+		};
+		$sql_regexp .= $caracter;
+	};
+	return $sql_regexp;
+};
+
+function consulta_sql($SQLtxt) {
+	global $bdcon;
+	$resultado = array();
+	$res = pg_query($bdcon, $SQLtxt);
+	if (pg_numrows($res) > 0) {
+		return pg_fetch_all($res);
+	} else {
+		return $resultado;
+	}
+}
+
+function consulta_dml($SQLtxt) {
+	global $bdcon;
+	$res = pg_query($bdcon, $SQLtxt);
+	if (pg_affected_rows($res) > 0) {
+		return pg_affected_rows($res);
+	} else {
+		return 0;
+	}
+}
+
+function meses($numeromes) {
+	$mes = "";
+	if ($numeromes > 0 && $numeromes < 13) {
+		$mes = strftime("%B", mktime(0,0,0,$numeromes,1,2000));
+	}
+	return $mes;
+};
+
+function requeridos($aRequeridos,$aCampos) {
+	$requeridos = array();
+	for($x=0;$x<count($aRequeridos);$x++) {
+		$requeridos = array_merge($requeridos,array("'".$aCampos[$aRequeridos[$x]]."'"));
+	}
+	return implode("," , $requeridos);
+}
+
+function tabla_encabezado($aDatosValores) {
+	$HTML_tabla_encabezado = "";
+	foreach ($aDatosValores as $nombre_campo => $valor_campo) {
+		$HTML_tabla_encabezado .= "<tr>\n"
+		                        . "  <td class='celdaNombreAttr'>$nombre_campo:</td>\n"
+	                           . "  <td class='celdaValorAttr'>$valor_campo</td>\n"
+	                           . "</tr>\n";
+	}
+	
+	return $HTML_tabla_encabezado;
+}
+
+function html_paginador($tot_reg,$reg_inicio,$cant_reg,$enlace_nav) {
+	$reg_ini_sgte = $reg_inicio + $cant_reg;
+	$reg_ini_ante = $reg_inicio - $cant_reg;
+
+	if ($reg_ini_ante < 0) {
+		$reg_ini_ante = 0;
+	}
+
+	if ($reg_ini_sgte >= $tot_reg) {
+		$reg_ini_sgte = 0;
+	}
+	
+	$tot_pag = ceil($tot_reg/$cant_reg);
+	
+	$html_paginador = "<a class='enlaces' href='$enlace_nav=$reg_ini_ante'>Anterior</a> |";
+
+  	for($pag=1;$pag<=$tot_pag;$pag++) {
+  		if ($cant_reg*($pag-1) == $reg_inicio) {
+  				$html_paginador .= " <b>$pag</b> |";
+  		} else {
+  			$reg_ini_pag = ($pag - 1) * $cant_reg;
+  			$html_paginador .= "<a class='enlaces' href='$enlace_nav=$reg_ini_pag'> $pag</a> | ";
+  		};  			
+  	};
+  	$html_paginador .= "<a class='enlaces' href='$enlace_nav=$reg_ini_sgte'>Siguiente</a>";
+  	return $html_paginador;
+}
+
+function calc_recuperativa ($s1,$nc,$s2) {
+	$recuperativa = false;
+	if ($s1<>"" && $nc<>"" && $s2<>"") {
+
+		$promedio=calc_promedio($s1,$nc,$s2);
+
+		if ($s1<>-1 && $nc<>-1 && $s2<>-1 && $promedio>=3.7 && $promedio<=3.9) {
+			$recuperativa = true;
+		}
+
+		if ($s1<>-1 && $nc<>-1 && $s2<=2.9 && $promedio>=3.7) {
+			$recuperativa = true;
+		}
+		
+		if ($s1<>-1 && $nc==-1 && $s2<>-1) {
+			$recuperativa = true;
+		}
+
+		if ($s1<>-1 && $nc==-1 && $s2<>-1) {
+			$recuperativa = true;
+		}
+
+		if ($s1<>-1 && $nc<>-1 && $s2==-1) {
+			$recuperativa = true;
+		}
+			 
+	}
+	return $recuperativa;
+}
+
+function calc_promedio($s1,$nc,$s2) {
+	$promedio = null;
+	if ($s1<>"" && $nc<>"" && $s2<>"") {
+		$promedio = (abs($s1)*0.3) + (abs($nc)*0.3) + (abs($s2)*0.3);
+	}
+	return $promedio;
+}
+
+function datos_personales_alumno() {
+	global $alumno, $enlbase;
+	extract($alumno[0]);
+	$HTML = "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Código Interno:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$id</td>".$LF
+	      . "    <td class='celdaNombreAttr'>RUT:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$rut</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Nombre:</td>".$LF
+	      . "    <td class='celdaValorAttr' colspan='3'>$nombre</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Género:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$genero</td>".$LF
+	      . "    <td class='celdaNombreAttr' nowrap>Fecha de nacimiento:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$fec_nac</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Nacionalidad:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$nacionalidad</td>".$LF
+	      . "    <td class='celdaNombreAttr'>Pasaporte:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$pasaporte</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Dirección:</td>".$LF
+	      . "    <td class='celdaValorAttr' colspan='3'>$direccion</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Comuna:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$comuna</td>".$LF
+	      . "    <td class='celdaNombreAttr'>Región:</td>".$LF
+	      . "    <td class='celdaValorAttr' nowrap>$region</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Telefóno fijo:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$telefono</td>".$LF
+	      . "    <td class='celdaNombreAttr'>Telefóno móvil:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$tel_movil</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>e-mail UMC:</td>".$LF
+	      . "    <td class='celdaValorAttr' colspan='3'>$email</td>".$LF
+	      . "  </tr>".$LF
+	      . "<!-- <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>e-mail externo:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$email_externo</td>".$LF
+	      . "  </tr> -->".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Admisión:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$admision</td>".$LF
+	      . "    <td class='celdaNombreAttr'>Cohorte:</td>".$LF
+	      . "    <td class='celdaValorAttr'>$cohorte-$semestre_cohorte</td>".$LF
+  	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Carrera Actual:</td>".$LF
+	      . "    <td class='celdaValorAttr' colspan='3'>$carrera</td>".$LF
+	      . "  </tr>".$LF
+	      . "  <tr>".$LF
+	      . "    <td class='celdaNombreAttr'>Año Malla Actual:</td>".$LF
+	      . "    <td class='celdaValorAttr'><a class='enlaces' href='$enlbase=ver_malla&id_malla=$id_malla_actual'>$malla_actual</a></td>".$LF
+	      . "    <td class='celdaNombreAttr'>Estado Académico:<br>Estado_financiero</td>".$LF
+	      . "    <td class='celdaValorAttr' style='$estilo_estado'>$estado</td>".$LF
+	      . "  </tr>";
+	return $HTML;
+}
+
+
+function avance_cronologico() {
+	global $id_alumno,$enlbase,$cohorte,$semestre_cohorte,$ANO,$SEMESTRE;
+	$SQL_alumno_ca = "SELECT vac.id_curso, vac.id_pa, vac.id_pa_homo, vac.id_estado, 
+	        CASE WHEN vac.id_curso IS NOT NULL THEN coalesce(vac.ano,'0')||'-'||coalesce(vac.semestre,'0')
+	             WHEN vac.id_pa IS NOT NULL AND vac.convalidado THEN '$cohorte-0'
+	             WHEN vac.id_pa_homo IS NOT NULL AND vac.homologada THEN extract(YEAR FROM vac.fec_mod)||'-'||CASE WHEN extract(MONTH from vac.fec_mod) <= 7 THEN 1 ELSE 2 END
+	             WHEN vac.id_pa IS NOT NULL AND vac.examen_con_rel THEN extract(YEAR FROM vac.fec_mod)||'-'||CASE WHEN extract(MONTH from vac.fec_mod) <= 7 THEN 1 ELSE 2 END
+	        END AS periodo, vac.asignatura, vac.s1, vac.nc, vac.s2, vac.recuperativa AS rec,vac.nf,vac.situacion,
+	        vac.fecha_mod,a.estado
+	 FROM vista_alumnos_cursos AS vac
+	 JOIN alumnos AS a ON a.id=vac.id_alumno
+	 WHERE vac.id_alumno=$id_alumno 
+	 ORDER BY periodo,vac.asignatura;";
+	$alumno_ca = consulta_sql($SQL_alumno_ca);
+
+	$_azul = "color: #000099";
+	$_rojo = "color: #ff0000";
+	$HTML_alumno_ca = "  <tr class='filaTituloTabla'>"
+	                . "    <td class='tituloTabla' colspan='9'>Rendimiento acad&eacute;mico del alumno</td>"
+	                . "  </tr>"
+	                . "  <tr class='filaTituloTabla'>"
+	                . "    <td class='tituloTabla'>Periodo</td>"
+	                . "    <td class='tituloTabla'>Asignatura</td>"
+	                . "    <td class='tituloTabla'>S1</td>"
+	                . "    <td class='tituloTabla'>NC</td>"
+	                . "    <td class='tituloTabla'>S2</td>"
+	                . "    <td class='tituloTabla'>Recup.</td>"
+	                . "    <td class='tituloTabla'>NF</td>"
+	                . "    <td class='tituloTabla'>Situaci&oacute;n</td>"
+	                . "  </tr>";
+	                
+	$periodo_aux = $alumno_ca[0]['periodo'];
+	
+	$periodo_actual = $ANO."-".$SEMESTRE;
+	
+	for($x=0;$x<count($alumno_ca);$x++) {
+		extract($alumno_ca[$x]);
+		
+		if ($periodo_aux <> $periodo) {
+			$HTML_alumno_ca .= "<tr class='filaTabla'><td colspan='8' class='textoTabla'>&nbsp;</td></tr>";
+		}
+		$periodo_aux = $periodo;
+
+		$estilo_s1 = $estilo_nc = $estilo_s2 = $estilo_rec = $estilo_nf = $estilo_sit = "color: #000000";
+
+		if ($periodo_actual == $periodo && $estado == 2 && $SESSION['tipo'] > 3) {
+			$s1 = $nc = $s2 = $rec = $nf = $situacion = "N/D";
+		}
+		
+		if ($s1>=1 && $s1<4) { $estilo_s1 = $_rojo; } elseif ($s1>=4) { $estilo_s1 = $_azul; }   
+		
+		if ($nc>=1 && $nc<4) { $estilo_nc = $_rojo; } elseif ($nc>=4) { $estilo_nc = $_azul; }   
+		
+		if ($s2>=1 && $s2<4) { $estilo_s2 = $_rojo; } elseif ($s2>=4) { $estilo_s2 = $_azul; }   
+		
+		if ($rec>=1 && $rec<4) { $estilo_rec = $_rojo; } elseif ($rec>=4) { $estilo_rec = $_azul; }   
+		
+		if ($nf>=1 && $nf<4 ) { $estilo_nf = $_rojo; } elseif ($nf>=4 || $nf=="APC" || $nf=="APH" || $nf=="APECR") { $estilo_nf = $_azul; }   
+		
+		if ($situacion == "Reprobado") { $estilo_sit = $_rojo; } elseif ($situacion <> "Suspendido" && $situacion <> "Condicional" && $situacion <> "N/D") { $estilo_sit = $_azul; }
+
+		if ($id_curso <> "") {
+			$enl = "$enlbase=ver_curso&id_curso=$id_curso";
+			$js_onClick = "\"window.location='$enl';\"";
+			$asignatura = "<a class='enlitem' href='$enl'>$asignatura</a>";
+		}
+		
+		$HTML_alumno_ca .= "<tr class='filaTabla' onClick=$js_onClick>\n"
+		                .  "  <td class='textoTabla'> $periodo</td>\n"
+		                .  "  <td class='textoTabla' nowrap><div title='header=[Propiedades] fade=[on] body=[Fecha de Ingreso: $fecha_mod]'>$asignatura</div></td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_s1'> $s1</td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_nc'> $nc</td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_s2'> $s2</td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_rec'> $rec</td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_nf'> $nf</td>\n"
+		                .  "  <td class='textoTabla' style='$estilo_sit' nowrap> $situacion</td>\n"
+		                .  "</tr>\n";
+	}	
+	return $HTML_alumno_ca;
+}
+
+function avance_malla() {
+	global $id_alumno;
+	
+	$SQL_alumno = "SELECT id_malla_actual,cohorte,semestre_cohorte FROM vista_alumnos WHERE id='$id_alumno'";
+	$alumno = consulta_sql($SQL_alumno);
+	extract($alumno[0]);
+	
+	$SQL_detalle_malla = "SELECT id_prog_asig,cod_asignatura,asignatura,nivel,caracter
+	     FROM vista_detalle_malla
+	     WHERE id_malla=$id_malla_actual";
+	
+	$SQL_alumno_ca = "SELECT CASE WHEN ca.id_curso IS NOT NULL THEN c.id_prog_asig
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN ca.id_pa
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN ca.id_pa_homo
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN ca.id_pa
+	        END AS id_prog_asig,
+	        CASE WHEN ca.id_curso IS NOT NULL THEN c.ano||'-'||c.semestre
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN '$cohorte-$semestre_cohorte'
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN extract(YEAR FROM ca.fecha_mod)||'-'||CASE WHEN extract(MONTH from ca.fecha_mod) <= 7 THEN 1 ELSE 2 END
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN extract(YEAR FROM ca.fecha_mod)||'-'||CASE WHEN extract(MONTH from ca.fecha_mod) <= 7 THEN 1 ELSE 2 END
+	        END AS periodo,
+	  	     CASE WHEN ca.id_curso IS NOT NULL THEN coalesce(ca.nota_final::numeric(2,1)::text,'Cursando')||' '||coalesce(cae.nombre,'')
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN 'APC'
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN 'APH'
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN 'APECR'
+	        END AS nf,ca.id_estado,ca.nota_final
+	 FROM cargas_academicas AS ca
+	 LEFT JOIN cursos AS c ON c.id=ca.id_curso
+	 LEFT JOIN ca_estados AS cae ON cae.id=ca.id_estado
+	 WHERE ca.id_alumno=$id_alumno
+	 ORDER BY periodo DESC";
+
+	$SQL_avance_malla = "SELECT dm.cod_asignatura||' '||dm.asignatura AS asignatura,dm.nivel,dm.caracter,
+	                            char_comma_sum(coalesce(aca.nf,'No cursado')) AS estado,
+	                            char_comma_sum(aca.periodo) AS periodo,
+	                            char_comma_sum(text(aca.id_estado)) AS ids_estados
+	                     FROM ($SQL_detalle_malla) AS dm
+	                     LEFT JOIN ($SQL_alumno_ca) AS aca ON aca.id_prog_asig=dm.id_prog_asig
+	                     GROUP BY dm.cod_asignatura,dm.asignatura,dm.nivel,dm.caracter
+	                     ORDER BY dm.nivel,asignatura;";
+	$avance_malla = consulta_sql($SQL_avance_malla);
+
+	$SQL_alumno_prom_aprob = "SELECT avg(nota_final)::numeric(2,1) AS prom_aprob,count(id) AS cant_asig_aprob
+	                          FROM cargas_academicas 
+	                          WHERE id_alumno=$id_alumno AND id_estado=1 
+	                          AND id_curso IN (SELECT id FROM cursos 
+	                                           WHERE id_prog_asig IN (SELECT id_prog_asig 
+	                                           FROM ($SQL_detalle_malla) AS dm));";
+	$alumno_prom_aprob = consulta_sql($SQL_alumno_prom_aprob);
+	$prom_aprob      = $alumno_prom_aprob[0]['prom_aprob'];
+	$cant_asig_aprob = $alumno_prom_aprob[0]['cant_asig_aprob'];
+	
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla' colspan='5'>Rendimiento académico con respecto al Plan de estudio (malla)</td>"
+	      . "  </tr>"
+	      . "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>Nivel</td>"
+	      . "    <td class='tituloTabla'>Asignatura</td>"
+	      . "    <td class='tituloTabla'>Carácter</td>"
+	      . "    <td class='tituloTabla'>Situación</td>"
+	      . "    <td class='tituloTabla'>Periodo</td>"
+	      . "  </tr>";
+
+	$nivel_aux = $avance_malla[0]['nivel'];
+	for($x=0;$x<count($avance_malla);$x++) {
+		extract($avance_malla[$x]);
+	
+		if ($nivel_aux <> $nivel) {
+			$HTML .= "<tr class='filaTabla'><td colspan='5' class='textoTabla'>&nbsp;</td></tr>";
+		}
+		
+		$nivel_aux = $nivel;
+		
+		$estado = explode(',',$estado);
+		$ids_estados = explode(',',$ids_estados);
+		$periodo = explode(",",$periodo);
+				
+		$color_estilo = "color: #000000";
+		for ($z=0;$z<count($estado);$z++) {
+			if ($ids_estados[$z] == "2") {
+				$color_estilo = "color: #ff0000";
+			} elseif ($ids_estados[$z] == "1") {
+				$color_estilo = "color: #000099";
+			}
+			$estado[$z] = "<div style='$color_estilo'>".trim($estado[$z])."</div>";
+			$periodo[$z] = "<div style='$color_estilo'>".trim($periodo[$z])."</div>";
+		}
+		$estado = implode("",$estado);		
+		$periodo = implode("",$periodo);		
+
+
+		$HTML .= "<tr class='filaTabla'>\n"
+		      .  "  <td class='textoTabla' align='center'> $nivel</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $asignatura</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $caracter</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $estado</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $periodo</td>\n"
+		      .  "</tr>\n";
+	}
+	
+	$HTML .= "<tr class='filaTabla'>\n"
+	      .  "  <td class='textoTabla' colspan='5' align='center'>"
+	      .  "    En promedio un <b>$prom_aprob</b> con $cant_asig_aprob asignaturas aprobadas"
+	      .  "  </td>\n"
+	      .  "</tr>\n";
+
+	return $HTML;	
+}
+
+function vista_homologaciones() {
+	global $id_alumno, $id_malla_actual,$cohorte,$semestre_cohorte,$enlbase;
+	
+	$SQL_homologaciones = "SELECT vac.id,vac.asignatura,vpa.cod_asignatura||' '||vpa.asignatura AS homologada_por,
+	                              extract(YEAR from fec_mod)||'-'||CASE WHEN extract(MONTH from fec_mod) < 8 THEN '1' ELSE '2' END AS periodo
+	                       FROM vista_alumnos_cursos AS vac
+	                       LEFT JOIN vista_prog_asig AS vpa ON vpa.id=vac.id_pa
+	                       WHERE vac.id_alumno=$id_alumno AND homologada
+	                       ORDER BY vac.asignatura";
+
+	$homologaciones = consulta_sql($SQL_homologaciones);
+
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla' colspan='5'>Homologaciones</td>"
+	      . "  </tr>"
+	      . "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>ID</td>"
+	      . "    <td class='tituloTabla'>Asignatura homologada</td>"
+	      . "    <td class='tituloTabla'>Asignatura aprobada</td>"
+	      . "    <td class='tituloTabla'>Periodo</td>"
+	      . "  </tr>";
+
+	if (count($homologaciones) == 0) {
+		$HTML .= "<tr><td colspan='4' class='tituloTabla'>** Es alumno no registra Homologaciones **</td></tr>";
+	} else {
+		for($x=0;$x<count($homologaciones);$x++) {
+			extract($homologaciones[$x]);
+		
+			$onclick = "onClick=\"window.location='$enlbase=editar_homologacion&id_ca=$id';\"";
+			
+			$HTML .= "<tr class='filaTabla' $onclick>\n"
+			      .  "  <td class='textoTabla' nowrap> $id</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $asignatura</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $homologada_por</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $periodo</td>\n"
+			      .  "</tr>\n";
+		}
+	}
+	return $HTML;	
+}
+
+function vista_convalidaciones() {
+	global $id_alumno, $id_malla_actual,$cohorte,$semestre_cohorte,$enlbase;
+	
+	$SQL_convalidaciones = "SELECT ca.id,vpa.cod_asignatura||' '||vpa.asignatura AS asignatura,'$cohorte-0' AS periodo,
+	                               conv.asignatura AS asignatura_ext,conv.alias||'/'||conv.ano AS inst_ed_sup	                              
+	                        FROM cargas_academicas AS ca
+	                        LEFT JOIN vista_convalidaciones AS conv ON conv.id=ca.id_convalida
+	                        LEFT JOIN vista_prog_asig AS vpa ON vpa.id=ca.id_pa
+	                        WHERE ca.id_alumno=$id_alumno AND convalidado
+	                        ORDER BY asignatura";
+
+	$convalidaciones = consulta_sql($SQL_convalidaciones);
+
+	$cant_convalidaciones = count($convalidaciones);
+	
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla' colspan='5'>Convalidaciones ($cant_convalidaciones)</td>"
+	      . "  </tr>"
+	      . "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>ID</td>"
+	      . "    <td class='tituloTabla'>Asignatura convalidada</td>"
+	      . "    <td class='tituloTabla'>Asignatura aprobada</td>"
+	      . "    <td class='tituloTabla'>Cursada en</td>"
+	      . "    <td class='tituloTabla'>Periodo</td>"
+	      . "  </tr>";
+
+	if ($cant_convalidaciones == 0) {
+		$HTML .= "<tr><td colspan='5' class='tituloTabla'>** Es alumno no registra Convalidaciones **</td></tr>";
+	} else {
+		for($x=0;$x<count($convalidaciones);$x++) {
+			extract($convalidaciones[$x]);
+		
+			//$onclick = "onClick=\"window.location='$enlbase=editar_convalidacion&id_ca=$id';\"";
+			
+			$HTML .= "<tr class='filaTabla' $onclick>\n"
+			      .  "  <td class='textoTabla' nowrap> $id</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $asignatura</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $asignatura_ext</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $inst_ed_sup</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $periodo</td>\n"
+			      .  "</tr>\n";
+		}
+		$HTML .= "<tr class='filaTabla' $onclick>\n"
+		      .  "  <td class='textoTabla' colspan='5' align='center'>"
+		      .  "    En total, <b>$cant_convalidaciones</b> asignaturas convalidadas"
+		      .  "  </td>\n"
+		      .  "</tr>\n";
+	}
+	return $HTML;	
+}
+
+function vista_examenes_con_rel() {
+	global $id_alumno, $id_malla_actual,$cohorte,$semestre_cohorte,$enlbase;
+	
+	$SQL_examenes_con_rel = "SELECT vac.id,vac.asignatura,
+	                                extract(YEAR from fec_mod)||'-'||CASE WHEN extract(MONTH from fec_mod) < 8 THEN '1' ELSE '2' END AS periodo
+	                         FROM vista_alumnos_cursos AS vac
+	                         WHERE vac.id_alumno=$id_alumno AND examen_con_rel
+	                         ORDER BY vac.asignatura";
+
+	$examenes_con_rel = consulta_sql($SQL_examenes_con_rel);
+
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla' colspan='5'>Exámenes de Conocimientos Relevantes</td>"
+	      . "  </tr>"
+	      . "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>ID</td>"
+	      . "    <td class='tituloTabla'>Asignatura</td>"
+	      . "    <td class='tituloTabla'>Periodo</td>"
+	      . "  </tr>";
+
+	if (count($examenes_con_rel) == 0) {
+		$HTML .= "<tr><td colspan='3' class='tituloTabla'>** Es alumno no registra Exámenes de Conocimientos Relevantes **</td></tr>";
+	} else {
+		for($x=0;$x<count($examenes_con_rel);$x++) {
+			extract($examenes_con_rel[$x]);
+	
+			$onclick = "onClick=\"window.location='$enlbase=editar_examen_con_rel&id_ca=$id';\"";
+			
+			$HTML .= "<tr class='filaTabla' $onclick>\n"
+			      .  "  <td class='textoTabla' nowrap> $id</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $asignatura</td>\n"
+			      .  "  <td class='textoTabla' nowrap> $periodo</td>\n"
+			      .  "</tr>\n";
+		}
+	}
+	return $HTML;	
+}
+
+function vista_anotaciones() {
+	global $id_alumno,$id_malla_actual,$cohorte,$semestre_cohorte,$enlbase;
+	
+	$anotaciones = consulta_sql("SELECT anotaciones FROM alumnos WHERE id=$id_alumno;");
+
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>Anotaciones</td>"
+	      . "  </tr>"
+	      . "  <tr>"
+	      . "    <td class='tituloTabla'>";
+	
+	if ($anotaciones[0]['anotaciones'] == "") {
+		$HTML .= "** Es alumno no registra Anotaciones **";
+	} else {
+		$anotaciones = $anotaciones[0]['anotaciones'];
+		$HTML .= nl2br($anotaciones);
+	}
+
+	$HTML .= "      <div align='center'>"
+	      .  "        <a href='$enlbase=agregar_anotacion&id_alumno=$id_alumno' class='boton'>Agregar anotación</a>"
+	      .  "      </div>"
+	      .  "    </td>"
+	      .  "  </tr>";
+		
+	return $HTML;	
+}
+
+function enc_est_conteo_ranking($matriz) {
+	if (!is_array($matriz)) { return false; }
+
+	$conteo = array();
+	$y = $x = 0;	
+	while ($x<count($matriz)) {
+		$id_profesor = $matriz[$x]['id_profesor'];
+		$conteo_profe = array();
+		$casos = 0;
+		$conteo_profe['id_profesor'] = $id_profesor;
+		if ($matriz[$x]['periodo'] <> "") { $conteo_profe['periodo'] = $matriz[$x]['periodo']; }
+		$conteo_profe['total'] = $conteo_profe['casos'] = $sub_total = 0;
+		while ($id_profesor == $matriz[$x]['id_profesor']) {
+			$nitem = 1;
+			$suma_item = array();
+			for($np=1;$np<=21;$np++) {
+				$campo = "p$np";
+				$suma_item[$nitem] += (100/3) * (4 - $matriz[$x][$campo]); 
+				if ($np==5 || $np==17) { $nitem++; }
+			}
+			$x++;
+			$casos++;
+			$sub_total += (($suma_item[1]/5*0.25) + ($suma_item[2]/12*0.50) + ($suma_item[3]/4*0.25));
+		}
+		$conteo_profe['total'] = $sub_total/$casos;
+		$conteo_profe['casos'] = $casos;
+		$conteo = array_merge($conteo,array($y => $conteo_profe));		
+		$y++;
+	}
+	return $conteo;
+}		
+
+function enc_autoev_conteo_ranking($matriz) {
+	if (!is_array($matriz)) { return false; }
+
+	$conteo = array();
+	$y = $x = 0;	
+	while ($x<count($matriz)) {
+		$id_profesor = $matriz[$x]['id_profesor'];
+		$conteo_profe = array();
+		$casos = 0;
+		$conteo_profe['id_profesor'] = $id_profesor;
+		if ($matriz[$x]['periodo'] <> "") { $conteo_profe['periodo'] = $matriz[$x]['periodo']; }
+		$conteo_profe['total'] = $conteo_profe['casos'] = $sub_total = 0;
+		while ($id_profesor == $matriz[$x]['id_profesor']) {
+			$nitem = 1;
+			$suma_item = array();
+			for($np=1;$np<=30;$np++) {
+				$campo = "p$np";
+				$suma_item[$nitem] += (100/3) * (4 - $matriz[$x][$campo]); 
+				if ($np==13 || $np==26) { $nitem++; }
+			}
+			$x++;
+			$casos++;
+			$sub_total += (($suma_item[1]/13*0.25) + ($suma_item[2]/13*0.50) + ($suma_item[3]/4*0.25));
+		}
+		$conteo_profe['total'] = $sub_total/$casos;
+		$conteo_profe['casos'] = $casos;
+		$conteo = array_merge($conteo,array($y => $conteo_profe));		
+		$y++;
+	}
+	return $conteo;
+}		
+
+function enc_autoev_conteo_ranking2($matriz) {
+
+	if (!is_array($matriz)) { return false; }
+
+	$conteo = array();
+	$y = $x = 0;	
+
+	while ($x<count($matriz)) {
+		$id_profesor = $matriz[$x]['id_profesor'];
+		$conteo_profe = array();
+		$casos = 0;
+		$conteo_profe['id_profesor'] = $id_profesor;
+		if ($matriz[$x]['periodo'] <> "") { $conteo_profe['periodo'] = $matriz[$x]['periodo']; }
+		$conteo_profe['total'] = $conteo_profe['casos'] = $sub_total = 0;
+		while ($id_profesor == $matriz[$x]['id_profesor']) {
+			$nitem = 1;
+			$suma_item = array();
+			for($np=1;$np<=30;$np++) {
+				if (!(($np>23 && $np<26) || $np==30)) {
+					$campo = "p$np";
+					$suma_item[$nitem] += (100/3) * (4 - $matriz[$x][$campo]); 
+					if ($np==13 || $np==26) { $nitem++; }
+				}
+			}
+			$x++;
+			$casos++;
+			$sub_total += (($suma_item[1]/13*0.25) + ($suma_item[2]/13*0.50) + ($suma_item[3]/4*0.25));
+		}
+		$conteo_profe['total'] = $sub_total/$casos;
+		$conteo_profe['casos'] = $casos;
+		$conteo = array_merge($conteo,array($y => $conteo_profe));		
+		$y++;
+	}
+	return $conteo;
+}
+
+function enc_evdoc_conteo_ranking($matriz) {
+	if (!is_array($matriz)) { return false; }
+
+	$conteo = array();
+	$y = $x = 0;	
+	while ($x<count($matriz)) {
+		$id_profesor = $matriz[$x]['id_profesor'];
+		$conteo_profe = array();
+		$casos = 0;
+		$conteo_profe['id_profesor'] = $id_profesor;
+		if ($matriz[$x]['periodo'] <> "") { $conteo_profe['periodo'] = $matriz[$x]['periodo']; }
+		$conteo_profe['total'] = $conteo_profe['casos'] = $sub_total = 0;
+		while ($id_profesor == $matriz[$x]['id_profesor']) {
+			$nitem = 1;
+			$suma_item = array();
+			for($np=1;$np<=19;$np++) {
+				$campo = "p$np";
+				if ($matriz[$x][$campo] <5) {
+					$suma_item[$nitem] += (100/3) * (4 - $matriz[$x][$campo]);
+				} 
+				if ($np==13 || $np==15) { $nitem++; }
+			}
+			$x++;
+			$casos++;
+			$sub_total += (($suma_item[1]/13*0.25) + ($suma_item[2]/2*0.50) + ($suma_item[3]/4*0.25));
+		}
+		$conteo_profe['total'] = $sub_total/$casos;
+		$conteo_profe['casos'] = $casos;
+		$conteo = array_merge($conteo,array($y => $conteo_profe));		
+		$y++;
+	}
+	return $conteo;
+}		
+
+function lista_control_asist_2011($id_curso) {
+	
+	$SQL_asist_curso = "SELECT fecha_hora::date AS fecha,to_char(fecha_hora,'YYYY-MM-DD HH24:MI:SS') AS fec_hora
+	                    FROM asist_cursos
+	                    WHERE id_curso=$id_curso ORDER BY fecha_hora";
+	$asist_curso     = consulta_sql($SQL_asist_curso);
+	
+	$lista_control_asist_2011 = array();
+	$x = $y = 0;
+	while ($x < count($asist_curso)) {
+		$hora_entrada = $hora_salida = "";
+		$lista_control_asist_2011[$y]['fecha'] = $fec = $asist_curso[$x]['fecha'];
+		$hora_entrada = strtotime($asist_curso[$x]['fec_hora']);
+		$lista_control_asist_2011[$y]['hora_entrada'] = strftime("%T",$hora_entrada);
+		$x++;
+		if ($fec == $asist_curso[$x]['fecha']) {
+			$hora_salida  = strtotime($asist_curso[$x]['fec_hora']);
+			$lista_control_asist_2011[$y]['hora_salida']  = strftime("%T",$hora_salida);
+			$x++;
+		}
+		$horas_dia_ped = $horas_dia = 0;
+		if ($hora_entrada <> "" && $hora_salida <> "") {
+			$horas_dia = $hora_salida - $hora_entrada; // esto devuelva la diferencia en segundos
+			// Modulos de 1 hora y 30 mins: 2400s = 40m; 4500s = 1h 15m; 9900s = 2h 45m
+			/*
+			if ($horas_dia >= 2400 && $horas_dia < 4500) { $horas_dia_ped = 1; }
+			if ($horas_dia >= 4500 && $horas_dia < 9900) { $horas_dia_ped = 2; }
+			if ($horas_dia >= 9900)                      { $horas_dia_ped = 4; }
+			*/
+			// Modulos de 1 hora y 20 mins: 2100s = 35m; 4500s = 1h 15m; 9600s = 2h 40m
+			if ($horas_dia >= 2100 && $horas_dia < 4500) { $horas_dia_ped = 1; }
+			if ($horas_dia >= 4500 && $horas_dia < 9600) { $horas_dia_ped = 2; }
+			if ($horas_dia >= 9600)                      { $horas_dia_ped = 4; }
+			$horas_dia = date("H:i", strtotime("00:00") + $hora_salida - $hora_entrada);
+		}
+		$lista_control_asist_2011[$y]['horas_dia_pedag']  = $horas_dia_ped;
+		$lista_control_asist_2011[$y]['horas_dia_reloj']  = $horas_dia;
+		$y++;
+	}
+	return $lista_control_asist_2011;
+}
+
+function total_horas_control_asist_2011($id_curso) {
+	$asist_curso = lista_control_asist_2011($id_curso);
+	$horas = 0;
+	for ($x=0;$x<count($asist_curso);$x++) { $horas += $asist_curso[$x]['horas_dia_pedag']; }
+	return $horas;
+}
+
+function horas_programdas_curso($id_curso) {
+	$SQL_curso = "SELECT dia1,dia2,dia3 FROM cursos WHERE id=$id_curso";
+	$SQL_feriados_curso = "SELECT count(sc.fecha) FROM susp_clases sc LEFT JOIN cursos c ON c.id=$id_curso
+	                       WHERE sc.ano=c.ano AND sc.semestre=c.semestre AND date_part('dow',sc.fecha) IN (c.dia1,c.dia2,c.dia3)) AS feriados";
+}
+
+function generar_cobros ($id_contrato,$id_glosa,$cant_cuotas,$monto_cuota,$monto_total,$diap,$mesp,$anop) {
+	$SQL_cobros = "";
+	for ($x=1;$x<=$cant_cuotas;$x++) {					
+		if ($x == $cant_cuotas) {
+			$monto_cuota = $monto_total - ($monto_cuota * ($x-1));
+		}
+		
+		if ($mesp > 12) { $mesp=1; $anop++; }
+		
+		$diap_aux = $diap;
+		if ($mesp == 2 && $diap_aux > 28) { $diap_aux = 28; }
+		
+		$fecha_venc = "$anop-$mesp-$diap_aux";
+		
+		$SQL_cobros .= "INSERT INTO finanzas.cobros (id_contrato,id_glosa,nro_cuota,monto,fecha_venc)
+						 VALUES ($id_contrato,$id_glosa,$x,$monto_cuota,'$fecha_venc');";
+		$mesp++;
+	}
+	return $SQL_cobros;
+}
+?>

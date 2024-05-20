@@ -1,0 +1,409 @@
+<html>
+  <head>
+    <title>UMC - SGU - Acta de Curso: DD-104-1 Teoría Económica</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 12px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body>
+    <table width='100%'>
+      <tr>
+        <td>
+          <table width='100%'><tr><td align='center'><u>UNIVERSIDAD MIGUEL DE CERVANTES</u><br><sup>Vicerrectoría Académica<br>Unidad de Registro Académico<br>Sistema de Gestión Universitaria (SGU)<br></sup><b>Acta de Curso</b></td><td align='right' valign='top'>03/09/07 21:27:48</td></tr></table><br>
+          <table>
+            <tr><td valign='top'><!--<img src='img/logo_RegAcad.jpg'>--></td><td valign='middle' width='100%'><table cellpadding='2' cellspacing='0' border='0'>
+  <tr>
+    <td align='right'>Carrera:</td>    <td colspan='3' bgcolor='#E5F8FF' nowrap>Derecho Diurno</td>  </tr>
+  <tr>
+    <td align='right'>Número de acta:</td>
+    <td bgcolor='#E5F8FF' nowrap>2342</td>
+    <td align='right'>Nº de Inscritos:</td>
+    <td bgcolor='#E5F8FF' nowrap>33 alumno(a)s</td>
+  </tr>
+  <tr>
+    <td align='right'>Asignatura:</td>
+    <td bgcolor='#E5F8FF' nowrap>DD-104-1 Teoría Económica</td>
+    <td align='right'>Periodo:</td>
+    <td bgcolor='#E5F8FF' nowrap>1-2007</td>
+  </tr>
+  <tr>
+    <td align='right'>Profesor:</td>
+    <td bgcolor='#E5F8FF' nowrap>Carlos Vitali San Martín</td>
+    <td align='right'>Horario:</td>
+    <td bgcolor='#E5F8FF' nowrap>[Mar F {408}] [Jue F {408}] </td>
+  </tr>
+</table><br></td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><table cellpadding='3' cellspacing='2' border='0' bgcolor='#d4d4d4'>
+  <tr bgcolor='#e5e5e5'>
+    <td align='center' colspan='3'><b>Alumnos</b></td>
+    <td align='center' colspan='6'><b>Calificaciones</b></td>
+  </tr>
+  <tr bgcolor='#e5e5e5'>
+    <td align='center'><b>ID</b></td>
+    <td align='center'><b>RUT</b></td>
+    <td align='center'><b>Nombre</b></td>
+    <td align='center' bgcolor='#DCDCDC'><b>S1</b></td>
+    <td align='center'><b>NC</b></td>
+    <td align='center' bgcolor='#DCDCDC'><b>S2</b></td>
+    <td align='center'><b>Rec.</b></td>
+    <td align='center' bgcolor='#DCDCDC'><b>NF</b></td>
+    <td align='center'><b>Situación</b></td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>11671</td>
+    <td align='right'>15662062-9     </td>
+    <td>Álvarez Ramírez Edmundo Andrés </td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td align='center'>5.0</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>3.2</td>
+    <td align='center' bgcolor='#DCDCDC'>3.5</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12054</td>
+    <td align='right'>6591276-7      </td>
+    <td>Arteaga Rodríguez José Miguel</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12186</td>
+    <td align='right'>16956466-3     </td>
+    <td>Briceño Carrasco Camila Ignacia</td>
+    <td align='center' bgcolor='#DCDCDC'>2.7</td>
+    <td align='center'>4.7</td>
+    <td align='center' bgcolor='#DCDCDC'>4.5</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.0</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12078</td>
+    <td align='right'>16634596-0     </td>
+    <td>Cabrera Salas Fernando José</td>
+    <td align='center' bgcolor='#DCDCDC'>1.4</td>
+    <td align='center'>4.7</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.2</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12187</td>
+    <td align='right'>16460936-7     </td>
+    <td>Cardenas Ojeda  Rodrigo Alexis</td>
+    <td align='center' bgcolor='#DCDCDC'>1.3</td>
+    <td align='center'>4.4</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.1</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12080</td>
+    <td align='right'>16919148-4     </td>
+    <td>Castro Guarda Carolina Elena</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>4.2</td>
+    <td align='center' bgcolor='#DCDCDC'>2.2</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.4</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12160</td>
+    <td align='right'>16901944-4     </td>
+    <td>Concha Badilla Anhavel Nadezka</td>
+    <td align='center' bgcolor='#DCDCDC'>4.6</td>
+    <td align='center'>5.7</td>
+    <td align='center' bgcolor='#DCDCDC'>3.9</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.7</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12081</td>
+    <td align='right'>16644502-7     </td>
+    <td>Díaz Acuña Yasna Nicole</td>
+    <td align='center' bgcolor='#DCDCDC'>1.5</td>
+    <td align='center'>5.3</td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>3.2</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12082</td>
+    <td align='right'>16647166-4     </td>
+    <td>Fuentealba Fuentealba Andrea Estefany</td>
+    <td align='center' bgcolor='#DCDCDC'>2.4</td>
+    <td align='center'>4.9</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.6</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>11476</td>
+    <td align='right'>6872977-7      </td>
+    <td>Galleguillos Salinas Gilberto Fernando</td>
+    <td align='center' bgcolor='#DCDCDC'>4.5</td>
+    <td align='center'>5.3</td>
+    <td align='center' bgcolor='#DCDCDC'>3.8</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.5</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12083</td>
+    <td align='right'>16358391-7     </td>
+    <td>Garcia Fuenzalida Daniel Alfonso</td>
+    <td align='center' bgcolor='#DCDCDC'>1.8</td>
+    <td align='center'>5.2</td>
+    <td align='center' bgcolor='#DCDCDC'>3.9</td>
+    <td align='center'>4.0</td>
+    <td align='center' bgcolor='#DCDCDC'>4.0</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12038</td>
+    <td align='right'>13883208-2     </td>
+    <td>González Abarca  Fernando Moroni</td>
+    <td align='center' bgcolor='#DCDCDC'>2.4</td>
+    <td align='center'>3.7</td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12084</td>
+    <td align='right'>15587680-8     </td>
+    <td>Herrera López Felipe Andrés</td>
+    <td align='center' bgcolor='#DCDCDC'>3.4</td>
+    <td align='center'>5.6</td>
+    <td align='center' bgcolor='#DCDCDC'>4.7</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.6</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12085</td>
+    <td align='right'>17022602-K     </td>
+    <td>Jara Zanni Dominique Alejandra</td>
+    <td align='center' bgcolor='#DCDCDC'>2.7</td>
+    <td align='center'>6.0</td>
+    <td align='center' bgcolor='#DCDCDC'>4.5</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.4</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12086</td>
+    <td align='right'>17025556-9     </td>
+    <td>Lagos Caris Javiera Lourdes</td>
+    <td align='center' bgcolor='#DCDCDC'>2.4</td>
+    <td align='center'>4.7</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12087</td>
+    <td align='right'>17082711-2     </td>
+    <td>Larenas Yévenes Camila Alejandra</td>
+    <td align='center' bgcolor='#DCDCDC'>3.7</td>
+    <td align='center'>5.8</td>
+    <td align='center' bgcolor='#DCDCDC'>5.6</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>5.1</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12088</td>
+    <td align='right'>16937170-9     </td>
+    <td>Marín Martínez Paola Cristina</td>
+    <td align='center' bgcolor='#DCDCDC'>1.9</td>
+    <td align='center'>5.4</td>
+    <td align='center' bgcolor='#DCDCDC'>3.7</td>
+    <td align='center'>4.8</td>
+    <td align='center' bgcolor='#DCDCDC'>4.0</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12089</td>
+    <td align='right'>16912879-0     </td>
+    <td>Miranda Astudillo Ghislaine Verónica</td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td align='center'>5.5</td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>3.6</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>11491</td>
+    <td align='right'>13915143-7     </td>
+    <td>Mora Chacón Gonzalo José </td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12180</td>
+    <td align='right'>16346258-3     </td>
+    <td> Muñoz Gutierrez Jennifer </td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12152</td>
+    <td align='right'>15957928-K     </td>
+    <td>Novoa Morales Aldo Patricio</td>
+    <td align='center' bgcolor='#DCDCDC'>4.9</td>
+    <td align='center'>6.1</td>
+    <td align='center' bgcolor='#DCDCDC'>5.0</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>5.3</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12206</td>
+    <td align='right'>13619818-1     </td>
+    <td>Ortiz Mendoza Daniel Mauricio</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12181</td>
+    <td align='right'>16147067-8     </td>
+    <td>Ovalle Contreras Alejandro Esteban</td>
+    <td align='center' bgcolor='#DCDCDC'>2.7</td>
+    <td align='center'>5.3</td>
+    <td align='center' bgcolor='#DCDCDC'>3.4</td>
+    <td align='center'>4.0</td>
+    <td align='center' bgcolor='#DCDCDC'>4.0</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12090</td>
+    <td align='right'>17248783-1     </td>
+    <td>Pedrini Becerra María Fernanda</td>
+    <td align='center' bgcolor='#DCDCDC'>2.3</td>
+    <td align='center'>5.0</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>3.2</td>
+    <td align='center' bgcolor='#DCDCDC'>3.5</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12065</td>
+    <td align='right'>14141710-K     </td>
+    <td>Pizarro Aguilera Fernando Ignacio</td>
+    <td align='center' bgcolor='#DCDCDC'>2.3</td>
+    <td align='center'>5.0</td>
+    <td align='center' bgcolor='#DCDCDC'>5.3</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>4.3</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12182</td>
+    <td align='right'>16127209-4     </td>
+    <td>Rojas  Maldonado César Ramón</td>
+    <td align='center' bgcolor='#DCDCDC'>1.6</td>
+    <td align='center'>4.8</td>
+    <td align='center' bgcolor='#DCDCDC'>2.0</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>2.7</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12252</td>
+    <td align='right'>13912406-5     </td>
+    <td>Rubio Hernandez Evelyn</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12183</td>
+    <td align='right'>15840892-9     </td>
+    <td>Valenzuela Cerda José Luis </td>
+    <td align='center' bgcolor='#DCDCDC'>1.7</td>
+    <td align='center'>4.3</td>
+    <td align='center' bgcolor='#DCDCDC'>1.7</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12091</td>
+    <td align='right'>16718509-6     </td>
+    <td>Valenzuela Martínez Enyels Grace</td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td align='center'>4.8</td>
+    <td align='center' bgcolor='#DCDCDC'>2.6</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>3.2</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12092</td>
+    <td align='right'>16820051-K     </td>
+    <td>Vásquez Tapia Geraldine Renee</td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td align='center'>4.5</td>
+    <td align='center' bgcolor='#DCDCDC'>2.4</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>3.2</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12188</td>
+    <td align='right'>10673234-5     </td>
+    <td>Vega Camus Jasmina Fanny</td>
+    <td align='center' bgcolor='#DCDCDC'>2.6</td>
+    <td align='center'>4.3</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NSP</td>
+    <td align='center' bgcolor='#DCDCDC'>2.5</td>
+    <td>Reprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12037</td>
+    <td align='right'>13922011-0     </td>
+    <td>Villalobos Cárdenas Hans Cristian</td>
+    <td align='center' bgcolor='#DCDCDC'>3.4</td>
+    <td align='center'>5.3</td>
+    <td align='center' bgcolor='#DCDCDC'>3.0</td>
+    <td align='center'>4.0</td>
+    <td align='center' bgcolor='#DCDCDC'>4.0</td>
+    <td>Aprobado</td>
+  </tr>  <tr bgcolor='#ffffff'>
+    <td align='center'>12184</td>
+    <td align='right'>15799226-0     </td>
+    <td>Villela Arancibia  Felix Eduardo</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'>NCR</td>
+    <td align='center' bgcolor='#DCDCDC'>NSP</td>
+    <td align='center'></td>
+    <td align='center' bgcolor='#DCDCDC'>1.0</td>
+    <td>Reprobado</td>
+  </tr></table>
+Alumno(a)s inscrito(a)s: 33<br>
+</td>
+      </tr>
+    </table><br><br><br><br><br><br>
+    <table width='100%'>
+      <tr>
+        <td><table width='100%'>
+  <tr>
+    <td align='center' valign='top' width='30%'><hr noshade size='2'><b>Diana Marcela Palacios Aristizabal</b><br>Dirección de Escuela</td>
+    <td align='center' valign='top' width='5%'></td>
+    <td align='center' valign='top' width='30%'><hr noshade size='2'><b>Carlos Vitali San Martín</b><br>Profesor(a) del Curso</td>
+    <td align='center' valign='top' width='5%'></td>
+    <td align='center' valign='top' width='30%'><hr noshade size='2'><b>Juan Eugenio Mart&iacute;nez Gallardo</b><br>REGISTRO ACADÉMICO</td>
+  </tr>
+</table>
+</td>
+      </tr>
+    </table>
+  </body>
+</html>

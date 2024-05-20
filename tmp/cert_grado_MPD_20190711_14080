@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>UMC - SGU - Certificado de Magister (MPD)</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 12px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body>
+    <table width='100%'>
+      <tr><td align='center'><img src='../img/logoumc_vertical.jpg' align='center'><div align='right'>Folio: <b>MEGC - 14080 / 2021</b><br><br></div><h2 align='center'>CERTIFICADO</h2><p align='justify'>La Secretaria General de la Universidad Miguel de Cervantes que suscribe certifica que don <b>LUIS ALBERTO OSSANDÓN SALAZAR</b>, Rut Nº <b>16.706.692-5</b>, ha cumplido con todas las exigencias y requisitos académicos reglamentarios y ha obtenido nota 4,9 (cuatro coma nueve), por lo cual se le ha otorgado el grado de <b>Magíster en Educación mención Gestión de Calidad </b> (cohorte Mayo 2018).<br><br>Asimismo, también se certifica que el mencionado Programa se imparte a distancia, durante cuatro semestres con un total de 1200 horas pedagógicas, desde el  7 de mayo de 2018 al  8 de mayo de 2020.  <br><br>Esta Universidad autónoma, otorga grados y títulos oficiales, cumpliendo con las exigencias establecidas en el DFL N.º 2, de 2009, del Ministerio de Educación, y está autorizada por dicho Ministerio de Educación por Decreto exento N°1169, de 27 de noviembre de 1997, publicado en el Diario Oficial de 17 de diciembre del mismo año.<br><br>Se extiende el presente certificado a petición del(a) interesado(a) para los fines que estime convenientes.<br><br>Santiago, 24 de marzo de 2021.</p></td></tr>
+      <tr><td><table width='100%'>  <tr>    <td width='45%' align='center' valign='botom'>      <img src='cert_14080.png'><br><small style='text-align: justify'>Para validar este certificado, por favor escanee este código QR o bien acceda a https://www.umcervantes.cl/validacion-de-certificados-oficiales-umc/</small>    </td>    <td width='10%'>&nbsp;</td>    <td width='45%' align='center' valign='botom'><img src='../img/firma-tiembre-secgen.jpg'></td>  </tr></table></td></tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+  <head>
+      <link href="sgu.css" rel="stylesheet" type="text/css">
+  </head>
+</head>
+<body>
+  <div>
+    <h3>Ficha de Antecedentes del Postulante</h3>
+  </div>
+<?php
+
+include("funciones.php");
+$id_pap = $_REQUEST['id_pap'];
+include("postulante_ficha_datos_personales.php");
+$resp_finan = consulta_sql("SELECT * FROM vista_avales WHERE id=(SELECT id_aval FROM pap WHERE id=$id_pap)");
+if (count($resp_finan) == 1) {
+	extract($resp_finan[0]);
+?>
+  <table>
+  <tr>
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">
+      Antecedentes del Responsable Financiero<br><sup>(Apoderado, Sostenedor o Aval)</sup> 
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'><?php echo($rf_rut); ?></td>
+    <td class='celdaNombreAttr'>Parentezco:</td>
+    <td class='celdaValorAttr'><?php echo($rf_parentezco); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($rf_nombre); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Estado Civil:</td>
+    <td class='celdaValorAttr'><?php echo($rf_estado_civil); ?></td>
+    <td class='celdaNombreAttr'>Profesión:</td>
+    <td class='celdaValorAttr'><?php echo($rf_profesion); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nacionalidad:</td>
+    <td class='celdaValorAttr'><?php echo($rf_nac); ?></td>
+    <td class='celdaNombreAttr'>Nro. Pasaporte:</td>
+    <td class='celdaValorAttr'><?php echo($rf_pasaporte); ?></td>    
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr'><?php echo($rf_direccion); ?></td>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'><?php echo($rf_com); ?></td>    
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($rf_reg); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Teléfono fijo:</td>
+    <td class='celdaValorAttr'><?php echo($rf_telefono); ?></td>
+    <td class='celdaNombreAttr'>Teléfono móvil:</td>
+    <td class='celdaValorAttr'><?php echo($rf_tel_movil); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-mail:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($rf_email); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">
+      <b>Antecedentes Laborales del Responsable Financiero</b>
+    </td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre Empresa:</td>
+    <td class='celdaValorAttr'><?php echo($rf_nombre_empresa); ?></td>
+    <td class='celdaNombreAttr'>Cargo:</td>
+    <td class='celdaValorAttr'><?php echo($rf_cargo_empresa); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Antigüedad:</td>
+    <td class='celdaValorAttr'><?php echo($rf_antiguedad_empresa); ?></td>
+    <td class='celdaNombreAttr'>Sueldo líquido:</td>
+    <td class='celdaValorAttr'><?php echo($rf_sueldo_liquido); ?></td>
+  </tr>  
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr'><?php echo($rf_direccion_empresa); ?></td>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'><?php echo($rf_com_empresa); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($rf_reg_empresa); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Teléfono:</td>
+    <td class='celdaValorAttr'><?php echo($rf_telefono_empresa); ?></td>
+    <td class='celdaNombreAttr'>e-Mail:</td>
+    <td class='celdaValorAttr'><?php echo($rf_email_empresa); ?></td>
+  </tr>
+  </table>
+<?php
+}
+?>
+  <script>
+    window.print();
+    history.back();
+  </script>
+</body>
+</html>

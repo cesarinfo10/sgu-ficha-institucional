@@ -1,0 +1,94 @@
+<?php
+
+include("funciones.php");
+
+$usuario = $_REQUEST['nombre_usuario'];
+$rut     = $_REQUEST['rut'];
+$modulo  = $_REQUEST['modulo'];
+
+if ($_REQUEST['entrar'] <> "Entrar" && ($usuario == "" || $rut == "")) {
+	header("Location: index.php");
+}
+
+$SQL_alumno = "SELECT a.id,initcap(a.nombres||' '||a.apellidos) AS nombre,a.carrera_actual AS id_carrera,c.id_escuela,c.nombre AS carrera,
+                      e.nombre AS escuela,malla_actual,ae.nombre AS estado
+               FROM alumnos AS a
+               LEFT JOIN carreras AS c ON c.id=a.carrera_actual
+               LEFT JOIN escuelas AS e ON e.id=c.id_escuela
+               LEFT JOIN al_estados AS ae ON ae.id=a.estado
+               WHERE nombre_usuario='$usuario' AND rut='$rut';";
+$alumno = consulta_sql($SQL_alumno);
+
+if (count($alumno) > 0) {
+	$problemas = false;
+
+	$id_alumno = $alumno[0]['id'];
+
+	$SQL_comp_matric = "SELECT id FROM matriculas WHERE id_alumno=$id_alumno AND ano=$ANO AND semestre=$SEMESTRE";
+	$comp_matric = consulta_sql($SQL_comp_matric);
+	if (count($comp_matric) == 0 && $alumno[0]['estado'] <> "Vigente") {
+		$msje = "Estimado estudiante, nuestros registros indican que no has completado tu proceso de Matrícula "
+		      . "para el periodo actual o no tienes estado de Vigente .\\n"
+		      . "Por favor acercate a las oficinas de Contabilidad, en el 6º piso del efidicio para que "
+		      . "realices este vital trámite.\\n"
+		      . "Tu estado actualmente es Vigente, pero este cambiará a Abandono si no te matriculas en las "
+		      . "fechas establecidas en el Calendario Académico vigente (lo encuentras en la portada de SGU).\\n\\n"
+		      . "De todas maneras, tendrás acceso a SGU, pero no podras realizar la Inscripción de Asignaturas.";			      
+		echo(msje_js($msje));
+		$modulo = "portada";
+	}
+
+	//chequeo del estado del alumno (moroso, vigente)..
+	$estado_alumno = $alumno[0]['estado'];
+	if ($estado_alumno <> "Vigente") {
+		$msje = "Actualmente no eres alumno regular o Vigente.\\n";
+		switch ($estado_alumno) {
+			case "Moroso":
+				$msje = "Información semestral no disponible por compromisos financieros pendientes con la UMC. "
+				      . "Para normalizar este situación, favor dirigite a la Oficina de Finanzas, en el sexto piso.";
+				break;
+			case "Eliminado (Art. 12)" || "Abandono (Art. 11)":
+				$msje_adic = "$msje Por favor dirigite a tu escuela, Piso 6.";
+				break;
+		}			
+		echo(msje_js($msje));
+		$problemas = true;
+	}
+
+	//chequeo de alumnos indocumentados
+	$SQL_al_indoc = "SELECT doc_adeudado FROM alumnos_indocumentados WHERE id_alumno='$id_alumno';";
+	$al_indoc = consulta_sql($SQL_al_indoc);
+	if (count($al_indoc) > 0) {
+		$doc_adeudado_alumno = $al_indoc[0]['doc_adeudado'];
+		$msje = "Actualmente nuestros registros indican que no has presentado toda la documentación requerida.\\n"
+		      . "Por favor acércate a las oficinas de Registro Académico para regularizar tu situación.\\n"
+		      . "La documentación adeudada es: $doc_adeudado_alumno";
+		echo(msje_js($msje));
+		$problemas = true;
+	}
+
+	if ($problemas) {
+		echo(js("window.location='index.php';"));
+		exit;
+	}
+
+	session_start();
+	$_SESSION['autentificado'] = true;
+	$_SESSION['usuario']       = $usuario;
+	$_SESSION['nombre_alumno'] = $alumno[0]['nombre'];
+	$_SESSION['id']            = $alumno[0]['id'];
+	$_SESSION['malla_actual']  = $alumno[0]['malla_actual'];
+	$_SESSION['id_carrera']    = $alumno[0]['id_carrera'];
+	$_SESSION['id_escuela']    = $alumno[0]['id_escuela'];
+	$_SESSION['carrera']       = $alumno[0]['carrera'];
+	$_SESSION['escuela']       = $alumno[0]['escuela'];
+	$_SESSION['enlace_volver'] = "";
+	//header("Location: principal.php?modulo=$modulo");
+	echo(js("window.location='principal.php?modulo=$modulo'"));
+} else {
+	$msje = " Ha ocurrido un error en el ingreso.\\n Por favor intentalo nuevamente.";
+	echo(msje_js($msje));
+	echo(js("window.locarion='http://www.umcervantes.cl/'"));
+	exit;	
+};	
+?>

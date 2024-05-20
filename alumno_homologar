@@ -1,0 +1,116 @@
+$SQL_alumno = "SELECT id_malla_actual,cohorte,semestre_cohorte FROM vista_alumnos WHERE id='$id_alumno'";
+	$alumno = consulta_sql($SQL_alumno);
+	extract($alumno[0]);
+	
+	$SQL_detalle_malla = "SELECT id_prog_asig,cod_asignatura,asignatura,nivel,caracter
+	     FROM vista_detalle_malla
+	     WHERE id_malla=$id_malla_actual";
+	
+	$SQL_alumno_ca = "SELECT CASE WHEN ca.id_curso IS NOT NULL THEN c.id_prog_asig
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN ca.id_pa
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN ca.id_pa_homo
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN ca.id_pa
+	        END AS id_prog_asig,
+	        CASE WHEN ca.id_curso IS NOT NULL THEN c.ano||'-'||c.semestre
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN '$cohorte-$semestre_cohorte'
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN extract(YEAR FROM ca.fecha_mod)||'-'||CASE WHEN extract(MONTH from ca.fecha_mod) <= 7 THEN 1 ELSE 2 END
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN extract(YEAR FROM ca.fecha_mod)||'-'||CASE WHEN extract(MONTH from ca.fecha_mod) <= 7 THEN 1 ELSE 2 END
+	        END AS periodo,
+	  	     CASE WHEN ca.id_curso IS NOT NULL THEN coalesce(ca.nota_final::numeric(2,1)::text,'Cursando')||' '||coalesce(cae.nombre,'')
+	             WHEN ca.id_pa IS NOT NULL AND ca.convalidado THEN 'APC'
+	             WHEN ca.id_pa_homo IS NOT NULL AND ca.homologada THEN 'APH'
+	             WHEN ca.id_pa IS NOT NULL AND ca.examen_con_rel THEN 'APECR'
+	        END AS nf,ca.id_estado,ca.nota_final
+	 FROM cargas_academicas AS ca
+	 LEFT JOIN cursos AS c ON c.id=ca.id_curso
+	 LEFT JOIN ca_estados AS cae ON cae.id=ca.id_estado
+	 WHERE ca.id_alumno=$id_alumno
+	 ORDER BY periodo DESC";
+
+	$SQL_avance_malla = "SELECT dm.cod_asignatura||' '||dm.asignatura AS asignatura,dm.nivel,dm.caracter,
+	                            char_comma_sum(coalesce(aca.nf,'No cursado')) AS estado,
+	                            char_comma_sum(aca.periodo) AS periodo,
+	                            char_comma_sum(text(aca.id_estado)) AS ids_estados
+	                     FROM ($SQL_detalle_malla) AS dm
+	                     LEFT JOIN ($SQL_alumno_ca) AS aca ON aca.id_prog_asig=dm.id_prog_asig
+	                     GROUP BY dm.cod_asignatura,dm.asignatura,dm.nivel,dm.caracter
+	                     ORDER BY dm.nivel,asignatura;";
+	$avance_malla = consulta_sql($SQL_avance_malla);
+
+	$SQL_alumno_prom_aprob = "SELECT avg(nota_final)::numeric(2,1) AS prom_aprob,count(id) AS cant_asig_aprob
+	                          FROM cargas_academicas 
+	                          WHERE id_alumno=$id_alumno AND id_estado=1 
+	                          AND id_curso IN (SELECT id FROM cursos 
+	                                           WHERE id_prog_asig IN (SELECT id_prog_asig 
+	                                           FROM ($SQL_detalle_malla) AS dm));";
+	$alumno_prom_aprob = consulta_sql($SQL_alumno_prom_aprob);
+	$prom_aprob      = $alumno_prom_aprob[0]['prom_aprob'];
+	$cant_asig_aprob = $alumno_prom_aprob[0]['cant_asig_aprob'];
+
+	$SQL_alumno_prom_gen = "SELECT avg(nota_final)::numeric(2,1) AS prom_gen,count(id) AS cant_asig_gen
+	                        FROM cargas_academicas 
+	                        WHERE id_alumno=$id_alumno AND id_estado in (1,2)
+	                          AND id_curso IN (SELECT id FROM cursos 
+	                                           WHERE id_prog_asig IN (SELECT id_prog_asig 
+	                                           FROM ($SQL_detalle_malla) AS dm));";
+	$alumno_prom_gen = consulta_sql($SQL_alumno_prom_gen);
+	$prom_gen        = $alumno_prom_gen[0]['prom_gen'];
+	$cant_asig_gen   = $alumno_prom_gen[0]['cant_asig_gen'];
+
+	
+	$HTML = "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla' colspan='5'>Rendimiento académico con respecto al Plan de estudio (malla)</td>"
+	      . "  </tr>"
+	      . "  <tr class='filaTituloTabla'>"
+	      . "    <td class='tituloTabla'>Nivel</td>"
+	      . "    <td class='tituloTabla'>Asignatura</td>"
+	      . "    <td class='tituloTabla'>Carácter</td>"
+	      . "    <td class='tituloTabla'>Situación</td>"
+	      . "    <td class='tituloTabla'>Periodo</td>"
+	      . "  </tr>";
+
+	$nivel_aux = $avance_malla[0]['nivel'];
+	for($x=0;$x<count($avance_malla);$x++) {
+		extract($avance_malla[$x]);
+	
+		if ($nivel_aux <> $nivel) {
+			$HTML .= "<tr class='filaTabla'><td colspan='5' class='textoTabla'>&nbsp;</td></tr>";
+		}
+		
+		$nivel_aux = $nivel;
+		
+		$estado = explode(',',$estado);
+		$ids_estados = explode(',',$ids_estados);
+		$periodo = explode(",",$periodo);
+				
+		$color_estilo = "color: #000000";
+		for ($z=0;$z<count($estado);$z++) {
+			if ($ids_estados[$z] == "2") {
+				$color_estilo = "color: #ff0000";
+			} elseif ($ids_estados[$z] == "1") {
+				$color_estilo = "color: #000099";
+			}
+			$estado[$z] = "<div style='$color_estilo'>".trim($estado[$z])."</div>";
+			$periodo[$z] = "<div style='$color_estilo'>".trim($periodo[$z])."</div>";
+		}
+		$estado = implode("",$estado);		
+		$periodo = implode("",$periodo);		
+
+
+		$HTML .= "<tr class='filaTabla'>\n"
+		      .  "  <td class='textoTabla' align='center'> $nivel</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $asignatura</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $caracter</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $estado</td>\n"
+		      .  "  <td class='textoTabla' nowrap> $periodo</td>\n"
+		      .  "</tr>\n";
+	}
+	
+	$HTML .= "<tr class='filaTabla'>\n"
+	      .  "  <td class='textoTabla' colspan='5' align='center'>"
+	      .  "    En promedio general un <b>$prom_gen</b> con $cant_asig_gen asignaturas<br>"
+	      .  "    En promedio un <b>$prom_aprob</b> con $cant_asig_aprob asignaturas aprobadas"
+	      .  "  </td>\n"
+	      .  "</tr>\n";
+
+	return $HTML;

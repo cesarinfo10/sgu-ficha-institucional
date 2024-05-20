@@ -1,0 +1,38 @@
+<?php
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+?>
+
+<!-- inicio: menu -->
+<div id="menu">
+  <ul>
+     <li><a href='http://www.umcervantes.cl/archivos/calendario_academico_2009.pdf' title='Pinche aquí para ver el Calendario Académico 2009'><blink>NUEVO:</blink> Calendario Académico 2009</a></li>
+    <li><a href="principal.php?modulo=portada">Portada</a></li>
+    <!-- <ul><li><a href='principal.php?modulo=tabla_horarios'>Tabla de horarios</a></li></ul> -->
+    <li><a href="principal.php?modulo=mi_registro_academico">Mi Registro Académico</a></li>
+      <ul><li><a href='principal.php?modulo=mis_cursos' title='Ver cursos actuales'>Mis Cursos</a></li></ul>
+    
+    <!-- <li><a href="principal.php?modulo=inscripcion_asignaturas">Toma de Ramos</a></li>-->
+<!-- <ul><li><a href='$enlace' title='$descrip_app'>$nombre_app</a></li></ul> -->
+  </ul>
+</div>
+<br><br>
+<div class="texto" align="justify">
+  <center><b>Tabla de Horarios</b></center>
+    <table border="1" class="texto" cellspacing="0" cellpadding="2" class="tabla">
+      <tr class='filaTituloTabla'><td class='tituloTabla'>Nombre del<br>Módulo</td><td class='tituloTabla'>intervalo</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">A</td><td nowrap class='textoTabla' align="left">08:30 - 10:00</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">B</td><td nowrap class='textoTabla' align="left">10:15 - 11:45</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">C</td><td nowrap class='textoTabla' align="left">12:00 - 13:30</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">D</td><td nowrap class='textoTabla' align="left">13:45 - 15:15</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">E</td><td nowrap class='textoTabla' align="left">15:30 - 17:00</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">F</td><td nowrap class='textoTabla' align="left">17:15 - 18:45</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">G</td><td nowrap class='textoTabla' align="left">19:00 - 20:30</td></tr>
+      <tr class='filaTabla' valign="top"><td class='textoTabla' align="center">H</td><td nowrap class='textoTabla' align="left">20:45 - 22:15</td></tr>
+    </table>
+</div>
+<!-- fin: menu -->
+

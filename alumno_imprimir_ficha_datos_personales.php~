@@ -1,0 +1,55 @@
+<html>
+  <head>
+      <link href="sgu.css" rel="stylesheet" type="text/css">
+  </head>
+</head>
+<body>
+<?php
+
+include("funciones.php");
+$id_alumno = $_REQUEST['id_alumno'];
+$vista     = $_REQUEST['vista'];
+
+$SQL_alumno = "SELECT id,rut,nombre,genero,fec_nac,nacionalidad,coalesce(pasaporte,'**No corresponde**') AS pasaporte,
+                      direccion,comuna,region,telefono,coalesce(tel_movil,'** No se registra **') AS tel_movil,email,admision,
+                      coalesce(semestre_cohorte,0) AS semestre_cohorte,cohorte,carrera,malla_actual,estado,id_malla_actual
+               FROM vista_alumnos WHERE id=$id_alumno;";
+$alumno = consulta_sql($SQL_alumno);
+extract($alumno[0]);
+$HTML_datos_personales_alumno = datos_personales_alumno();
+if ($_REQUEST['vista']=="") { $_REQUEST['vista']="avance_cronologico"; } 
+
+switch ($_REQUEST['vista']) {
+	case "avance_cronologico":
+		$HTML_vista_rend_acad = avance_cronologico();
+		break;
+	case "avance_malla":
+		$HTML_vista_rend_acad = avance_malla();
+		break;
+	case "homologaciones":
+		$HTML_vista_rend_acad = vista_homologaciones();
+		break;
+	case "convalidaciones":
+		$HTML_vista_rend_acad = vista_convalidaciones();
+		break;
+
+}			
+
+
+?>
+<div>
+ <h3>Ficha de Antecedentes del Alumno</h3>
+</div>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <?php echo($HTML_datos_personales_alumno); ?>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla" width="100%">
+  <?php echo($HTML_vista_rend_acad); ?>
+</table>
+<script>
+  window.print();
+  history.back();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<div class="texto" align="justify">
+<?php if ($_SESSION['tipo'] == 0 || $_SESSION['tipo'] == 5 || $_SESSION['usuario'] == "ggonzalez") { ?>
+  <?php echo(ucfirst(strftime("%A %d de %B de %Y", time()))); ?>:
+  <b>Avance de Estados de Alumnos Matriculados (<?php echo ("$SEMESTRE-$ANO"); ?>): </b>
+  <blockquote>
+    <?php include("contenido_finazas.php"); ?>
+  </blockquote><br>
+  <?php } ?>
+<?php if ($_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2 ) { ?>
+<!--  Lunes 2 de Noviembre de 2009: <b>Encuesta de Evaluación Docente 2dor semestre 2009</b>
+  <blockquote>
+    Se encuentran disponibles las encuestas para ser respondidas en línea. Para ello debe pinchar
+    <a href="http://ugs.umcervantes.cl/sgu/encuestas/?modulo=encuestas_escuela&id_evaluador=<?php echo($_SESSION['id_usuario']); ?>">
+      aquí
+    </a>
+  </blockquote>--> 
+<?php } ?>  
+</div>
+<div class="texto" style="color: #7D7D7D">
+  Lunes 15 de Septiembre de 2008: <b>Se encuentra disponible el ingreso de Calificaciones Parciales</b>
+  <blockquote>
+    A diferencia del semestre anterior, en que se encontraba predefinida la cantidad de notas parciales (dos notas)
+    que un profesor debía aplicar, en este semestre cada docente podrá definir para cada curso este parámetro. El
+    rango es de mínimo una a un máximo de siete notas parciales que se aplicarán e ingresarán durante el semestre. Así
+    mismo, el SGU cuando detecte que no se ha definido tal parámetro, preguntará al intentar entrar a un curso para
+    ser calificado. Finalmente, este parámetro podrá ser cambiado por el profesor las veces que estime conveniente, no
+    obstante, en la medida que lo disminuya, la orden que le estará dando al SGU es de eliminar todas aquellas notas
+    parciales fuera del rango. Para cualquier duda, puede consultar con su coordinador de carrera.
+  </blockquote><br>
+  Lunes 25 de Agosto de 2008: <b>Se encuentra habilitado los cupos de cursos</b>
+  <blockquote>
+    Como una necesidad natural de la gestión académico administrativa, se ha habilitado los cupos de cursos
+    que funcionan como tope al momento de realizar inscripciones de asignaturas. Algunos cursos (que se solicitaron
+    informalmente) ya tienen sus cupos establecidos, mientras que para el resto de los cursos del periodo 2-2008 no lo
+    tienen, por tanto, no hay límite de alumnos a inscribir. Prontamente, en el módulo de edición de cursos, aparecerá
+    la opción para establecer el cupo de un curso.
+  </blockquote><br>
+  Viernes 18 de Julio de 2008: <b>Se encuentra disponible el cálculo de Promedio de Notas Parciales</b>
+  <blockquote>
+    Originalmente se pensó en un cálculo centralizado de Nota de cátedra (vale decir, promedio de Notar Parciales) y
+    la Nota Final, pero era poco práctico. Entonces, para calcular este promedio, se debe entrar al modulo de control
+    de Notas Parciales y pinchar en el último botón (Calcular Nota de Cátedra). Este paso será necesario para obtener el
+    listado de alumnos con derecho u obligación de rendir prueba recuperativa (a excepción de las asignaturas que se
+    encuentran en proceso de Examinación por parte del CSE).
+  </blockquote><br>
+<!--
+Viernes 20 de octubre de 2006: <b>&Uacute;ltima hora!!!</b>
+<blockquote>
+Nuestro Vicerrector Acad&eacute;mico autoriz&oacute; la nueva nomenclatura para los m&oacute;dulos de horarios:
+<table border="1" class="texto" cellspacing="0" cellpadding="2">
+  <tr><th align="center">Nombre del<br>M&oacute;dulo</th><th align="center">intervalo</th></tr>
+  <tr valign="top"><td align="center">A</td><td align="left">08:30 - 10:00</td></tr>
+  <tr valign="top"><td align="center">B</td><td align="left">10:15 - 11:45</td></tr>
+  <tr valign="top"><td align="center">C</td><td align="left">12:00 - 13:30</td></tr>
+  <tr valign="top"><td align="center">D</td><td align="left">13:45 - 15:15</td></tr>
+  <tr valign="top"><td align="center">E</td><td align="left">15:30 - 17:00</td></tr>
+  <tr valign="top"><td align="center">F</td><td align="left">17:15 - 18:45</td></tr>
+  <tr valign="top"><td align="center">G</td><td align="left">19:00 - 20:30</td></tr>
+  <tr valign="top"><td align="center">H</td><td align="left">20:45 - 22:15</td></tr>
+</table>
+</blockquote>
+Mi&eacute;rcoles 16 de agosto de 2006: <b>Apunto de la liberación 1.0</b><br>
+<blockquote>
+Luego de ya largos 6 meses de desarrollo y m&aacute;s dos meses de dise&ntilde;o,
+SGU (Sistema de Gesti&oacute;n Universitaria), en su primera liberaci&oacute;n
+siendo la candidata a la versi&oacute;n estable 1.0, est&aacute; apunto de ver la luz.<br>
+<br>
+En un inicio, este proyecto fue un prototipo para un trabajo de taller universitario,
+pero luego de un arduo dise&ntilde;o de datos interno (con la colaboraci&oacute;n del DESIM y
+la Vicerector&iacute;a Acad&eacute;mica), y la filosof&iacute;a del software libre han permitido
+sacar adelante este software, que ayudar&aacute; notablemente a la gesti&oacute;n de nuestra
+Universidad Miguel de Cervantes.
+</blockquote>
+</div>
+-->

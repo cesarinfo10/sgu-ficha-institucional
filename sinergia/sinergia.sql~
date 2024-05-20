@@ -1,0 +1,58 @@
+CREATE SCHEMA sinergia;
+
+CREATE TABLE sinergia.pruebas (
+	id serial primary key,
+	nombre text not null unique,
+	alias text not null unique,
+	activo bool default false not null
+);
+
+INSERT INTO sinergia.pruebas (nombre,alias,activo) VALUES ('Autoconcepto Forma 5','AF5',true);
+INSERT INTO sinergia.pruebas (nombre,alias,activo) VALUES ('Escala de Estrategias de Aprendizaje','ACRA',true);
+INSERT INTO sinergia.pruebas (nombre,alias,activo) VALUES ('OTIS Sencillo','OTIS',true);
+
+CREATE TABLE sinergia.respuestas_af5 (
+	id serial primary key,
+	semestre int2 not null,
+	ano int2 not null,
+	fecha timestamp default now(),
+	rut_alumno text not null,
+	p1 int2 not null,
+	p2 int2 not null,
+	p3 int2 not null,
+	p4 int2 not null,
+	p5 int2 not null,
+	p6 int2 not null,
+	p7 int2 not null,
+	p8 int2 not null,
+	p9 int2 not null,
+	p10 int2 not null,
+	p11 int2 not null,
+	p12 int2 not null,
+	p13 int2 not null,
+	p14 int2 not null,
+	p15 int2 not null,
+	p16 int2 not null,
+	p17 int2 not null,
+	p18 int2 not null,
+	p19 int2 not null,
+	p20 int2 not null,
+	p21 int2 not null,
+	p22 int2 not null,
+	p23 int2 not null,
+	p24 int2 not null,
+	p25 int2 not null,
+	p26 int2 not null,
+	p27 int2 not null,
+	p28 int2 not null,
+	p29 int2 not null,
+	p30 int2 not null,
+	UNIQUE(semestre,ano,rut_alumno)
+);
+
+CREATE TABLE sinergia.aplicadores (
+	rut text not null unique,
+	activo bool default true
+);
+
+INSERT INTO sinergia.aplicadores (rut) VALUES ('9386444-1');

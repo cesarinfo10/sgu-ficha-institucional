@@ -1,0 +1,1 @@
+COPY (SELECT * FROM encuestas.vista_estudiantil_hist WHERE ano=2023 AND semestre=1) to stdout WITH CSV HEADER

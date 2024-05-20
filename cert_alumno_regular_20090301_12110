@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>UMC - SGU - Certificado de Alumno Regular</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 12px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body>
+    <table width='100%'>
+      <tr><td align='center'><img src='img/logoumc_vertical.jpg' align='center'><div align='right'>Folio: <b>PS - 12110 / 2020</b><br><br></div><h2 align='center'>CERTIFICADO DE ALUMNO REGULAR</h2><p align='justify'><br />
+La Secretaria General de la Universidad Miguel de Cervantes certifica que doña <b>IVÁN ROBERTO ARANCIBIA MANQUI</b>, Rut  Nº <b>20.823.775-6</b>, es alumno(a) regular de esta Casa de Estudios Superiores durante el año académico <b>2020</b>, en la carrera de <b>Psicología</b>, jornada <b>Diurna</b>.<br />
+<br />
+Esta Universidad autónoma, otorga grados y títulos oficiales, cumpliendo con las exigencias establecidas en el DFL N.º 2, de 2009, del Ministerio de Educación, y está autorizada por dicho Ministerio de Educación por Decreto exento N°1169, de 27 de noviembre de 1997, publicado en el Diario Oficial de 17 de diciembre del mismo año.<br />
+<br />
+Se extiende el presente certificado a petición del(a) interesado(a) para los fines que estime convenientes.<br />
+<br />
+Santiago,  9 de junio de 2020.<br />
+</p></td></tr>
+      <tr><td><table width='100%'>  <tr>    <td width='45%' align='center' valign='botom'>      <img src='img/cert_12110.png'><br><small style='text-align: justify'>Para validar este certificado, por favor escanee este código QR o bien acceda a https://www.umcervantes.cl/validacion-de-certificados-oficiales-umc/</small>    </td>    <td width='10%'>&nbsp;</td>    <td width='45%' align='center' valign='botom'><img src='img/firma-tiembre-secgen.jpg'></td>  </tr></table></td></tr>
+    </table>
+  </body>
+</html>

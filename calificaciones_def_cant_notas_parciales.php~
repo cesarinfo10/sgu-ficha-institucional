@@ -1,0 +1,99 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+//include("validar_modulo.php");
+
+$id_curso             = $_REQUEST['id_curso'];
+$cant_notas_parciales = $_REQUEST['cant_notas_parciales'];
+if ($id_curso == "") {
+	echo(js("location.href='principal.php?modulo=calificaciones';"));
+	exit;
+}
+
+$SQL_curso = "SELECT vc.id,vc.cod_asignatura||'-'||vc.seccion||' '||vc.asignatura AS asignatura,
+                     CASE vc.semestre
+                          WHEN 0 THEN 'Verano'
+                          WHEN 1 THEN 'Primero'
+                          WHEN 2 THEN 'Segundo'
+                     END AS semestre,vc.ano,vc.profesor,vc.carrera,
+                     coalesce(vc.sesion1,'')||' '||coalesce(vc.sesion2,'')||' '||coalesce(vc.sesion3,'') as horario,
+                     vc.id_prog_asig,cantidad_alumnos(vc.id) AS cant_alumnos,c.cupo,c.cant_notas_parciales
+              FROM vista_cursos AS vc
+              LEFT JOIN cursos AS c ON c.id=vc.id 
+              WHERE vc.id=$id_curso;";
+$curso = consulta_sql($SQL_curso);
+
+if (count($curso) == 0) {
+	echo(js("location.href='principal.php?modulo=calificaciones';"));
+	exit;
+}
+
+if ($_REQUEST['guardar'] == "Guardar" && $cant_notas_parciales <> "") {
+	$SQL_curso_update = "UPDATE cursos SET cant_notas_parciales='$cant_notas_parciales' WHERE id=$id_curso;";
+	if (consulta_dml($SQL_curso_update) > 0) {
+		echo(msje_js('Se ha guardado la información ingresada.'));		
+		echo(js("location.href='principal.php?modulo=calificaciones_ver_curso&id_curso=$id_curso';"));
+		exit;
+	}
+}
+	
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	Definir cantidad de Notas Parciales: <?php echo($curso[0]['asignatura']); ?>  
+</div><br>
+
+<form name="formulario" action="principal.php" method="post">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_curso" value="<?php echo($id_curso); ?>">
+
+<table class="tabla">
+  <tr>
+    <td class="tituloTabla" style="text-align:left">
+      <input type="submit" name="guardar" value="Guardar">
+    </td>
+    <td class="tituloTabla" style="text-align:left">
+      <input type="button" value="Cancelar" onClick="history.back();">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+<?php
+	extract($curso[0]);
+
+	$cant_np = "";
+	for ($x=1;$x<=7;$x++) {
+		if ($cant_notas_parciales <> "") {
+			$cant_np .= "<option value='$x' selected>$x</option>";
+		} else {
+			$cant_np .= "<option value='$x'>$x</option>";
+		}
+	}
+	
+	$cant_notas_parciales = "<select name='cant_notas_parciales'>"
+	                      . "  <option value=''>-- Seleccione --</option>"
+	                      . $cant_np
+	                      . "</select>";
+	
+	$aCurso = array("Número de Acta"              => $id,
+	                "Asignatura"                  => $asignatura,
+	                "Semestre"                    => $semestre,
+	                "Año"                         => $ano,
+	                "Profesor"                    => $profesor,
+	                "Carrera"                     => $carrera,
+	                "Horario"                     => $horario,
+	                "Cantidad de Notas Parciales" => $cant_notas_parciales);	                
+
+	$HTML_enc_curso = tabla_encabezado($aCurso);
+	echo($HTML_enc_curso);	
+?>
+
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->

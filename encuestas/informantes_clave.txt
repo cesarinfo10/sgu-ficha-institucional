@@ -1,0 +1,53 @@
+#Cuestionario Informantes Claves Alumnos
+p1#Semestre que está cursando#I#II#III#IV#V#VI#VII#VIII#IX#X
+p2#Conozco la Misión y Visión de UMC#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p3#La carrera que estudio es coherente con la Misión y Visión de  la UMC#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p4#Conozco las principales características del Modelo Educativo de la UMC#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p5#Como estudiante tengo conocimiento del perfil de egreso, esto es, el conjunto de conocimientos, habilidades y actitudes profesionales que debe tener el egresado en la carrera que estoy cursando#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p6#El plan de estudios corresponde al perfil de egreso declarado para la carrera#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p7#La formación recibida hasta la fecha permite suponer que se cumplirán los objetivos de la carrera#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p8#La información que recibí por Admisión cuando postulé a la carrera es verídica#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p9#La reglamentación académica es conocida por mi#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p10#Los Directores de Escuela y los Coordinadores son conocidas y accesibles por los alumnos#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p11#Existen las instancias para comunicarse con docentes y las autoridades de la carrera#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p12#Los centros de estudiantes u otras agrupaciones de los alumnos permiten canalizar las necesidades a las autoridades#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p13#Creo que la calidad de los docentes de la UMC es buena#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p14#El Plan de Estudios de mi carrera (incluyendo el proceso de titulación) responde a las necesidades de quien luego se enfrentará al mundo laboral#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p15#Los contenidos y actividades prácticas que se me han entregado son las adecuadas para mi formación#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p16#Las metodologías de enseñanza empleadas por los docentes permiten un buen aprendizaje#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p17#La forma de evaluar por los docentes está basada en criterios claros#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p18#Cuando tengo dudas sobre la corrección de un instrumento de evaluación tengo mecanismos que me permiten abordar esa duda#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p19#Los docentes que participan en la carrera son idóneos y se encuentran actualizados en sus conocimientos#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p20#La cantidad de docentes de la carrera es suficiente y adecuada#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p21#Existen mecanismos periódicos de evaluación docente, es decir encuestas mediante los cuales los alumnos juzgan la calidad de los profesores y la docencia impartida#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p22#La interacción con la Dirección de Escuela como el personal administrativo dan en un ambiente de respecto#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p23#Los trámites que debo efectuar como solicitud de certificados, inscripción de asignaturas y otras prestaciones, generalmente son expeditos#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p24#La  Dirección de Asuntos Estudiantiles (DAE) se encuentra siempre disponible a prestar la asesoría y/o ayuda a mis necesidades#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p25#La DAE organiza actividades extraprogramáticas de su interés#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p26#En la universidad existen mecanismos que facilitan la inserción laboral de los estudiantes, como por ejemplo, prácticas laborales, bolsa de trabajo en el Sitio Web de la UMC, etc.#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p27#Utilizo habitualmente la Biblioteca#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p28#Biblioteca cuenta con el material requerido para mi aprendizaje#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p29#La biblioteca adquiere permanente publicaciones periódicas (revistas, informes, etc.) sobre la disciplina#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p30#Para complementar mis aprendizajes prefiero utilizar textos o documentos digitalizados (fuentes fidedignas en la Web)#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p31#Utilizo regularmente el sistema informático (SGU) para efectuar la toma de ramos y revisar información académica#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p32#La Escuela fomenta entre sus estudiantes la participación en diferentes actividades de extensión de la Universidad, como seminarios, charlas, entre otros#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p33#Participo regularmente en las actividades organizadas por la Universidad#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p34#Los docentes utilizan las herramientas tecnologías adecuadas para el logro de los aprendizajes declarados en la carrera#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p35#Los recintos de la universidad son los adecuados para realizar el proceso de enseñanza aprendizaje#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p36#El laboratorio de informática se encuentra disponible para los estudiantes fuera de las horas de clases#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p37#El laboratorio de informática con conexión a Internet  es un recurso importante que utilizo en mis aprendizajes#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p38#La infraestructura de la Universidad en general es la adecuada#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p39#La docencia impartida en la carrera es de calidad#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p40#Estoy satisfecho con la formación que he recibido en esta universidad#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p41#Considero realizar estudios de postítulo o postgrado después de egresar y/o titularme#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+#Evaluación uso de medios audiovisuales
+p42#El uso de videos o películas fue una herramienta útil para introducirme en las materias de la asignatura#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p43#El uso de videos o películas me permitieron fortalecer mis conocimientos teóricos#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p44#El uso de videos o películas me permitieron aprender la aplicación práctica de mis contenidos#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p45#El uso de videos o películas elevaron mi interés por la asignatura#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p46#El uso de videos o películas fue un proceso eficaz de apoyo a mi proceso de aprendizaje#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p47#El uso de videos o películas permitieron que entendiera que los procesos formativos son abiertos y flexibles#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p48#El uso de videos o películas me permitió entender que las Tecnologías de la Información (TICs) son un recurso necesario en la docencia universitaria#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p49#El uso de videos o películas me permitió entender que las Tecnologías de la información (TICs) disponen de materiales de consulta y de apoyo a los recursos educativos tradicionales#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p50#Recomiendo que esta metodología se utilice en otras asignaturas de la UMC.#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo
+p51#Esto satisfecho con el uso de medios audiovisuales en el aula#Muy en desacuerdo#En desacuerdo#De acuerdo#Muy de acuerdo

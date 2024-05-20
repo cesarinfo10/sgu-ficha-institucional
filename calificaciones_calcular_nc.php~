@@ -1,0 +1,100 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+//include("validar_modulo.php");
+
+$id_curso = $_REQUEST['id_curso'];
+if ($id_curso == "") {
+	echo(js("location.href='principal.php?modulo=calificaciones';"));
+	exit;
+};
+
+//$SQL_curso = "SELECT cantidad_alumnos(id) AS cant_alumnos FROM cursos WHERE id=$id_curso AND semestre=$SEMESTRE AND ano=$ANO;";
+$SQL_curso = "SELECT cantidad_alumnos(id) AS cant_alumnos,cant_notas_parciales FROM cursos WHERE id=$id_curso";
+$curso = consulta_sql($SQL_curso);
+
+/*
+$SQL_tiempo_calificaciones = "SELECT c1,c2,c3,c4,c5,c6,c7 FROM tiempo_calificaciones
+                              WHERE semestre=$SEMESTRE AND ano=$ANO;";
+$tiempo_calificaciones = consulta_sql($SQL_tiempo_calificaciones);
+
+if (count($tiempo_calificaciones) > 0 && count($curso) > 0) {
+	
+	$cant_notas_parciales = $curso[0]['cant_notas_parciales'];
+	
+	for ($x=1;$x<=$cant_notas_parciales;$x++) {
+		$cp = "c".$x;
+		if ($tiempo_calificaciones[0][$cp] == "t") {
+			$parciales .= "$cp,";
+		}
+	}
+}
+*/
+
+if (count($curso) > 0) {
+	$cod_auth = md5("id_curso_$id_curso");
+	
+	$SQL_calif_parc = "SELECT (count(c1)+count(c2)+count(c3)+count(c4)+count(c5)+count(c6)+count(c7))/cantidad_alumnos(id_curso) AS cant_np_registradas
+	                   FROM vista_calificaciones_parciales
+	                   WHERE id_curso=$id_curso
+	                   GROUP BY id_curso";
+	$calif_parc = consulta_sql($SQL_calif_parc);
+	if (count($calif_parc) > 0) {
+		echo($calif_parc[0]['cant_np_registradas']);
+		if (intval($calif_parc[0]['cant_np_registradas']) < intval($curso[0]['cant_notas_parciales'])) {
+			echo(msje_js("No están registradas todas las notas parciales que ha definido en Cantidad de Notas Parciales\\n"
+			            ."No se puede calcular el promedio"));
+			echo(js("window.location='$enlbase=calificaciones_ver_curso&id_curso=$id_curso';"));
+			exit;
+		}
+
+		if ($calif_parc[0]['cant_np_registradas'] > $curso[0]['cant_notas_parciales'] && $_REQUEST['cod_anular'] == "") {
+			$msje = "ATENCIÓN: En este momento hay más notas parciales registradas de las que corresponde.\\n\\n"
+			      . "Esto ocurrió por que inicialmente usted definió un número determinado, luego registró esta "
+			      . "cantidad de notas parciales y posteriormente redefinió la cantidad de notas parciales a un "
+			      . "número menor que el inicial.\\n\\n"
+			      . "El SGU para calcular el promedio debe obligatoriamente anular dichas notas, que se han "
+			      . "registrado demás. Para esto, SGU conservará el número de calificaciones definidas, que estén "
+			      . "más a la izquierda, es decir, si registró 4 columnas de calificaciones parciales y ahora ha "
+			      . "redefinido a 2 la cantidad de estas notas, entonces SGU anulará C3 y C4\\n\\n"
+			      . "Desea continuar?";
+			$url_si = "$enlbase=calificaciones_calcular_nc&id_curso=$id_curso&cod_anular=$cod_auth";
+			$url_no = "$enlbase=calificaciones_ver_curso&id_curso=$id_curso";
+			echo(confirma_js($msje,$url_si,$url_no));
+			exit;
+		}
+		
+		if ($calif_parc[0]['cant_np_registradas'] > $curso[0]['cant_notas_parciales'] && $_REQUEST['cod_anular'] == $cod_auth) {
+			$notas_anular = "";
+			for ($x=$curso[0]['cant_notas_parciales']+1;$x<=7;$x++) { $notas_anular .= "c$x=null,"; }
+			$notas_anular = substr($notas_anular,0,-1);
+			$SQL_anular = "UPDATE calificaciones_parciales SET $notas_anular WHERE id_ca IN (SELECT id FROM cargas_academicas WHERE id_curso=$id_curso)";			
+			consulta_dml($SQL_anular);
+			echo(msje_js("Se ha procedido a anular las calificaciones sobrantes, ahora se procederá a calcular " 
+			            ."el promedio de notas parciales y establecer la Nota de Cátedra"));
+		}
+	} 
+	
+	$SQL_calc_nc_curso = "UPDATE cargas_academicas
+	                      SET nota_catedra = (suma_notas_parciales/cant_notas_parciales)::numeric(2,1),nota_final=null
+	                      FROM vista_calif_parciales_promedio
+	                      WHERE cargas_academicas.id_curso=$id_curso AND cargas_academicas.id=vista_calif_parciales_promedio.id_ca;";
+	$calc_nc_curso = consulta_dml($SQL_calc_nc_curso);
+
+	if ($calc_nc_curso > 0) {
+		echo(msje_js("Se ha calculado la Nota de Cátedra (Promedio de Notas Parciales) para los alumno(a)s del curso"));
+	}
+
+ 	echo(js("window.location='$enlbase=calificaciones_ver_curso&id_curso=$id_curso';"));
+	
+}
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<!-- Fin: <?php echo($modulo); ?> -->
+

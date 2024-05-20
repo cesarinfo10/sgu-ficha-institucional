@@ -1,0 +1,206 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+$id_curso = $_REQUEST['id_curso'];
+if (!is_numeric($id_curso)) {
+	echo(js("location.href='principal.php?modulo=gestion_cursos';"));
+	exit;
+}
+
+$SQL_curso = "SELECT vc.id,vc.cod_asignatura||'-'||vc.seccion||' '||vc.asignatura AS asignatura,vc.semestre as sem_num,
+                     CASE vc.semestre
+                          WHEN 0 THEN 'Verano'
+                          WHEN 1 THEN 'Primero'
+                          WHEN 2 THEN 'Segundo'
+                     END AS sem,vc.semestre,vc.ano,vc.profesor,vc.carrera,vc.id_profesor,
+                     coalesce(vc.sesion1,'')||' '||coalesce(vc.sesion2,'')||' '||coalesce(vc.sesion3,'') as horario,
+                     vc.id_prog_asig,cantidad_alumnos(vc.id) AS cant_alumnos,cant_alumnos_asist(vc.id) AS cant_alumnos_asist,
+                     pa.ano AS ano_prog_asig,m.ano AS ano_malla,c.cerrado
+              FROM vista_cursos AS vc
+              LEFT JOIN prog_asig AS pa ON pa.id=vc.id_prog_asig
+              LEFT JOIN detalle_mallas AS dm ON dm.id_prog_asig=vc.id_prog_asig
+              LEFT JOIN mallas AS m ON m.id=dm.id_malla
+              LEFT JOIN cursos AS c ON c.id=vc.id 
+              WHERE vc.id=$id_curso;";
+$curso = consulta_sql($SQL_curso);
+           
+if (count($curso) > 0) {
+
+	$SQL_curso_alumnos = "SELECT id_alumno,va.rut,nombre_alumno,va.carrera||'-'||a.jornada AS carrera,va.cohorte,va.semestre_cohorte,va.estado,s1,nc,s2,recup AS rec,nf,situacion
+	                      FROM vista_cursos_alumnos
+	                      LEFT JOIN vista_alumnos AS va ON va.id=id_alumno
+	                      LEFT JOIN alumnos AS a ON a.id=id_alumno
+	                      WHERE id_curso=$id_curso
+	                      ORDER BY nombre_alumno;";
+	$curso_alumnos = consulta_sql($SQL_curso_alumnos);
+
+	$SQL_calc_acta = "SELECT CASE WHEN count(id) = count(id_estado) THEN true ELSE false END AS calc_acta
+	                  FROM cargas_academicas
+	                  WHERE id_curso=$id_curso";
+	$calc_acta = consulta_sql($SQL_calc_acta);
+	$acta_imprimible = $calc_acta[0]['calc_acta'];
+
+	$SQL_curso_prom_nf = "SELECT avg(nota_final)::numeric(2,1) AS prom_nf
+	                      FROM cargas_academicas
+	                      WHERE id_curso=$id_curso AND id_estado IN (1,2);";
+	$curso_prom_nf = consulta_sql($SQL_curso_prom_nf);
+	$promedio_nf = $curso_prom_nf[0]['prom_nf'];
+	
+}
+
+extract($curso[0]);
+	
+$prog_asig = "<a class='enlaces' href='$enlbase=ver_prog_asig&id_prog_asig=$id_prog_asig'><small>Ver programa</small></a>";
+$ficha_prof = "<a class='enlaces' href='$enlbase=ver_profesor&id_profesor=$id_profesor'><small>Ver ficha</small></a>";
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>: <?php echo($curso[0]['asignatura']); ?>  
+</div><br>
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>Acciones:</td>
+    <td class='tituloTabla'>Gestión de Curso:</td>
+  </tr>
+  <tr>
+    <td class="textoTabla" style="vertical-align: middle;">
+      <?php
+			echo("<a href='$enlbase=editar_curso&id_curso=$id_curso' class='boton'>Editar</a> ");
+			echo("<a href='$mod_ant' class='boton'>Volver</a> ");
+      ?>
+    </td>
+    <td class="textoTabla" style="vertical-align: middle;">
+      <?php
+			if ($_SESSION['tipo'] == 0 || ($acta_imprimible == "t" && $curso[0]['cerrado'] == "f")) {
+				echo("<a href='acta.php?id_curso=$id_curso' target='_blank' class='boton'>Ver Acta</a> ");
+			} else {
+				$msje = "No puede imprimir el Acta de éste curso. Es posible que falten calificaciones o este curso ya esté cerrado";
+				echo("<a href='#' onClick=\"alert('$msje');\" class='boton'>Ver Acta</a> ");
+			}
+			
+			if ($_SESSION['tipo'] == 0 || ($SEMESTRE==$curso[0]['sem_num'] && $ANO == $curso[0]['ano'])) {
+				echo("<a href='$enlbase=calificaciones_ver_curso&id_curso=$id_curso' class='boton'>Calificar</a> ");
+			}
+			
+			if ($_SESSION['tipo'] == 0 || $curso[0]['cerrado'] == "f") {
+				echo("<a href='libro_de_clases.php?id_curso=$id_curso' target='_blank' class='boton'>Libro de Clases</a> ");
+			} else {
+				$msje = "Este curso está cerrado, por lo tanto ya no puede obtener una Lista de Curso para el Libro de Clases";
+				echo("<a href='#' onClick=\"alert('$msje');\" class='boton'>Lista para Libro de Clases</a> ");
+			}
+			echo("<a href='$enlbase=cursos_control_asistencia&id_curso=$id_curso' class='boton'>Asistencia Docente</a> ");
+			echo("<a href='$enlbase=ver_curso_email_al&id_curso=$id_curso' class='boton'>e-mail Alumnos</a> ");
+		?>
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class='celdaNombreAttr'>Nº Acta:</td>
+    <td class='celdaValorAttr'><?php echo($id); ?></td>
+    <td class='celdaNombreAttr'>Periodo:</td>
+    <td class='celdaValorAttr'><?php echo($sem_num."-".$ano); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Asignatura:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($asignatura); ?> <?php echo($prog_asig); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Carrera:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($carrera); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Profesor:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($profesor); ?> <?php echo($ficha_prof); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Horario:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($horario); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Inscrito(a)s:</td>
+    <td class='celdaValorAttr'><?php echo($cant_alumnos); ?> alumno(a)s</td>
+    <td class='celdaNombreAttr'>Asistentes:</td>
+    <td class='celdaValorAttr'><?php echo($cant_alumnos_asist); ?> alumno(a)s</td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla' colspan="3">Alumnos</td>
+    <td class='tituloTabla' colspan="6">Calificaciones</td>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>ID</td>
+    <td class='tituloTabla'>Nombre</td>
+    <td class='tituloTabla'>Carrera</td>
+    <td class='tituloTabla'>S1</td>
+    <td class='tituloTabla'>NC</td>
+    <td class='tituloTabla'>S2</td>
+    <td class='tituloTabla'>Rec.</td>
+    <td class='tituloTabla'>NF</td>
+    <td class='tituloTabla'>Situación</td>
+  </tr>
+<?php
+	$HTML_curso_alumnos = "";
+	for ($x=0; $x<count($curso_alumnos); $x++) {
+		extract($curso_alumnos[$x]);
+		
+		$enl = "$enlbase=ver_alumno&id_alumno=$id_alumno";
+		$enlace = "<a class='enlitem' href='$enl'>";
+		$js_onClick = "\"window.location='$enl';\"";
+		
+		$_azul = "color: #000099";
+		$_rojo = "color: #ff0000";
+		
+		$estilo_s1 = $estilo_nc = $estilo_s2 = $estilo_rec = $estilo_nf = $estilo_sit = "color: #000000";
+
+		if ($estado == "Moroso" && $semestre == $SEMESTRE && $ano == $ANO && $_SESSION['tipo'] > 0) {
+			$s1 = $nc = $s2 = $rec = $nf = $situacion = "N/D";
+		}
+		
+		if ($s1>=1 && $s1<4) { $estilo_s1 = $_rojo; } elseif ($s1>=4) { $estilo_s1 = $_azul; }   
+
+		if ($nc>=1 && $nc<4) { $estilo_nc = $_rojo; } elseif ($nc>=4) { $estilo_nc = $_azul; }   
+
+		if ($s2>=1 && $s2<4) { $estilo_s2 = $_rojo; } elseif ($s2>=4) { $estilo_s2 = $_azul; }   
+
+		if ($rec>=1 && $rec<4) { $estilo_rec = $_rojo; } elseif ($rec>=4) { $estilo_rec = $_azul; }   
+
+		if ($nf>=1 && $nf<4) { $estilo_nf = $_rojo; } elseif ($nf>=4) { $estilo_nf = $_azul; }   
+
+		if ($situacion == "Reprobado") { $estilo_sit = $_rojo; } elseif ($situacion == "Aprobado") { $estilo_sit = $_azul; }
+
+		if ($estado == "Moroso") { $situacion = "(M) ".$situacion; }
+		
+		$HTML_curso_alumno .= "<tr class='filaTabla' onClick=$js_onClick>\n"
+		                   .  "  <td class='textoTabla'> $id_alumno</td>\n"
+		                   .  "  <td class='textoTabla'><a class='enlitem' href='$enl'>$nombre_alumno</a></td>\n"
+		                   .  "  <td class='textoTabla' align='center'> $carrera ($cohorte-$semestre_cohorte)</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_s1'> $s1</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_nc'> $nc</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_s2'> $s2</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_rec'> $rec</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_nf'> $nf</td>\n"
+		                   .  "  <td class='textoTabla' style='$estilo_sit'> $situacion</td>\n"
+		                   .  "</tr>\n";
+		                   
+	};
+	
+	$HTML_curso_alumno .= "  <tr>\n"
+	                   .  "    <td class='textoTabla' align='right' colspan='7'>Promedio Notas Finales:</td>\n"
+	                   .  "    <td class='textoTabla' colspan='2'>&nbsp;$promedio_nf</td>\n"
+	                   .  "  </tr>\n";
+	echo($HTML_curso_alumno);
+?>
+</table>
+
+<!-- Fin: <?php echo($modulo); ?> -->

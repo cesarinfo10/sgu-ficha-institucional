@@ -1,0 +1,2939 @@
+AU    
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12172
+     RUT: 16787525-4
+  Nombre: * AMÉSTICA  JOCELYN
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12107
+     RUT: 16793309-2
+  Nombre: ARAVENA ARAVENA YAQUELINE MACARENA
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12108
+     RUT: 17072147-0
+  Nombre: CASTRO ACEVEDO NATHALY DEL PILAR
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12109
+     RUT: 16040713-1
+  Nombre: DOTTE RAMÍREZ DANILO ALEXANDER
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12173
+     RUT: 16368452-7
+  Nombre: * FERRÁN ECHEVERRIA  NELSÓN 
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12174
+     RUT: 15762236-1
+  Nombre: * GAJARDO  JEANNETTE
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12163
+     RUT: 9533779-1
+  Nombre: GODOY ZAMARZA ADOLFO EVINSON
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12175
+     RUT: 9663976-7
+  Nombre: * GUTIERREZ  MARÍA ANGÉLICA 
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12176
+     RUT: 13682233-0
+  Nombre: * HORMAZABAL CLAUDIO
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12112
+     RUT: 13087646-3
+  Nombre: MELÉNDEZ GARRIDO OSCAR FABIÁN
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12113
+     RUT: 12489387-9
+  Nombre: MUÑOZ HIDALGO MANUEL ENRIQUE
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12114
+     RUT: 16993075-9
+  Nombre: PALMA ARNEZ SHIRLEY KATHERINE
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12115
+     RUT: 15417983-6
+  Nombre: PARDO ARANDA CRISTIAN ALEJANDRO
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12177
+     RUT: 14090498-8
+  Nombre: * PÉREZ GONZÁLEZ  EDUARDO 
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12164
+     RUT: 15353642-2
+  Nombre: POZO LASTRA MIGUEL ANDRÉS
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12117
+     RUT: 12282623-6
+  Nombre: ROJAS CATALÁN PAMELA ADRIANA
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12118
+     RUT: 16719090-1
+  Nombre: SÁNCHEZ OROSTEGUI PAULINA ANDREA
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12178
+     RUT: 14417877-2
+  Nombre: * VALDERRAMA RODRIGO 
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12052
+     RUT: 16663970-0
+  Nombre: VALENZUELA MUÑOZ CAROLINA GUISELLA
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12119
+     RUT: 16787313-8
+  Nombre: VENEGAS QUEZADA JACQUELINE DEL CARMEN
+ Carrera: AU    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2269 | AU-101 Contabilidad I
+  2007-1 |     2268 | AU-102 Computación I
+  2007-1 |     2265 | AU-103 Introducción a la Economía
+  2007-1 |     2266 | AU-104 Introducción a la Administración
+  2007-1 |     2267 | AU-105 Introducción al Algebra
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+DºDº  
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12185
+     RUT: 16149165-9
+  Nombre: * ARAYA MOSQUERA  DAYAN AMBAR
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12054
+     RUT: 6591276-7
+  Nombre: ARTEAGA RODRÍGUEZ JOSÉ MIGUEL
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12186
+     RUT: 16956466-3
+  Nombre: * BRICEÑO  CAMILA   
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12078
+     RUT: 16634596-0
+  Nombre: CABRERA SALAS FERNANDO JOSÉ
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12187
+     RUT: 16460936-7
+  Nombre: * CARDENAS OJEDA  RODRIGO 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12080
+     RUT: 16919148-4
+  Nombre: CASTRO GUARDA CAROLINA ELENA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12160
+     RUT: 16901944-4
+  Nombre: CONCHA BADILLA ANHAVEL NADEZKA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12081
+     RUT: 16644502-7
+  Nombre: DÍAZ ACUÑA YASNA NICOLE
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12082
+     RUT: 16647166-4
+  Nombre: FUENTEALBA FUENTEALBA ANDREA ESTEFANY
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12179
+     RUT: 15642284-3
+  Nombre: * FUENTES PABLO 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12083
+     RUT: 16358391-7
+  Nombre: GARCIA FUENZALIDA DANIEL ALFONSO
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12084
+     RUT: 15587680-8
+  Nombre: HERRERA LÓPEZ FELIPE ANDRÉS
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12085
+     RUT: 17022602-K
+  Nombre: JARA ZANNI DOMINIQUE ALEJANDRA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12086
+     RUT: 17025556-9
+  Nombre: LAGOS CARIS JAVIERA LOURDES
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2363 | SELLO-002 Concepciones Políticas Contemporaneas
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12087
+     RUT: 17082711-2
+  Nombre: LARENAS YÉVENES CAMILA ALEJANDRA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12088
+     RUT: 16937170-9
+  Nombre: MARÍN MARTÍNEZ PAOLA CRISTINA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12089
+     RUT: 16912879-0
+  Nombre: MIRANDA ASTUDILLO GHISLAINE VERÓNICA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12161
+     RUT: 16557909-7
+  Nombre: MONTOYA LEMUS SEBASTIÁN PATRICIO
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12180
+     RUT: 16346258-3
+  Nombre: * MUÑOZ GUTIERREZ JENNIFER 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12181
+     RUT: 16147067-8
+  Nombre: * OVALLE CONTRERAS ALEJANDRO
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12090
+     RUT: 17248783-1
+  Nombre: PEDRINI BECERRA MARÍA FERNANDA
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2363 | SELLO-002 Concepciones Políticas Contemporaneas
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12182
+     RUT: 16127209-4
+  Nombre: * ROJAS  CESAR 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12183
+     RUT: 15840892-9
+  Nombre: * VALENZUELA CERDA JOSÉ LUIS 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12091
+     RUT: 16718509-6
+  Nombre: VALENZUELA MARTÍNEZ ENYELS GRACE
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12092
+     RUT: 16820051-K
+  Nombre: VÁSQUEZ TAPIA GERALDINE RENEE
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12188
+     RUT: 10673234-5
+  Nombre: * VEGA  YAZMINA 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12184
+     RUT: 15799226-0
+  Nombre: * VILLELA ARANCIBIA  FELIX 
+ Carrera: DºDº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2338 | DD-101 Introducción al Derecho I
+  2007-1 |     2339 | DD-102 Derecho Político I
+  2007-1 |     2340 | DD-103 Historia del Derecho I
+  2007-1 |     2342 | DD-104 Teoría Económica
+  2007-1 |     2341 | DD-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+DºVº  
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12053
+     RUT: 13452989-K
+  Nombre: ALARCÓN FERNÁNDEZ HÉCTOR YERKO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12148
+     RUT: 15811354-6
+  Nombre: ALVAREZ MEDINA DANILO IVÁN
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12189
+     RUT: 12907515-5
+  Nombre: * ÁLVAREZ SILVA  RAÚL 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12190
+     RUT: 11126884-3
+  Nombre: * ARRIOLA APORTO  LUIS 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12191
+     RUT: 11632052-5
+  Nombre: * ASTETE DÍAZ  ARTURO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12192
+     RUT: 7260020-7
+  Nombre: * BARRIGA NANCY 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12193
+     RUT: 10284621-4
+  Nombre: * BARRIOS VALENZUELA  CRISTIAN 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12055
+     RUT: 12496934-4
+  Nombre: BARRUETO CISTERNA CARLA PAOLA
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12194
+     RUT: 9423730-0
+  Nombre: * BRAVO BRITO  CLAUDIO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12195
+     RUT: 14299240-K
+  Nombre: * BURGOS TORRES PERLA 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12196
+     RUT: 10033534-4
+  Nombre: * CARTAGENA ARAYA ALEX 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12057
+     RUT: 7016374-8
+  Nombre: CARVALLO RENCORET MANUEL FEDERICO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12197
+     RUT: 8006306-7
+  Nombre: * DEL REAL CASTRO  MARIO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12157
+     RUT: 13459581-7
+  Nombre: GAETE GUAJARDO SERGIO IVÁN
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12059
+     RUT: 12683961-8
+  Nombre: GASTÓN BRAVO GONZALO HERNÁN
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12198
+     RUT: 12590568-4
+  Nombre: * GÓMEZ VALDÉS  GONZÁLO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12199
+     RUT: 13368937-0
+  Nombre: * GONZALEZ MORALES CAROLINA 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12060
+     RUT: 16477104-0
+  Nombre: GONZÁLEZ SEPÚLVEDA ADOLFO FRANCISCO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12061
+     RUT: 8629371-4
+  Nombre: GONZÁLEZ TAPIA LIONEL MARCELINO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12169
+     RUT: 15149579-6
+  Nombre: GUAJARDO JARA CAMILO DEL TRÁNSITO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12170
+     RUT: 5667185-4
+  Nombre: GUERRA TORO MARGARITA ANGÉLICA
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12200
+     RUT: 15360928-4
+  Nombre: * GUZMÁN AMAS  FRANCIS 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12201
+     RUT: 14417595-6
+  Nombre: * HENRIQUEZ ALEX 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12062
+     RUT: 14470176-3
+  Nombre: HERNÁNDEZ IBACACHE CRISTIAN ANTONIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12151
+     RUT: 5991519-3
+  Nombre: HINOJOSA SERRANO JAIME FRANCISCO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12202
+     RUT: 10570460-7
+  Nombre: * INOSTROZA  ROLANDO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12171
+     RUT: 14497824-2
+  Nombre: LEVIÑANCO JARAMILLO ROBERTO CARLOS
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12215
+     RUT: 12247433-K
+  Nombre: * LÓPEZ  JUAN CARLOS
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12203
+     RUT: 13078617-0
+  Nombre: * MEJÍAS LÓPEZ  MIGUEL 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12204
+     RUT: 16026960-K
+  Nombre: * MONDACA  ADOLFO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12205
+     RUT: 15865528-4
+  Nombre: * NORAMBUENA GONZÁLEZ ROMÁN 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12152
+     RUT: 15957928-K
+  Nombre: NOVOA MORALES ALDO PATRICIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12206
+     RUT: 13619818-1
+  Nombre: * ORTIZ DANIEL 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12064
+     RUT: 6836363-2
+  Nombre: PEREDO LOBOS JORGE OMAR
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12207
+     RUT: 14520909-9
+  Nombre: * PÉREZ CARVAJAL NOLAR OMAR
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12065
+     RUT: 14141710-K
+  Nombre: PIZARRO AGUILERA FERNANDO IGNACIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12208
+     RUT: 15434170-6
+  Nombre: * RODRIGUEZ JIMÉNEZ  MANUEL 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12067
+     RUT: 16091988-4
+  Nombre: ROJAS ALBORNOZ RICARDO WLADIMIR
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12209
+     RUT: 15338143-7
+  Nombre: * ROJAS GALAZ CARLA 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12069
+     RUT: 8537192-4
+  Nombre: ROMAGNOLI DELPORTE DANTE PATRICIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12210
+     RUT: 7346355-6
+  Nombre: * ROMO LADRON DE GUEVARA  AFREDO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12211
+     RUT: 15221790-0
+  Nombre: * RUIZ FICA JOCELYN
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12070
+     RUT: 15793652-2
+  Nombre: SABALLA PAVÉZ CRISTIAN SPLEY
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12154
+     RUT: 11265992-7
+  Nombre: SANHUEZA SALGADO RAÚL EDUARDO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12071
+     RUT: 15777035-7
+  Nombre: SANTANDER VIDELA MITCHEL ANTHONY
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12212
+     RUT: 6887904-3
+  Nombre: * SEGUEL MOLINA RODOLFO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12072
+     RUT: 12903692-3
+  Nombre: SEGURA NÚÑEZ JOSÉ ANTONIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12213
+     RUT: 15360742-7
+  Nombre: * SEPULVEDA ALEX
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12216
+     RUT: 12827933-4
+  Nombre: * SILVA QUIROZ  JULIO 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12214
+     RUT: 13059187-6
+  Nombre: * TABJA CARRASCO DENIS 
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12073
+     RUT: 9514039-4
+  Nombre: TELLO CONTRERAS JUAN PATRICIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12074
+     RUT: 15378922-3
+  Nombre: TORRES RODRIGUEZ RODRIGO FELIPE
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12075
+     RUT: 14203433-6
+  Nombre: VALENZUELA SALINAS JUAN PABLO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12156
+     RUT: 12827714-5
+  Nombre: VERGARA SUAZO MAURICIO ANTONIO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12076
+     RUT: 12880009-3
+  Nombre: VILLANUEVA ÁBRIGO ANGÉLICA DEL CARMEN
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12077
+     RUT: 10084963-1
+  Nombre: ZAMORANO MARTÍNEZ JOSÉ RODRIGO
+ Carrera: DºVº  
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2175 | DV-101 Introducción al Derecho I
+  2007-1 |     2177 | DV-102 Derecho Político I
+  2007-1 |     2173 | DV-103 Historia del Derecho I
+  2007-1 |     2176 | DV-104 Teoría Económica
+  2007-1 |     2174 | DV-105 Derecho Romano I
+  2007-1 |     2371 | EFG-201 Introducción a la Vida Académica I
+  2007-1 |     2365 | SELLO-004 Cultura y Modernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+PEB   
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12130
+     RUT: 16692834-6
+  Nombre: ARANDA BAEZA NICOL ALISON
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12165
+     RUT: 15474025-2
+  Nombre: BARRIOS PLAZA KARLA KARINA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12131
+     RUT: 16283688-9
+  Nombre: BINIMELIS SILVA CONSTANZA JAVIERA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12132
+     RUT: 16952591-9
+  Nombre: BRAVO LIZANA CAMILO ALEJANDRO
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12133
+     RUT: 16380625-8
+  Nombre: BUSTOS LOBOS LUIS YOSUHART
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12134
+     RUT: 17049825-9
+  Nombre: CORTÉS SOTO NICOLE ANDREA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12142
+     RUT: 22155617-8
+  Nombre: COVARRUBIAS LÓPEZ FELIPE AZARIAS
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12135
+     RUT: 16809424-8
+  Nombre: DUARTE MUÑOZ ANDREA HADASSA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12136
+     RUT: 16031962-3
+  Nombre: FARÍAS SOLIS LISSETTE ANGÉLICA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12166
+     RUT: 16027033-0
+  Nombre: GALLARDO DONOSO ANDREA LORETO
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12217
+     RUT: 16624074-3
+  Nombre: * JIMENEZ FARÍAS  VALERIA 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12137
+     RUT: 15413384-4
+  Nombre: LOPEHANDIA VALDÉS KAREN VIVIANA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12167
+     RUT: 15793852-5
+  Nombre: MARQUÉZ MARTÍNEZ LORNEE JOCELYN
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12218
+     RUT: 16638255-6
+  Nombre: * QUEZADA  CARLA 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12219
+     RUT: 16799361-3
+  Nombre: * REQUENA PINTO JENNIFER 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12168
+     RUT: 15479470-0
+  Nombre: RODRÍGUEZ ARELLANO EMILIA ANDREA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12138
+     RUT: 16832867-2
+  Nombre: SAAVEDRA RODRIGUEZ LILIAN VICTORIA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12220
+     RUT: 15781033-2
+  Nombre: * SALAS NAHUELHUAL MARCELA 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12140
+     RUT: 16711697-3
+  Nombre: TEJO SANTIBAÑEZ SIRIA FRANSUA
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12221
+     RUT: 15898876-3
+  Nombre: * VALENZUELA BAHAMONDEZ  ROMMYNA 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12222
+     RUT: 15707613-2
+  Nombre: * VIDAL JIMENEZ PAMELA 
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12141
+     RUT: 15782253-5
+  Nombre: YAÑEZ MAUREIRA JONATHAN FELIPE
+ Carrera: PEB   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+PEEPA 
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12125
+     RUT: 17225147-1
+  Nombre: ARMIJO IBARRA MARÍA FERNANDA
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12126
+     RUT: 17150070-2
+  Nombre: CARGNINO LATIN ALEXANDRA VALESKA
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12224
+     RUT: 16876514-2
+  Nombre: * GALLARDO DANIELA 
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12225
+     RUT: 16723801-7
+  Nombre: * LEÓN URRIOLA  CAROLINA
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12127
+     RUT: 17082616-7
+  Nombre: MORAGA JOFRÉ CONSTANZA PAZ
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12128
+     RUT: 16916171-2
+  Nombre: NORAMBUENA ZURITA CINDY LORENA
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12223
+     RUT: 16397549-1
+  Nombre: * SILVA OYARZO ERICA 
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12226
+     RUT: 16372130-9
+  Nombre: * TOLEDO SCHLENKERT INGRID 
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12144
+     RUT: 13716822-7
+  Nombre: VALENZUELA GALDAMEZ MARCELA NICOLE
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12129
+     RUT: 16747587-6
+  Nombre: VERGARA BAEZA JENNIFFER MARJORYTE
+ Carrera: PEEPA 
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2275 | EB-106 Taller de Educación Matemática
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+PEP   
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12120
+     RUT: 16780563-9
+  Nombre: CALISTO SÁEZ MARÍA FRANCISCA
+ Carrera: PEP   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+  2007-1 |     2309 | EP-106 Introducción a la Educación Parvularia
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12121
+     RUT: 16663477-6
+  Nombre: FERNÁNDEZ SANDOVAL KARINA ANDREA
+ Carrera: PEP   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+  2007-1 |     2309 | EP-106 Introducción a la Educación Parvularia
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12122
+     RUT: 17148918-0
+  Nombre: GARCÍA TELLO DENISSE ALEJANDRA
+ Carrera: PEP   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+  2007-1 |     2309 | EP-106 Introducción a la Educación Parvularia
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12123
+     RUT: 16475826-5
+  Nombre: ORELLANA CAMPOS CAMILA FERNANDA
+ Carrera: PEP   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+  2007-1 |     2309 | EP-106 Introducción a la Educación Parvularia
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12124
+     RUT: 11481146-7
+  Nombre: PINO BARRIENTOS SANDRA MARCELA
+ Carrera: PEP   
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2270 | EB-101 Bases Filosóficas de la Educación
+  2007-1 |     2271 | EB-102 Educación y Contexto Sociocultural
+  2007-1 |     2272 | EB-103 Bases Psicológicas de la Educación
+  2007-1 |     2273 | EB-104 Bases Psiconeurológicas del Comportamiento
+  2007-1 |     2274 | EB-105 Bases Históricas de la Educación
+  2007-1 |     2276 | EB-107 Introducción  a la Vida Académica I
+  2007-1 |     2309 | EP-106 Introducción a la Educación Parvularia
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+PS    
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12227
+     RUT: 16474089-7
+  Nombre: * BAUTISTA RÍOS  ALVARO 
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12228
+     RUT: 13051580-0
+  Nombre: * CACERES CANIU VICTORIA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12229
+     RUT: 15287940-7
+  Nombre: * CARDENAS OJEDA  DANILO 
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12095
+     RUT: 17082419-9
+  Nombre: CARVALLO VERGARA SERGIO IGNACIO
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12096
+     RUT: 16832384-0
+  Nombre: CHÁVEZ ESCOBAR MONSERRAT DANIELA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12097
+     RUT: 16876515-0
+  Nombre: GALLARDO VÁSQUEZ NATALIA ALEJANDRA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12098
+     RUT: 16309320-0
+  Nombre: GONZÁLEZ CAVIERES FRANCISCA JAVIERA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12099
+     RUT: 16952644-3
+  Nombre: GONZÁLEZ LÓPEZ YENIFER ESTEFANI
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+  2007-1 |     2364 | SELLO-003 Globalización y Postmodernidad
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12100
+     RUT: 16796919-4
+  Nombre: GUTIÉRREZ DÍAZ DAMARIS ELIZABETH
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12101
+     RUT: 16478080-5
+  Nombre: HERNÁNDEZ CÓRDOVA NATALIA ALEJANDRA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12230
+     RUT: 13670486-9
+  Nombre: * IRRIBARRA ESPINOSA  MARÍA ANGÉLICA 
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12231
+     RUT: 17154478-5
+  Nombre: * JARAMILLO VIDAL  JENNIFER 
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12102
+     RUT: 16912078-1
+  Nombre: LEIVA CANDIA VERÓNICA ALEJANDRA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12145
+     RUT: 17006290-6
+  Nombre: NEIRA RUIZ JENIFFER VALESCA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12103
+     RUT: 16477940-8
+  Nombre: POBLETE MÜHLENBROCK FRANCISCA ALEJANDRA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12232
+     RUT: 17027553-5
+  Nombre: * ROA SANTELICES NICOLE
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+  2007-1 |     2362 | SELLO-001 Humanismo Social
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12233
+     RUT: 16667036-5
+  Nombre: * SANTANDER  RODRIGO 
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12104
+     RUT: 19039774-2
+  Nombre: VALDERAS CORTÉS SEBASTIÁN ANDRÉS
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+UNIVERSIDAD MIGUEL DE CERVANTES - Carga Académica Primer Semestre 2007 
+
+      ID: 12105
+     RUT: 16742167-9
+  Nombre: VALENZUELA CERDA CONSTANZA PATRICIA
+ Carrera: PS    
+Admisión: Normal
+=================================================================================================
+ Periodo | ID Curso | Asignatura 
+=================================================================================================
+  2007-1 |     2240 | EFG-108 Taller de Desarrollo Personal I
+  2007-1 |     2223 | PS-101 Mundo Biológico
+  2007-1 |     2224 | PS-102 Panorama General de la Psicología Contemporánea
+  2007-1 |     2222 | PS-103 Antropología Filosófica
+  2007-1 |     2227 | PS-104 Int a la Inv. y al Análisis de Datos en Psicología
+  2007-1 |     2225 | PS-105 Fundamentos Cult. y Soc. del Comportamiento I
+  2007-1 |     2226 | PS-106 Reforzamiento de recursos y Comp. Aprendizaje
+=================================================================================================
+  * Alumno nuevo con documentación incompleta.
+

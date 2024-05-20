@@ -1,0 +1,221 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$id_profesor = $_REQUEST['id_profesor'];
+if (!is_numeric($id_profesor)) {
+	echo(js("location.href='principal.php?modulo=gestion_profesores';"));
+	exit;
+}
+
+$mod_ant = $_SERVER['HTTP_REFERER'];
+if ($mod_ant == "") { $mod_ant = "$enlbase=gestion_profesores"; }
+
+$SQL_profesor = "SELECT vp.id,vp.rut,vp.nombre,vp.genero,vp.fec_nac,vp.direccion,vp.comuna,vp.region,
+                        vp.telefono,vp.tel_movil,vp.email,vp.email_personal,vp.escuela,vp.nacionalidad,
+                        vp.nombre_usuario,vp.grado_academico,vp.grado_acad_ano,vp.grado_acad_universidad,
+                        vp.doc_fotocopia_ci,vp.doc_curriculum_vitae,vp.doc_certif_grado_acad
+               FROM vista_profesores AS vp
+               WHERE vp.id=$id_profesor;";
+$profesor = consulta_sql($SQL_profesor);
+if (count($profesor) == 0) {
+	echo(js("location.href='principal.php?modulo=gestion_profesores';"));
+	exit;
+} else {
+	extract($profesor[0]);
+	$id_carrera = $_REQUEST['id_carrera'];
+	$semestre   = $_REQUEST['semestre'];
+	$ano        = $_REQUEST['ano'];
+	$condiciones = "";
+	if (is_numeric($id_carrera)) { $condiciones .= " AND id_carrera=$id_carrera "; }
+	if (is_numeric($ano))        { $condiciones .= " AND ano=$ano "; }
+	if (is_numeric($semestre))   { $condiciones .= " AND semestre=$semestre "; }
+	
+	$SQL_cursos = "SELECT vc.id,vc.cod_asignatura||'-'||vc.seccion||' '||vc.asignatura AS asignatura,
+	                      vc.semestre||'-'||vc.ano AS periodo,
+	                      coalesce(vc.sesion1,'')||' '||coalesce(vc.sesion2,'')||' '||coalesce(vc.sesion3,'') as horario,
+	                      cantidad_alumnos(vc.id) AS cant_alumnos,
+	                      CASE WHEN count(solemne1) = cantidad_alumnos(vc.id) THEN 'Si' ELSE 'No' END AS s1,
+	                      CASE WHEN count(nota_catedra) = cantidad_alumnos(vc.id) THEN 'Si' ELSE 'No' END AS nc,
+	                      CASE WHEN count(solemne2) = cantidad_alumnos(vc.id) THEN 'Si' ELSE 'No' END AS s2,
+	                      CASE WHEN count(id_estado) = cantidad_alumnos(vc.id) THEN 'Si' ELSE 'No' END AS nf
+	               FROM cargas_academicas AS ca
+	               LEFT JOIN vista_cursos AS vc ON vc.id=ca.id_curso
+	               WHERE id_profesor=$id_profesor $condiciones
+	               GROUP BY vc.id,vc.cod_asignatura,vc.seccion,vc.asignatura,vc.semestre,vc.ano,
+	                        vc.sesion1,vc.sesion2,vc.sesion3
+	               ORDER BY ano DESC,semestre DESC,cod_asignatura";
+	$cursos_profe = consulta_sql($SQL_cursos);
+}
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  <?php echo($nombre_modulo); ?>
+</div><br>
+
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>Acciones:</td>
+    <td class='tituloTabla'>Gestión:</td>
+  </tr>
+  <tr>
+    <td align="center" class="textoTabla" style="vertical-align: middle;">
+      <?php
+			echo("<a href='$enlbase=editar_profesor&id_profesor=$id_profesor' class='boton'>Editar</a> ");
+      ?>
+    </td>
+    <td align="center" class="textoTabla" style="vertical-align: middle;">
+      <?php
+			echo("<a href='$enlbase=profesor_passwd&id_profesor=$id_profesor' class='boton'>Crear nueva Contraseña</a> "
+			    ."<a href='$mod_ant' class='boton'>Volver</a> ");
+      ?>
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Código Interno:</td>
+    <td class='celdaValorAttr'><?php echo($id); ?></td>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'><?php echo($rut); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($nombre); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Género:</td>
+    <td class='celdaValorAttr'><?php echo($genero); ?></td>
+    <td class='celdaNombreAttr' nowrap>Fecha de nacimiento:</td>
+    <td class='celdaValorAttr'><?php echo($fec_nac); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nacionalidad:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($nacionalidad); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Académicos del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Grado Académico:</td>
+    <td class='celdaValorAttr'><?php echo($grado_academico); ?></td>
+    <td class='celdaNombreAttr' nowrap>Año de obtención:</td>
+    <td class='celdaValorAttr'><?php echo($grado_acad_ano); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Universidad:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($grado_acad_universidad); ?></td>
+  </tr>
+    <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Documentación presentada del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Curriculum Vitae:</td>
+    <td class='celdaValorAttr' width="50%" colspan="2"><span class="<?php echo($doc_curriculum_vitae); ?>"><?php echo($doc_curriculum_vitae); ?></span></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Certificado de Grado Académico:</td>
+    <td class='celdaValorAttr' width="50%" colspan="2"><span class="<?php echo($doc_fotocopia_ci); ?>"><?php echo($doc_fotocopia_ci); ?></span></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' style="font-weight: lighter;" colspan="2">Fotocopia C.I.:</td>
+    <td class='celdaValorAttr' width="50%" colspan="2"><span class="<?php echo($doc_certif_grado_acad); ?>"><?php echo($doc_certif_grado_acad); ?></span></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Referenciales del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($direccion); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'><?php echo($comuna); ?></td>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr' nowrap><?php echo($region); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Telefóno fijo:</td>
+    <td class='celdaValorAttr'><?php echo($telefono); ?></td>
+    <td class='celdaNombreAttr'>Telefóno móvil:</td>
+    <td class='celdaValorAttr'><?php echo($tel_movil); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-Mail Personal:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($email_personal); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Datos internos del Profesor</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Escuela:</td>
+    <td class='celdaValorAttr'><?php echo($escuela); ?></td>
+    <td class='celdaNombreAttr'>Nombre de usuario:</td>
+    <td class='celdaValorAttr'><?php echo($nombre_usuario); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-Mail UMC:</td>
+    <td class='celdaValorAttr' colspan='3'><?php echo($email); ?></td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla' colspan="9">Cursos del Profesor <u><?php echo($nombre); ?></u></td>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>ID</td>
+    <td class='tituloTabla'>Asignatura</td>
+    <td class='tituloTabla'>A.I.</td>
+    <td class='tituloTabla'>Periodo</td>
+    <td class='tituloTabla'>S1</td>
+    <td class='tituloTabla'>NC</td>
+    <td class='tituloTabla'>S2</td>
+    <td class='tituloTabla'>NF</td>
+    <td class='tituloTabla'>Horario</td>
+  </tr>
+<?php
+	if (count($cursos_profe) > 0) {
+		$_verde = "color: #009900; text-align: center";
+		$_rojo  = "color: #ff0000; text-align: center";
+
+		for ($x=0; $x<count($cursos_profe); $x++) {
+			extract($cursos_profe[$x]);
+		
+			$est_s1 = $est_nc = $est_s2 = $est_nf = "color: #000000";
+
+			if ($s1=="Si") { $est_s1 = $_verde; } else { $est_s1 = $_rojo; }   
+			if ($nc=="Si") { $est_nc = $_verde; } else { $est_nc = $_rojo; }   
+			if ($s2=="Si") { $est_s2 = $_verde; } else { $est_s2 = $_rojo; }   
+			if ($nf=="Si") { $est_nf = $_verde; } else { $est_nf = $_rojo; }   
+			
+			$enl = "$enlbase=ver_curso&id_curso=$id";
+			$enlace = "<a class='enlitem' href='$enl'>";
+			echo("  <tr class='filaTabla' onClick=\"window.location='$enl';\">\n"
+			    ."    <td class='textoTabla'>$id</td>"
+			    ."    <td class='textoTabla'>$asignatura</td>"
+			    ."    <td class='textoTabla' style='text-align: right'>$cant_alumnos</td>"
+			    ."    <td class='textoTabla'>$periodo</td>"
+			    ."    <td class='textoTabla' style='$est_s1'>$s1</td>"
+			    ."    <td class='textoTabla' style='$est_nc'>$nc</td>"
+			    ."    <td class='textoTabla' style='$est_s2'>$s2</td>"
+			    ."    <td class='textoTabla' style='$est_nf'>$nf</td>"
+			    ."    <td class='textoTabla'>$horario</td>"
+			    ."  </tr>");
+		};
+	} else {
+		echo("<td class='textoTabla' colspan='8'>No hay cursos</td>\n");
+	};
+?>
+</table><br>

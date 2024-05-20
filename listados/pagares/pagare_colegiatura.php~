@@ -1,0 +1,74 @@
+<?php
+
+include("../../funciones.php");
+include("../../conversor_num2palabras.php");
+
+$id_pagare_colegiatura = "1427,1210,1262,1130,1133,1134,1202,1137,1140,1143,1144,1149,1174,1221,1169,1171,1176,1172,1184,1186,1187,1188,1189,1190,1191,1192,1196,1197,1198,1199,1200,1406,1407,1203,1204,1205,1206,1208,1214,1212,1213,1216,1220,1222,1279,1224,1226,1231,1232,1235,1308,1237,1239,1240,1241,1243,1244,1246,1249,1253,1251,1255,1256,1259,1260,1261,1264,1265,1270,1271,1274,1278,1281,1282,1287,1296,1297,1290,1292,1347,1295,1303,1304,1305,1307,1310,1312,1314,1317,1378,1319,1323,1325,1339,1337,1350,1359,1340,1342,1344,1346,1348,1351,1352,1377,1356,1365,1366,1370,1371,1373,1375,1386,1387,1389,1390,1391,1396,1399,1405,1422,1423,1424,1425,1426,1428";
+
+$SQL_pagare_coleg = "SELECT p.id AS id_pagare_colegiatura,p.*,p.fecha::date,a.*,c.estado 
+                     FROM finanzas.pagares_colegiatura AS p
+                     LEFT JOIN finanzas.contratos AS c ON p.id_contrato=c.id
+                     LEFT JOIN vista_avales AS a ON a.id=c.id_aval
+                     WHERE p.id IN ($id_pagare_colegiatura)";
+$pagare_coleg     = consulta_sql($SQL_pagare_coleg);
+
+for ($x=0;$x<count($pagare_coleg);$x++) {
+
+	extract($pagare_coleg[$x]);
+
+	$monto_cuotas = round($monto / $cuotas);
+	
+	$monto_palabras        = num2palabras($monto);
+	$monto_cuotas_palabras = num2palabras($monto_cuotas);
+	
+	$monto        = number_format($monto,0,',','.');
+	$monto_cuotas = number_format($monto_cuotas,0,',','.');
+	
+	$mes_inicio = $meses_palabra[$mes_inicio-1]['nombre'];
+	
+	$fecha_pagare = strftime("%e de %B de %Y",strtotime($fecha));
+
+	
+	$FIRMAS = "<table width='100%'>".$LF
+	        . "  <tr>".$LF
+	        . "    <td align='center' valign='top' width='70%'>&nbsp;</td>".$LF
+	        . "    <td align='center' valign='top' width='30%'><hr noshade size='1'><b>Firma del Suscriptor</b></td>".$LF
+	        . "  </tr>".$LF
+	        . "</table><br>".$LF
+	        . "<table width='100%'>".$LF
+	        . "  <tr>".$LF
+	        . "    <td valign='top' width='15%' nowrap>Representante Legal:</td><td valign='top' width='70%'>$rf_nombre</td>".$LF
+	        . "    <td valign='top' width='5%' nowrap>RUT:</td>                <td valign='top' width='10%'>$rf_rut</td>".$LF
+	        . "  </tr>".$LF
+	        . "  <tr>".$LF
+	        . "    <td valign='top' width='15%' nowrap>Nombre o Razón Social:</td><td valign='top' width='70%'>$rf_nombre</td>".$LF
+	        . "    <td valign='top' width='5%' nowrap>RUT:</td>                  <td valign='top' width='10%'>$rf_rut</td>".$LF
+	        . "  </tr>".$LF
+	        . "  <tr>".$LF
+	        . "    <td valign='top' widht='15%' nowrap>Domicilio:</td><td valign='top' width='70%'>$rf_direccion</td>".$LF
+	        . "    <td valign='top' width='5%' nowrap>Comuna:</td>   <td valign='top' width='10%'>$rf_com</td>".$LF
+	        . "  </tr>".$LF
+	        . "</table>".$LF;
+
+	$imagen_fondo = "../../img/logo_umc_fondo_oficio.jpg";
+	if ($estado == '') {
+		$imagen_fondo = "../../img/logo_umc_fondo_oficio_nulo.jpg";
+	}
+	
+	$HTML = ""; 
+	include("pagare_colegiatura_formato.php");
+	
+	//echo($HTML);
+	$HTML = iconv("UTF-8","ISO-8859-1",$HTML);
+	$archivo = "pagare_colegiatura_".$id_pagare_colegiatura;
+	$hand=fopen($archivo,"w");
+	fwrite($hand,$HTML);
+	fclose($hand);
+	$html2pdf = "htmldoc -t pdf --fontsize 11 --fontspacing 1.2 --no-strict --size 21.5x33cm --bodyfont helvetica "
+	          . "--left 1.5cm --top 1cm --right 1.5cm --bottom 1cm --footer '   ' --header '   ' --no-embedfonts "
+	          . "--compression=9 --encryption --permissions print,no-copy,no-annotate,no-modify "
+	          . "--webpage -f $archivo.pdf $archivo ";
+	exec($html2pdf);
+	unlink($archivo);
+}
+?>

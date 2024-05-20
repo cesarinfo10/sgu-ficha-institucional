@@ -1,0 +1,108 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$id_malla = $_REQUEST['id_malla'];
+if (!is_numeric($id_malla)) {
+	echo(js("location.href='principal.php?modulo=gestion_carreras';"));
+	exit;
+};
+
+$bdcon = pg_connect("dbname=regacad" . $authbd);
+
+if ($_REQUEST['guardar'] <> "") {
+	$aCampos = array("niveles","cant_asig_oblig","cant_asig_elect","cant_asig_efp","comentarios");
+	$SQLupdate = "UPDATE mallas SET " . arr2sqlupdate($_REQUEST,$aCampos) . " WHERE id=$id_malla;";
+	$resultado = pg_query($bdcon, $SQLupdate);
+	if (!$resultado) {
+		echo(msje(pg_last_error()));
+	} else {
+		$filas = pg_affected_rows($resultado);
+	};
+	if ($filas > 0) {
+		echo(msje_js("Se ha guardado los cambios ingresados"));
+		echo(js("location.href='$enlbase=ver_malla&id_malla=$id_malla';"));
+		exit;
+	};
+};
+
+$SQL_malla = "SELECT * FROM vista_mallas WHERE id=$id_malla;";
+$malla = consulta_sql($SQL_malla);
+/*
+$resultado = pg_query($bdcon, $SQLtxt);
+$filas = pg_numrows($resultado);
+if ($filas > 0) {
+	$malla = utf2html(pg_fetch_all($resultado));
+};
+*/
+
+$validar_js = "'niveles','cant_asig_oblig','cant_asig_elect','cant_asig_efp'";
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<form name="formulario" action="principal.php" method="post" onSubmit="return enblanco2(<?php echo($validar_js); ?>);">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_malla" value="<?php echo($id_malla); ?>">
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>: <?php echo($malla[0]['carrera']); ?> - <?php echo($malla[0]['ano']); ?>
+</div><br>
+<table class="tabla">
+  <tr>
+  <tr>
+    <td class="tituloTabla">
+      <input type="submit" name="guardar" value="Guardar" onClick="return confirmar_guardar();">
+    </td>
+    <td class="tituloTabla">
+      <input type="button" name="cancelar" value="Cancelar"  onClick="cancelar_guardar();">
+    </td>
+  </tr>
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class="celdaNombreAttr">A&ntilde;o:</td>
+    <td class="celdaValorAttr"><?php echo($malla[0]['ano']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Carrera:</td>
+    <td class="celdaValorAttr"><?php echo($malla[0]['carrera']); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Niveles (semestres):</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="niveles" value="<?php echo($malla[0]['niveles']); ?>" size="2" maxlength="2" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Cantidad Asignaturas Obligatorias:</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="cant_asig_oblig" value="<?php echo($malla[0]['cant_asig_oblig']); ?>" size="2" maxlength="2" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Cantidad Asignaturas Electivas:</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="cant_asig_elect" value="<?php echo($malla[0]['cant_asig_elect']); ?>" size="2" maxlength="2" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Cantidad Asignaturas EFP:</td>
+    <td class="celdaValorAttr">
+      <input type="text" name="cant_asig_efp" value="<?php echo($malla[0]['cant_asig_efp']); ?>" size="2" maxlength="2" onChange="cambiado();">
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Comentarios:</td>
+    <td class="celdaValorAttr">
+      <textarea name='comentarios'><?php echo($malla[0]['comentarios']); ?></textarea>
+    </td>
+  </tr>
+</table>
+<br>
+<!-- Fin: <?php echo($modulo); ?> -->
+

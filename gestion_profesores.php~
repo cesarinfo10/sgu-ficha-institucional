@@ -1,0 +1,204 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+$ids_carreras = $_SESSION['ids_carreras'];
+$id_usuario   = $_SESSION['id_usuario'];
+ 
+include("validar_modulo.php");
+
+$cant_reg = 30;
+
+$reg_inicio = $_REQUEST['reg_inicio'];
+if (!is_numeric($reg_inicio)) { $reg_inicio = 0; }
+
+$texto_buscar = $_REQUEST['texto_buscar'];
+$buscar       = $_REQUEST['buscar'];
+$id_carrera   = $_REQUEST['id_carrera'];
+$ano          = $_REQUEST['ano'];
+$semestre     = $_REQUEST['semestre'];
+
+if ($_REQUEST['ano'] == "")      { $ano = $ANO; }
+if ($_REQUEST['semestre'] == "") { $semestre = $SEMESTRE; }
+
+$condicion = "";
+if (!empty($texto_buscar)) {
+	$textos_buscar = explode(" ",sql_regexp($texto_buscar));
+	for ($x=0;$x<count($textos_buscar);$x++) {
+		$cadena_buscada = strtolower($textos_buscar[$x]);
+		$condicion .= " AND (lower(profesor) ~* '$cadena_buscada')";
+	}
+}
+if (is_numeric($id_carrera))               { $condicion .= " AND id_carrera=$id_carrera "; }
+if (is_numeric($ano) && $ano>0)            { $condicion .= " AND ano=$ano "; }
+if (is_numeric($semestre) && $semestre>-1) { $condicion .= " AND semestre=$semestre "; }
+if (!empty($ids_carreras))                 { $condicion .= " AND id_carrera IN ($ids_carreras) "; }
+
+$SQL_profesores = "SELECT vc.id_profesor,initcap(u.apellido||' '||u.nombre) AS profesor,ga.nombre AS grado_acad,
+                          count(vc.id_profesor) AS cursos_asignados,u.rut,
+                          CASE WHEN ead.id_profesor IS NOT NULL THEN 'Si' ELSE 'No' END AS auto_ev_completa,
+                          to_char(ead.fecha,'DD/MM/YYYY HH24:MI') AS fecha_ead
+                   FROM vista_cursos AS vc
+                   LEFT JOIN usuarios   AS u  ON u.id=vc.id_profesor
+                   LEFT JOIN grado_acad AS ga ON ga.id = u.grado_academico
+                   LEFT JOIN encuestas.autoevaluacion_docente AS ead ON ead.id_profesor=vc.id_profesor
+                   WHERE true $condicion
+                   GROUP BY ead.id_profesor,vc.id_profesor,u.apellido,u.nombre,ga.nombre,ead.fecha,u.rut
+                   ORDER BY u.apellido,u.nombre
+                   LIMIT $cant_reg
+                   OFFSET $reg_inicio;";
+$profesores = consulta_sql($SQL_profesores);
+if (count($profesores) > 0) {
+	$tot_reg = consulta_sql("SELECT count(id_profesor) AS cant_profes FROM (SELECT DISTINCT ON (id_profesor) id_profesor FROM vista_cursos WHERE true $condicion) AS profes;");
+	$tot_reg = $tot_reg[0]['cant_profes']; 
+	$reg_ini_sgte = $reg_inicio + $cant_reg;
+	$reg_ini_ante = $reg_inicio - $cant_reg;
+	if ($reg_ini_ante < 0) {
+		$reg_ini_ante = 0;
+	};
+	if ($reg_ini_sgte >= $tot_reg) {
+		$reg_ini_sgte = 0;
+	};
+};
+
+if ($ids_carreras <> "") { $condicion_carreras = "WHERE id IN ($ids_carreras)"; }
+$SQL_carreras = "SELECT id,nombre FROM carreras $condicion_carreras ORDER BY nombre;";
+$carreras = consulta_sql($SQL_carreras);
+
+$_SESSION['enlace_volver'] = "$enlbase=$modulo&id_carrera=$id_carrera&texto_buscar=$texto_buscar&buscar=$buscar&reg_inicio=$reg_inicio";
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+	<?php echo($nombre_modulo); ?>
+</div><br>
+<div class="texto">
+  <form name="formulario" action="principal.php" method="get">
+    <input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+    <table cellpadding="2" border="0" cellspacing="0" width="auto">
+      <tr valign="top">
+        <td class="texto" width="auto">
+          Filtrar por año
+          <select name="ano" onChange="submitform();">
+            <option value="0">Todos</option>
+				<?php
+					echo(select($anos,$ano));
+				?>
+          </select>
+          y/o semestre:
+          <select name="semestre" onChange="submitform();">
+            <option value="-1">Todos</option>
+				<?php
+					echo(select($semestres,$semestre));
+				?>
+          </select>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td class="texto">
+          Mostrar profesores asociados a la carrera:<br>
+          <select name="id_carrera" onChange="submitform();">
+            <option value="">Todas</option>
+            <?php echo(select($carreras,$id_carrera)); ?>    
+          </select>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td class="texto" width="auto">
+          Buscar por nombre del profesor:<br>
+          <input type="text" name="texto_buscar" value="<?php echo($texto_buscar); ?>" size="30">
+          <input type='submit' name='buscar' value='Buscar'>          
+          <?php 
+          	if ($buscar == "Buscar" && $texto_buscar <> "") {
+          		echo("<input type='submit' name='buscar' value='Vaciar'>");          		
+          	};
+          ?>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <?php
+  	$enlace_nav = "$enlbase=$modulo&id_carrera=$id_carrera&texto_buscar=$texto_buscar&ano=$ano&semestre=$semestre&buscar=$buscar&reg_inicio";
+  ?>
+  Mostrando <b><?php echo($tot_reg); ?></b> profesor(es) en total, en p&aacute;gina(s) de <?php echo($cant_reg); ?> filas<br>
+  <a class="enlaces" href="<?php echo("$enlace_nav=$reg_ini_ante"); ?>">Anterior</a> | 
+  <?php
+  	for($pag=1;$pag<=ceil($tot_reg/$cant_reg);$pag++) {
+  		if ($cant_reg*($pag-1)== $reg_inicio) {
+  			echo(" <b>$pag</b> |");
+  		} else {
+  			$reg_ini_pag = ($pag - 1) * $cant_reg;
+  			echo("<a class='enlaces' href='$enlace_nav=$reg_ini_pag'> $pag</a> |");
+  		};  			
+  	};
+  ?>
+  <a class="enlaces" href="<?php echo("$enlace_nav=$reg_ini_sgte"); ?>">Siguiente</a>
+</div>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class='tituloTabla'>ID</td>
+    <td class='tituloTabla'>Profesor</td>
+    <td class='tituloTabla'>Grado Académico</td>
+    <td class='tituloTabla'>C.A.</td>
+    <td class='tituloTabla'>Auto Ev.?</td>
+  </tr>
+<?php
+	if (count($profesores) > 0) {
+		$_verde = "color: #009900;";
+		$_rojo  = "color: #ff0000;";
+
+		for ($x=0; $x<count($profesores); $x++) {
+			extract($profesores[$x]);
+
+			if ($auto_ev_completa == "Si") { 
+				$est_auto_ev_completa = $_verde;
+				$auto_ev_completa = " <a title='$fecha_ead'>Si</a>";
+			} else {
+				$enl="/sgu/encuestas/index.php?modulo=encuestas&arch_encuesta=autoevaluacion_docente&id_profesor=$id_profesor";
+				//$auto_ev_completa .= " <a href='$enl' target='_blank' class='enlaces'>[Contestar]</a>";
+				$est_auto_ev_completa = $_rojo;
+			}
+			
+			$tr_style = empty($rut) ? "style='background: #F8FF00;'" : ""; 
+
+			$enl = "$enlbase=ver_profesor&id_profesor=$id_profesor&ano=$ano&semestre=$semestre&id_carrera=$id_carrera";
+			$enlace = "<a class='enlitem' href='$enl'>";
+			echo("  <tr class='filaTabla' $tr_style onClick=\"window.location='$enl';\">"
+			    ."    <td class='textoTabla' align='right'>$id_profesor</td>"
+			    ."    <td class='textoTabla'>$profesor</td>"
+			    ."    <td class='textoTabla'>$grado_acad</td>"
+			    ."    <td class='textoTabla'>$cursos_asignados</td>"
+			    ."    <td class='textoTabla' style='$est_auto_ev_completa' align='center'>$auto_ev_completa</td>"
+			    ."  </tr>\n");			
+		}
+	} else {
+		echo("<td class='textoTabla' colspan='5'>"
+		    ."  No hay registros para los criterios de búsqueda/selección"
+		    ."</td>\n");
+	}
+?>
+</table>
+<div class="texto">
+  <b>C.A.:</b> Cursos Asignados<br>
+  <!--<b>Auto Ev.:</b> Autoevaluación Docente Completada del periodo actual (<?php echo($SEMESTRE."-".$ANO); ?>)-->
+</div><br>
+<div class="texto">
+  <a class="enlaces" href="<?php echo("$enlace_nav=$reg_ini_ante"); ?>">Anterior</a> | 
+  <?php
+  	for($pag=1;$pag<=ceil($tot_reg/$cant_reg);$pag++) {
+  		if ($cant_reg*($pag-1)== $reg_inicio) {
+  			echo(" <b>$pag</b> |");
+  		} else {
+  			$reg_ini_pag = ($pag - 1) * $cant_reg;
+  			echo("<a class='enlaces' href='$enlace_nav=$reg_ini_pag'> $pag</a> |");
+  		};  			
+  	};
+  ?>
+  <a class="enlaces" href="<?php echo("$enlace_nav=$reg_ini_sgte"); ?>">Siguiente</a>
+</div>
+<!-- Fin: <?php echo($modulo); ?> -->
+

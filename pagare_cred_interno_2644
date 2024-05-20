@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>UMC - SGU - Pagaré de Crédito Interno</title>
+    <style>
+      td { font-size: 12px; font-family: sans,arial,helvetica; }
+      @media print {
+        @page {page-break-after: always; size: 21.5cm 25cm; }
+        td { font-size: 12px; font-family: sans,arial,helvetica; }
+      }
+    </style>
+  </head>
+  <body background='img/logo_umc_fondo_oficio.jpg'>
+    <table width='100%'>
+      <tr>
+        <td>
+          <table width='100%'><tr><td align='center'><table width='100%'>  <tr>    <td align='left'   width='25%'><img src='img/logo_umc_apaisado.jpg'></td>    <td align='center' valign='bottom' width='50%'><h1>P A G A R É</h1><b>Nº 2644</b></td>    <td width='25%'>&nbsp;</td>  </tr></table></td>/tr></table><br>
+          <table>
+            <tr><td valign='top' align='justify'>Debo y pagaré a la orden de la Universidad Miguel de Cervantes, la suma de UF 9,74.- valor que me obligo a pagar en moneda nacional, en las oficinas de la Universidad ubicadas en calle Enrique Mac Iver # 370 de la comuna de Santiago, ciudad de Santiago de Chile o en el domicilio que esta tuviere a la fecha del vencimiento.<br><br>La fecha de vencimiento de este instrumento es el día 30 de junio de 2012 y, hasta esa fecha, esta obligación no devengará intereses de ninguna naturaleza.<br><br>En mi calidad de deudor podré anticipar el pago total o parcial de esta obligación.  Sin embargo, el no pago oportuno de esta obligación a su vencimiento dará derecho al acreedor a cobrar además del capital, los intereses, gastos e impuestos que su cobro implique.<br><br>Para todos los efectos de este instrumento constituyo domicilio en la ciudad y comuna de Santiago y me someto a la competencia de sus Tribunales.<br><br>En Santiago de Chile a 15 de julio de 2011<br><br><table cellpadding='2' cellspacing='0' border='1' width='100%'>  <tr><td width='15%'>Deudor(a)<br><sub>Alumno(a)</sub></td> <td width='60%'>BUSTAMANTE PEÑA JAIME ALEJANDRO</td><td width='25%' rowspan='3' align='center' valign='bottom'><br><br><br><hr size='1' noshade><sup>Firma y Huella Dactilar</sup></td></tr>  <tr><td width='15%'>RUT</td>                               <td width='60%'>13838299-0</td></tr>  <tr><td width='15%'>Domicilio</td>                         <td width='60%'>CALLE TONGOY Nº1071, La Pintana, RM Región Metropolitana</td></tr></table><br><table cellpadding='2' cellspacing='0' border='1' width='100%'>  <tr><td width='15%'>Deudor(a)<br><sub>Apoderado(a)</sub></td> <td width='60%'>GUTIERREZ ASTORGA MAYERLING LISSETTE</td><td width='25%' rowspan='3' align='center' valign='bottom'><br><br><br><hr size='1' noshade><sup>Firma y Huella Dactilar</sup></td></tr>  <tr><td width='15%'>RUT</td>                                  <td width='60%'>13835981-6</td></tr>  <tr><td width='15%'>Domicilio</td>                            <td width='60%'>PEDRO PRADO Nº13078, La Pintana, Región Metropolitana</td></tr></table><br><b>NOTA : Exento del Impuesto de la Ley de Timbres y Estampillas, Decreto Ley Nº 3.375, Artículo 23 Nº 3º</b></td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

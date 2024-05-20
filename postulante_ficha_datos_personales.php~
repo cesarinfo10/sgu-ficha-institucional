@@ -1,0 +1,138 @@
+<?php
+
+$SQL_postulante = "SELECT vp.id,vp.nombre,vp.rut,vp.genero,vp.fec_nac,vp.nacionalidad,pap.profesion,
+                          CASE pap.est_civil WHEN 'S' THEN 'Soltero(a)' WHEN 'C' THEN 'Casado(a)' 
+                                             WHEN 'D' THEN 'Divorsiado(a)' WHEN 'V' THEN 'Viudo(a)' END AS est_civil,
+                          coalesce(vp.pasaporte,'**No corresponde**') AS pasaporte,
+                          vp.direccion,vp.comuna,vp.region,vp.email,vp.telefono,vp.tel_movil,
+                          vp.admision,to_char(vp.fecha_post,'DD/MM/YYYY') AS fecha_post,
+                          coalesce(c1.nombre,'** No ingresada **') AS carrera1,
+                          CASE jornada1_post WHEN 'D' THEN 'Diurna' WHEN 'V' THEN 'Vespertina' END AS jornada1,  
+                          coalesce(c2.nombre,'** No ingresada **') AS carrera2,
+                          CASE jornada2_post WHEN 'D' THEN 'Diurna' WHEN 'V' THEN 'Vespertina' END AS jornada2,
+                          coalesce(c3.nombre,'** No ingresada **') AS carrera3,
+                          CASE jornada3_post WHEN 'D' THEN 'Diurna' WHEN 'V' THEN 'Vespertina' END AS jornada3,
+                          r.nombre AS referencia
+                   FROM vista_pap AS vp
+                   LEFT JOIN carreras AS c1 ON c1.id=vp.carrera1_post
+                   LEFT JOIN carreras AS c2 ON c2.id=vp.carrera2_post
+                   LEFT JOIN carreras AS c3 ON c3.id=vp.carrera3_post
+                   LEFT JOIN pap ON pap.id=vp.id
+                   LEFT JOIN admision.referencias AS r ON r.id=pap.referencia
+                   WHERE vp.id=$id_pap;";
+$postulante     = consulta_sql($SQL_postulante);
+if (count($postulante) > 0) {
+	$SQL_pa_ext = "SELECT asignatura,inst_edsup,alias,semestre,ano,duracion,nota_final
+	               FROM vista_convalidaciones
+	               WHERE id_pap=$id_pap";
+	$pa_ext     = consulta_sql($SQL_pa_ext);
+} else {
+	echo(js("location.href='principal.php?modulo=gestion_postulantes';"));
+	exit;
+}
+
+?>
+
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla" width="100%">
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes Personales del Postulante</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>RUT:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['rut']); ?></td>
+    <td class='celdaNombreAttr'>ID Postulante:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['id']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nombre:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['nombre']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Género:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['genero']); ?></td>
+    <td class='celdaNombreAttr'>Fecha de Nacimiento:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['fec_nac']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Estado Civil:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['est_civil']); ?></td>
+    <td class='celdaNombreAttr'>Profesion:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['profesion']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Nacionalidad:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['nacionalidad']); ?></td>
+    <td class='celdaNombreAttr'>Pasaporte:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['pasaporte']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Dirección:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['direccion']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Comuna:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['comuna']); ?></td>
+    <td class='celdaNombreAttr'>Región:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['region']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Teléfono (red fija):</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['telefono']); ?></td>
+    <td class='celdaNombreAttr'>Teléfono móvil:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['tel_movil']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>e-Mail personal:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['email']); ?></td>
+    <td class='celdaNombreAttr'>Referencia:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['referencia']); ?></td>
+  </tr>
+  <tr>  
+    <td class='celdaNombreAttr' colspan="4" style="text-align: center; ">Antecedentes de la Postulación</td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>Admisión:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['admision']); ?></td>
+    <td class='celdaNombreAttr'>Fecha:</td>
+    <td class='celdaValorAttr'><?php echo($postulante[0]['fecha_post']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>1ª opción de Carrera:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['carrera1']); ?> <sub>Jornada</sub> <?php echo($postulante[0]['jornada1']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>2ª opción de Carrera:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['carrera2']); ?> <sub>Jornada</sub> <?php echo($postulante[0]['jornada2']); ?></td>
+  </tr>
+  <tr>
+    <td class='celdaNombreAttr'>3ª opción de Carrera:</td>
+    <td class='celdaValorAttr' colspan="3"><?php echo($postulante[0]['carrera3']); ?> <sub>Jornada</sub> <?php echo($postulante[0]['jornada3']); ?></td>
+  </tr>  
+</table>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr class='filaTituloTabla'>
+    <td class="tituloTabla" colspan="5">Programas de Asignaturas externos registrados</td>
+  </tr>
+  <tr class='filaTituloTabla'>
+    <td class="tituloTabla">Asignatura</td>
+    <td class="tituloTabla">Inst. Ed. Sup. Origen</td>
+    <td class="tituloTabla">Año</td>
+    <td class="tituloTabla">Duración</td>
+    <td class="tituloTabla">NF</td>
+  </tr>
+	<?php
+		$HTML = "";
+		for ($x=0;$x<count($pa_ext);$x++) {
+			extract($pa_ext[$x]);
+			$HTML .= "<tr>"
+			      .  "  <td class='textoTabla'>$asignatura</td>"
+			      .  "  <td class='textoTabla'><a title='$inst_edsup'>$alias</a></td>"
+			      .  "  <td class='textoTabla'>$ano</td>"
+			      .  "  <td class='textoTabla'>$duracion</td>"
+			      .  "  <td class='textoTabla'>$nota_final</td>"
+			      .  "</tr>";
+		}
+		echo($HTML);
+	?>
+</table>

@@ -1,0 +1,307 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+include("validar_modulo.php");
+
+if (!is_numeric($_REQUEST['id_pc_det']) || !is_numeric($_REQUEST['id_prog_curso'])) {
+	echo(js("window.location='$enlbase=';"));
+	exit;
+} else {
+	$id_pc_det     = $_REQUEST['id_pc_det'];
+	$id_prog_curso = $_REQUEST['id_prog_curso'];
+}
+
+$aCampos = array('id_pa_fusion','seccion','al_proyectado','id_profesor','cupo','tipo','fec_ini','fec_fin',
+                 'dia1','horario1','dia2','horario2','dia3','horario3','fec_sol1','fec_sol2','fec_sol_recup',
+                 'comentarios','horas_semestrales');         
+         
+if ($_REQUEST['guardar'] == "Guardar") {
+
+	if ($_REQUEST['tipo'] <> "m") {
+		if ($_REQUEST['al_proyectado'] <= 6) {
+			$_REQUEST['tipo'] = "t";
+			$_REQUEST['horas_semestrales'] = $_REQUEST['hrs_semanal'] * 18 * 0.5; 
+		} elseif (intval($_REQUEST['al_proyectado']) > 6) {
+			$_REQUEST['tipo'] = "r";
+			$_REQUEST['horas_semestrales'] = $_REQUEST['hrs_semanal'] * 18; 
+		}
+		
+		if ($_REQUEST['hrs_semanal'] < 4) {
+			$_REQUEST['tipo'] = "r";
+			$_REQUEST['horas_semestrales'] = $_REQUEST['hrs_semanal'] * 18;
+		}
+		
+	} elseif ($_REQUEST['tipo'] == "m") {
+		$_REQUEST['horas_semestrales'] = intval($_REQUEST['hrs_semanal'] * 18 * 0.78);
+	}
+	
+	$SQLupdate_pc_det = "UPDATE prog_cursos_detalle SET " . arr2sqlupdate($_REQUEST,$aCampos) . " WHERE id=$id_pc_det;";
+	//echo($SQLupdate_pc_det);
+	if (consulta_dml($SQLupdate_pc_det)>0) {
+		echo(msje_js("Se han guardados los datos exitosamente"));
+	} else {
+		echo(msje_js("ATENCIÓN: Ha ocurrio un error y no se pudo guardar los datos"));
+	}
+	echo(js("window.location='$enlbase=prog_cursos_ver&id_prog_curso=$id_prog_curso';"));
+	exit;
+}
+
+$prog_curso = consulta_sql("SELECT * FROM vista_prog_cursos WHERE id=$id_prog_curso");
+if (count($prog_curso) == 0) {
+	echo(msje_js("ATENCIÓN: Ha ocurrio un error. No se puede continuar"));
+	echo(js("window.location='$enlbase=';"));
+	exit;
+}
+extract($prog_curso[0],EXTR_PREFIX_ALL,"pc");
+
+$SQL_prog_asig = "SELECT dm.id_prog_asig,pa.horas_semanal AS hrs_sem,char_comma_sum(c.alias||m.ano::text) AS mallas
+                  FROM detalle_mallas AS dm
+                  LEFT JOIN mallas AS m ON m.id=dm.id_malla
+                  LEFT JOIN prog_asig AS pa ON pa.id=dm.id_prog_asig
+                  LEFT JOIN carreras AS c ON c.id=m.id_carrera
+                  WHERE c.id_escuela=$pc_id_escuela
+                  GROUP BY id_prog_asig,horas_semanal";
+                  
+$SQL_pc_det = "SELECT pcd.id,pcd.id_prog_curso,pcd.id_prog_asig,cod_asignatura,asignatura,seccion,al_proyectado,
+                      pcd.id_profesor,cupo,tipo,pcd.dia1,pcd.horario1,pcd.dia2,pcd.horario2,pcd.dia3,pcd.horario3,
+                      pcd.comentarios,to_char(pcd.fec_ini,'DD-MM-YYYY') AS fec_ini,to_char(fec_fin,'DD-MM-YYYY') AS fec_fin,
+                      to_char(fec_sol1,'DD-MM-YYYY') AS fec_sol1,to_char(fec_sol2,'DD-MM-YYYY') AS fec_sol2,
+                      to_char(fec_sol_recup,'DD-MM-YYYY') AS fec_sol_recup,mpa.mallas,pcd.id_pa_fusion,horas_semestrales,
+                      \"horas semanales\" as hrs_semanal,CASE WHEN vobo_vra THEN 'Sí' ELSE 'No' END AS vobo_vra,
+                      CASE WHEN vobo_vraf THEN 'Sí' ELSE 'No' END AS vobo_vraf
+               FROM prog_cursos_detalle AS pcd
+               LEFT JOIN vista_prog_asig AS vpa ON vpa.id=pcd.id_prog_asig
+               LEFT JOIN vista_profesores AS vp ON vp.id=pcd.id_profesor
+               LEFT JOIN ($SQL_prog_asig) AS mpa ON mpa.id_prog_asig=pcd.id_prog_asig
+               WHERE pcd.id=$id_pc_det   
+               ORDER BY cod_asignatura";
+$pc_det = consulta_sql($SQL_pc_det);
+if (count($pc_det) == 0) {
+	echo(msje_js("ATENCIÓN: Ha ocurrio un error. No se puede continuar"));
+	echo(js("window.location='$enlbase=';"));
+	exit;
+}
+extract($pc_det[0]);
+
+$deshabilitado = "";
+if ($tipo == "m") {
+	$deshabilitado = "disabled";
+} else {
+	$rojo = "color: #ff0000";
+	$dia1_style = $dia2_style = $dia3_style = $horario1_style  = $horario2_style = $horario3_style = "";
+	if ($dia1 == "") { $dia1_style = $rojo; }
+	if ($dia2 == "" && $horas_semestrales >= 72) { $dia2_style = $rojo; }
+	if ($dia3 == "" && $horas_semestrales > 72) { $dia3_style = $rojo; }
+	if ($horario1 == "") { $horario1_style = $rojo; }
+	if ($horario2 == "" && $horas_semestrales >= 72) { $horario2_style = $rojo; }
+	if ($horario3 == "" && $horas_semestrales > 72) { $horario3_style = $rojo; }
+}
+
+$profesores = consulta_sql("SELECT id,nombre_buscar AS nombre FROM vista_profesores ORDER BY nombre_buscar");
+
+$TIPOS = array(array("id"=>"m","nombre"=>"Modular"));
+
+$horarios = consulta_sql("SELECT id,id||'=> '||intervalo AS nombre FROM vista_horarios ORDER BY id;");
+
+$SQL_prog_asig = "SELECT id,ano||'/'||cod_asignatura||' '||asignatura AS nombre
+                  FROM vista_prog_asig
+                  WHERE id IN (SELECT id_prog_asig FROM detalle_mallas
+                               WHERE id_malla IN (SELECT id FROM mallas 
+                                                  WHERE id_carrera IN (SELECT id FROM carreras 
+                                                                       WHERE id_escuela = $pc_id_escuela)))
+                    AND id<>$id_prog_asig
+                  ORDER BY nombre";
+$prog_asig     = consulta_sql($SQL_prog_asig);
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+
+<script>
+function tipo_curso(valor) {
+	if (valor != 'm') {
+		formulario.dia1.disabled = false;
+		formulario.dia2.disabled = false;
+		formulario.dia3.disabled = false;
+		formulario.horario1.disabled = false;
+		formulario.horario2.disabled = false;
+		formulario.horario3.disabled = false;
+	} else {
+		formulario.dia1.disabled = true;
+		formulario.dia2.disabled = true;
+		formulario.dia3.disabled = true;
+		formulario.horario1.disabled = true;
+		formulario.horario2.disabled = true;
+		formulario.horario3.disabled = true;
+	}
+}
+</script>
+<div class="tituloModulo">
+	<?php echo($nombre_modulo); ?>
+</div><br>
+
+<form name="formulario" action="principal.php" method="get">
+<input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+<input type="hidden" name="id_pc_det" value="<?php echo($id_pc_det); ?>">
+<input type="hidden" name="id_prog_curso" value="<?php echo($id_prog_curso); ?>">
+<input type="hidden" name="hrs_semanal" value="<?php echo($hrs_semanal); ?>">
+
+<table cellpadding="4" cellspacing="0" border="0" class="tabla">
+  <tr>
+    <td align="center" class="textoTabla" style="vertical-align: middle;">
+      <input type="submit" name="guardar" value="Guardar">
+      <input type="button" onClick="history.back();" name="cancelar" value="Cancelar">
+    </td>
+  </tr>
+</table><br>
+
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla">
+  <tr>
+    <td class="celdaNombreAttr" colspan="4" style="text-align:center">Antecendentes de la Programación de Cursos</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Escuela:</td>
+    <td class="celdaValorAttr"><?php echo($pc_escuela); ?></td>
+    <td class="celdaNombreAttr">Periodo:</td>
+    <td class="celdaValorAttr"><?php echo($pc_periodo); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Creador:</td>
+    <td class="celdaValorAttr" colspan="3"><?php echo($pc_creador); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr" colspan="4" style="text-align:center">Antecendentes del curso a modificar</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Asignatura:</td>
+    <td class="celdaValorAttr" colspan="3">
+      <?php echo("$cod_asignatura $asignatura"); ?>
+      <b>- Seccion</b>:<input type="text" size="1" name="seccion" value="<?php echo($seccion); ?>"></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Malla(s):</td>
+    <td class="celdaValorAttr"><?php echo($mallas); ?></td>
+    <td class="celdaNombreAttr">Horas:</td>
+    <td class="celdaValorAttr"><?php echo($horas_semestrales."/".($hrs_semanal*18)); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Fusionar con:</td>
+    <td class="celdaValorAttr" colspan="3">
+      <select name="id_pa_fusion" style="font-weight:normal">
+        <option value="">-- Sin curso fusionado --</option>
+        <?php echo(select($prog_asig,$id_pa_fusion)); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Profesor:</td>
+    <td class="celdaValorAttr" colspan="3">
+      <select name="id_profesor" style="font-weight:normal">
+        <option value="">-- Sin profesor --</option>
+        <?php echo(select($profesores,$id_profesor)); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Al. Proyectados:</td>
+    <td class="celdaValorAttr">
+      <input type="text" size="2" name="al_proyectado" value="<?php echo($al_proyectado); ?>">
+      <b>Cupo:</b>
+      <input type="text" size="2" name="cupo" value="<?php echo($cupo); ?>">
+    </td>
+    <td class="celdaNombreAttr">Tipo:</td>
+    <td class="celdaValorAttr">
+      <select name="tipo" onChange="tipo_curso(this.value);">
+        <option value="">Regular/Tutorial</option>
+        <?php echo(select($TIPOS,$tipo)); ?>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr" colspan="4" style="text-align:center">Horarios y Fechas relevantes</td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">F. Inicio:</td>
+    <td class="celdaValorAttr"><input type="text" size="10" name="fec_ini" value="<?php echo($fec_ini); ?>"></td>
+    <td class="celdaNombreAttr">F. Término:</td>
+    <td class="celdaValorAttr"><input type="text" size="10" name="fec_fin" value="<?php echo($fec_fin); ?>"></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">1er módulo:</td>
+    <td class="celdaValorAttr">
+      <select name="dia1" style="<?php echo($dia1_style); ?>" <?php echo($deshabilitado); ?>>
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$dia1)); ?>
+      </select>
+      <select name="horario1" style="<?php echo($horario1_style); ?>" <?php echo($deshabilitado); ?>>
+        <option value="">-- Módulo --</option>
+        <?php echo(select($horarios,$horario1)); ?>
+      </select>
+    </td>
+    <td class="celdaNombreAttr">F. Prueba Solemne 1:</td>
+    <td class="celdaValorAttr"><input type="text" size="10" name="fec_sol1" value="<?php echo($fec_sol1); ?>"></td>
+  </tr>
+  <tr>
+  <td class="celdaNombreAttr">2do módulo:</td>
+    <td class="celdaValorAttr">
+      <select name="dia2" style="<?php echo($dia2_style); ?>" <?php echo($deshabilitado); ?>>
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$dia2)); ?>
+      </select>
+      <select name="horario2" style="<?php echo($horario2_style); ?>"<?php echo($deshabilitado); ?>>
+        <option value="">-- Módulo --</option>
+        <?php echo(select($horarios,$horario2)); ?>
+      </select>
+    </td>
+    <td class="celdaNombreAttr">F. Prueba Solemne 2:</td>
+    <td class="celdaValorAttr"><input type="text" size="10" name="fec_sol2" value="<?php echo($fec_sol2); ?>"></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">3er módulo:</td>
+    <td class="celdaValorAttr">
+      <select name="dia3" style="<?php echo($dia3_style); ?>" <?php echo($deshabilitado); ?>>
+        <option value="">-- Día --</option>
+        <?php echo(select($dias_palabra,$dia3)); ?>
+      </select>
+      <select name="horario3" style="<?php echo($horario3_style); ?>" <?php echo($deshabilitado); ?>>
+        <option value="">-- Módulo --</option>
+        <?php echo(select($horarios,$horario3)); ?>
+      </select>
+    </td>
+    <td class="celdaNombreAttr">F. Prueba Solemne Recup:</td>
+    <td class="celdaValorAttr"><input type="text" size="10" name="fec_sol_recup" value="<?php echo($fec_sol_recup); ?>"></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Visado VRA:</td>
+    <td class="celdaValorAttr"><?php echo($vobo_vra); ?></td>
+    <td class="celdaNombreAttr">Visado VRAF:</td>
+    <td class="celdaValorAttr"><?php echo($vobo_vraf); ?></td>
+  </tr>
+  <tr>
+    <td class="celdaNombreAttr">Comentarios:</td>
+    <td class="celdaValorAttr" colspan="3"><textarea name="comentarios"><?php echo(nl2br($comentarios)); ?></textarea></td>
+  </tr>
+</table><br>
+
+</form>
+
+<!-- Fin: <?php echo($modulo); ?> -->
+
+<?php
+function arr2sqlupd($aTabla) {
+	$arr2sqlupd = "";
+	$aCampos = array_keys($aTabla);
+	for($x=1;$x<count($aCampos);$x++) {
+		if ($aTabla[$aCampos[$x]] == "") {
+			$aTabla[$aCampos[$x]] = "null";
+		} else {
+			$aTabla[$aCampos[$x]] = "'{$aTabla[$aCampos[$x]]}'";
+		}
+		$arr2sqlupd .= "{$aCampos[$x]}={$aTabla[$aCampos[$x]]},";
+	}
+	return substr($arr2sqlupd,0,-1);
+}
+?>

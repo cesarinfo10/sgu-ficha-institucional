@@ -1,0 +1,106 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+};
+
+include("validar_modulo.php");
+
+$aCampos = array("rut","nombres","apellidos","genero","est_civil",
+                 "profesion","nacionalidad","pasaporte","direccion","comuna",
+                 "region","telefono","tel_movil","email","referencia",
+                 "admision","admision_subtipo","semestre_cohorte","cohorte","carrera1_post","jornada1_post","carrera2_post","jornada2_post",
+                 "carrera3_post","jornada3_post","cert_nacimiento","fotografias","conc_notas_em",
+                 "boletin_psu","copia_ced_iden","licencia_em","rbd_colegio","ano_egreso_col",
+                 "promedio_col","ano_psu","puntaje_psu","id_inst_edsup_proced","carr_ies_pro",
+                 "prom_nt_ies_pro","conc_nt_ies_pro","prog_as_ies_pro","fec_nac","referencia_comentarios",
+                 "licencia_em_comp_solic","conc_notas_em_comp_solic",
+                 "carrera4_post","jornada4_post","carrera5_post","jornada5_post",
+                 "carrera6_post","jornada6_post","regimen");
+
+$aRequeridos = array(0,1,2,3,4,5,6,8,9,10,11,12,14,15,16,17);
+$requeridos  = requeridos($aRequeridos,$aCampos);
+$requeridos .= ",'fec_nac_dia','fec_nac_mes','fec_nac_ano'";
+
+$rut = $_REQUEST['rut'];
+$validar = $_REQUEST['validar'];
+$rut_valido = false;
+
+if ($validar <> "" && $rut <> "") {
+	$pap = consulta_sql("SELECT id FROM pap WHERE rut = '$rut';");
+	if (!$pap) {
+		$rut_valido = true;
+	} else {
+		$id_pap = $pap[0]['id'];
+		$confirma_msje   = "Este rut ya está registrado.\\n Desea ver los datos?";
+		$confirma_url_si = "$enlbase=ver_postulante&id_pap=$id_pap";
+		$confirma_url_no = "$enlbase=$modulo";
+		echo(confirma_js($confirma_msje,$confirma_url_si,$confirma_url_no));
+	}
+}
+
+if ($_REQUEST['crear'] <> "") {
+	if (!checkdate($_REQUEST['fec_nac_mes'],$_REQUEST['fec_nac_dia'],$_REQUEST['fec_nac_ano'])) {
+		echo(msje_js(""
+		            ."Al parecer hay un problema con la fecha de nacimiento.\\n"
+		            ."Lo más seguro es que seleccionó una fecha imposible\\n"
+		            ."(como un 29 de febrero con un año no biciesto o un 31 de mayo)\\n"
+		            ."o bien no ha ingresado ninguna."
+		            .""));
+		$_REQUEST['crear'] = "";
+	} else {
+		$fec_nac = mktime(0,0,0,$_REQUEST['fec_nac_mes'],$_REQUEST['fec_nac_dia'],$_REQUEST['fec_nac_ano']);
+		$_REQUEST['fec_nac'] = strftime("%Y-%m-%d",$fec_nac);		
+	}
+}
+
+if ($_REQUEST['crear'] <> "") {
+	$SQLinsert = "INSERT INTO pap " . arr2sqlinsert($_REQUEST,$aCampos);
+	$resultado = pg_query($bdcon, $SQLinsert);
+	$filas = pg_affected_rows($resultado);
+	if ($filas > 0) {
+		$pap    = consulta_sql("SELECT currval('serial_id_pap') AS id;");
+		$id_pap = $pap[0]['id'];
+		$msje = "Se ha creado existosamente un nuevo postulante.\\n";
+		      //. "A continuación corresponde completar el Cuestionario UMC";
+		echo(msje_js($msje));
+		//echo(js("location='$enlbase=postulante_cuestionario_umc&id_pap=$id_pap';"));
+		echo(js("location='$enlbase=postulante_matricular&id_pap=$id_pap';"));		
+	}
+}
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+  	<?php echo($nombre_modulo); ?>
+</div><br>
+<?php
+	if ($rut_valido) {
+		$_REQUEST['fecha_post'] = strftime("%d/%m/%Y %X");
+		$carreras       = consulta_sql("SELECT id,nombre||' ('||alias||')' AS nombre FROM carreras WHERE activa ORDER BY nombre;");
+		include("postulante_formulario.php");
+	} else {
+?>
+<form name="formulario" action="principal.php" method="post" onSubmit="return valida_rut(formulario.rut);">
+  <input type="hidden" name="modulo" value="<?php echo($modulo); ?>">
+  <input type="hidden" name="cohorte" value="<?php echo($ANO_MATRICULA); ?>">
+  <input type="hidden" name="semestre_cohorte" value="<?php echo($SEMESTRE_MATRICULA); ?>">
+  <table bgcolor='#ffffff' cellspacing='1' cellpadding='2' class='tabla'>
+    <tr>
+      <td class='celdaNombreAttr'>RUT:</td>
+      <td class='celdaValorAttr'>
+        <input type='text' size="12" name='rut' onChange="var valor=this.value;this.value=valor.toUpperCase();" tabindex="1">
+        <script>formulario.rut.focus();</script>
+        <input type="submit" name="validar" value="Validar" tabindex="2">
+      </td>
+    </tr>
+  </table>
+</form>
+<?php
+	}
+?>
+
+<!-- Fin: <?php echo($modulo); ?> -->
+

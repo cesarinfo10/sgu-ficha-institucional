@@ -1,0 +1,33 @@
+Gestión Académico-administrativa
+p1#1. Inicio y finalizo puntualmente mis clases.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p2#2. Entrego en las fechas programadas las calificaciones obtenidas por los alumnos en las evaluaciones a la coordinación académica#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p3#3. Aviso oportunamente mi inasistencia.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p4#4. Recupero las clases perdidas a causa de mis inasistencias. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p5#5. Registro adecuadamente en el libro de clases la asistencia, las calificaciones de los alumnos y los contenidos tratados clase a clase.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p6#6. Respeto el calendario académico dispuesto por la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p7#7. Presento las pruebas al coordinador al menos 10 días antes de su aplicación para ser revisadas. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p8#8. Entrego las pruebas al coordinador al menos 48 horas antes de su aplicación.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p9#9. Cumplo adecuadamente con el programa del curso acordado con la Universidad.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p10#10. Doy cuenta oportunamente de las pautas y criterios de corrección de las evaluaciones a la coordinación académica. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p11#11. Entrego la planificación semestral de la asignatura en los plazos estipulados (contenidos, evaluaciones, actividades, etc.) #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p12#12. Entrego oportunamente el material de apoyo bibliográfico a la coordinación de la carrera. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p13#13. Ingreso las calificaciones al SGU en los plazos establecidos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Gestión Docente
+p14#14. Asisto a las reuniones de profesores programadas y a otras actividades como formar parte de un comité, extensión, etc. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p15#15. Aporto con ideas a la Escuela que permitan optimizar la calidad de la docencia.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p16#16. Desarrollo el programa del curso de acuerdo a lo indicado al inicio del semestre.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p17#17. Me preocupo por despertar el interés de los alumnos por el ramo.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p18#18. Me preocupo por incentivar la participación de los alumnos en clases.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p19#19. Recurro a diversos métodos y materiales de apoyo para el desarrollo didáctico de los contenidos del curso.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p20#20. Demuestro seguridad y dominio de los temas a la hora de responder preguntas. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p21#21. Realizo actividades curriculares que desarrollen diferentes habilidades en los estudiantes (Ej. Habilidades comunicacionales, trabajo en equipo, etc.)#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p22#22. Relaciono los contenidos de mi asignatura con otras materias de la carrera, logrando la tranversalidad de los contenidos tratados. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p23#23. Fomento en mis cátedras los principios y valores declarados por la Universidad (solidaridad, responsabilidad, honestidad,  etc.) #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p24#24. Las pruebas que aplico se ciñen a los contenidos vistos y analizados en clases. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p25#25. La revisión de las pruebas responde a una pauta preestablecida que permite objetividad en la evaluación del alumno. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p26#26. Comento al curso los resultados de las pruebas y analizo con los alumnos las respuestas esperadas. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+Interacción profesor/alumno
+p27#27. Establezco un trato respetuoso e igualitario con todos los alumnos de la clase. #Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p28#28. Mantengo un equilibrio entre cercanía y distancia con los alumnos.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p29#29. Establezco un clima que facilita la interacción profesor/alumnos#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo
+p30#30. Estoy dispuesto a responder a las inquietudes de los alumnos, aún fuera del aula.#Totalmente de acuerdo#De acuerdo#En desacuerdo#Totalmente en desacuerdo

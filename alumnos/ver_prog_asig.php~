@@ -1,0 +1,54 @@
+<?php
+
+if (!$_SESSION['autentificado']) {
+	header("Location: index.php");
+	exit;
+}
+
+$id_alumno = $_SESSION['id'];
+if (!is_numeric($id_alumno)) {
+}
+
+$id_prog_asig = $_REQUEST['id_prog_asig'];
+if (!is_numeric($id_prog_asig)) {
+	echo(js("location.href='principal.php?modulo=portada';"));
+	exit;
+}
+
+$SQL_prog_asig = "SELECT id,cod_asignatura AS \"código\",ano AS \"año\",
+                  asignatura,\"objetivos generales\",
+                  \"objetivos específicos\",contenidos,\"método de instrucción\",
+                  \"evaluación\",\"bibliografía obligatoria\",
+                  \"bibliografía complementaria\"
+           FROM vista_prog_asig 
+           WHERE id=$id_prog_asig;";
+$prog_asig = consulta_sql($SQL_prog_asig);
+if (count($prog_asig) <> 1) {
+	echo(js("location.href='principal.php?modulo=portada';"));
+	exit;
+}
+
+?>
+
+<!-- Inicio: <?php echo($modulo); ?> -->
+<div class="tituloModulo">
+	Ver Programa de asignatura: <?php echo($prog_asig[0]['asignatura']); ?>
+</div><br>
+<br>
+<table bgcolor="#ffffff" cellspacing="1" cellpadding="2" class="tabla" width="75%">
+<?php
+	foreach ($prog_asig[0] AS $nombre_campo => $valor_campo) {
+		$nombre_campo = ucfirst($nombre_campo);
+		$valor_campo = nl2br($valor_campo);
+		echo("  <tr>\n");
+		echo("    <td class='celdaNombreAttr' style='text-align: left;'>$nombre_campo:</td>\n");
+		echo("  </tr>\n");
+		echo("  <tr>\n");
+		echo("    <td class='celdaValorAttr' >$valor_campo&nbsp;</td>\n");
+		echo("  </tr>\n");
+	};
+?>
+</table>
+</form>
+<!-- Fin: <?php echo($modulo); ?> -->
+
