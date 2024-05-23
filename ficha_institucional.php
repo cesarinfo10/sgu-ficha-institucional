@@ -15,7 +15,7 @@
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#home">Información Consolidada</a>
+      <a class="nav-link active"  data-toggle="tab" href="#home" onclick="cargarInfoConsolidada();">Información Consolidada</a>
     </li>
     <li class="nav-item">   
       <a class="nav-link" data-toggle="tab" href="#menu1">Ofera de Pregrado</a>
@@ -29,102 +29,7 @@
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>Información Consolidada</h3>
-    <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th></th>
-      <th class="tituloTabla">Proceso anterior [1]</th>
-      <th class="tituloTabla">Proceso actual (año actual)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="text-left tituloTabla">N° de sedes</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">N° de carreras de pregrado (especificar niveles) [2]</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Áreas del conocimiento [3]</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matrícula nueva pregrado</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matrícula nueva pregrado (% Mujer) [4]</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matricula total pregrado</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matricula total pregrado (% Mujer)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">N° académicos</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">N° académicos (% Mujer)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">JCE [5]</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">JCE (% Mujer)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">N° programas magister</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">N° programas doctorados</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matrícula nueva postgrados</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matrícula nueva postgrados (% Mujer)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matricula total postgrados</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="text-left tituloTabla">Matricula total postgrados (% Mujer)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    </tbody>
-</table>
+<div id="infoCon"></div>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
       <h3>Menu 1</h3>
@@ -136,6 +41,6 @@
     </div>
   </div>
 </div>
-
+<script src="./ficha-institucional/js/ficha.js"></script>
 </body>
 </html>
