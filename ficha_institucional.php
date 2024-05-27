@@ -18,7 +18,7 @@
       <a class="nav-link active"  data-toggle="tab" href="#home" onclick="cargarInfoConsolidada();">Información Consolidada</a>
     </li>
     <li class="nav-item">   
-      <a class="nav-link" data-toggle="tab" href="#menu1">Ofera de Pregrado</a>
+      <a class="nav-link" data-toggle="tab" href="#menu1" onclick="cargarOfertaPregrado();">Ofera de Pregrado</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu2">Matrícula de Pregrado</a>
@@ -29,11 +29,11 @@
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>Información Consolidada</h3>
-<div id="infoCon"></div>
+      <div id="infoCon"></div>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h3>Oferta Pregrado</h3>
+      <div id="ofPregrado"></div>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
       <h3>Menu 2</h3>
