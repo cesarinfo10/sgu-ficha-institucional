@@ -21,7 +21,7 @@
       <a class="nav-link" data-toggle="tab" href="#menu1" onclick="cargarOfertaPregrado();">Ofera de Pregrado</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu2">Matrícula de Pregrado</a>
+      <a class="nav-link" data-toggle="tab" href="#menu2" onclick="cargarMatriculaPregrado();" >Matrícula de Pregrado</a>
     </li>
   </ul>
 
@@ -36,8 +36,8 @@
       <div id="ofPregrado"></div>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <h3>Matricual Pregrado</h3>
+      <div id="matPregrado"></div>
     </div>
   </div>
 </div>
