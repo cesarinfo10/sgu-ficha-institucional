@@ -36,7 +36,6 @@
       <div id="ofPregrado"></div>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Matricual Pregrado</h3>
       <div id="matPregrado"></div>
     </div>
   </div>
