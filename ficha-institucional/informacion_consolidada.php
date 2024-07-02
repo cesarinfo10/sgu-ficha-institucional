@@ -14,11 +14,7 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
-        <td class="text-left tituloTabla">N° de carreras de pregrado (especificar niveles) [2]</td>
-        <td></td>
-        <td></td>
-      </tr>
+        <div id="numCarrerasGrado"></div>
       <tr>
         <td class="text-left tituloTabla">Áreas del conocimiento [3]</td>
         <td></td>

@@ -1,10 +1,9 @@
 <?php
+
 function db_connect(){
-    /* DESARROLLO*/
-   // $dbconn = pg_connect("host=10.1.1.88 dbname=regacad user=sgu")
-    $dbconn = pg_connect("host=10.111.0.113 dbname=regacad user=sgu")
+    include_once './../funciones.php';
+    $dbconn = pg_connect("dbname=regacad" . $authbd)
      or die('No se ha podido conectar: ' . pg_last_error());
 
      return $dbconn;
-
 }

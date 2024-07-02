@@ -41,5 +41,6 @@
   </div>
 </div>
 <script src="./ficha-institucional/js/ficha.js"></script>
+<script src="./ficha-institucional/js/query.js"></script>
 </body>
 </html>
