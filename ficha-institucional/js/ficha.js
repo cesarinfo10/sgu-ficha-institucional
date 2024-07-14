@@ -50,3 +50,19 @@ function cargarMatriculaPregrado(){
 
     });
 }
+
+function cargarfichaGob(){
+    
+    var url ="ficha-institucional/matricula_pregrado.php";
+    $.ajax({
+        type: "POST",
+        url: url,
+        async: false,
+        success: function(data) {
+          //  console.log(data);
+            $("#fichaGob").html(data);
+
+        }
+
+    });
+}

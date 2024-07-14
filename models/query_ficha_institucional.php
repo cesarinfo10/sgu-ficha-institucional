@@ -44,7 +44,7 @@ if (isset($_GET['getCarrera'])){
       echo '<tr>
             <td>'.$row[0].'</td>
             <td>'.$row[1].'</td>
-            <td>'.$row[2].'</td>
+            
             </tr>';
     }
 // Áreas del conocimiento [3]
@@ -57,7 +57,6 @@ echo ' <tr>
       echo '<tr>
             <td>'.$rowAC[0].'</td>
             <td>'.$rowAC[1].'</td>
-            <td>'.$rowAC[2].'</td>
             </tr>';
     }
     echo '</table>';

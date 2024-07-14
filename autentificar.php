@@ -1,7 +1,7 @@
 <?php
 
 include("funciones.php");
-
+//$tipos_usuario = '0';
 $usuario = $_REQUEST['nombre_usuario'];
 $clave   = $_REQUEST['clave'];
 $tipo    = $_REQUEST['tipo'];
@@ -9,6 +9,7 @@ $entrar  = $_REQUEST['entrar'];
 
 $modulo     = "autentificar";
 $accion_log = $_SERVER['REQUEST_URI'];
+
 
 $tipos_usuarios = tipos_usuario($tipo);
 $servidor = $tipos_usuario['servidor'];
@@ -24,7 +25,7 @@ $auth_bd = auth_bd($usuario,$tipo);
 if ($auth_bd) {
 	$servidor = tipos_usuario($tipo);
 	$servidor = $servidor['servidor'];
-	error_reporting(0);
+	//error_reporting(0);
 	$auth_passwd = auth_imap($usuario,$clave,$servidor);
 	if ($auth_passwd) {
 		session_start();

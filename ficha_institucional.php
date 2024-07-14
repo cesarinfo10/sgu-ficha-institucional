@@ -23,6 +23,9 @@
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu2" onclick="cargarMatriculaPregrado();" >Matrícula de Pregrado</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu16" onclick="cargarfichaGob();" >(16) Gobierno</a>
+    </li>
   </ul>
 
   <!-- Tab panes -->
@@ -37,6 +40,9 @@
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
       <div id="matPregrado"></div>
+    </div>
+    <div id="menu16" class="container tab-pane fade"><br>
+      <div id="fichaGob"></div>
     </div>
   </div>
 </div>
