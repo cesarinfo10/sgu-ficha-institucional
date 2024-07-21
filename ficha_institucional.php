@@ -26,6 +26,9 @@
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu16" onclick="cargarfichaGob();" >(16) Gobierno</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu17" onclick="cargarInfRecursos();" >(17) Infraestructura y recursos</a>
+    </li>
   </ul>
 
   <!-- Tab panes -->
@@ -43,6 +46,9 @@
     </div>
     <div id="menu16" class="container tab-pane fade"><br>
       <div id="fichaGob"></div>
+    </div>
+    <div id="menu17" class="container tab-pane fade"><br>
+      <div id="fichaInf17"></div>
     </div>
   </div>
 </div>

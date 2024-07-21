@@ -66,3 +66,19 @@ function cargarfichaGob(){
 
     });
 }
+    function cargarInfRecursos(){
+    
+        var url ="ficha-institucional/Inf_recursos17.php";
+        $.ajax({
+            type: "POST",
+            url: url,
+            async: false,
+            success: function(data) {
+              //  console.log(data);
+                $("#fichaInf17").html(data);
+    
+            }
+    
+        });
+    
+}
