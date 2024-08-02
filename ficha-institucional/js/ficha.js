@@ -82,3 +82,28 @@ function cargarfichaGob(){
         });
     
 }
+
+
+function llamarSede(i){
+    
+    var url ="models/dotacion_personal.php?getSede";
+    $.ajax({
+        type: "POST",
+        url: url,
+        async: false,
+        success: function(data) {
+          if(i==1){
+            $("#comboSede17a").html(data);
+          }else if(i==2){
+            $("#comboSede17b").html(data);
+          }else if(i==3){
+            $("#comboSede17c").html(data);
+          }else if(i==4){
+            $("#comboSede17d").html(data);
+          }
+
+        }
+
+    });
+
+}

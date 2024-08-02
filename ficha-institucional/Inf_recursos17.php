@@ -1,5 +1,5 @@
 <h4>Dotación de personal, por sede</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtSede">Agregar +</button>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtSede" onclick="llamarSede(1)">Agregar +</button>
 <br />
 <br />
 <table class="table table-bordered">
@@ -85,7 +85,7 @@
 <hr>
 
 <h4> Edificios propios</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdiPro">Agregar +</button>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdiPro" onclick="llamarSede(2)">Agregar +</button>
 <br />
 <br />
 <table class="table table-bordered">
@@ -138,7 +138,7 @@
 
 <hr>
 <h4>Edificios arrendados</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdAriendo">Agregar +</button>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdAriendo" onclick="llamarSede(3)">Agregar +</button>
 <br />
 <br />
 <table class="table table-bordered">
@@ -199,7 +199,7 @@
 
 <hr>
 <h4>Edificios en comodato</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdComodato">Agregar +</button>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdComodato" onclick="llamarSede(4)">Agregar +</button>
 <br />
 <br />
 <table class="table table-bordered">
@@ -412,7 +412,7 @@
 
 <hr>
 <h4>Beneficios a estudiantes de pregrado</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>
+<!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
 <br />
 <br />
 <div class="table-responsive">
@@ -604,7 +604,7 @@
 
 <hr>
 <h4>Beneficios a estudiantes de postgrado</h4>
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPostgrado">Agregar +</button>
+<!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPostgrado">Agregar +</button>-->
 <br />
 <br />
 <div class="table-responsive">
@@ -791,22 +791,15 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="sede">Sede:</label>
-            <input type="text" class="form-control" id="nomSede" placeholder="Sede" name="nomSede">
+              <div id="comboSede17a"></div>
           </div>
           <div class="form-group">
             <label for="ano">Año:</label>
             <input type="number" class="form-control" id="sedeAno" placeholder="Año" name="sedeAno">
           </div>
           <div class="form-group">
-            <label for="sede">Genero:</label>
-            <select class="shadow-lg p-1 bg-white form-control" id="ddl_genero" name="ddl_genero"
-              style="visibility: visible;">
-              <option value="0">Seleccione</option>
-              <option value="m" class="1">Hombre</option>
-              <option value="f" class="2">Mujer</option>
-              <option value="o" class="3">Otro</option>
-            </select>
+            <label for="sede">% Mujeres:</label>
+            <input type="number" class="form-control" id="ddl_genero" placeholder="Total" name="ddl_genero">
           </div>
           <div class="form-group">
             <label for="ano">Total:</label>
@@ -855,8 +848,7 @@
       <div class="modal-body">
       <form>
           <div class="form-group">
-            <label for="sede">Sede:</label>
-            <input type="text" class="form-control" id="nomSedeEp" placeholder="Sede" name="nomSedeEp">
+              <div id="comboSede17b"></div>
           </div>
           <div class="form-group">
             <label for="ano">Dirección:</label>
@@ -913,8 +905,7 @@
       <div class="modal-body">
       <form>
           <div class="form-group">
-            <label for="">Sede:</label>
-            <input type="text" class="form-control" id="nomSedeEa" placeholder="Sede" name="nomSedeEa">
+          <div id="comboSede17c"></div>
           </div>
           <div class="form-group">
             <label for="">Propietario:</label>
@@ -978,8 +969,7 @@
       <div class="modal-body">
       <form>
           <div class="form-group">
-            <label for="">Sede:</label>
-            <input type="text" class="form-control" id="nomSedeEa" placeholder="Sede" name="nomSedeEc">
+            <div id="comboSede17d"></div>
           </div>
           <div class="form-group">
             <label for="">Propietario:</label>

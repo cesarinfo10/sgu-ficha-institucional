@@ -9,9 +9,10 @@
 </head>
 <body>
 
-<div class="container mt-3">
+<div class="container mt-3"></div>
   <h3>Ficha Institucional</h3>
   <br>
+
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -32,26 +33,30 @@
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
+  <div class="tab-content" style="">
+  <!--<div id="home" class="container tab-pane active"><br>-->
+    <div id="home" class="tab-pane active"><br>
       <h3>Información Consolidada</h3>
       <div id="infoCon"></div>
     </div>
-    <div id="menu1" class="container tab-pane fade"><br>
+   <!-- <div id="menu1" class="container tab-pane fade"><br>-->
+    <div id="menu1" class="tab-pane fade"><br>
     <h3>Oferta Pregrado</h3>
       <div id="ofPregrado"></div>
     </div>
-    <div id="menu2" class="container tab-pane fade"><br>
+   <!-- <div id="menu2" class="container tab-pane fade"><br>-->
+    <div id="menu2" class="tab-pane fade"><br>
       <div id="matPregrado"></div>
     </div>
-    <div id="menu16" class="container tab-pane fade"><br>
+    <!--<div id="menu16" class="container tab-pane fade"><br>-->
+    <div id="menu16" class="tab-pane fade"><br>
       <div id="fichaGob"></div>
     </div>
-    <div id="menu17" class="container tab-pane fade"><br>
+    <!--<div id="menu17" class="container tab-pane fade"><br>-->
+    <div id="menu17" class="tab-pane fade"><br>
       <div id="fichaInf17"></div>
     </div>
   </div>
-</div>
 <script src="./ficha-institucional/js/ficha.js"></script>
 <script src="./ficha-institucional/js/query.js"></script>
 </body>
