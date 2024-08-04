@@ -2,86 +2,7 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtSede" onclick="llamarSede(1)">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th></th>
-      <th class="tituloTabla" colspan="2">2019</th>
-      <th class="tituloTabla" colspan="2">2020</th>
-      <th class="tituloTabla" colspan="2">2021</th>
-      <th class="tituloTabla" colspan="2">2022</th>
-      <th class="tituloTabla" colspan="2">2023</th>
-      <th class="tituloTabla" colspan="3">Instituciones del conglomerado</th>
-    </tr>
-    <tr>
-    <tr>
-      <th class="tituloTabla">Sede</th>
-      <th class="tituloTabla">Total</th>
-      <th class="tituloTabla">Mujer (%)</th>
-      <th class="tituloTabla">Total</th>
-      <th class="tituloTabla">Mujer (%)</th>
-      <th class="tituloTabla">Total</th>
-      <th class="tituloTabla">Mujer (%)</th>
-      <th class="tituloTabla">Total</th>
-      <th class="tituloTabla">Mujer (%)</th>
-      <th class="tituloTabla">Total</th>
-      <th class="tituloTabla">Mujer (%)</th>
-      <th class="tituloTabla">CFT</th>
-      <th class="tituloTabla">IP</th>
-      <th class="tituloTabla">Universidad</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sede 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede N</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblDPersonal"></div>
 <hr>
 
 <h4> Edificios propios</h4>
@@ -799,27 +720,27 @@
           </div>
           <div class="form-group">
             <label for="sede">% Mujeres:</label>
-            <input type="number" class="form-control" id="ddl_genero" placeholder="Total" name="ddl_genero">
+            <input type="number" class="form-control" id="porMujerDP" placeholder="Total" name="porMujerDP">
           </div>
           <div class="form-group">
             <label for="ano">Total:</label>
             <input type="number" class="form-control" id="sedeTotal" placeholder="Total" name="sedeTotal">
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio1" name="optradioSed" value="option1" >CFT
+            <input type="radio" class="form-check-input" id="optradioDp1" name="optradioDp">CFT
             <label class="form-check-label" for="radio1"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio2" name="optradioSed" value="option2">IP
+            <input type="radio" class="form-check-input" id="optradioDp2" name="optradioDp">IP
             <label class="form-check-label" for="radio2"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio3" name="optradioSed" value="option3"checked>Universidad
+            <input type="radio" class="form-check-input" id="optradioDp3" name="optradioDp" checked>Universidad
             <label class="form-check-label"></label>
           </div>
           <br/>
           <br/>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="insertarDP()">Guardar</button>
         </form>
       </div>
 
