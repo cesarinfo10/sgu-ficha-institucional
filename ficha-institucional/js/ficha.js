@@ -199,3 +199,77 @@ function llamarDPesonal(){
 /*==========================================================================================
                                   FIN DOTACION DE PERSONAL
 ==========================================================================================*/
+
+/*==========================================================================================
+                                  EDIFICIO PROPIO
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE EDIFICIO PROPIO
+=============================================*/
+function insertarEP(){
+  
+
+  let idSede =$("#tipoBeneficio").val();
+  let direccion = $("#dirEp").val();
+  let mtEp = $("#mtEp").val();
+  let anoAdquisision = $("#epAno").val();
+
+  let cftSede = $("#optradioEP1").is(':checked') ? 1 : 0;
+  let ipSede = $("#optradioEP2").is(':checked') ? 1 : 0;
+  let uniSede = $("#optradioEP3").is(':checked') ? 1 : 0;
+
+if(idSede == 0 || direccion == "" || mtEp == "" || anoAdquisision == ""){
+  Swal.fire("Todos los campos son obligatorios!");
+  return false;
+}
+  let dataString = 'idSede='+idSede.trim()+'&direccion='+direccion.trim()+'&mtEp='+mtEp.trim()+'&anoAdquisision='+anoAdquisision.trim() 
+                    +'&cftSede='+cftSede+'&ipSede='+ipSede +'&uniSede='+uniSede;
+
+
+$.ajax({
+            type: "POST",
+            url: "models/dotacion_personal_17.php?postEPropio",
+            data: dataString,
+            success: function(data) {
+             if (data == 1) {
+              Swal.fire({
+                title: "Registo guardado con exito!",
+                icon: "success"
+              });
+              llamarDPesonal();
+              limpiarFormularioEP();
+
+            } else if (data == 3) {
+              Swal.fire({
+                title: "Registro actualizado con exito!",
+                icon: "success"
+              });
+              llamarDPesonal();
+              limpiarFormularioEP();
+
+            } else {
+              Swal.fire({
+                title: "Error al guardar el registro!",
+                icon: "error"
+              });
+              limpiarFormularioEP();
+            }
+            }
+
+        });
+}
+
+function limpiarFormularioEP(){
+  $("#tipoBeneficio").val(0);
+  $("#dirEp").val("");
+  $("#mtEp").val("");
+  $("#epAno").val("");
+  $("#optradioEP1").prop("checked", false);
+  $("#optradioEP2").prop("checked", false);
+  $("#optradioEP3").prop("checked", true);
+}
+
+/*==========================================================================================
+                                  FIN EDIFICIO PROPIO
+==========================================================================================*/

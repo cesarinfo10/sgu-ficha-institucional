@@ -784,26 +784,26 @@
             <input type="number" class="form-control" id="epAno" placeholder="Año adquisición" name="epAno">
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio1" name="optradioEP" value="option1" >CFT
+            <input type="radio" class="form-check-input" id="optradioEP1" name="optradioEP" value="option1" >CFT
             <label class="form-check-label" for="radio1"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio2" name="optradioEP" value="option2">IP
+            <input type="radio" class="form-check-input" id="optradioEP2" name="optradioEP" value="option2">IP
             <label class="form-check-label" for="radio2"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="radio3" name="optradioEP" value="option3"checked>Universidad
+            <input type="radio" class="form-check-input" id="optradioEP3" name="optradioEP" value="option3"checked>Universidad
             <label class="form-check-label"></label>
           </div>
           <br/>
           <br/>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="insertarEP()">Guardar</button>
         </form>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" >Cerrar</button>
       </div>
 
     </div>

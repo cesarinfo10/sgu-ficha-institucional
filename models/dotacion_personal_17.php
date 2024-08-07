@@ -1,6 +1,9 @@
 <?php
 include ('conexion.php');
-//echo 'Hola';
+/*==========================================================================================
+                                  DOTACION DE PERSONAL
+==========================================================================================*/
+
 /*=============================================
 LLAMAR A Dotación de personal, por sede
 =============================================*/
@@ -146,3 +149,143 @@ if (isset($_GET['getDPersonal'])) {
   echo ' </tbody>
   </table>';
 }
+/*==========================================================================================
+                                  FIN DOTACION DE PERSONAL
+==========================================================================================*/
+
+/*==========================================================================================
+                                  EDIFICIO PROPIO
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE EDIFICIO PROPIO
+=============================================*/
+if (isset($_GET['postEPropio'])) {
+
+  $dbconn = db_connect();
+  
+  $idSede = $_POST['idSede'];
+  $direccion = $_POST['direccion'];
+  $mtEp = $_POST['mtEp'];
+  $anoadquisision = $_POST['anoAdquisision'];
+
+  $cftSede = $_POST['cftSede'];
+  $ipSede = $_POST['ipSede'];
+  $uniSede = $_POST['uniSede'];
+
+  $query = "SELECT idSede FROM public.edi_propio_sedes WHERE idSede = '" . $idSede . "'";
+  $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
+  $rows = pg_num_rows($result);
+
+  if ($rows == 0) {
+
+    $sql = "INSERT INTO public.edi_propio_sedes (idSede, direccion, mtEp, anoadquisision, cftSede, ipSede, uniSede)
+              VALUES ('" . $idSede . "', '" . $direccion . "', '" . $mtEp . "', '" . $anoadquisision . "', '" . $cftSede . "', 
+              '" . $ipSede . "', '" . $uniSede . "')";
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 1;
+      while ($row = pg_fetch_row($result)) {
+        echo $row[0];
+      }
+
+    } else {
+      echo 2;
+    }
+    //echo $result ;
+    pg_close($dbconn);
+  } else {
+
+    $sql = "UPDATE public.edi_propio_sedes SET idSede = '" . $idSede . "', direccion = '" . $direccion . "', mtEp = '" . $mtEp . "',
+           anoadquisision = '" . $anoadquisision . "', cftSede = '" . $cftSede . "', ipSede = '" . $ipSede . "', uniSede = '" . $uniSede . "'
+           WHERE idSede = '" . $idSede . "'";
+
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 3;
+    } else {
+      echo 2;
+    }
+  }
+}
+/*=============================================
+LLAMAR A TODOS LOS EDIFICIO PROPIO
+=============================================*/
+if (isset($_GET['getEPropio'])) {
+  $dbconn = db_connect();
+
+  $query = "SELECT informacion_sedes.idsede, sede_ficha.nomsede, sede_ficha.estado, informacion_sedes.cftSede, 
+      informacion_sedes.ipSede, informacion_sedes.uniSede
+            FROM edi_propio_sedes";
+
+  $result = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+  $result2 = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+  $rowIdsede = pg_fetch_row($result);
+
+
+  
+  $queryIS = "SELECT *FROM public.informacion_sedes WHERE idSede = '" . $rowIdsede[0] . "' ORDER BY sedeAno";
+  $resultIS = pg_query($dbconn, $queryIS) or die('La consulta fallo: ' . pg_last_error());
+  $resultIS2 = pg_query($dbconn, $queryIS) or die('La consulta fallo: ' . pg_last_error());
+  $resultIS3 = pg_query($dbconn, $queryIS) or die('La consulta fallo: ' . pg_last_error());
+  //return $result;
+    
+  echo '<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th colspan="4"></th>
+      <th class="tituloTabla" colspan="3">Instituciones del conglomerado</th>
+    </tr>
+    <tr>
+    <tr>
+      <th class="tituloTabla">Sede</th>
+      <th class="tituloTabla">Dirección</th>
+      <th class="tituloTabla">Metros cuadrados totales</th>
+      <th class="tituloTabla">Año adquisición</th>
+      <th class="tituloTabla">CFT</th>
+      <th class="tituloTabla">IP</th>
+      <th class="tituloTabla">Universidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sede 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sede 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sede N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>';
+}
+/*==========================================================================================
+                                  FIN EDIFICIO PROPIO
+==========================================================================================*/

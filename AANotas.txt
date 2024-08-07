@@ -1,4 +1,0 @@
-ficha_institucional.php
-Inf_recursos17.php
-dotacion_personal.php
-ficha.js
