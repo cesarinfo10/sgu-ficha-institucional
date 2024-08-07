@@ -9,114 +9,14 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdiPro" onclick="llamarSede(2)">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th colspan="4"></th>
-      <th class="tituloTabla" colspan="3">Instituciones del conglomerado</th>
-    </tr>
-    <tr>
-    <tr>
-      <th class="tituloTabla">Sede</th>
-      <th class="tituloTabla">Dirección</th>
-      <th class="tituloTabla">Metros cuadrados totales</th>
-      <th class="tituloTabla">Año adquisición</th>
-      <th class="tituloTabla">CFT</th>
-      <th class="tituloTabla">IP</th>
-      <th class="tituloTabla">Universidad</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sede 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede N</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblEPropio"></div>
 
 <hr>
 <h4>Edificios arrendados</h4>
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdAriendo" onclick="llamarSede(3)">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th colspan="6"></th>
-      <th class="tituloTabla" colspan="3">Metros cuadrados conglomerado</th>
-    </tr>
-    <tr>
-    <tr>
-      <th class="tituloTabla">Sede</th>
-      <th class="tituloTabla">Propietario</th>
-      <th class="tituloTabla">Fecha inicio contrato</th>
-      <th class="tituloTabla">Plazo contrato </th>
-      <th class="tituloTabla">Arriendo (CLP$ o UF)</th>
-      <th class="tituloTabla">Metros cuadrados totales</th>
-      <th class="tituloTabla">CFT</th>
-      <th class="tituloTabla">IP</th>
-      <th class="tituloTabla">Universidad</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sede 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede N</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblEArriendo"></div>
 
 <hr>
 <h4>Edificios en comodato</h4>
@@ -849,20 +749,20 @@
             <input type="text" class="form-control" id="metrosCuaEA" placeholder="Metros cuadrados" name="metrosCuaEA">
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="arriendoCFT" name="optradioArriendo" value="option1" >CFT
+            <input type="radio" class="form-check-input" id="optradioArriendo1" name="optradioArriendo" value="option1" >CFT
             <label class="form-check-label" for="radio1"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="arriendoIP" name="optradioArriendo" value="option2">IP
+            <input type="radio" class="form-check-input" id="optradioArriendo2" name="optradioArriendo" value="option2">IP
             <label class="form-check-label" for="radio2"></label>
           </div>
           <div class="form-check">
-            <input type="radio" class="form-check-input" id="arriendoUni" name="optradioArriendo" value="option3"checked>Universidad
+            <input type="radio" class="form-check-input" id="optradioArriendo3" name="optradioArriendo" value="option3"checked>Universidad
             <label class="form-check-label"></label>
           </div>
           <br/>
           <br/>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="insertarEA();">Guardar</button>
         </form>
       </div>
 

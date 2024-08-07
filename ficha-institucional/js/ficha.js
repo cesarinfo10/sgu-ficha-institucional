@@ -237,7 +237,7 @@ $.ajax({
                 title: "Registo guardado con exito!",
                 icon: "success"
               });
-              llamarDPesonal();
+              llamarEPropio();
               limpiarFormularioEP();
 
             } else if (data == 3) {
@@ -245,7 +245,7 @@ $.ajax({
                 title: "Registro actualizado con exito!",
                 icon: "success"
               });
-              llamarDPesonal();
+              llamarEPropio();
               limpiarFormularioEP();
 
             } else {
@@ -269,7 +269,116 @@ function limpiarFormularioEP(){
   $("#optradioEP2").prop("checked", false);
   $("#optradioEP3").prop("checked", true);
 }
+/*=============================================
+LLAMAR A TODAS LOS EDIFICIO PROPIO
+=============================================*/
+function llamarEPropio(){
+  setTimeout(() => {
+  var url ="models/dotacion_personal_17.php?getEPropio";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+          $("#tblEPropio").html(data);
+      }
 
+  });
+}, 1000);
+}
 /*==========================================================================================
                                   FIN EDIFICIO PROPIO
+==========================================================================================*/
+
+/*==========================================================================================
+                                  EDIFICIO DE ARRIENDO
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE EDIFICIO DE ARRIENDO
+=============================================*/
+function insertarEA(){
+  
+
+  let idSede =$("#tipoBeneficio").val();
+  let propEA = $("#propEA").val();
+  let fecIniEA = $("#fecIniEA").val();
+  let plazoEA = $("#plazoEA").val();
+  let arriendoEA = $("#arriendoEA").val();
+  let metrosCuaEA = $("#metrosCuaEA").val();
+
+  let cftSede = $("#optradioArriendo1").is(':checked') ? 1 : 0;
+  let ipSede = $("#optradioArriendo2").is(':checked') ? 1 : 0;
+  let uniSede = $("#optradioArriendo3").is(':checked') ? 1 : 0;
+
+if(idSede == 0 || propEA == "" || arriendoEA == "" || metrosCuaEA == ""){
+  Swal.fire("Todos los campos son obligatorios!");
+  return false;
+}
+  let dataString = 'idSede='+idSede.trim()+'&propEA='+propEA.trim()+'&fecIniEA='+fecIniEA.trim()+'&plazoEA='+plazoEA.trim() 
+                    +'&arriendoEA='+arriendoEA.trim()+'&metrosCuaEA='+metrosCuaEA.trim()+'&cftSede='+cftSede
+                    +'&ipSede='+ipSede +'&uniSede='+uniSede;
+
+
+$.ajax({
+            type: "POST",
+            url: "models/dotacion_personal_17.php?postEArrendado",
+            data: dataString,
+            success: function(data) {
+             if (data == 1) {
+              Swal.fire({
+                title: "Registo guardado con exito!",
+                icon: "success"
+              });
+              llamarEArriendo();
+              limpiarFormularioEP();
+
+            } else if (data == 3) {
+              Swal.fire({
+                title: "Registro actualizado con exito!",
+                icon: "success"
+              });
+              llamarEArriendo();
+              limpiarFormularioEP();
+
+            } else {
+              Swal.fire({
+                title: "Error al guardar el registro!",
+                icon: "error"
+              });
+              limpiarFormularioEP();
+            }
+            }
+
+        });
+}
+
+function limpiarFormularioEA(){
+  $("#tipoBeneficio").val(0);
+  $("#dirEp").val("");
+  $("#mtEp").val("");
+  $("#epAno").val("");
+  $("#optradioEP1").prop("checked", false);
+  $("#optradioEP2").prop("checked", false);
+  $("#optradioEP3").prop("checked", true);
+}
+/*=============================================
+LLAMAR A TODAS LOS EDIFICIO DE ARRIENDO
+=============================================*/
+function llamarEArriendo(){
+  setTimeout(() => {
+  var url ="models/dotacion_personal_17.php?getEArendado";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+          $("#tblEArriendo").html(data);
+      }
+
+  });
+}, 1000);
+}
+/*==========================================================================================
+                                  FIN EDIFICIO DE ARRIENDO
 ==========================================================================================*/
