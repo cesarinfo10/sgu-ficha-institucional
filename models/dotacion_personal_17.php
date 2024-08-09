@@ -278,8 +278,8 @@ if (isset($_GET['postEArrendado'])) {
   $propEA = $_POST['propEA'];
   $fecIniEA = $_POST['fecIniEA'];
   $plazoEA = $_POST['plazoEA'];
-  $arriendoEA = $_POST['arriendoEA'];
   $metrosCuaEA = $_POST['metrosCuaEA'];
+  $arriendoEA = $_POST['arriendoEA'];
 
   $arriendoCFT = $_POST['cftSede'];
   $arriendoIP = $_POST['ipSede'];
@@ -314,7 +314,7 @@ if (isset($_GET['postEArrendado'])) {
 
     $sql = "UPDATE public.edi_arendado_sedes SET idSede = '" . $idSede . "', propEA = '" . $propEA . "', fecIniEA = '" . $fecIniEA . "',
            plazoEA = '" . $plazoEA . "', arriendoEA = '" . $arriendoEA . "', metrosCuaEA = '" . $metrosCuaEA . "', 
-           cftSede = '" . $arriendoCFT . "', arriendoIP = '" . $arriendoIP . "', arriendoUni = '" . $arriendoUni . "'
+           arriendoCFT = '" . $arriendoCFT . "', arriendoIP = '" . $arriendoIP . "', arriendoUni = '" . $arriendoUni . "'
            WHERE idSede = '" . $idSede . "'";
 
 
@@ -378,4 +378,118 @@ if (isset($_GET['getEArendado'])) {
 }
 /*==========================================================================================
                                   FIN EDIFICIO PROPIO
+==========================================================================================*/
+
+/*==========================================================================================
+                                  EDIFICIO COMODATO
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE EDIFICIO COMODATO
+=============================================*/
+if (isset($_GET['postEComodato'])) {
+
+  $dbconn = db_connect();
+  
+  $idSede = $_POST['idSede'];
+  $propEC = $_POST['propEC'];
+  $fecIniEC = $_POST['fecIniEC'];
+  $plazoEC = $_POST['plazoEC'];
+  $metrosCuaEC = $_POST['metrosCuaEC'];
+
+  $comodatoCFT = $_POST['comodatoCFT'];
+  $comodatoCIP = $_POST['comodatoCIP'];
+  $comodatoUni = $_POST['comodatoUni'];
+
+  $query = "SELECT idSede FROM public.edi_comodato_sedes WHERE idSede = '" . $idSede . "'";
+  $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
+  $rows = pg_num_rows($result);
+
+  if ($rows == 0) {
+
+    $sql = "INSERT INTO public.edi_comodato_sedes (idSede, propEC, fecIniEC, plazoEC, metrosCuaEC, comodatoCFT, comodatoCIP, comodatoUni)
+              VALUES ('" . $idSede . "', '" . $propEC . "', '" . $fecIniEC . "', '" . $plazoEC . "',
+               '" . $metrosCuaEC . "', '" . $comodatoCFT . "', '" . $comodatoCIP . "', '" . $comodatoUni . "')";
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 1;
+      while ($row = pg_fetch_row($result)) {
+        echo $row[0];
+      }
+
+    } else {
+      echo 2;
+    }
+    //echo $result ;
+    pg_close($dbconn);
+  } else {
+
+    $sql = "UPDATE public.edi_comodato_sedes SET idSede = '" . $idSede . "', propEC = '" . $propEC . "', fecIniEC = '" . $fecIniEC . "',
+           plazoEC = '" . $plazoEC . "',  metrosCuaEC = '" . $metrosCuaEC . "', 
+           comodatoCFT = '" . $comodatoCFT . "', comodatoCIP = '" . $comodatoCIP . "', comodatoUni = '" . $comodatoUni . "'
+           WHERE idSede = '" . $idSede . "'";
+
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 3;
+    } else {
+      echo 2;
+    }
+  }
+}
+/*=============================================
+LLAMAR A TODOS LOS EDIFICIO COMODATO
+=============================================*/
+if (isset($_GET['getEComodato'])) {
+  $dbconn = db_connect();
+
+  $query = "SELECT idSede, (SELECT nomSede FROM sede_ficha WHERE id= idSede) AS nomSede, propEC, 
+            fecIniEC, plazoEC, metrosCuaEC, comodatoCFT, comodatoCIP, comodatoUni FROM edi_comodato_sedes";
+  $result = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+
+  //return $result;    
+  echo '<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th colspan="5"></th>
+      <th class="tituloTabla" colspan="3">Metros cuadrados conglomerado</th>
+    </tr>
+    <tr>
+    <tr>
+      <th class="tituloTabla">Sede</th>
+      <th class="tituloTabla">Propietario</th>
+      <th class="tituloTabla">Fecha inicio comodato</th>
+      <th class="tituloTabla">Plazo</th>
+      <th class="tituloTabla">Metros cuadrados totales</th>
+      <th class="tituloTabla">CFT</th>
+      <th class="tituloTabla">IP</th>
+      <th class="tituloTabla">Universidad</th>
+    </tr>
+  </thead>
+  <tbody>';
+  while ($row = pg_fetch_row($result)) {
+  echo '<tr>
+      <td>'.$row[1].'</td>
+      <td>'.$row[2].'</td>
+      <td>'.$row[3].'</td>
+      <td>'.$row[4].'</td>
+      <td>'.$row[5].'</td>
+      <td>'.(($row[6] == 't') ? 'Sí' : 'No').'</td>
+      <td>'.(($row[7] == 't') ? 'Sí' : 'No').'</td>
+      <td>'.(($row[8] == 't') ? 'Sí' : 'No').'</td>
+    </tr>';
+  }
+  echo '</tbody>
+</table>';
+}
+/*==========================================================================================
+                                  FIN EDIFICIO COMODATO
 ==========================================================================================*/

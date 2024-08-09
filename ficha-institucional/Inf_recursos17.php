@@ -23,57 +23,7 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEdComodato" onclick="llamarSede(4)">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th colspan="6"></th>
-      <th class="tituloTabla" colspan="3">Metros cuadrados conglomerado</th>
-    </tr>
-    <tr>
-    <tr>
-      <th class="tituloTabla">Sede</th>
-      <th class="tituloTabla">Propietario</th>
-      <th class="tituloTabla">Fecha inicio comodato</th>
-      <th class="tituloTabla">Plazo</th>
-      <th class="tituloTabla">Metros cuadrados totales</th>
-      <th class="tituloTabla">CFT</th>
-      <th class="tituloTabla">IP</th>
-      <th class="tituloTabla">Universidad</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sede 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Sede N</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblEComodato"></div>
 
 <hr>
 <h4>Evolución de infraestructura total y de otras instituciones del conglomerado por sede.</h4>
@@ -730,7 +680,7 @@
           </div>
           <div class="form-group">
             <label for="">Propietario:</label>
-            <input type="text" class="form-control" id="propEA" placeholder="Dirección" name="propEA">
+            <input type="text" class="form-control" id="propEA" placeholder="Propietario" name="propEA">
           </div>
           <div class="form-group">
             <label for="">Fecha inicio contrato</label>
@@ -822,7 +772,7 @@
           </div>
           <br/>
           <br/>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="insertarEC()">Guardar</button>
         </form>
       </div>
 

@@ -48,11 +48,16 @@ CREATE TABLE edi_arendado_sedes (
 
 CREATE TABLE edi_comodato_sedes (
     id SERIAL PRIMARY KEY,
-    /* Evolución de infraestructura o Indicadores de infraestructura
-    donde 1 es evolucion y 2 es infractuctura */
-    indicadores INTEGER NOT NULL,
-    descripcion TEXT NOT NULL,
-    infractucturaAno INTEGER NOT NULL
+    idSede INTEGER NOT NULL,
+    propEC VARCHAR(255),
+    fecIniEC DATE NOT NULL,
+    plazoEC DATE NULL,
+    metrosCuaEC VARCHAR(50), 
+    comodatoCFT BOOLEAN NULL,
+    comodatoCIP BOOLEAN NULL,
+    comodatoUni BOOLEAN NULL,
+    CONSTRAINT fk_comodato_sede FOREIGN KEY (idSede) REFERENCES sede_ficha(id)
+
 );
 
 CREATE TABLE beneficio_pregrado_postgrado (

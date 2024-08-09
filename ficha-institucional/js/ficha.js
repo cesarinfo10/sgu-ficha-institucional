@@ -331,7 +331,7 @@ $.ajax({
                 icon: "success"
               });
               llamarEArriendo();
-              limpiarFormularioEP();
+              limpiarFormularioEA();
 
             } else if (data == 3) {
               Swal.fire({
@@ -339,14 +339,14 @@ $.ajax({
                 icon: "success"
               });
               llamarEArriendo();
-              limpiarFormularioEP();
+              limpiarFormularioEA();
 
             } else {
               Swal.fire({
                 title: "Error al guardar el registro!",
                 icon: "error"
               });
-              limpiarFormularioEP();
+              limpiarFormularioEA();
             }
             }
 
@@ -355,12 +355,14 @@ $.ajax({
 
 function limpiarFormularioEA(){
   $("#tipoBeneficio").val(0);
-  $("#dirEp").val("");
-  $("#mtEp").val("");
-  $("#epAno").val("");
-  $("#optradioEP1").prop("checked", false);
-  $("#optradioEP2").prop("checked", false);
-  $("#optradioEP3").prop("checked", true);
+  $("#propEA").val("");
+  $("#fecIniEA").val("");
+  $("#plazoEA").val("");
+  $("#arriendoEA").val("");
+  $("#metrosCuaEA").val("");
+  $("#optradioArriendo1").prop("checked", false);
+  $("#optradioArriendo2").prop("checked", false);
+  $("#optradioArriendo3").prop("checked", true);
 }
 /*=============================================
 LLAMAR A TODAS LOS EDIFICIO DE ARRIENDO
@@ -381,4 +383,95 @@ function llamarEArriendo(){
 }
 /*==========================================================================================
                                   FIN EDIFICIO DE ARRIENDO
+==========================================================================================*/
+/*==========================================================================================
+                                  EDIFICIO EN COMODATO
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE EDIFICIO EN COMODATO
+=============================================*/
+function insertarEC(){
+  
+
+  let idSede =$("#tipoBeneficio").val();
+  let propEC = $("#propEc").val();
+  let fecIniEC = $("#fecIniEc").val();
+  let plazoEC = $("#plazoEc").val();
+  let metrosCuaEC = $("#metrosCuaEc").val();
+
+  let comodatoCFT = $("#comodatoCFT").is(':checked') ? 1 : 0;
+  let comodatoCIP = $("#comodatoCIP").is(':checked') ? 1 : 0;
+  let comodatoUni = $("#comodatoUni").is(':checked') ? 1 : 0;
+
+if(idSede == 0 || propEC == "" || metrosCuaEA == ""){
+  Swal.fire("Todos los campos son obligatorios!");
+  return false;
+}
+  let dataString = 'idSede='+idSede.trim()+'&propEC='+propEC.trim()+'&fecIniEC='+fecIniEC.trim()+'&plazoEC='+plazoEC.trim() 
+                    +'&metrosCuaEC='+metrosCuaEC.trim()+'&comodatoCFT='+comodatoCFT+'&comodatoCIP='+comodatoCIP +'&comodatoUni='+comodatoUni;
+
+
+$.ajax({
+            type: "POST",
+            url: "models/dotacion_personal_17.php?postEComodato",
+            data: dataString,
+            success: function(data) {
+             if (data == 1) {
+              Swal.fire({
+                title: "Registo guardado con exito!",
+                icon: "success"
+              });
+              llamarEComodato();
+              limpiarFormularioEC();
+
+            } else if (data == 3) {
+              Swal.fire({
+                title: "Registro actualizado con exito!",
+                icon: "success"
+              });
+              llamarEComodato();
+              limpiarFormularioEC();
+
+            } else {
+              Swal.fire({
+                title: "Error al guardar el registro!",
+                icon: "error"
+              });
+              limpiarFormularioEC();
+            }
+            }
+
+        });
+}
+
+function limpiarFormularioEC(){
+  $("#tipoBeneficio").val(0);
+  $("#propEc").val("");
+  $("#fecIniEc").val("");
+  $("#plazoEc").val("");
+  $("#metrosCuaEc").val("");
+  $("#comodatoCFT").prop("checked", false);
+  $("#comodatoCIP").prop("checked", false);
+  $("#comodatoUni").prop("checked", true);
+}
+/*=============================================
+LLAMAR A TODoS LOS EDIFICIO EN COMODATO
+=============================================*/
+function llamarEComodato(){
+  setTimeout(() => {
+  var url ="models/dotacion_personal_17.php?getEComodato";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+          $("#tblEComodato").html(data);
+      }
+
+  });
+}, 1000);
+}
+/*==========================================================================================
+                                  FIN EDIFICIO EN COMODATO
 ==========================================================================================*/
