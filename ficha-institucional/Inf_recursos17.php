@@ -566,7 +566,9 @@
           </div>
           <div class="form-group">
             <label for="ano">Año:</label>
-            <input type="number" class="form-control" id="sedeAno" placeholder="Año" name="sedeAno">
+            <select id="sedeAno" name="sedeAno" class="form-control yearSelect">
+              <option value="">Seleccione un año</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="sede">% Mujeres:</label>
@@ -630,8 +632,10 @@
             <input type="text" class="form-control" id="mtEp" placeholder="Metros cuadrados" name="mtEp">
           </div>
           <div class="form-group">
-            <label for="ano">Año adquisición:</label>
-            <input type="number" class="form-control" id="epAno" placeholder="Año adquisición" name="epAno">
+            <label for="ano">Año adquisición:</label>            
+            <select id="epAno" name="epAno" class="form-control yearSelect">
+              <option value="">Seleccione un año</option>
+            </select>
           </div>
           <div class="form-check">
             <input type="radio" class="form-check-input" id="optradioEP1" name="optradioEP" value="option1" >CFT
@@ -974,3 +978,17 @@
   </div>
 </div>
 <!---------------------------------------------------------------------------------------------->
+
+
+<script>
+  const yearSelects = document.querySelectorAll('.yearSelect');
+  const currentYear = new Date().getFullYear();
+  const earliestYear = 1998; // Cambia esto al año más antiguo que desees incluir
+
+  yearSelects.forEach(select => {
+    for (let year = currentYear; year >= earliestYear; year--) {
+      let option = new Option(year, year);
+      select.add(option);
+    }
+  });
+  </script>
