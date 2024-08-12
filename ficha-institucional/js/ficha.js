@@ -475,3 +475,83 @@ function llamarEComodato(){
 /*==========================================================================================
                                   FIN EDIFICIO EN COMODATO
 ==========================================================================================*/
+
+/*==========================================================================================
+                                  Evolución infraestructura
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE Evolución infraestructura
+=============================================*/
+function insertarEvoInfra(){
+  
+
+  let descripcion =$("#evoInfDes").val();
+  let ano = $("#infractucturaAno").val();  
+  let metrosCuaEC = $("#metrosCuaEi").val();
+
+if(descripcion == 0 || ano == "" || metrosCuaEA == ""){
+  Swal.fire("Todos los campos son obligatorios!");
+  return false;
+}
+  let dataString = 'descripcion='+descripcion.trim()+'&ano='+ano.trim()+'&metrosCuaEC='+metrosCuaEC.trim();
+
+
+$.ajax({
+            type: "POST",
+            url: "models/dotacion_personal_17.php?postEvoInfra",
+            data: dataString,
+            success: function(data) {
+             if (data == 1) {
+              Swal.fire({
+                title: "Registo guardado con exito!",
+                icon: "success"
+              });
+              llamarEvoInfra();
+              limpiarFormularioEvoInfra();
+
+            } else if (data == 3) {
+              Swal.fire({
+                title: "Registro actualizado con exito!",
+                icon: "success"
+              });
+              llamarEvoInfra();
+              limpiarFormularioEvoInfra();
+
+            } else {
+              Swal.fire({
+                title: "Error al guardar el registro!",
+                icon: "error"
+              });
+              limpiarFormularioEvoInfra();
+            }
+            }
+
+        });
+}
+
+function limpiarFormularioEvoInfra(){
+  $("#evoInfDes").val(0);
+  $("#infractucturaAno").val(0);
+  $("#metrosCuaEi").val("");
+}
+/*=============================================
+LLAMAR A TODOS Evolución infraestructura
+=============================================*/
+function llamarEvoInfra(){
+  setTimeout(() => {
+  var url ="models/dotacion_personal_17.php?geEvoInfra";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+          $("#tblEvoInfra").html(data);
+      }
+
+  });
+}, 1000);
+}
+/*==========================================================================================
+                                  FIN Evolución infraestructura
+==========================================================================================*/

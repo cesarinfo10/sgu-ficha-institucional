@@ -493,3 +493,184 @@ if (isset($_GET['getEComodato'])) {
 /*==========================================================================================
                                   FIN EDIFICIO COMODATO
 ==========================================================================================*/
+
+/*==========================================================================================
+  Evolución de infraestructura total y de otras instituciones del conglomerado por sede.
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE Evolución infraestructura
+=============================================*/
+if (isset($_GET['postEvoInfra'])) {
+
+  $dbconn = db_connect();
+  
+  $descripcion = $_POST['descripcion'];
+  $ano = $_POST['ano'];
+  $metrosCuaEC = $_POST['metrosCuaEC'];
+
+
+  $query = "SELECT id FROM public.evolucion_conglomerado_sede WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+  $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
+  $rows = pg_num_rows($result);
+
+  if ($rows == 0) {
+
+    $sql = "INSERT INTO public.evolucion_conglomerado_sede (descripcion, ano, metrosCuaEC)
+              VALUES ('" . $descripcion . "', '" . $ano . "', '" . $metrosCuaEC . "')";
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 1;
+      while ($row = pg_fetch_row($result)) {
+        echo $row[0];
+      }
+
+    } else {
+      echo 2;
+    }
+    //echo $result ;
+    pg_close($dbconn);
+  } else {
+
+    $sql = "UPDATE public.evolucion_conglomerado_sede SET metrosCuaEC = '" . $metrosCuaEC . "' WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 3;
+    } else {
+      echo 2;
+    }
+  }
+}
+/*=============================================
+LLAMAR A TODA la Evolución infraestructura
+=============================================*/
+if (isset($_GET['geEvoInfra'])) {
+  $dbconn = db_connect();
+
+  $query = "SELECT descripcion, ano, metrosCuaEC FROM evolucion_conglomerado_sede";
+  $result = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+  $result2 = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+
+  //return $result;    
+  echo '<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th></th>';
+      while ($rowA = pg_fetch_row($result)) {
+      echo '<th class="tituloTabla">'.$rowA[1].'</th>';
+      }
+    echo'</tr>
+  </thead>
+  <tbody>';
+  while ($row = pg_fetch_row($result2)) {
+  echo '<tr>
+      <td>'.$row[0].'</td>
+      <td>'.$row[2].'</td>
+    </tr>';
+  }
+  echo '</tbody>
+</table>';
+}
+/*==========================================================================================
+                                  FIN Evolución infraestructura
+==========================================================================================*/
+
+
+/*==========================================================================================
+  Indicadores de infraestructura: M2 totales por estudiantes, volúmenes, títulos etc.
+==========================================================================================*/
+
+/*=============================================
+INSERTAR - UPDATE Indicadores infraestructura
+=============================================*/
+if (isset($_GET['postIndInfra'])) {
+
+  $dbconn = db_connect();
+  
+  $descripcion = $_POST['descripcion'];
+  $ano = $_POST['ano'];
+  $metrosCuaEC = $_POST['metrosCuaEC'];
+
+
+  $query = "SELECT id FROM public.evolucion_conglomerado_sede WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+  $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
+  $rows = pg_num_rows($result);
+
+  if ($rows == 0) {
+
+    $sql = "INSERT INTO public.evolucion_conglomerado_sede (descripcion, ano, metrosCuaEC)
+              VALUES ('" . $descripcion . "', '" . $ano . "', '" . $metrosCuaEC . "')";
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 1;
+      while ($row = pg_fetch_row($result)) {
+        echo $row[0];
+      }
+
+    } else {
+      echo 2;
+    }
+    //echo $result ;
+    pg_close($dbconn);
+  } else {
+
+    $sql = "UPDATE public.evolucion_conglomerado_sede SET metrosCuaEC = '" . $metrosCuaEC . "' WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+
+
+    // Ejecutamos la sentencia preparada
+    $result = pg_query($dbconn, $sql);
+
+    if ($result) {
+
+      echo 3;
+    } else {
+      echo 2;
+    }
+  }
+}
+/*=============================================
+LLAMAR A TODA la Indicadores infraestructura
+=============================================*/
+if (isset($_GET['getIndInfra'])) {
+  $dbconn = db_connect();
+
+  $query = "SELECT descripcion, ano, metrosCuaEC FROM evolucion_conglomerado_sede";
+  $result = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+  $result2 = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
+
+  //return $result;    
+  echo '<table class="table table-bordered">
+  <thead>
+    <tr>
+    <th></th>';
+      while ($rowA = pg_fetch_row($result)) {
+      echo '<th class="tituloTabla">'.$rowA[1].'</th>';
+      }
+    echo'</tr>
+  </thead>
+  <tbody>';
+  while ($row = pg_fetch_row($result2)) {
+  echo '<tr>
+      <td>'.$row[0].'</td>
+      <td>'.$row[2].'</td>
+    </tr>';
+  }
+  echo '</tbody>
+</table>';
+}
+/*==========================================================================================
+                                  FIN Indicadores infraestructura
+==========================================================================================*/

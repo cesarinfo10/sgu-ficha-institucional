@@ -30,85 +30,7 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtEvoInf">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-    <tr>
-      <th class="tituloTabla"></th>
-      <th class="tituloTabla">2019</th>
-      <th class="tituloTabla">2020</th>
-      <th class="tituloTabla">2021</th>
-      <th class="tituloTabla">2022</th>
-      <th class="tituloTabla">2023</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>M2 construidos totales</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 construidos bibliotecas</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 construidos laboratorios y talleres</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 construidos salas de clases</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 construidos salas de estudio</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 dependencias de servicio de salud para estudiantes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 casinos, cafeterías y salas de comedores</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 instalaciones deportivas y recreativas</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblEvoInfra"></div>
 
 <hr>
 <br>
@@ -567,7 +489,7 @@
           <div class="form-group">
             <label for="ano">Año:</label>
             <select id="sedeAno" name="sedeAno" class="form-control yearSelect">
-              <option value="">Seleccione un año</option>
+              <option value="0">Seleccione un año</option>
             </select>
           </div>
           <div class="form-group">
@@ -634,7 +556,7 @@
           <div class="form-group">
             <label for="ano">Año adquisición:</label>            
             <select id="epAno" name="epAno" class="form-control yearSelect">
-              <option value="">Seleccione un año</option>
+              <option value="0">Seleccione un año</option>
             </select>
           </div>
           <div class="form-check">
@@ -806,14 +728,29 @@
       <form>
           <div class="form-group">
             <label for="">Descripción:</label>
-            <input type="text" class="form-control" id="evoInfDes" placeholder="Descripción" name="evoInfDes">
+            <select name="evoInfDes" id="evoInfDes" class="form-control">
+              <option value="0">Seleccione M2 Construido</option>
+              <option value="M2 construidos totales">M2 construidos totales</option>
+              <option value="M2 construidos bibliotecas">M2 construidos bibliotecas</option>
+              <option value="M2 construidos laboratorios y talleres">M2 construidos laboratorios y talleres</option>
+              <option value="M2 construidos salas de clases">M2 construidos salas de clases</option>
+              <option value="M2 construidos salas de estudio">M2 construidos salas de estudio</option>
+              <option value="M2 dependencias de servicio de salud para estudiantes">M2 dependencias de servicio de salud para estudiantes</option>
+              <option value="M2 casinos, cafeterías y salas de comedores">M2 casinos, cafeterías y salas de comedores</option>
+              <option value="M2 instalaciones deportivas y recreativas">M2 instalaciones deportivas y recreativas</option>
+            </select>
           </div>
-          <input type="hidden" class="form-control" id="evulucionInfrac" value="1">
           <div class="form-group">
-            <label for="">Año:</label>
-            <input type="number" class="form-control" id="infractucturaAno" placeholder="Año" name="infractucturaAno">
+            <label for="ano">Año:</label>
+            <select id="infractucturaAno" name="infractucturaAno" class="form-control yearSelect">
+              <option value="0">Seleccione un año</option>
+            </select>
           </div>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <div class="form-group">
+            <label for="">Metros cuadrados totales:</label>
+            <input type="text" class="form-control" id="metrosCuaEi" placeholder="Metros cuadrados" name="metrosCuaEi">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="insertarEvoInfra()">Guardar</button>
         </form>
       </div>
 

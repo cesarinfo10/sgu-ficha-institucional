@@ -59,18 +59,19 @@ CREATE TABLE edi_comodato_sedes (
     CONSTRAINT fk_comodato_sede FOREIGN KEY (idSede) REFERENCES sede_ficha(id)
 
 );
-
-CREATE TABLE beneficio_pregrado_postgrado (
+--Evolución de infraestructura total y de otras instituciones del conglomerado por sede.
+CREATE TABLE evolucion_conglomerado_sede (
     id SERIAL PRIMARY KEY,
-     /* Beneficio pregrado o postgrado
-    donde 1 es pregrado y 2 es postgrado */
-    pregrado_posgrado INTEGER NOT NULL,
-    /* Beneficio interno o externo
-    donde 1 es interno y 2 es externo */
-    tipoBeneficio INTEGER NOT NULL,
-    descBeneficio TEXT NOT NULL,
-    anoBen VARCHAR(255) NOT NULL,
-    montoTotal VARCHAR(50) NULL,
-    estudiantePorc DECIMAL(5,2) NULL, 
-    mujerPors DECIMAL(5,2) NULL
+    descripcion TEXT,
+    ano INTEGER NOT NULL,
+    metrosCuaEC VARCHAR(50)
+);
+
+/*Indicadores de infraestructura: M2 totales por estudiantes, volúmenes, títulos,
+bases de datos, libros digitales; indicadores de uso/préstamos.*/
+CREATE TABLE infraestructura_conglomerado_sede (
+    id SERIAL PRIMARY KEY,
+    descripcion TEXT,
+    ano INTEGER NOT NULL,
+    valorCon VARCHAR(50)
 );

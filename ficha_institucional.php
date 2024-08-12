@@ -30,7 +30,7 @@
       <a class="nav-link" data-toggle="tab" href="#menu16" onclick="cargarfichaGob();" >(16) Gobierno</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu17" onclick="cargarInfRecursos(); llamarDPesonal(); llamarEPropio(); llamarEArriendo(); llamarEComodato();" >(17) Infraestructura y recursos</a>
+      <a class="nav-link" data-toggle="tab" href="#menu17" onclick="cargarInfRecursos(); llamarDPesonal(); llamarEPropio(); llamarEArriendo(); llamarEComodato(); llamarEvoInfra();" >(17) Infraestructura y recursos</a>
     </li>
   </ul>
 
