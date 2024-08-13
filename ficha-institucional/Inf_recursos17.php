@@ -778,18 +778,31 @@
       <!-- Modal body -->
       <div class="modal-body">
       <form>
+      <div class="form-group">
+          <label for="indicadoresInfra">Indicadores de infraestructura:</label>
+          <select class="form-control" id="indicadoresInfra" name="indicadoresInfra">
+            <option value="M2 totales por estudiantes presenciales">M2 totales por estudiantes presenciales</option>
+            <option value="M2 totales por estudiantes">M2 totales por estudiantes</option>
+            <option value="Volúmenes Biblioteca">Volúmenes Biblioteca</option>
+            <option value="Títulos Biblioteca">Títulos Biblioteca</option>
+            <option value="N° de libros digitales en Biblioteca">N° de libros digitales en Biblioteca</option>
+            <option value="Indicadores de uso o préstamo de Bibliotecas">Indicadores de uso o préstamo de Bibliotecas</option>
+          </select>
+        </div>
           <div class="form-group">
-            <label for="">Descripción:</label>
-            <input type="text" class="form-control" id="indInfDes" placeholder="Descripción" name="indInfDes">
+            <label for="ano">Año:</label>
+            <select id="infractucturaAno" name="indInfractucturaAno" class="form-control yearSelect">
+              <option value="0">Seleccione un año</option>
+            </select>
           </div>
-          <input type="hidden" class="form-control" id="indicadoresInfrac" value="2">
           <div class="form-group">
-            <label for="">Año:</label>
-            <input type="number" class="form-control" id="indicadoresAno" placeholder="Año" name="indicadoresAno">
+            <label for="">Valor totales:</label>
+            <input type="text" class="form-control" id="valorCuaEi" placeholder="Metros cuadrados - Volúmenes - N° de libros etc." name="valorCuaEi">
           </div>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="">Guardar</button>
         </form>
       </div>
+
 
       <!-- Modal footer -->
       <div class="modal-footer">
