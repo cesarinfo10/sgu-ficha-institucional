@@ -555,3 +555,99 @@ function llamarEvoInfra(){
 /*==========================================================================================
                                   FIN Evolución infraestructura
 ==========================================================================================*/
+
+/*==========================================================================================
+                                 Indicadores de infraestructura
+==========================================================================================*/
+function handleSelectChange() {
+  var selectElement = document.getElementById("indicadoresInfra");
+  var inputElement = document.getElementById("valorCuaEi");
+  var labelElement = document.querySelector("label[for='valorCuaEi']");
+  var selectedValue = selectElement.value;
+
+  if (selectedValue === "M2 totales por estudiantes presenciales" || selectedValue === "M2 totales por estudiantes") {
+    inputElement.disabled = true;
+    inputElement.value = ""; // Limpiar el valor del input
+    inputElement.style.display = "none"; // Ocultar el input
+    labelElement.style.display = "none"; // Ocultar el label
+  } else {
+    inputElement.disabled = false;
+    inputElement.style.display = "block"; // Mostrar el input
+    labelElement.style.display = "block"; // Mostrar el label
+  }
+}
+/*=============================================
+INSERTAR - UPDATE Indicadores de infraestructura
+=============================================*/
+function insertarIndInfra(){
+  
+
+  let descripcion =$("#indicadoresInfra").val();
+  let ano = $("#indInfractucturaAno").val();  
+  let valorCon = $("#valorCuaEi").val();
+
+if(descripcion == 0 || ano == "" || metrosCuaEA == ""){
+  Swal.fire("Todos los campos son obligatorios!");
+  return false;
+}
+  let dataString = 'descripcion='+descripcion.trim()+'&ano='+ano.trim()+'&valorCon='+valorCon.trim();
+
+
+$.ajax({
+            type: "POST",
+            url: "models/dotacion_personal_17.php?postIndInfra",
+            data: dataString,
+            success: function(data) {
+             if (data == 1) {
+              Swal.fire({
+                title: "Registo guardado con exito!",
+                icon: "success"
+              });
+              llamarIndInfra();
+              limpiarIndInfra();
+
+            } else if (data == 3) {
+              Swal.fire({
+                title: "Registro actualizado con exito!",
+                icon: "success"
+              });
+              llamarIndInfra();
+              limpiarIndInfra();
+
+            } else {
+              Swal.fire({
+                title: "Error al guardar el registro!",
+                icon: "error"
+              });
+              limpiarIndInfra();
+            }
+            }
+
+        });
+}
+
+function limpiarIndInfra(){
+  $("#indicadoresInfra").val(0);
+  $("#indInfractucturaAno").val(0);
+  $("#valorCuaEi").val("");
+}
+/*=============================================
+LLAMAR A TODOS Indicadores de infraestructura
+=============================================*/
+function llamarIndInfra(){
+  setTimeout(() => {
+  var url ="models/dotacion_personal_17.php?getIndInfra";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+          $("#tblIndInfra").html(data);
+      }
+
+  });
+}, 1000);
+}
+/*==========================================================================================
+                                  FIN Indicadores de infraestructura
+==========================================================================================*/

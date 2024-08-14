@@ -39,69 +39,7 @@
 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modaldtIndInf">Agregar +</button>
 <br />
 <br />
-<table class="table table-bordered">
-  <thead>
-    <tr>
-    <tr>
-      <th class="tituloTabla"></th>
-      <th class="tituloTabla">2019</th>
-      <th class="tituloTabla">2020</th>
-      <th class="tituloTabla">2021</th>
-      <th class="tituloTabla">2022</th>
-      <th class="tituloTabla">2023</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>M2 totales por estudiantes presenciales</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>M2 totales por estudiantes</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Volúmenes Biblioteca</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Títulos Biblioteca</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>N° de libros digitales en Biblioteca</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Indicadores de uso o préstamo de Bibliotecas</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div id="tblIndInfra"></div>
 
 <hr>
 <h4>Beneficios a estudiantes de pregrado</h4>
@@ -780,7 +718,8 @@
       <form>
       <div class="form-group">
           <label for="indicadoresInfra">Indicadores de infraestructura:</label>
-          <select class="form-control" id="indicadoresInfra" name="indicadoresInfra">
+          <select class="form-control" id="indicadoresInfra" name="indicadoresInfra" onchange="handleSelectChange()">
+            <option value="0">Seleccione Valor</option>
             <option value="M2 totales por estudiantes presenciales">M2 totales por estudiantes presenciales</option>
             <option value="M2 totales por estudiantes">M2 totales por estudiantes</option>
             <option value="Volúmenes Biblioteca">Volúmenes Biblioteca</option>
@@ -791,15 +730,15 @@
         </div>
           <div class="form-group">
             <label for="ano">Año:</label>
-            <select id="infractucturaAno" name="indInfractucturaAno" class="form-control yearSelect">
+            <select id="indInfractucturaAno" name="indInfractucturaAno" class="form-control yearSelect">
               <option value="0">Seleccione un año</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="">Valor totales:</label>
+            <label for="valorCuaEi">Valor totales:</label>
             <input type="text" class="form-control" id="valorCuaEi" placeholder="Metros cuadrados - Volúmenes - N° de libros etc." name="valorCuaEi">
           </div>
-          <button type="button" class="btn btn-primary" onclick="">Guardar</button>
+          <button type="button" class="btn btn-primary" onclick="insertarIndInfra()">Guardar</button>
         </form>
       </div>
 

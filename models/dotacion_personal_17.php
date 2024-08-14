@@ -598,17 +598,31 @@ if (isset($_GET['postIndInfra'])) {
   
   $descripcion = $_POST['descripcion'];
   $ano = $_POST['ano'];
-  $metrosCuaEC = $_POST['metrosCuaEC'];
+  
+if ($descripcion == 'M2 totales por estudiantes presenciales' || $descripcion == 'M2 totales por estudiantes') {
+  $query = "SELECT gestion.mat_sies_pre($ano, '$ano-12-31')";
+  $result = pg_query($dbconn, $query) or die('La consulta falló: ' . pg_last_error());
+  $row = pg_fetch_assoc($result);
 
+  
+  $queryM = "SELECT metrosCuaEC FROM evolucion_conglomerado_sede WHERE ano =  '$ano'";
+  $resultM = pg_query($dbconn, $queryM) or die('La consulta fallo: ' . pg_last_error());
+  $rowM = pg_fetch_assoc($resultM);
 
-  $query = "SELECT id FROM public.evolucion_conglomerado_sede WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+  $resultado =  $rowM['metroscuaec'] / $row['mat_sies_pre'];
+  $valorCon =  number_format($resultado, 2);
+} else {
+  $valorCon = $_POST['valorCon'];
+}
+
+  $query = "SELECT id FROM public.infraestructura_conglomerado_sede WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
   $result = pg_query($query) or die('La consulta fallo: ' . pg_last_error());
   $rows = pg_num_rows($result);
 
   if ($rows == 0) {
 
-    $sql = "INSERT INTO public.evolucion_conglomerado_sede (descripcion, ano, metrosCuaEC)
-              VALUES ('" . $descripcion . "', '" . $ano . "', '" . $metrosCuaEC . "')";
+    $sql = "INSERT INTO public.infraestructura_conglomerado_sede (descripcion, ano, valorCon)
+              VALUES ('" . $descripcion . "', '" . $ano . "', '" . $valorCon . "')";
 
     // Ejecutamos la sentencia preparada
     $result = pg_query($dbconn, $sql);
@@ -627,7 +641,7 @@ if (isset($_GET['postIndInfra'])) {
     pg_close($dbconn);
   } else {
 
-    $sql = "UPDATE public.evolucion_conglomerado_sede SET metrosCuaEC = '" . $metrosCuaEC . "' WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
+    $sql = "UPDATE public.infraestructura_conglomerado_sede SET valorCon = '" . $valorCon . "' WHERE descripcion = '" . $descripcion . "' AND ano= '" . $ano . "'";
 
 
     // Ejecutamos la sentencia preparada
@@ -647,7 +661,7 @@ LLAMAR A TODA la Indicadores infraestructura
 if (isset($_GET['getIndInfra'])) {
   $dbconn = db_connect();
 
-  $query = "SELECT descripcion, ano, metrosCuaEC FROM evolucion_conglomerado_sede";
+  $query = "SELECT descripcion, ano, valorCon FROM infraestructura_conglomerado_sede";
   $result = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
   $result2 = pg_query($dbconn, $query) or die('La consulta fallo: ' . pg_last_error());
 
