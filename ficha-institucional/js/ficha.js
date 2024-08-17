@@ -651,3 +651,30 @@ function llamarIndInfra(){
 /*==========================================================================================
                                   FIN Indicadores de infraestructura
 ==========================================================================================*/
+
+/*==========================================================================================
+                 Cuerpo Académico por nivel de formación y tipo de rol
+==========================================================================================*/
+
+function cargarDotacioPostgrado(){
+    
+  var url ="ficha-institucional/dotacion_postgrado14.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#DPostgrado").html(data);
+
+      }
+
+  });
+}
+
+
+
+
+/*==========================================================================================
+                FIN   Cuerpo Académico por nivel de formación y tipo de rol
+==========================================================================================*/

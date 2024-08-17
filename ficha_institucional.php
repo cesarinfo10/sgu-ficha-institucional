@@ -24,7 +24,10 @@
       <a class="nav-link" data-toggle="tab" href="#menu1" onclick="cargarOfertaPregrado();">Ofera de Pregrado</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu2" onclick="cargarDimensionGestion();" >(15) Dimensión Gestión</a>
+      <a class="nav-link" data-toggle="tab" href="#menu14" onclick="cargarDotacioPostgrado();" >(14) Dotación de Postgrado</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu15" onclick="cargarDimensionGestion();" >(15) Dimensión Gestión</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu16" onclick="cargarfichaGob();" >(16) Gobierno</a>
@@ -46,9 +49,13 @@
     <h3>Oferta Pregrado</h3>
       <div id="ofPregrado"></div>
     </div>
-   <!-- <div id="menu2" class="container tab-pane fade"><br>-->
-    <div id="menu2" class="tab-pane fade"><br>
-      <div id="matPregrado"></div>
+     <!-- <div id="menu15" class="container tab-pane fade"><br>-->
+     <div id="menu14" class="tab-pane fade"><br>
+      <div id="DPostgrado"></div>
+    </div>
+   <!-- <div id="menu15" class="container tab-pane fade"><br>-->
+    <div id="menu15" class="tab-pane fade"><br>
+      <div id="DPostgrado"></div>
     </div>
     <!--<div id="menu16" class="container tab-pane fade"><br>-->
     <div id="menu16" class="tab-pane fade"><br>
