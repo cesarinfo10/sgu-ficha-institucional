@@ -24,7 +24,7 @@
       <a class="nav-link" data-toggle="tab" href="#menu1" onclick="cargarOfertaPregrado();">Ofera de Pregrado</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu2" onclick="cargarMatriculaPregrado();" >Matrícula de Pregrado</a>
+      <a class="nav-link" data-toggle="tab" href="#menu2" onclick="cargarDimensionGestion();" >(15) Dimensión Gestión</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu16" onclick="cargarfichaGob();" >(16) Gobierno</a>

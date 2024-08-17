@@ -37,9 +37,9 @@ function cargarOfertaPregrado(){
     });
 }
 
-function cargarMatriculaPregrado(){
+function cargarDimensionGestion(){
     
-    var url ="ficha-institucional/matricula_pregrado.php";
+    var url ="ficha-institucional/localización_geo15.php";
     $.ajax({
         type: "POST",
         url: url,
