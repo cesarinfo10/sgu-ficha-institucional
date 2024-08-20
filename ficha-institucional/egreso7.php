@@ -1,56 +1,30 @@
-<h4>Cuerpo Académico por nivel de formación y tipo de rol</h4>
+<h4>Retención estudiantil</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
 <br />
 <br />
 <div class="table-responsive">
 <table class="table table-bordered">
     <thead>
-        <tr>
+    <tr>
             <th></th>
-            <th class="tituloTabla" colspan="2">2019</th>
-            <th class="tituloTabla" colspan="2">2020</th>
-            <th class="tituloTabla" colspan="2">2021</th>
-            <th class="tituloTabla" colspan="2">2022</th>
-            <th class="tituloTabla" colspan="2">2023</th>
+            <th class="tituloTabla" colspan="5">Tasa retención 1° año por cohorte</th>
         </tr>
         <tr>
             <th></th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
+            <th class="tituloTabla">2019</th>
+            <th class="tituloTabla">2020</th>
+            <th class="tituloTabla">2021</th>
+            <th class="tituloTabla">2022</th>
+            <th class="tituloTabla">2023</th>
         </tr>
+
         <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos del Claustro o Núcleo</th>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sede</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Doctorado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Magíster</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 1</td>
             <td></td>
             <td></td>
             <td></td>
@@ -58,25 +32,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Licenciado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Otros</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 2</td>
             <td></td>
             <td></td>
             <td></td>
@@ -84,17 +40,7 @@
             <td></td>
         </tr>
         <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos Colaboradores</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Doctorado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede N</td>
             <td></td>
             <td></td>
             <td></td>
@@ -102,12 +48,10 @@
             <td></td>
         </tr>
         <tr>
-            <td>Magíster</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por nivel de formación</th>
+        </tr>
+        <tr>
+            <td>Profesional con Licenciatura</td>
             <td></td>
             <td></td>
             <td></td>
@@ -115,25 +59,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Licenciado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Otros</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Profesional sin Licenciatura</td>
             <td></td>
             <td></td>
             <td></td>
@@ -141,17 +67,7 @@
             <td></td>
         </tr>
         <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos Visitantes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Doctorado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Licenciatura no Conducente a Título</td>
             <td></td>
             <td></td>
             <td></td>
@@ -159,25 +75,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Magíster</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Licenciado</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Bachillerato, Ciclo Inicial o Plan Común</td>
             <td></td>
             <td></td>
             <td></td>
@@ -185,12 +83,108 @@
             <td></td>
         </tr>
         <tr>
-            <td>Otros</td>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por jornada</th>
+        </tr>
+        <tr>
+            <td>Diurna</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
+            <td>Vespertina</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Otra</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por modalidad</th>
+        </tr>
+        <tr>
+            <td>Presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Semipresencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>No presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por área del conocimiento</th>
+        </tr>
+        <tr>
+            <td>Área 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área N</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sexo</th>
+        </tr>
+        <tr>
+            <td>Mujer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hombre</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tituloTabla">Total Institucional</td>
             <td></td>
             <td></td>
             <td></td>
@@ -200,56 +194,33 @@
     </tbody>
 </table>
 </div>
-<hr>
+
+<br />
+<hr/>
+<br />
 <div class="table-responsive">
 <table class="table table-bordered">
     <thead>
-        <tr>
+    <tr>
             <th></th>
-            <th class="tituloTabla" colspan="2">2019</th>
-            <th class="tituloTabla" colspan="2">2020</th>
-            <th class="tituloTabla" colspan="2">2021</th>
-            <th class="tituloTabla" colspan="2">2022</th>
-            <th class="tituloTabla" colspan="2">2023</th>
+            <th class="tituloTabla" colspan="5">Programas de 4 a 5 años</th>
         </tr>
         <tr>
             <th></th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
-            <th class="tituloTabla">Mujer</th>
-            <th class="tituloTabla">Hombre</th>
+            <th class="tituloTabla">2019</th>
+            <th class="tituloTabla">2020</th>
+            <th class="tituloTabla">2021</th>
+            <th class="tituloTabla">2022</th>
+            <th class="tituloTabla">2023</th>
         </tr>
+
         <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos del Claustro o Núcleo</th>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sede</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Jornada completa</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Media jornada</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 1</td>
             <td></td>
             <td></td>
             <td></td>
@@ -257,30 +228,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Jornada hora</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos Colaboradores</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-            <td>Jornada completa</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 2</td>
             <td></td>
             <td></td>
             <td></td>
@@ -288,25 +236,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Media jornada</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Jornada hora</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede N</td>
             <td></td>
             <td></td>
             <td></td>
@@ -314,17 +244,10 @@
             <td></td>
         </tr>
         <tr>
-            <th class="tituloTabla" colspan="11" style="text-align:left !important">Académicos Visitantes</th>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por nivel de formación</th>
         </tr>
-    </thead>
-    <tbody>
-    <tr>
-            <td>Jornada completa</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr>
+            <td>Profesional con Licenciatura</td>
             <td></td>
             <td></td>
             <td></td>
@@ -332,12 +255,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Media jornada</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Profesional sin Licenciatura</td>
             <td></td>
             <td></td>
             <td></td>
@@ -345,12 +263,124 @@
             <td></td>
         </tr>
         <tr>
-            <td>Jornada hora</td>
+            <td>Licenciatura no Conducente a Título</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
+        </tr>
+        <tr>
+            <td>Bachillerato, Ciclo Inicial o Plan Común</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por jornada</th>
+        </tr>
+        <tr>
+            <td>Diurna</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Vespertina</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Otra</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por modalidad</th>
+        </tr>
+        <tr>
+            <td>Presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Semipresencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>No presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por área del conocimiento</th>
+        </tr>
+        <tr>
+            <td>Área 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área N</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sexo</th>
+        </tr>
+        <tr>
+            <td>Mujer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hombre</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tituloTabla">Total Institucional</td>
             <td></td>
             <td></td>
             <td></td>
@@ -360,73 +390,33 @@
     </tbody>
 </table>
 </div>
-<hr>
+
+<br />
+<hr/>
+<br />
+<div class="table-responsive">
 <table class="table table-bordered">
     <thead>
-        <tr>
+    <tr>
             <th></th>
-            <th class="tituloTabla" colspan="8">Académicos del claustro / núcleo</th>
-            <th class="tituloTabla" colspan="9">Académicos Colaboradores</th>
-            <th class="tituloTabla" colspan="10">Académicos Colaboradores</th>
+            <th class="tituloTabla" colspan="5">Programas de 6 a 7 años</th>
         </tr>
         <tr>
-            <th class="tituloTabla">Nombre de programa</th>
-            <th class="tituloTabla">Total</th>
-            <th class="tituloTabla">Doc. (%)</th>
-            <th class="tituloTabla">Mag. (%)</th>
-            <th class="tituloTabla">MJ + JC (%)</th>
-            <th class="tituloTabla">Mujer (%)</th>
-            <th class="tituloTabla">Mujer Doc. (%)</th>
-            <th class="tituloTabla">Mujer Mag. (%)</th>
-            <th class="tituloTabla">Mujer MJ + JC (%)</th>
+            <th></th>
+            <th class="tituloTabla">2019</th>
+            <th class="tituloTabla">2020</th>
+            <th class="tituloTabla">2021</th>
+            <th class="tituloTabla">2022</th>
+            <th class="tituloTabla">2023</th>
+        </tr>
 
-            <th class="tituloTabla">Nombre de programa</th>
-            <th class="tituloTabla">Total</th>
-            <th class="tituloTabla">Doc. (%)</th>
-            <th class="tituloTabla">Mag. (%)</th>
-            <th class="tituloTabla">MJ + JC (%)</th>
-            <th class="tituloTabla">Mujer (%)</th>
-            <th class="tituloTabla">Mujer Doc. (%)</th>
-            <th class="tituloTabla">Mujer Mag. (%)</th>
-            <th class="tituloTabla">Mujer MJ + JC (%)</th>
-
-            <th class="tituloTabla">Nombre de programa</th>
-            <th class="tituloTabla">Total</th>
-            <th class="tituloTabla">Doc. (%)</th>
-            <th class="tituloTabla">Mag. (%)</th>
-            <th class="tituloTabla">MJ + JC (%)</th>
-            <th class="tituloTabla">Mujer (%)</th>
-            <th class="tituloTabla">Mujer Doc. (%)</th>
-            <th class="tituloTabla">Mujer Mag. (%)</th>
-            <th class="tituloTabla">Mujer MJ + JC (%)</th>
-            <th class="tituloTabla">Total N° de académicos</th>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sede</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 1</td>
             <td></td>
             <td></td>
             <td></td>
@@ -434,29 +424,7 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede 2</td>
             <td></td>
             <td></td>
             <td></td>
@@ -464,34 +432,158 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Sede N</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-</tbody>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por nivel de formación</th>
+        </tr>
+        <tr>
+            <td>Profesional con Licenciatura</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Profesional sin Licenciatura</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Licenciatura no Conducente a Título</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bachillerato, Ciclo Inicial o Plan Común</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por jornada</th>
+        </tr>
+        <tr>
+            <td>Diurna</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Vespertina</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Otra</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por modalidad</th>
+        </tr>
+        <tr>
+            <td>Presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Semipresencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>No presencial</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por área del conocimiento</th>
+        </tr>
+        <tr>
+            <td>Área 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Área N</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="tituloTabla" colspan="6" style="text-align:left !important">Por sexo</th>
+        </tr>
+        <tr>
+            <td>Mujer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hombre</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="tituloTabla">Total Institucional</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
 </table>
+</div>
+

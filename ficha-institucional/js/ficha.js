@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 function cargarInfoConsolidada(){
     
-    var url ="ficha-institucional/informacion_consolidada.php";
+    var url ="ficha-institucional/informacion_consolidada1.php";
     $.ajax({
         type: "POST",
         url: url,
@@ -23,7 +23,7 @@ function cargarInfoConsolidada(){
 
 function cargarOfertaPregrado(){
     
-    var url ="ficha-institucional/oferta_pregrado.php";
+    var url ="ficha-institucional/oferta_pregrado2.php";
     $.ajax({
         type: "POST",
         url: url,
@@ -39,7 +39,7 @@ function cargarOfertaPregrado(){
 
 function cargarDimensionGestion(){
     
-    var url ="ficha-institucional/localización_geo15.php";
+    var url ="ficha-institucional/localizacion_geo15.php";
     $.ajax({
         type: "POST",
         url: url,
@@ -55,7 +55,7 @@ function cargarDimensionGestion(){
 
 function cargarfichaGob(){
     
-    var url ="ficha-institucional/matricula_pregrado.php";
+    var url ="ficha-institucional/matricula_pregrado16.php";
     $.ajax({
         type: "POST",
         url: url,
@@ -653,6 +653,174 @@ function llamarIndInfra(){
 ==========================================================================================*/
 
 /*==========================================================================================
+                             7. Egreso
+==========================================================================================*/
+
+function cargarEgresos(){
+    
+  var url ="ficha-institucional/egreso7.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#Egre").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                                FIN 7. Egreso
+==========================================================================================*/
+
+/*==========================================================================================
+                             8. Dotación académica
+==========================================================================================*/
+
+function cargarTSegimiento(){
+    
+  var url ="ficha-institucional/titulacion_seguimiento8.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#TSegimiento").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                                FIN 8. Dotación académica
+==========================================================================================*/
+
+/*==========================================================================================
+                             9. Dotación académica
+==========================================================================================*/
+
+function cargarDAcademica(){
+    
+  var url ="ficha-institucional/dotacion_academica9.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#DAcademica").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                                FIN 9. Dotación académica
+==========================================================================================*/
+
+/*==========================================================================================
+                              10. Oferta de Postgrado 
+==========================================================================================*/
+
+function cargarOPostgrado(){
+    
+  var url ="ficha-institucional/oferta_postgrado10.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#OPostgrado").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                                FIN 10. Oferta de Postgrado 
+==========================================================================================*/
+
+/*==========================================================================================
+                      11. Programas no vigentes o vigentes sin admisión.
+==========================================================================================*/
+
+function cargarPCerrado(){
+    
+  var url ="ficha-institucional/programas_cerrados11.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#PCerrado").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                        FIN 11. Programas no vigentes o vigentes sin admisión.
+==========================================================================================*/
+
+/*==========================================================================================
+                                   12. Matrícula Postgrado
+==========================================================================================*/
+
+function cargarMPostgrado(){
+    
+  var url ="ficha-institucional/matricula_postgrado12.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#MPostgrado").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                              FIN 12. Matrícula Postgrado
+==========================================================================================*/
+
+/*==========================================================================================
+                                   13. Progresión Postgrado
+==========================================================================================*/
+
+function cargarPPostgrado(){
+    
+  var url ="ficha-institucional/progresion_postgrado13.php";
+  $.ajax({
+      type: "POST",
+      url: url,
+      async: false,
+      success: function(data) {
+        //  console.log(data);
+          $("#PPostgrado").html(data);
+
+      }
+
+  });
+}
+
+/*==========================================================================================
+                              FIN 13. Progresión Postgrado
+==========================================================================================*/
+
+/*==========================================================================================
                  Cuerpo Académico por nivel de formación y tipo de rol
 ==========================================================================================*/
 
@@ -672,9 +840,6 @@ function cargarDotacioPostgrado(){
   });
 }
 
-
-
-
 /*==========================================================================================
-                FIN   Cuerpo Académico por nivel de formación y tipo de rol
+                FIN Cuerpo Académico por nivel de formación y tipo de rol
 ==========================================================================================*/
