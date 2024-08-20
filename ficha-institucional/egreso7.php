@@ -1,4 +1,4 @@
-<h4>Retención estudiantil</h4>
+<h4>Tasa de egreso total por duración de carrera, por sede, nivel de formación, jornada, modalidad, área del conocimiento y sexo</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
 <br />
 <br />
