@@ -1,4 +1,4 @@
-<h4>Cuerpo Académico por nivel de formación y tipo de rol</h4>
+<h4> Indicadores de investigación, creación y/o innovación</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
 <br />
 <br />
