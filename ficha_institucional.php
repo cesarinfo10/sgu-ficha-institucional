@@ -24,6 +24,18 @@
       <a class="nav-link" data-toggle="tab" href="#menu1" onclick="cargarOfertaPregrado();">(2) Ofera de Pregrado</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu3" onclick="cargarMatPregrado();" >(3) Matrícula de Pregrado</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu4" onclick="cargarPuntPromedio();" >(4) Puntajes promedio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu5" onclick="cargarOcuVacantes();" >(5) Ocupación de Vacantes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu6" onclick="cargarRetencion();" >(6) Retencion</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu7" onclick="cargarEgresos();" >(7) Egresos</a>
     </li>
     <li class="nav-item">
@@ -69,6 +81,22 @@
     <div id="menu1" class="tab-pane fade"><br>
     <h3>Oferta Pregrado</h3>
       <div id="ofPregrado"></div>
+    </div>
+    <!-- <div id="menu3" class="container tab-pane fade"><br>-->
+    <div id="menu3" class="tab-pane fade"><br>
+        <div id="Mpregrado"></div>
+    </div>
+    <!-- <div id="menu4" class="container tab-pane fade"><br>-->
+    <div id="menu4" class="tab-pane fade"><br>
+        <div id="PProm"></div>
+    </div>
+    <!-- <div id="menu5" class="container tab-pane fade"><br>-->
+    <div id="menu5" class="tab-pane fade"><br>
+        <div id="ocuV"></div>
+    </div>
+    <!-- <div id="menu6" class="container tab-pane fade"><br>-->
+    <div id="menu6" class="tab-pane fade"><br>
+        <div id="Reten"></div>
     </div>
     <!-- <div id="menu9" class="container tab-pane fade"><br>-->
     <div id="menu7" class="tab-pane fade"><br>
