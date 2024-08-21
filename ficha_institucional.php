@@ -68,6 +68,12 @@
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu17" onclick="cargarInfRecursos(); llamarDPesonal(); llamarEPropio(); llamarEArriendo(); llamarEComodato(); llamarEvoInfra(); llamarIndInfra();" >(17) Infraestructura y recursos</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu18" onclick="cargarVinculcionM();" >(18) Vinculación con el Medio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu19" onclick="cargarInvestigacion();" >(19) Investigación</a>
+    </li>
   </ul>
 
   <!-- Tab panes -->
@@ -141,6 +147,14 @@
     <!--<div id="menu17" class="container tab-pane fade"><br>-->
     <div id="menu17" class="tab-pane fade"><br>
       <div id="fichaInf17"></div>
+    </div>
+    <!--<div id="menu18" class="container tab-pane fade"><br>-->
+    <div id="menu18" class="tab-pane fade"><br>
+      <div id="Vmedio"></div>
+    </div>
+    <!--<div id="menu18" class="container tab-pane fade"><br>-->
+    <div id="menu19" class="tab-pane fade"><br>
+      <div id="inv"></div>
     </div>
   </div>
 <script src="./ficha-institucional/js/ficha.js"></script>
