@@ -1,7 +1,5 @@
 <h4>Retención estudiantil</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
-<br />
-<br />
 <h4>Tasa de retención 1° y 3° año por sede, nivel de formación, jornada, modalidad, área de conocimiento y sexo</h4>
 <div class="table-responsive">
 <table class="table table-bordered">

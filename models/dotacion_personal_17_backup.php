@@ -694,57 +694,59 @@ LLAMAR A TODA la Indicadores infraestructura
 =============================================*/
 if (isset($_GET['getBenEstudiante'])) {
   $dbconn = db_connect();
-  $currentYear = date('Y');
-  $startYear = $currentYear - 9; // Mostrar desde 5 años atrás
-  $endYear = $currentYear; // Mostrar hasta el año actual
+echo '<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th></th>';
+    $currentYear = date('Y');
+    $startYear = $currentYear -5; // Mostrar desde 5 años atrás
+    $endYear = $currentYear - 1; // Mostrar hasta el próximo año
 
-  $years = range($startYear, $endYear);
-  if (count($years) > 9) {
-      $years = array_slice($years, -9); // Mantener solo los últimos 5 años
-  }
+    $years = range($startYear, $endYear);
+    if (count($years) > 5) {
+        $years = array_slice($years, -5); // Mantener solo los últimos 5 años
+    }
 
-  $startYearPlusOne = $startYear + 3;
+    foreach ($years as $year): 
+        echo '<th class="tituloTabla" colspan="3"> '.$year.'</th>';
+    endforeach;
+      echo '</tr>
+      <tr>
+      <tr>
+        <th></th>
+        <th class="tituloTabla">Montos totales ($)</th>
+        <th class="tituloTabla">Estudiantes (%)</th>
+        <th class="tituloTabla">Mujer (%)</th>
+        <th class="tituloTabla">Montos totales ($)</th>
+        <th class="tituloTabla">Estudiantes (%)</th>
+        <th class="tituloTabla">Mujer (%)</th>
+        <th class="tituloTabla">Montos totales ($)</th>
+        <th class="tituloTabla">Estudiantes (%)</th>
+        <th class="tituloTabla">Mujer (%)</th>
+        <th class="tituloTabla">Montos totales ($)</th>
+        <th class="tituloTabla">Estudiantes (%)</th>
+        <th class="tituloTabla">Mujer (%)</th>
+        <th class="tituloTabla">Montos totales ($)</th>
+        <th class="tituloTabla">Estudiantes (%)</th>
+        <th class="tituloTabla">Mujer (%)</th>
 
-  echo '<div class="tituloTabla">';
-  foreach ($years as $key => $year) {
-      $checked = ($year > $startYearPlusOne  && $year != $currentYear ) ? 'checked' : '';
-      echo '<input type="checkbox" id="checkbox-' . $year . '" name="years[]" value="' . $year . '" ' . $checked . ' onclick="toggleColumn(' . $year . ')"> ' . $year . '';
-  }
-  echo '</div>';
-
-  echo '<div class="table-responsive">
-          <table class="table table-bordered">
-              <thead>
-                  <tr>
-                      <th></th>';
-  foreach ($years as $year) {
-      echo '<th class="tituloTabla" colspan="3" id="col-' . $year . '"> ' . $year . '</th>';
-  }
-  echo '</tr>
-        <tr>
-        <tr>
-          <th></th>';
-  foreach ($years as $year) {
-      echo '<th class="tituloTabla" id="col-' . $year . '-monto">Montos totales ($)</th>
-            <th class="tituloTabla" id="col-' . $year . '-est">Estudiantes (%)</th>
-            <th class="tituloTabla" id="col-' . $year . '-muj">Mujer (%)</th>';
-  }
-  echo '</tr>
-        <tr>
-          <th class="tituloTabla" colspan="19" style="text-align:left !important">Beneficio internos</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>Beca</td>';
-
-  foreach ($years as $year) {
+      </tr>
+      <tr>
+        <th class="tituloTabla" colspan="16" style="text-align:left !important">Beneficio internos</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Beca</td>';
+    
+    foreach ($years as $year) {
       $queries = [
           'monto' => "SELECT finanzas.beca_pre($year::int2, '$year-12-31'::date, 'monto'::text)",
-          'porc' => "SELECT finanzas.beca_pre($year::int2, '$year-12-31'::date, 'porc'::text)",
+          'porc_est' => "SELECT finanzas.beca_pre($year::int2, '$year-12-31'::date, 'porc_est'::text)",
           'porc_mujeres' => "SELECT finanzas.beca_pre($year::int2, '$year-12-31'::date, 'porc_mujeres'::text)"
       ];
-
+  
       $results = [];
       foreach ($queries as $key => $query) {
           $result = pg_query($dbconn, $query);
@@ -753,94 +755,143 @@ if (isset($_GET['getBenEstudiante'])) {
           }
           $results[$key] = pg_fetch_assoc($result);
       }
-
-      echo '<td id="col-' . $year . '-monto">$' . number_format($results['monto']['beca_pre'], 0, ',', '.') . '</td>';
-      echo '<td id="col-' . $year . '-est">' . ($results['porc']['beca_pre']?? 0 ) . '%</td>';
-      echo '<td id="col-' . $year . '-muj">' . ($results['porc_mujeres']['beca_pre']?? 0) . '%</td>';
-  }
-/*********************Descuento de arancel******************************/
-  echo '<tr>
-  <td>Descuento de arancel</td>';
-
-foreach ($years as $year) {
-$queries = [
-    'monto' => "SELECT finanzas.descuentos_arancel_pre($year::int2, '$year-12-31'::date, 'monto'::text)",
-    'porc' => "SELECT finanzas.descuentos_arancel_pre($year::int2, '$year-12-31'::date, 'porc'::text)",
-    'porc_mujeres' => "SELECT finanzas.descuentos_arancel_pre($year::int2, '$year-12-31'::date, 'porc_mujeres'::text)"
-];
-
-$results = [];
-foreach ($queries as $key => $query) {
-    $result = pg_query($dbconn, $query);
-    if (!$result) {
-        die('La consulta fallo: ' . pg_last_error());
-    }
-    $results[$key] = pg_fetch_assoc($result);
-}
-
-echo '<td id="col-' . $year . '-monto">$' . number_format($results['monto']['descuentos_arancel_pre'] ?? 0, 0, ',', '.') . '</td>';
-echo '<td id="col-' . $year . '-est">' . ($results['porc']['descuentos_arancel_pre'] ?? 0) . '%</td>';
-echo '<td id="col-' . $year . '-muj">' . ($results['porc_mujeres']['descuentos_arancel_pre'] ?? 0) . '%</td>';
-}
-
-echo '</tr>';
-/*********************Créditos internos******************************/
-echo '<tr>
-<td>Créditos internos</td>';
-
-foreach ($years as $year) {
-$queries = [
-  'monto' => "SELECT finanzas.ci_pre($year::int2, '$year-12-31'::date, 'monto'::text)",
-  'porc' => "SELECT finanzas.ci_pre($year::int2, '$year-12-31'::date, 'porc'::text)",
-  'porc_mujeres' => "SELECT finanzas.ci_pre($year::int2, '$year-12-31'::date, 'porc_mujeres'::text)"
-];
-
-$results = [];
-foreach ($queries as $key => $query) {
-  $result = pg_query($dbconn, $query);
-  if (!$result) {
-      die('La consulta fallo: ' . pg_last_error());
-  }
-  $results[$key] = pg_fetch_assoc($result);
-}
-
-echo '<td id="col-' . $year . '-monto">$' . number_format($results['monto']['ci_pre'] ?? 0, 0, ',', '.') . '</td>';
-echo '<td id="col-' . $year . '-est">' . ($results['porc']['ci_pre'] ?? 0) . '%</td>';
-echo '<td id="col-' . $year . '-muj">' . ($results['porc_mujeres']['ci_pre'] ?? 0) . '%</td>';
-}
-
-echo '</tr>
-
-  </tbody>
-  </table>
-  </div>';
-}
-?>
-
-<script>
-function toggleColumn(year) {
-  var columns = document.querySelectorAll('#col-' + year + ', #col-' + year + '-monto, #col-' + year + '-est, #col-' + year + '-muj');
-  columns.forEach(function(column) {
-      column.style.display = column.style.display === 'none' ? '' : 'none';
-  });
- // updateColspan();
-}
-
-function updateColspan() {
-    var visibleColumns = document.querySelectorAll('th[id^="col-"]:not([style*="display: none"])').length;
-    var beneficioHeader = document.getElementById('beneficio-internos-header');
-    beneficioHeader.colSpan = visibleColumns + 1; // +1 for the first empty column
-}
-// Inicializar la visibilidad de las columnas según los checkboxes
-setTimeout(() => {
-  var checkboxes = document.querySelectorAll('input[type="checkbox"][name="years[]"]');
-  var startYearPlusOne = <?php echo json_encode($startYearPlusOne); ?>;
-  var currentYear = <?php echo json_encode($currentYear); ?>;
-  checkboxes.forEach(function(checkbox) {
-    if (!checkbox.checked || checkbox.value == startYearPlusOne || checkbox.value == currentYear) {
-          toggleColumn(checkbox.value);
-      }
-  });
   
-}, 1000);
-</script>
+      echo '<td>$' . number_format($results['monto']['beca_pre'], 0, ',', '.') . '</td>';
+      echo '<td>' . $results['porc_est']['beca_pre'] . '%</td>';
+      echo '<td>' . $results['porc_mujeres']['beca_pre'] . '%</td>';
+  }
+      
+      echo'</tr>
+      <tr>
+        <td>Descuento de arancel</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Créditos internos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Otros</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="tituloTabla" colspan="16" style="text-align:left !important">Beneficio externo</th>
+      </tr>
+      <tr>
+        <td>Beca</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Gratuidad</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Crédito con Garantía Estatal (CAE)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Otros</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>';
+}

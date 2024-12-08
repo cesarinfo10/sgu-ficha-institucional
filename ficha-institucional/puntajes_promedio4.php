@@ -1,7 +1,5 @@
 <h4>Puntaje promedio de admisión (PSU, PDT y/o PAES), por sede, nivel de formación, jornada, modalidad, área del conocimiento y sexo</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
-<br />
-<br />
 <div class="table-responsive">
 <table class="table table-bordered">
     <thead>

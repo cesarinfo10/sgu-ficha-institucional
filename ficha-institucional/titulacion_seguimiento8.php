@@ -1,7 +1,5 @@
 <h4>  Seguimiento de titulados e indicadores de titulación por duración de carreras, sede, jornada, modalidad, área del conocimiento y sexo.</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
-<br />
-<br />
 <h4>Tasa de titulación por duración de carrera</h4>
 <div class="table-responsive">
 <table class="table table-bordered">

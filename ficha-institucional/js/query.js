@@ -2,6 +2,7 @@
 setTimeout(() => {
     llamarInfoConsolidada();
 }, 3000);
+
 function llamarInfoConsolidada(){
     
     var url ="models/query_ficha_institucional.php?getCarrera";

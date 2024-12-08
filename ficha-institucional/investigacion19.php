@@ -1,7 +1,5 @@
 <h4> Indicadores de investigación, creación y/o innovación</h4>
 <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalBenPregrado">Agregar +</button>-->
-<br />
-<br />
 <div class="table-responsive">
 <table class="table table-bordered">
     <thead>
