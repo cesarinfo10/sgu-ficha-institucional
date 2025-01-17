@@ -7,6 +7,7 @@ include ('conexion.php');
 /*=============================================
 LLAMAR A Dotación de personal, por sede
 =============================================*/
+
 if (isset($_GET['getSede'])) {
   $dbconn = db_connect();
 
@@ -27,27 +28,9 @@ if (isset($_GET['getSede'])) {
 /*=============================================
 INSERTAR - UPDATE DOTACION DE PERSONAL
 =============================================*/
+
 if (isset($_GET['getDPersonal'])) {
     $dbconn = db_connect();
-    $currentYearPersonal = date('Y');
-    $startYearPersonal = $currentYearPersonal - 9; // Mostrar desde 9 años atrás
-    $endYearPersonal = $currentYearPersonal; // Mostrar hasta el año actual
-
-    $yearsPersonal = range($startYearPersonal, $endYearPersonal);
-    if (count($yearsPersonal) > 9) {
-        $yearsPersonal = array_slice($yearsPersonal, -9); // Mantener solo los últimos 9 años
-    }
-
-    $startYearPlusOnePersonal = $startYearPersonal + 3;
-
-    echo '<div class="tituloTabla">';
-    foreach ($yearsPersonal as $key => $year) {
-        $checked = ($year > $startYearPlusOnePersonal  && $year != $currentYearPersonal ) ? 'checked' : '';
-        echo '<input type="checkbox" id="checkboxPersonal-' . $year . '" name="yearsPersonal[]" value="' . $year . '" ' . $checked . ' onclick="toggleColumnPersonal(' . $year . ')"> ' . $year . '';
-    }
-    echo '</div>';
-
-    $selectedYearsPersonal = isset($_GET['yearsPersonal']) ? $_GET['yearsPersonal'] : $yearsPersonal;
 
     $query = "SELECT informacion_sedes.idsede, sede_ficha.nomsede, sede_ficha.estado, informacion_sedes.cftSede, 
         informacion_sedes.ipSede, informacion_sedes.uniSede
@@ -64,21 +47,12 @@ if (isset($_GET['getDPersonal'])) {
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th></th>';
-    foreach ($selectedYearsPersonal as $year) {
-        echo '<th class="tituloTabla" colspan="2" id="colPersonal-' . $year . '">' . $year . '</th>';
-    }
-    echo '<th class="tituloTabla" colspan="3">Instituciones del conglomerado</th>
-                    </tr>
-                    <tr>
-                        <th class="tituloTabla">Sede</th>';
-    foreach ($selectedYearsPersonal as $year) {
-        echo '<th class="tituloTabla" id="colPersonal-' . $year . '-total">Total</th>
-              <th class="tituloTabla" id="colPersonal-' . $year . '-muj">Mujer (%)</th>';
-    }
-    echo '<th class="tituloTabla">CFT</th>
-          <th class="tituloTabla">IP</th>
-          <th class="tituloTabla">Universidad</th>
+                        <th class="tituloTabla">Sede</th>
+                        <th class="tituloTabla">Total</th>
+                        <th class="tituloTabla">Mujer (%)</th>
+                        <th class="tituloTabla">CFT</th>
+                        <th class="tituloTabla">IP</th>
+                        <th class="tituloTabla">Universidad</th>
                     </tr>
                 </thead>
                 <tbody>';
@@ -86,13 +60,13 @@ if (isset($_GET['getDPersonal'])) {
     while ($row = pg_fetch_row($result)) {
         echo '<tr>
                 <td>' . $row[1] . '</td>';
-        foreach ($selectedYearsPersonal as $year) {
-            $queryIS = "SELECT * FROM public.informacion_sedes WHERE idSede = '" . $row[0] . "' AND sedeAno = '$year' ORDER BY sedeAno";
-            $resultIS = pg_query($dbconn, $queryIS) or die('La consulta fallo: ' . pg_last_error());
-            $rowIS = pg_fetch_row($resultIS);
-            echo '<td id="colPersonal-' . $year . '-total">' . ($rowIS[4] ?? 0) . '</td>
-                  <td id="colPersonal-' . $year . '-muj">' . ($rowIS[3] ?? 0) . ' %</td>';
-        }
+        
+        $queryIS = "SELECT * FROM public.informacion_sedes WHERE idSede = '" . $row[0] . "' ORDER BY sedeAno";
+        $resultIS = pg_query($dbconn, $queryIS) or die('La consulta fallo: ' . pg_last_error());
+        $rowIS = pg_fetch_row($resultIS);
+        echo '<td>' . ($rowIS[4] ?? 0) . '</td>
+              <td>' . ($rowIS[3] ?? 0) . ' %</td>';
+        
         echo '<td>' . (($row[3] == 't') ? 'Sí' : 'No') . '</td>
               <td>' . (($row[4] == 't') ? 'Sí' : 'No') . '</td>
               <td>' . (($row[5] == 't') ? 'Sí' : 'No') . '</td>
@@ -103,35 +77,7 @@ if (isset($_GET['getDPersonal'])) {
           </table>
           </div>';
 }
-?>
 
-<script>
-function toggleColumnPersonal(year) {
-    var columns = document.querySelectorAll('#colPersonal-' + year + ', #colPersonal-' + year + '-total, #colPersonal-' + year + '-muj');
-    columns.forEach(function(column) {
-        column.style.display = column.style.display === 'none' ? '' : 'none';
-    });
-}
-
-function initializeGetDPersonal() {
-    var checkboxes = document.querySelectorAll('input[type="checkbox"][name="yearsPersonal[]"]');
-    checkboxes.forEach(function(checkbox) {
-        if (!checkbox.checked) {
-            toggleColumnPersonal(checkbox.value);
-        }
-    });
-}
-
-// Inicializar la visibilidad de las columnas según los checkboxes solo si getDPersonal está presente
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.search.includes('getDPersonal')) {
-        initializeGetDPersonal();
-    }
-});
-
-</script>
-
-<?php
 /*==========================================================================================
                                   FIN DOTACION DE PERSONAL
 ==========================================================================================*/
